@@ -35,13 +35,13 @@
 ### 3. Courses and search (1.5 minutes)
 
 **Do:**
-1. Open **Courses**. Swipe across **Diploma**, **Pre-University** and **Degree**.
-2. Show the Electrical, Mechanical, and Computer & Information groups under Diploma.
+1. Open **Courses**. Show the three Diploma departments, then swipe across **Pre-University** and **Degree**.
+2. Back on **Diploma**, tap **Electrical Engineering** to open it, then tap it again to close it.
 3. Tap the search icon and type `software`.
-4. Clear the search and open **Diploma in Software Engineering**.
+4. Open **Diploma in Software Engineering** from the results.
 5. Show the fees, then open **Subjects** and **Entry requirements**.
 
-**Say:** "There are 18 programmes, grouped the way GMI groups them. Every card has the same structure, so they are easy to compare. Every course page comes from one data file, so GMI's details can change without changing the code. Long sections collapse, so the page stays easy to read."
+**Say:** "There are 18 programmes, grouped the way GMI groups them. Departments open like dropdowns, so the list starts as a short overview. Every card has the same structure, so they are easy to compare. Every course page comes from one data file, so GMI's details can change without changing the code. Long sections collapse, so the page stays easy to read."
 
 ### 4. Bookmarks and share (45 seconds)
 
@@ -84,7 +84,7 @@ This is the main feature. **Swap speakers here.**
 2. Tap **Open in Maps**. Go back.
 3. Tap **Send an Enquiry**, fill in the form, choose a programme and tap **Send Enquiry**.
 
-**Say:** "Rows with an arrow can be tapped. They use Intents to hand over to the phone, maps and email apps. If an app is missing, the app explains that instead of crashing, and the map falls back to the browser."
+**Say:** "Rows with an arrow can be tapped, and the logos at the bottom open GMI's social pages. They use Intents to hand over to the phone, maps and email apps. If an app is missing, the app explains that instead of crashing, and the map falls back to the browser."
 
 ### 8. Extras (1.5 minutes)
 

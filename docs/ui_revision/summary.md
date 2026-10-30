@@ -1,6 +1,6 @@
 # GMI Pathway UI Revision Summary
 
-The revision changed how the app looks and reads, not what it does. Compare `before/` with `after/`, which use matching file numbers. Screens 38 to 43 in `after/` are extra checks on a 6.7" phone and at Large text.
+The revision changed how the app looks and reads, not what it does. Compare `before/` with `after/`, which use matching file numbers. Screens 38 to 45 in `after/` are extra views: a 6.7" phone, Large text, and an open department.
 
 The full audit is in `audit.md`, and the type, spacing and component details are in `design_system.md`.
 
@@ -67,11 +67,11 @@ Nothing is below 12sp.
 |---|---|---|
 | **Splash** | New font | It was already clean, and it uses the SplashScreen API |
 | **Home** | Apply Now moved above the cards. Added icon tiles and a gold accent. Cards reserve two lines for subtitles | The main action now shows without scrolling, even on a 5" phone |
-| **Course List** | Every card has the same structure: title, 2-line description, then labelled Duration and Intake | A long list is easier to scan and compare |
+| **Course List** | Diploma departments are dropdowns that start closed. Every card has the same structure: title, 2-line description, then labelled Duration and Intake | The tab opens as a short overview instead of 15 cards, and programmes are easy to compare |
 | **Course Details** | Seven stacked cards became flat sections with hairline dividers. Larger reading text | No section competes with the others, so it reads like a prospectus |
 | **Eligibility Checker** | "Step 1 of 2" and "Step 2 of 2" cards. Fixed subjects are plain labels. Added subjects get a full-width line | Shows the task's shape, and makes clear what can be edited |
 | **Eligibility Result** | A headline such as "You qualify for 4 programmes". Eligible cards have a blue border and a red Apply button. Not eligible and Not assessed are grey | The answer comes first, and only the useful actions stand out |
-| **Contact Us** | A location card with the address and Open in Maps. Chevrons on tappable rows. An even grid of social links | Rows look tappable, and the fax row shows it is not |
+| **Contact Us** | A location card with the address and Open in Maps. Chevrons on tappable rows. One row of six social logo buttons | Rows look tappable, the fax row shows it is not, and logos are quicker to recognise than names |
 | **Enquiry Form** | Helper text on email and phone. More space between fields | Guides people before an error appears |
 | **About Us** | Vision and Mission highlighted. History shown as a timeline | Key statements stand out, and dates read as a sequence |
 | **FAQ** | Flat list of questions | Shorter and easier to scan |
@@ -107,7 +107,8 @@ No GMI facts changed. One unused status string was removed.
 | Why is there no embedded map? | Google's map needs an API key and internet, so the app hands over to the Maps app |
 | Why are there no office hours? | GMI has not published them, and the app does not invent facts |
 | Why do tabs say Pre-University and Degree? | That structure was chosen in Phase 0 and matches GMI's own grouping |
-| Why are social links buttons and not chips? | Chips wrapped unevenly, and an even grid looks tidier |
+| Why do the courses start closed? | 15 cards at once looks crowded, so the Diploma tab opens as three departments |
+| Why are the social logos one colour? | The theme colours are locked, so they use the app's blue. The logos remain recognisable, and each has a screen reader label |
 | Why is Apply pink in dark mode? | It is the locked dark palette value, which keeps strong contrast |
 
 ## Test results
@@ -116,8 +117,9 @@ No GMI facts changed. One unused status string was removed.
 |---|---|---|
 | Unit tests | Computer | 58 of 58 passed |
 | Lint | Computer | No issues found |
-| All features, including dark mode and BM | Android 7 (API 24) | 37 of 37 passed |
-| All features, including dark mode and BM | Pixel 9a (API 37) | 37 of 37 passed |
+| All features, including dropdowns, dark mode and BM | Android 7 (API 24) | 40 of 40 passed |
+| All features, including dropdowns, dark mode and BM | Pixel 9a (API 37) | 40 of 40 passed |
+| All six social logos open the right link | API 24 and Pixel 9a | 6 of 6 passed on each |
 | Form, rotation, and phone, map and Apply hand-offs | Pixel 9a | 16 of 16 passed |
 | Course structure | Pixel 9a | 14 of 14 passed |
 | Real eligibility results | Pixel 9a | 11 of 11 passed |
@@ -125,15 +127,19 @@ No GMI facts changed. One unused status string was removed.
 | Edge cases: offline, no email app, no maps app, rotation | Pixel 9a | 10 of 10 passed |
 | BM at 360dp | Pixel 9a | Passed, screens checked by eye |
 | Results and long lists at 360dp, dark mode | Pixel 9a | 6 of 6 passed |
-| Screen sizes: 5" phone, 6.7" phone, landscape, Large text | Pixel 9a | No overflow or clipping, and no crashes across 43 screens |
+| Screen sizes: 5" phone, 6.7" phone, landscape, Large text | Pixel 9a | No overflow or clipping, and no crashes |
 
-**Final build:** unit tests, Lint, the form walk and the BM check ran on the exact final APK. The other device checks ran one small change earlier. That change only removed a width override from the subject list.
+**Final build:** unit tests, Lint, the feature walks on both devices and the logo checks ran on the exact final APK. The other device checks ran on earlier builds of the redesign. Only the course list, Contact Us and the subject list changed after them.
 
-**Screenshots:** the `after/` set was captured before the last two small changes: 48dp rows in the qualification and grade lists, and the subject list width. One screenshot is affected: `after_12` shows the subject list 12dp to the right of where it now sits. No other screen changed.
+**Screenshots:** every screen affected by those later changes was captured again on the final build.
 
-**Functional runs:** the form-based checks ran at a lower display density, so every row fit on screen for the test scripts. Real sizes were checked separately in the screen size row.
+**Functional runs:** the feature walks ran at a lower display density, so every row fit on screen for the test scripts. Real sizes were checked separately in the screen size row.
 
 **Not run on API 24 after the redesign:** the form walk, the Enquiry walk and the edge-case walk. All three passed on API 24 before the redesign, and the checker and Enquiry logic did not change.
+
+## Credits
+
+The social logos are from Simple Icons, under CC0, and are drawn in one colour. The brands belong to their owners, and the logos are used only to link to GMI's official profiles.
 
 ## Known limits
 

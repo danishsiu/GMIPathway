@@ -19,6 +19,7 @@ import com.week14.gmipathway.model.ProgrammeCategory;
  */
 public class CourseListFragment extends Fragment {
     private static final String ARG_CATEGORY = "category";
+    private static final String STATE_EXPANDED = "expandedDepartments";
 
     private CourseAdapter adapter;
 
@@ -43,8 +44,20 @@ public class CourseListFragment extends Fragment {
                 CourseRepository.getInstance(requireContext()).getCourses(category),
                 new BookmarkStore(requireContext()),
                 course -> startActivity(
-                        CourseDetailActivity.createIntent(requireContext(), course.getId())));
+                        CourseDetailActivity.createIntent(requireContext(), course.getId())),
+                true);
+        if (savedInstanceState != null) {
+            adapter.setExpandedDepartments(savedInstanceState.getStringArrayList(STATE_EXPANDED));
+        }
         ((RecyclerView) view.findViewById(R.id.course_list)).setAdapter(adapter);
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (adapter != null) {
+            outState.putStringArrayList(STATE_EXPANDED, adapter.getExpandedDepartments());
+        }
     }
 
     /** A course may have been saved or removed elsewhere, so every row is refreshed. */

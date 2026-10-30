@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.week14.gmipathway.R;
 import com.week14.gmipathway.data.BookmarkStore;
 import com.week14.gmipathway.model.Course;
+import com.week14.gmipathway.ui.common.DetailViews;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -23,10 +24,13 @@ import java.util.Map;
 
 /**
  * Shows courses as cards under a heading for each department.
+ * With more than one department, a collapsible list starts closed, as a short overview.
  */
 class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_COURSE = 1;
+    private static final float CHEVRON_EXPANDED = 180f;
+    private static final float CHEVRON_COLLAPSED = 0f;
 
     interface OnCourseClickListener {
         void onCourseClick(Course course);
@@ -36,25 +40,35 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
-    /** A department heading and how many programmes it has. */
-    private static final class DepartmentHeader {
+    /** A department, its courses, and whether they are showing. */
+    private static final class Department {
         final String id;
         final String name;
-        final int courseCount;
+        final List<Course> courses;
+        boolean expanded;
 
-        DepartmentHeader(Course firstCourse, int courseCount) {
-            this.id = firstCourse.getDepartmentId();
-            this.name = firstCourse.getDepartment();
-            this.courseCount = courseCount;
+        Department(List<Course> courses, boolean expanded) {
+            this.id = courses.get(0).getDepartmentId();
+            this.name = courses.get(0).getDepartment();
+            this.courses = courses;
+            this.expanded = expanded;
         }
     }
 
-    /** Holds a DepartmentHeader or a Course, in display order. */
+    private final List<Department> departmentList = new ArrayList<>();
+    /** Holds a Department or a Course, in display order. */
     private final List<Object> rows = new ArrayList<>();
     private final BookmarkStore bookmarks;
     private final OnCourseClickListener listener;
+    private final boolean collapsible;
 
+    /** A list of everything, used for search results and saved courses. */
     CourseAdapter(List<Course> courses, BookmarkStore bookmarks, OnCourseClickListener listener) {
+        this(courses, bookmarks, listener, false);
+    }
+
+    CourseAdapter(List<Course> courses, BookmarkStore bookmarks, OnCourseClickListener listener,
+                  boolean allowCollapsing) {
         this.bookmarks = bookmarks;
         this.listener = listener;
         Map<String, List<Course>> departments = new LinkedHashMap<>();
@@ -64,9 +78,52 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             }
             departments.get(course.getDepartmentId()).add(course);
         }
-        for (List<Course> department : departments.values()) {
-            rows.add(new DepartmentHeader(department.get(0), department.size()));
-            rows.addAll(department);
+        // One department is already short, so there is nothing to tidy away.
+        collapsible = allowCollapsing && departments.size() > 1;
+        for (List<Course> courseGroup : departments.values()) {
+            departmentList.add(new Department(courseGroup, !collapsible));
+        }
+        rebuildRows();
+    }
+
+    /** Returns the departments that are open, so the screen can keep them after rotation. */
+    ArrayList<String> getExpandedDepartments() {
+        ArrayList<String> expanded = new ArrayList<>();
+        for (Department department : departmentList) {
+            if (department.expanded) {
+                expanded.add(department.id);
+            }
+        }
+        return expanded;
+    }
+
+    /** Call this before the list shows the adapter. */
+    void setExpandedDepartments(List<String> expanded) {
+        for (Department department : departmentList) {
+            department.expanded = expanded.contains(department.id);
+        }
+        rebuildRows();
+    }
+
+    private void rebuildRows() {
+        rows.clear();
+        for (Department department : departmentList) {
+            rows.add(department);
+            if (department.expanded) {
+                rows.addAll(department.courses);
+            }
+        }
+    }
+
+    private void toggle(Department department) {
+        int headerPosition = rows.indexOf(department);
+        department.expanded = !department.expanded;
+        rebuildRows();
+        notifyItemChanged(headerPosition);
+        if (department.expanded) {
+            notifyItemRangeInserted(headerPosition + 1, department.courses.size());
+        } else {
+            notifyItemRangeRemoved(headerPosition + 1, department.courses.size());
         }
     }
 
@@ -94,8 +151,9 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         if (viewType == TYPE_HEADER) {
-            return new HeaderViewHolder(
-                    inflater.inflate(R.layout.item_section_header, parent, false));
+            return new HeaderViewHolder(inflater.inflate(collapsible
+                    ? R.layout.item_department_header : R.layout.item_section_header,
+                    parent, false));
         }
         return new CourseViewHolder(inflater.inflate(R.layout.item_course, parent, false));
     }
@@ -104,7 +162,7 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         Object row = rows.get(position);
         if (holder instanceof HeaderViewHolder) {
-            ((HeaderViewHolder) holder).bind((DepartmentHeader) row);
+            bindHeader((HeaderViewHolder) holder, (Department) row);
             return;
         }
         Course course = (Course) row;
@@ -122,6 +180,16 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         });
     }
 
+    private void bindHeader(HeaderViewHolder holder, Department department) {
+        holder.bind(department);
+        if (collapsible) {
+            holder.chevron.setRotation(
+                    department.expanded ? CHEVRON_EXPANDED : CHEVRON_COLLAPSED);
+            DetailViews.updateExpandedState(holder.itemView, department.expanded);
+            holder.itemView.setOnClickListener(view -> toggle(department));
+        }
+    }
+
     @Override
     public int getItemCount() {
         return rows.size();
@@ -131,20 +199,23 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         final ImageView icon;
         final TextView title;
         final TextView count;
+        final ImageView chevron;
 
         HeaderViewHolder(@NonNull View itemView) {
             super(itemView);
             icon = itemView.findViewById(R.id.header_icon);
             title = itemView.findViewById(R.id.header_title);
             count = itemView.findViewById(R.id.header_count);
+            chevron = itemView.findViewById(R.id.header_chevron);
         }
 
-        void bind(DepartmentHeader header) {
+        void bind(Department department) {
             Resources resources = itemView.getResources();
-            icon.setImageResource(getDepartmentIcon(header.id));
-            title.setText(header.name);
+            int courseCount = department.courses.size();
+            icon.setImageResource(getDepartmentIcon(department.id));
+            title.setText(department.name);
             count.setText(resources.getQuantityString(
-                    R.plurals.course_count, header.courseCount, header.courseCount));
+                    R.plurals.course_count, courseCount, courseCount));
         }
     }
 
