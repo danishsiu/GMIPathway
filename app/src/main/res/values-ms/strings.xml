@@ -8,6 +8,7 @@
     <string name="section_expanded">Dibuka</string>
     <string name="section_collapsed">Ditutup</string>
     <string name="error_no_browser">Tiada aplikasi untuk membuka pautan ini.</string>
+    <string name="error_no_internet">Tiada sambungan internet. Sila sambung dan cuba lagi.</string>
     <string name="error_no_dialer">Tiada aplikasi telefon pada peranti ini.</string>
     <string name="error_no_email">Tiada aplikasi e-mel pada peranti ini.</string>
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- Versions are pinned so the demo build stays the one that was tested. -->
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="NewerVersionAvailable" severity="ignore" />
+    <issue id="OldTargetApi" severity="ignore" />
+
+    <!-- The blue app bars and splash deliberately paint over the plain window background. -->
+    <issue id="Overdraw" severity="ignore" />
+
+    <!-- Home has different views in each orientation, and MainActivity checks for them. -->
+    <issue id="InconsistentLayout">
+        <ignore path="src/main/res/layout/activity_main.xml" />
+        <ignore path="src/main/res/layout-land/activity_main.xml" />
+    </issue>
+
+    <!-- The chevron rotates on its own, which a compound drawable cannot do. -->
+    <issue id="UseCompoundDrawables">
+        <ignore path="src/main/res/layout/view_detail_section.xml" />
+    </issue>
+</lint>

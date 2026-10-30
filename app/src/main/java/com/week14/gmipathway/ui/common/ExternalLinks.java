@@ -3,6 +3,8 @@ package com.week14.gmipathway.ui.common;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
 import android.net.Uri;
 import android.widget.Toast;
 
@@ -19,8 +21,20 @@ public final class ExternalLinks {
     private ExternalLinks() {
     }
 
+    /** Web links need the internet, unlike the course data, which ships inside the app. */
     public static void openWebPage(Context context, String url) {
+        if (!isOnline(context)) {
+            Toast.makeText(context, R.string.error_no_internet, Toast.LENGTH_LONG).show();
+            return;
+        }
         start(context, new Intent(Intent.ACTION_VIEW, Uri.parse(url)), R.string.error_no_browser);
+    }
+
+    private static boolean isOnline(Context context) {
+        ConnectivityManager connectivity = context.getSystemService(ConnectivityManager.class);
+        NetworkCapabilities network =
+                connectivity.getNetworkCapabilities(connectivity.getActiveNetwork());
+        return network != null && network.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET);
     }
 
     /** Opens the phone app with the number filled in, without calling it. */
