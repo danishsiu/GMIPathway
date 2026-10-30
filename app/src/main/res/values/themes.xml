@@ -1,9 +1,68 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
+    <!-- Base application theme. Light and dark mode share it; the colours change in values-night. -->
     <style name="Base.Theme.GMIPathway" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <item name="colorPrimaryContainer">@color/md_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/md_on_primary_container</item>
+        <item name="colorSecondary">@color/md_secondary</item>
+        <item name="colorOnSecondary">@color/md_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/md_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/md_on_secondary_container</item>
+        <item name="colorTertiary">@color/md_tertiary</item>
+        <item name="colorOnTertiary">@color/md_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/md_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/md_on_tertiary_container</item>
+        <item name="android:colorBackground">@color/md_surface</item>
+        <item name="colorOnBackground">@color/md_on_surface</item>
+        <item name="colorSurface">@color/md_surface</item>
+        <item name="colorOnSurface">@color/md_on_surface</item>
+        <item name="colorSurfaceVariant">@color/md_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/md_on_surface_variant</item>
+        <item name="colorOutline">@color/md_outline</item>
+        <item name="colorOutlineVariant">@color/md_outline_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/md_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/md_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/md_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/md_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/md_surface_container_highest</item>
+        <item name="colorSurfaceDim">@color/md_surface_dim</item>
+        <item name="colorSurfaceBright">@color/md_surface_bright</item>
     </style>
 
     <style name="Theme.GMIPathway" parent="Base.Theme.GMIPathway" />
+
+    <!-- System splash shown first; Android 12 and later use it natively, older versions through the compat library. -->
+    <style name="Theme.GMIPathway.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/app_bar_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.GMIPathway</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/app_bar_background</item>
+        <item name="titleTextColor">@color/on_app_bar</item>
+        <item name="navigationIconTint">@color/on_app_bar</item>
+    </style>
+
+    <style name="Widget.GMIPathway.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="android:background">@color/app_bar_background</item>
+        <item name="tabTextColor">@color/on_app_bar_muted</item>
+        <item name="tabSelectedTextColor">@color/on_app_bar</item>
+        <item name="tabIndicatorColor">@color/on_app_bar</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/corner_large</item>
+        <item name="strokeColor">?attr/colorOutlineVariant</item>
+    </style>
+
+    <!-- Apply buttons use the darker brand red so white text stays easy to read. -->
+    <style name="Widget.GMIPathway.Button.Apply" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/colorTertiary</item>
+        <item name="android:textColor">?attr/colorOnTertiary</item>
+        <item name="iconTint">?attr/colorOnTertiary</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" />
 </resources>

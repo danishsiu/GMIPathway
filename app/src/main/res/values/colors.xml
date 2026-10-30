@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Brand colours, taken from GMI's logo. The app bar stays blue in light and dark mode. -->
+    <color name="app_bar_background">#1004A0</color>
+    <color name="app_bar_background_end">#2A1FC4</color>
+    <color name="on_app_bar">#FFFFFF</color>
+    <color name="on_app_bar_muted">#D6D3FF</color>
+
+    <!-- Material 3 colour roles for light mode -->
+    <color name="md_primary">#1004A0</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#E1E0FF</color>
+    <color name="md_on_primary_container">#0B006B</color>
+    <color name="md_secondary">#5B5D72</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#E0E0F9</color>
+    <color name="md_on_secondary_container">#181A2C</color>
+    <color name="md_tertiary">#B3122B</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_tertiary_container">#FFDAD8</color>
+    <color name="md_on_tertiary_container">#410007</color>
+    <color name="md_surface">#FBF8FF</color>
+    <color name="md_on_surface">#1B1B21</color>
+    <color name="md_surface_variant">#E4E1EC</color>
+    <color name="md_on_surface_variant">#46464F</color>
+    <color name="md_outline">#777680</color>
+    <color name="md_outline_variant">#C8C5D0</color>
+    <color name="md_surface_container_lowest">#FFFFFF</color>
+    <color name="md_surface_container_low">#F5F2FA</color>
+    <color name="md_surface_container">#EFEDF4</color>
+    <color name="md_surface_container_high">#E9E7EF</color>
+    <color name="md_surface_container_highest">#E4E1E9</color>
+    <color name="md_surface_dim">#DBD9E0</color>
+    <color name="md_surface_bright">#FBF8FF</color>
 </resources>

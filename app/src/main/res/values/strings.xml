@@ -1,3 +1,165 @@
 <resources>
     <string name="app_name">GMI Pathway</string>
+    <string name="institute_name" translatable="false">German-Malaysian Institute</string>
+
+    <!-- Fixed GMI data. Source: research/gmi_research.md, section 8 -->
+    <string name="phone_main" translatable="false">+603-8921 9000</string>
+    <string name="phone_admissions" translatable="false">+603-8921 9191</string>
+    <string name="phone_admissions_display" translatable="false">+603-8921 9191 / 9450 / 9257</string>
+    <string name="phone_fax" translatable="false">+603-8921 9001</string>
+    <string name="phone_whatsapp" translatable="false">+60 11-5674 1706</string>
+    <string name="email_enquiry" translatable="false">marketing@gmi.edu.my</string>
+    <string name="address_full" translatable="false">Jalan Ilmiah, Taman Universiti, 43000 Kajang, Selangor, Malaysia</string>
+    <string name="website_display" translatable="false">www.gmi.edu.my</string>
+    <string name="url_online_application" translatable="false">https://gmi.vialing.com/oa/login</string>
+    <string name="url_website" translatable="false">https://www.gmi.edu.my</string>
+    <string name="url_whatsapp" translatable="false">https://wasap.my/+601156741706</string>
+    <string name="url_facebook" translatable="false">https://www.facebook.com/germanmalaysianinstitute</string>
+    <string name="url_instagram" translatable="false">https://instagram.com/germanmalaysianinstitute</string>
+    <string name="url_x" translatable="false">https://twitter.com/gmiofficial92</string>
+    <string name="url_youtube" translatable="false">https://youtube.com/channel/UCbMySMz4KlW8MSmGiW64bNw</string>
+    <string name="url_tiktok" translatable="false">https://www.tiktok.com/@germanmalaysianinstitute</string>
+    <string name="url_linkedin" translatable="false">https://www.linkedin.com/company/gmi_official/</string>
+    <string name="map_geo_uri" translatable="false">geo:2.9328487,101.7979726?q=2.9328487,101.7979726(German-Malaysian Institute)</string>
+    <string name="map_web_url" translatable="false">https://www.google.com/maps/search/?api=1&amp;query=2.9328487,101.7979726</string>
+
+    <!-- Shared -->
+    <string name="apply_now">Apply Now</string>
+    <string name="apply_online">Apply Online</string>
+    <string name="bullet_item">• %1$s</string>
+    <string name="error_no_browser">No app found to open this link.</string>
+    <string name="error_no_dialer">No phone app found on this device.</string>
+    <string name="error_no_email">No email app found on this device.</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Your path to studying at GMI</string>
+
+    <!-- Home -->
+    <string name="home_welcome">Welcome to</string>
+    <string name="home_tagline">Explore GMI\'s programmes, check your eligibility and apply online.</string>
+    <string name="home_explore">Get started</string>
+    <string name="home_courses_title">Courses</string>
+    <string name="home_courses_subtitle">Diploma, GAPP and GUFP</string>
+    <string name="home_eligibility_title">Eligibility Checker</string>
+    <string name="home_eligibility_subtitle">See what you qualify for</string>
+    <string name="home_contact_title">Contact Us</string>
+    <string name="home_contact_subtitle">Phone, email and map</string>
+    <string name="home_about_title">About Us</string>
+    <string name="home_about_subtitle">GMI\'s story and vision</string>
+
+    <!-- Courses -->
+    <string name="courses_title">Courses</string>
+    <string name="tab_diploma">Diploma</string>
+    <string name="tab_gapp">GAPP</string>
+    <string name="tab_gufp">GUFP</string>
+    <string name="course_detail_title">Course Details</string>
+    <string name="course_info_code">Programme code</string>
+    <string name="course_info_duration">Duration</string>
+    <string name="course_info_intake">Intake</string>
+    <string name="course_info_mode">Mode of study</string>
+    <string name="course_info_credits">Credits</string>
+    <string name="course_info_fee">Fees</string>
+    <string name="course_section_about">About this programme</string>
+    <string name="course_section_core">Core study areas</string>
+    <string name="course_section_certificates">Professional certificates</string>
+    <string name="course_section_subjects">Subjects</string>
+    <string name="course_section_careers">Career prospects</string>
+    <string name="course_section_entry">Entry requirements</string>
+    <string name="course_section_progression">Progression</string>
+    <string name="course_certificates_note">Terms and conditions apply.</string>
+    <string name="course_subjects_unavailable">Please contact GMI for the current subject list.</string>
+    <string name="course_entry_unpublished">GMI has not published entry requirements for this programme. Please contact GMI to confirm them.</string>
+    <string name="course_entry_standard">Standard: %1$s</string>
+
+    <!-- Eligibility Checker -->
+    <string name="eligibility_title">Eligibility Checker</string>
+    <string name="eligibility_intro">Choose your qualification and enter your results. The checker then shows which GMI programmes match.</string>
+    <string name="eligibility_qualification_hint">Your qualification</string>
+    <string name="eligibility_other_option">Other qualification</string>
+    <string name="eligibility_subjects_heading">Your subjects and grades</string>
+    <string name="eligibility_subject_hint">Subject</string>
+    <string name="eligibility_grade_hint">Grade</string>
+    <string name="eligibility_add_subject">Add subject</string>
+    <string name="eligibility_remove_subject">Remove subject</string>
+    <string name="eligibility_supporting_heading">Your %1$s results</string>
+    <string name="eligibility_check_button">Check Eligibility</string>
+    <string name="eligibility_error_required">Required</string>
+    <string name="eligibility_error_incomplete">Please complete the highlighted fields.</string>
+    <string name="eligibility_error_no_subjects">Please add at least one subject.</string>
+    <string name="eligibility_error_no_more_subjects">All listed subjects have been added.</string>
+    <string name="eligibility_guided_title">Other entry routes</string>
+    <string name="eligibility_guided_body">GMI also accepts STAM, SKM Level 3, MQF Level 3 Certificates, Pre-Diploma, Matriculation, SVM and APEL for some programmes. These depend on your documents and field of study, so GMI\'s admissions team needs to assess them. Each course page lists the routes it accepts.</string>
+    <string name="eligibility_guided_button">Contact GMI</string>
+    <string name="eligibility_result_title">Your Results</string>
+    <plurals name="eligibility_result_summary">
+        <item quantity="one">%1$s, %2$d subject entered</item>
+        <item quantity="other">%1$s, %2$d subjects entered</item>
+    </plurals>
+    <string name="eligibility_disclaimer">This is a guide based on GMI\'s published requirements. GMI makes the final admission decision.</string>
+    <string name="eligibility_status_eligible">You qualify</string>
+    <string name="eligibility_status_not_eligible">Not eligible</string>
+    <string name="eligibility_status_contact">Contact GMI</string>
+    <!-- Temporary: removed when the eligibility rules are connected in Phase 3 -->
+    <string name="eligibility_pending_reason">Not checked yet. The eligibility rules are connected in Phase 3.</string>
+
+    <!-- Contact Us -->
+    <string name="contact_title">Contact Us</string>
+    <string name="contact_address_label">Address</string>
+    <string name="contact_phone_label">Main line</string>
+    <string name="contact_admissions_label">Admissions</string>
+    <string name="contact_fax_label">Fax</string>
+    <string name="contact_email_label">Email</string>
+    <string name="contact_whatsapp_label">WhatsApp</string>
+    <string name="contact_website_label">Website</string>
+    <string name="contact_map_button">Open in Maps</string>
+    <string name="contact_enquiry_button">Send an Enquiry</string>
+    <string name="contact_social_title">Follow GMI</string>
+    <string name="social_facebook" translatable="false">Facebook</string>
+    <string name="social_instagram" translatable="false">Instagram</string>
+    <string name="social_x" translatable="false">X</string>
+    <string name="social_youtube" translatable="false">YouTube</string>
+    <string name="social_tiktok" translatable="false">TikTok</string>
+    <string name="social_linkedin" translatable="false">LinkedIn</string>
+
+    <!-- Enquiry Form -->
+    <string name="enquiry_title">Enquiry Form</string>
+    <string name="enquiry_intro">Fill in your details. Your email app will open with the message ready to send to GMI.</string>
+    <string name="enquiry_name_hint">Full name</string>
+    <string name="enquiry_email_hint">Email address</string>
+    <string name="enquiry_phone_hint">Phone number</string>
+    <string name="enquiry_programme_hint">Programme of interest</string>
+    <string name="enquiry_general_option">General enquiry</string>
+    <string name="enquiry_message_hint">Your message</string>
+    <string name="enquiry_submit">Send Enquiry</string>
+    <string name="enquiry_error_name">Please enter your name.</string>
+    <string name="enquiry_error_email">Please enter a valid email address.</string>
+    <string name="enquiry_error_phone">Please enter a valid phone number.</string>
+    <string name="enquiry_error_programme">Please choose a programme.</string>
+    <string name="enquiry_error_message">Please enter your message.</string>
+    <string name="enquiry_email_subject">GMI Pathway enquiry: %1$s</string>
+    <string name="enquiry_email_body">Name: %1$s\nEmail: %2$s\nPhone: %3$s\nProgramme: %4$s\n\n%5$s</string>
+
+    <!-- About Us. Source: research/gmi_research.md, section 1 -->
+    <string name="about_title">About Us</string>
+    <string name="about_section_who">Who we are</string>
+    <string name="about_who_body">The German-Malaysian Institute (GMI) is a technical education institute on a 75-acre campus in Kajang, Selangor. It began as a joint venture between the Governments of Malaysia and Germany, and describes itself as a pioneer of German-style technical and vocational education and training (TVET) in Malaysia.</string>
+    <string name="about_section_history">Our history</string>
+    <string name="about_history_1991">1991: GMI was established.</string>
+    <string name="about_history_1992">1992: The first students enrolled, and Tun Dr Mahathir Mohamad led the grand opening.</string>
+    <string name="about_history_2001">2001: The German University Preparatory Programme (GAPP) was launched.</string>
+    <string name="about_history_2008">2008: GMI moved to its campus in Kajang.</string>
+    <string name="about_history_2024">2024: GMI reported Ministry of Higher Education approval to upgrade to GMI University College of Applied Sciences.</string>
+    <string name="about_section_vision">Vision</string>
+    <string name="about_vision_body">To be an internationally competitive higher learning institution delivering advanced technical education, training and services; empowering a skilled workforce to reach its fullest potential.</string>
+    <string name="about_section_mission">Mission</string>
+    <string name="about_mission_body">To provide cutting-edge industrial solutions in advanced technical education and training through innovative blended methodologies, fostering lifelong learning and responsive to global industry demands.</string>
+    <string name="about_section_german">German-based education</string>
+    <string name="about_german_practical" formatted="false">A learning approach of 70% practical and 30% theory</string>
+    <string name="about_german_centres">22 Advanced Technology Centres, many linked to industry names</string>
+    <string name="about_german_language">German language in the diploma curriculum</string>
+    <string name="about_german_industry">An Industry Advisory Council of industry partners</string>
+    <string name="about_section_governance">Governance</string>
+    <string name="about_governance_body">GMI is a Company Limited by Guarantee founded by Majlis Amanah Rakyat (MARA) and the Malaysian-German Chamber of Commerce and Industry (MGCC). Its implementing agencies are MARA and GIZ GmbH, and a 10-member Board of Directors governs the institute.</string>
+    <string name="about_section_accreditation">Accreditation</string>
+    <string name="about_accreditation_body">GMI\'s programmes are listed on the Malaysian Qualifications Register. Most diplomas follow Board of Engineers Malaysia or Malaysia Board of Technologists standards. GMI is also a Cambridge examination centre and a TELC certified examination centre.</string>
 </resources>

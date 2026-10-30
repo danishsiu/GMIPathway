@@ -1,0 +1,2080 @@
+{
+  "source": "Built from GMI's Programme Guide (May 2026), gmi.edu.my and the Malaysian Qualifications Register, accessed 30 October 2026. See research/gmi_research.md and research/eligibility_rules.md.",
+  "courses": [
+    {
+      "id": "mechatronics",
+      "name": "Diploma of Mechatronics Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Electrical Engineering",
+      "code": "(R3/0713/4/0041) (07/30) (MQA/FA 14611)",
+      "credits": 98,
+      "summary": "Build smart, automated systems by combining mechanical design, electronics and computer control.",
+      "description": "Combines mechanical design, electronics and intelligent computer control to build smart, automated systems for Industry 4.0 settings.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "PLC & Human Machine Interface",
+        "Computer Integrated Manufacturing",
+        "Industrial Robotics",
+        "Machine Design"
+      ],
+      "certificates": [
+        "FESTO Pneumatics",
+        "FESTO Hydraulics",
+        "FESTO Introduction to Industry 4.0 (IND401)",
+        "FESTO Modular Production System"
+      ],
+      "careers": [
+        "Assistant Mechatronics Engineer",
+        "Automation Technical Specialist",
+        "Automation System Designer",
+        "ROV Supervisor"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Basic Metal Work",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Technical English 1",
+            "German Language 2",
+            "Electronics Workshop",
+            "Calculus",
+            "Basic Turning & Milling",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Sensor & Transducer",
+            "Basic Engineering Metrology",
+            "Digital Systems",
+            "Technical English 2",
+            "Pneumatics & Hydraulics Technology",
+            "Machine Elements",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Electrical Machines & Control",
+            "Electrical Installation",
+            "Digital Entrepreneurship",
+            "Programmable Logic Controller",
+            "Machine Design",
+            "MEC Project Proposal",
+            "Industrial Management",
+            "Control Systems Application"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Industrial Robotics",
+            "Computer Integrated Manufacturing",
+            "MEC Final Project",
+            "Engineering Materials",
+            "Microcontroller",
+            "Power Electronics & Modern Drive Technology"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "instrumentation_control",
+      "name": "Diploma of Engineering Technology (Instrumentation and Control)",
+      "category": "DIPLOMA",
+      "department": "Electrical Engineering",
+      "code": "(R3/0741/4/0012) (07/30) (MQA/FA 14612)",
+      "credits": 99,
+      "summary": "Run and maintain the automated systems that measure and control industrial processes.",
+      "description": "Trains students to run and maintain automated systems that measure and control process variables such as temperature, pressure, level and flow in industrial plants.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Distributed Control System",
+        "Process Control Instrumentation",
+        "Instrument Calibration & Maintenance",
+        "Sensor & Transducer",
+        "SCADA"
+      ],
+      "certificates": [],
+      "careers": [
+        "Field Assistant Engineer",
+        "Control & Instrumentation Technologist",
+        "Service Assistant Engineer",
+        "Process Assistant Engineer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer & Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Digital Systems",
+            "Technical English 1",
+            "German Language 2",
+            "Electronics Workshop",
+            "Calculus",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Sensor & Transducer",
+            "Electrical Machines & Control",
+            "Technical English 2",
+            "Data Acquisition Technology",
+            "Pneumatics & Hydraulics Technology",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services",
+            "Control Systems Application"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Programmable Logic Controllers",
+            "Electrical Installation",
+            "PIC Project Proposal",
+            "Process Measurement Technology",
+            "Digital Entrepreneurship",
+            "Process Technology System",
+            "Process Control Instrumentation",
+            "Industrial Management"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Power Electronics & Modern Drive Technology",
+            "PIC Final Project",
+            "Instrument Calibration & Maintenance",
+            "Basic Metal Work & Welding",
+            "Distributed Control System & Applications"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "electronics_computer",
+      "name": "Diploma of Electronics Engineering Technology (Computer)",
+      "category": "DIPLOMA",
+      "department": "Electrical Engineering",
+      "code": "(R3/0741/4/0013) (07/30) (MQA/FA 14613)",
+      "credits": 97,
+      "summary": "Design and build electronic and computer-based systems for high-tech industry.",
+      "description": "Teaches students to design and build electronic and computer-based systems, covering circuits, telecommunications and computer control.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Computer Programming",
+        "Embedded Controller",
+        "Computer Interfacing Technology",
+        "Microelectromechanical System",
+        "Apps Development",
+        "Internet of Things",
+        "Artificial Intelligence",
+        "Radio Frequency & Data Communication"
+      ],
+      "certificates": [],
+      "careers": [
+        "IT Assistant",
+        "System Programmer / Analyst / Manager",
+        "Telecommunication Technologist",
+        "Electronics Support Specialist",
+        "Junior Software Developer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer & Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Digital Systems",
+            "Technical English 1",
+            "German Language 2",
+            "Calculus",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Data Management"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Electrical Control Systems",
+            "Electronic Circuit Analysis",
+            "Technical English 2",
+            "Electronics Workshop",
+            "Microprocessor",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services",
+            "Control Systems Application"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Network Design & Administration",
+            "Communication Principles",
+            "Microelectromechanical Systems",
+            "EIT Project Proposal",
+            "Industrial Management",
+            "Microcontroller",
+            "Digital Entrepreneurship",
+            "Programming in Visual Basic",
+            "FPGA & Applications"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Data Communication Systems",
+            "Broadband Technology",
+            "EIT Final Project",
+            "Programming in JAVA",
+            "Computer Interfacing Technology"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "sustainable_energy",
+      "name": "Diploma in Engineering Technology (Sustainable Energy and Power Distribution)",
+      "category": "DIPLOMA",
+      "department": "Electrical Engineering",
+      "code": "(R2/522/4/0017) (10/27) (MQA/FA 17923)",
+      "credits": 96,
+      "summary": "Work with solar, wind, hydro and biomass energy, and the systems that distribute power.",
+      "description": "Covers the main renewable technologies (solar PV, wind, hydro and biomass) from installation and commissioning through to maintenance, along with energy management and power distribution.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Photovoltaic Principles & Materials",
+        "Hydro & Wind Energy System",
+        "Renewable Energy System",
+        "Energy Audit",
+        "Energy Management",
+        "Power Distribution"
+      ],
+      "certificates": [],
+      "careers": [
+        "Renewable Energy Technician",
+        "Power Distribution Engineer",
+        "Energy Consultant",
+        "Electrical Maintenance Supervisor",
+        "Smart Grid Technician",
+        "Solar Installer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer & Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Digital Systems",
+            "Technical English 1",
+            "German Language 2",
+            "Electronics Workshop",
+            "Calculus",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Sensor & Transducer",
+            "Electrical Machines & Control",
+            "Technical English 2",
+            "Electrical Installation",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services",
+            "Microcontroller",
+            "Sustainable Energy Technology & System",
+            "Photovoltaic Principles & Materials"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Power Electronics & Modern Drive Technology",
+            "SPD Project Proposal",
+            "Programmable Logic Controllers",
+            "Electrical Devices",
+            "Digital Entrepreneurship",
+            "Hydro & Wind Energy System",
+            "Solar System Design & Application",
+            "Control Systems Application",
+            "Industrial Management"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Power Distribution System",
+            "SPD Final Project",
+            "Biomass Energy",
+            "Field Technology",
+            "Power Management & Analysis"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "autotronics",
+      "name": "Diploma in Autotronics Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Electrical Engineering",
+      "code": "(R2/0741/4/0009) (12/29) (MQA/FA 17922)",
+      "credits": 99,
+      "summary": "Diagnose and maintain modern vehicle electronics, including hybrid and electric vehicles.",
+      "description": "Focuses on modern vehicle electronics, including hybrid and electric vehicles, engine management, CAN and LIN networks, and advanced diagnostic tools.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Hybrid & Electric Vehicle Technologies",
+        "Automotive Electrical Systems",
+        "Engine Management & Diagnostics",
+        "Digital Communication in Automotive"
+      ],
+      "certificates": [],
+      "careers": [
+        "Automotive Electrical Technician",
+        "Automotive Diagnostician",
+        "Service Advisor (EV & HEV)",
+        "Sales & Application Engineer (EV Components)",
+        "Research and Development Engineer",
+        "Automotive Maintenance Entrepreneur"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Basic Metal Work & Welding",
+            "Effective Communication Skills",
+            "Electrical Principles",
+            "Health, Safety & Environment",
+            "Engineering Science",
+            "German Language 1",
+            "Technical Drawing & CAD",
+            "Pre-Calculus"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Calculus",
+            "Electronics",
+            "Technical English 1",
+            "German Language 2",
+            "Engine Structure",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Pneumatics & Hydraulics Technology"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Automotive Control Systems",
+            "Automotive Electrical Systems",
+            "Automotive Sensor & Actuator",
+            "Kursus Integriti dan Antirasuah",
+            "Community Service",
+            "Engine Performance",
+            "Technical English 2",
+            "Vehicle Air Conditioning System"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "AHS Project Proposal",
+            "Auxiliary System",
+            "Engine Management System",
+            "Digital Entrepreneurship",
+            "Hybrid Technology",
+            "Automotive Communication System",
+            "Transmission Systems",
+            "Industrial Management"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "AHS Final Project",
+            "Alternative Energy Sources & Storage Devices",
+            "Automotive Troubleshooting & Maintenance",
+            "Electric Vehicle",
+            "Engineering Ethics"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "cnc_precision",
+      "name": "Diploma of Mechanical Engineering Technology (CNC Precision)",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R3/0714/4/0025) (12/27) (MQA/FA 14870)",
+      "credits": 101,
+      "summary": "Program, set up and run CNC machines to produce parts to exact specifications.",
+      "description": "Teaches students to program, set up and run CNC machines, using CAD/CAM software to produce parts to exact specifications.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Engineering Drawing",
+        "CAD/CAM 3 & 5 Axis",
+        "CNC Milling & Turning Technology",
+        "Tool Cutter Grinder",
+        "Electrical Discharge Machining Technology",
+        "Jigs & Fixtures Design & Manufacturing",
+        "CNC Milling & Turning Multi Axis"
+      ],
+      "certificates": [],
+      "careers": [
+        "CNC Machinist",
+        "CAD Designer",
+        "CNC Programmer",
+        "CAM Programmer",
+        "Production Executive",
+        "Maintenance & Servicing Specialist",
+        "Assistant Engineer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Manufacturing Processes",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing",
+            "Electrical Technology"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Geometrical Dimensioning & Tolerancing",
+            "Computer Aided Design",
+            "Kursus Integriti dan Antirasuah"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "CAD CAM 2 & 3 Axis",
+            "CNC Milling & Turning Technology",
+            "Technical English 2",
+            "German Language 1",
+            "Jigs & Fixtures Manufacturing",
+            "Jigs & Fixtures Design",
+            "Engineering Mechanics",
+            "Further Calculus",
+            "Community Service"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "CAD CAM 4 & 5 Axis",
+            "Reverse Engineering",
+            "CNC Milling Multi Axis & Programming",
+            "CNC Grinding",
+            "CNC Turning Multi Axis & Programming",
+            "Digital Entrepreneurship",
+            "German Language 2",
+            "Industrial Management",
+            "Welding",
+            "CPT Project Proposal"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "EDM Technology",
+            "Machine Tool Maintenance",
+            "Pneumatics & Hydraulics",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Bahasa Kebangsaan A",
+            "CPT Final Project"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "manufacturing",
+      "name": "Diploma of Mechanical Engineering Technology (Manufacturing)",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R2/0714/4/0011) (02/28) (MQA/FA 14871)",
+      "credits": 101,
+      "summary": "Learn how machines, processes and controls work together in a modern factory.",
+      "description": "Looks at how manufacturing equipment, processes and controls fit together in a modern factory, with work on robotics, PLCs and automated production systems.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Automated Manufacturing",
+        "Manufacturing Processes",
+        "Computer Integrated Manufacturing System",
+        "Production Planning Control",
+        "Fundamental Statics & Dynamics"
+      ],
+      "certificates": [],
+      "careers": [
+        "Manufacturing Assistant Engineer",
+        "Industrial Assistant Engineer",
+        "Automation Technical Assistant",
+        "Production Assistant Engineer / Technical Supervisor"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Manufacturing Process",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Geometrical Dimensioning & Tolerancing",
+            "Computer Aided Design",
+            "Kursus Integriti dan Antirasuah"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "CNC Programming & CAD CAM",
+            "Electrical Technology",
+            "Technical English 2",
+            "German Language 1",
+            "Further Calculus",
+            "Community Service",
+            "Automated Manufacturing",
+            "Flexible Manufacturing System",
+            "Statics & Dynamics"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "German Language 2",
+            "Pneumatics & Hydraulics",
+            "Industrial Management",
+            "Welding",
+            "Electro-Mechanics",
+            "Computer Integrated Manufacturing System (CIMS)",
+            "Machine Elements Design & Operation",
+            "MSD Project Proposal",
+            "Digital Entrepreneurship"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Engineering Analysis",
+            "Robust Industrial Design",
+            "Statistical Process Control",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi",
+            "Bahasa Kebangsaan A",
+            "Production Planning Control",
+            "MSD Final Project"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "industrial_quality",
+      "name": "Diploma in Industrial Quality Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R/0741/4/0001) (10/28) (MQA/FA 10032)",
+      "credits": 99,
+      "summary": "Develop inspection and quality management skills to solve workplace quality problems.",
+      "description": "Builds skills in inspection and quality management so graduates can solve quality problems in the workplace.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Total Quality Management",
+        "Quality Standards & Auditing",
+        "Geometrical Dimension & Tolerance Inspection",
+        "Six Sigma Management System",
+        "Lean Manufacturing",
+        "Continuous Improvement"
+      ],
+      "certificates": [
+        "Lean Six Sigma Green Belt",
+        "Ergonomic Trained Person Level 1 (Initial), DOSH"
+      ],
+      "careers": [
+        "QA Assistant Engineer",
+        "Quality Assurance Supervisor",
+        "Quality Management System Coordinator",
+        "Audit Assistant Engineer",
+        "Assistant Industrial Engineer",
+        "Process Improvement Coordinator"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Basic Cutting Process",
+            "Manufacturing Processes",
+            "Total Quality Management",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Quality Tools",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Kursus Integriti dan Antirasuah",
+            "Computer Aided Design"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "CNC Milling & Turning Technology",
+            "Electrical & Electronics for Industry",
+            "Technical English 2",
+            "German Language 1",
+            "Further Calculus",
+            "Community Services",
+            "Ergonomics in Industry",
+            "Continuous Improvement Technique",
+            "Lean Manufacturing"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "German Language 2",
+            "Six Sigma Management System",
+            "Industrial Management",
+            "Quality Standard & Auditing",
+            "Mechanical Instrument Calibration",
+            "GD&T Inspection",
+            "IQM Project Proposal",
+            "Digital Entrepreneurship"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Operational Safety, Health & Environment",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi",
+            "Inspection and Testing",
+            "IQM Final Project",
+            "Instrument Calibration & Maintenance"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "precision_tooling",
+      "name": "Diploma in Precision Tooling Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R3/0714/4/0013) (10/30) (A 5005)",
+      "credits": 93,
+      "summary": "Design and make high-accuracy tools, dies, moulds and precision components.",
+      "description": "Specialises in the high-accuracy design and manufacture of tools, dies, moulds, sheet metal and precision components, mixing theory with industry projects.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Tool & Die Design",
+        "Mould Design",
+        "Sheet Metal Design & Development",
+        "CNC Machining and Programming",
+        "Computer-Aided Design",
+        "Computer-Aided Manufacturing",
+        "Mould and Die Fabrication"
+      ],
+      "certificates": [],
+      "careers": [
+        "Production Engineer",
+        "Mould & Die Design Engineer",
+        "Machinist Expert",
+        "Quality Assurance Executive",
+        "Technical Trainer or Consultant",
+        "Application Engineer",
+        "Production Supervisor",
+        "Multi Skill Technician"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [],
+      "entryGroupId": "A"
+    },
+    {
+      "id": "innovative_product_design",
+      "name": "Diploma in Innovative Product Design Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R3/0741/4/0006) (01/31) (A 7165)",
+      "credits": 102,
+      "summary": "Take real products from first idea to prototype and production.",
+      "description": "Takes students through designing real products, joining engineering with CAD/CAM, prototyping, digital fabrication and sustainable practice.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Design Conceptualisation & Ideation",
+        "Creativity & Innovation",
+        "Model Making Techniques",
+        "Prototype Technology & Application",
+        "Ergonomics",
+        "Design for Manufacture & Assembly",
+        "Digital Design & Styling"
+      ],
+      "certificates": [],
+      "careers": [
+        "Product Designer",
+        "CAD Application Assistant Engineer",
+        "R&D Assistant Engineer",
+        "Quality Assurance Executive"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Manufacturing Processes",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Geometrical Dimensioning & Tolerancing",
+            "Kursus Integriti dan Antirasuah",
+            "Computer Aided Design"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Design Conceptualization & Ideation",
+            "Creativity & Innovation",
+            "Model Making Techniques",
+            "Electrical Technology",
+            "Technical English 2",
+            "German Language 1",
+            "Engineering Mechanics",
+            "Further Calculus",
+            "Plastic Product Design & Tooling",
+            "Community Service"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Design for Manufacturing & Assembly",
+            "Ergonomics",
+            "Digital Design & Styling",
+            "German Language 2",
+            "Industrial Management",
+            "Digital Entrepreneurship",
+            "Prototype Technology & Application",
+            "Welding",
+            "PDM Project Proposal",
+            "Sheet Metal Design & Tooling"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "CNC Programming & CAD CAM",
+            "Reverse Engineering",
+            "Engineering Analysis",
+            "Pneumatics & Hydraulics",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Product Development & Marketing",
+            "Bahasa Kebangsaan A",
+            "PDM Final Project"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "A"
+    },
+    {
+      "id": "industrial_design",
+      "name": "Diploma in Engineering Technology (Industrial Design)",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R2/0741/4/0010) (02/30) (MQA/FA 4785)",
+      "credits": 100,
+      "summary": "Design products that balance function, value and appearance, from brief to finished work.",
+      "description": "Prepares creative, practical designers to carry a product from brief to finished design, balancing function, value and appearance.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Industrial Design Project (Product, Automotive and Furniture Design)",
+        "Digital Design & Styling",
+        "Prototype Technology & Applications",
+        "3D Modeling (Design, Rendering, Animation)"
+      ],
+      "certificates": [],
+      "careers": [
+        "Product / Industrial Designer",
+        "3D Visualiser",
+        "3D Modeller",
+        "CAD / CAID Specialist",
+        "Prototype Specialist",
+        "Model Maker",
+        "Draftsman",
+        "Product Planner",
+        "Graphic Designer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Design History",
+            "Engineering Drawing",
+            "Engineering Methodology",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Machine Tool Operation",
+            "Manufacturing Processes",
+            "Pre-Calculus"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Design Studio 1 (Sketching)",
+            "Computer Aided Design",
+            "Kursus Integriti dan Antirasuah",
+            "Engineering Materials",
+            "Engineering Science",
+            "Workshop Practice",
+            "Technical English 1",
+            "Calculus"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Design Project 1",
+            "Form Study 1",
+            "Creativity & Innovation",
+            "Engineering Mechanics",
+            "Community Services",
+            "Technical English 2",
+            "German Language 1",
+            "Ergonomics",
+            "Electrical Technology"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Design Project 2",
+            "Design Studio 2 (Sketching)",
+            "Digital Design & Styling 1",
+            "Form 2",
+            "German Language 2",
+            "IDE Project Proposal",
+            "Industrial Management",
+            "Digital Entrepreneurship"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Design Project 3",
+            "Digital Design & Styling 2",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi",
+            "IDE Final Project",
+            "Product Development & Marketing",
+            "Prototype Technology & Applications"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "C"
+    },
+    {
+      "id": "machine_tools",
+      "name": "Diploma in Engineering Technology (Machine Tools Maintenance)",
+      "category": "DIPLOMA",
+      "department": "Mechanical Engineering",
+      "code": "(R2/0741/4/0008) (12/29) (MQA/FA 4786)",
+      "credits": 102,
+      "summary": "Keep CNC machine tools running through diagnostics and preventive maintenance.",
+      "description": "Prepares students to keep CNC machine tools running, covering electrical, pneumatic, hydraulic, PLC and mechanical systems, plus diagnostics and preventive maintenance.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Machine Systems & Applications",
+        "Machine Maintenance & Restoration",
+        "Machine Upgrades & System Improvements",
+        "Electrical Faults & Diagnostics"
+      ],
+      "certificates": [],
+      "careers": [
+        "Machine Maintenance & Industrial Automation Specialist",
+        "Machine Design & Retrofitting Expert",
+        "Operation & Maintenance Engineer",
+        "Precision Machine Tool Technician",
+        "Manufacturing Systems & Maintenance Project Engineer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) with UTeM at GMI, for diploma holders who meet its entry requirements"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Electrical Technology",
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Basic Cutting Process",
+            "Manufacturing Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Kursus Integriti dan Antirasuah",
+            "Geometrical Dimensioning & Tolerancing"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Community Service",
+            "Engineering Mechanics",
+            "Technical English 2",
+            "German Language",
+            "Maintenance Fundamentals",
+            "Motion & Systems Control",
+            "Pneumatic & Hydraulics System Maintenance",
+            "Programmable Logic Controllers",
+            "Further Calculus"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "CNC Operation",
+            "Digital Entrepreneurship",
+            "German Language 2",
+            "Industrial Management",
+            "Machine Electrical Faults & Diagnosis",
+            "Machine Electrical Design & Operation",
+            "Machine Tolerances & Calibration",
+            "MTM Project Proposal"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Occupational Safety, Health & Environment",
+            "Machine Repair & Retrofit",
+            "MTM Final Project",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Bahasa Kebangsaan A",
+            "Total Productive Maintenance",
+            "Welding"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "C"
+    },
+    {
+      "id": "software_engineering",
+      "name": "Diploma in Software Engineering",
+      "category": "DIPLOMA",
+      "department": "Computer & Information",
+      "code": "(R/0612/4/0007) (03/28) (MQA/FA 9541)",
+      "credits": 95,
+      "summary": "Develop and test intelligent software, with Android, AI and IoT.",
+      "description": "Covers developing and testing intelligent software across both the software development and software testing life cycles, using C, Java, PHP and Android, with attention to AI, IoT and automated testing.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Artificial Intelligence",
+        "Android Programming",
+        "Internet of Things",
+        "Laravel Web Development"
+      ],
+      "certificates": [
+        "Cisco IT Essentials",
+        "Cisco CCNA Network Fundamental",
+        "Cisco Internet of Things"
+      ],
+      "careers": [
+        "Software Engineer",
+        "Software Tester",
+        "IoT Engineer",
+        "Android Programmer",
+        "AI Engineer"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Discrete Mathematics",
+            "Effective Communication Skills",
+            "German Language 1",
+            "IT Essentials",
+            "Computer Ethics & Values",
+            "Basic of Software Engineering",
+            "Operating Systems"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "English for Professional Purposes 1",
+            "German Language 2",
+            "Networking Fundamentals",
+            "Basic of Programming",
+            "Basic of Software Testing",
+            "Software Modelling & Requirements Engineering",
+            "Calculus & Algebra"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "English for Professional Purposes 2",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Dinamika Islam di Malaysia / Etika & Moral Masyarakat Malaysia",
+            "Co-Curricular Activities & Community Services",
+            "Database Management System",
+            "Data Structure & Algorithm",
+            "Secured Object Oriented Programming"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Human Computer Interaction",
+            "SET Project Proposal",
+            "IT Project Management",
+            "Web Programming",
+            "Test Automation & Configuration",
+            "Digital Entrepreneurship",
+            "IoT Application & Software"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "SET Final Project",
+            "Android Programming",
+            "Quality Assurance & Control",
+            "Artificial Intelligence in Modern Computing",
+            "Advanced Web Programming"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "D"
+    },
+    {
+      "id": "creative_multimedia",
+      "name": "Diploma in Creative Multimedia",
+      "category": "DIPLOMA",
+      "department": "Computer & Information",
+      "code": "(R2/0211/4/0171) (07/30) (MQA/FA 6035)",
+      "credits": 92,
+      "summary": "Produce 2D and 3D digital work, from pre-production to post-production.",
+      "description": "Introduces the full process of producing 2D and 3D digital work, from pre-production to post-production, including animation and studio sound editing, and encourages digital entrepreneurship.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Sketching & Drawing",
+        "Graphic Design & Desktop Publishing",
+        "Modelling & Animation in 2D & 3D",
+        "Interactive Courseware",
+        "Games Application",
+        "Audio Editing & Mixing",
+        "Video Editing & Rendering",
+        "Photography",
+        "Website & Mobile Application"
+      ],
+      "certificates": [
+        "Adobe Certified Professional, Visual Design using Adobe Photoshop"
+      ],
+      "careers": [
+        "Creative Media Editor",
+        "Web Designer",
+        "Creative Designer",
+        "Graphic Designer",
+        "2D/3D Animator"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Visual Communication",
+            "Effective Communication Skills",
+            "German Language 1",
+            "Multimedia in Concept",
+            "Storyboard Visualization",
+            "Computer & Programming",
+            "Computer Ethics & Values",
+            "Sketching & Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "English for Professional Purposes 1",
+            "German Language 2",
+            "Multimedia OOP",
+            "Digital Imaging",
+            "Multimedia Instructional Design",
+            "Graphic Design & Composition",
+            "Artificial Intelligence in Multimedia Technologies",
+            "Bahasa Kebangsaan A"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "English for Professional Purposes 2",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Community Services",
+            "Web Programming with HTML",
+            "Database Management System",
+            "2D Animation",
+            "Multimedia Authoring"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Digital Video & Audio",
+            "Human Computer Interaction",
+            "Digital Entrepreneurship",
+            "3D Animation",
+            "CRM Project Proposal"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "CRM Final Project",
+            "Web Programming with PHP",
+            "Mobile Application Development",
+            "Multimedia Project Management"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "E"
+    },
+    {
+      "id": "cyber_security",
+      "name": "Diploma in Cyber Security Technology",
+      "category": "DIPLOMA",
+      "department": "Computer & Information",
+      "code": "(R3/0613/4/0043) (07/31) (MQA/FA15748-01)",
+      "credits": 96,
+      "summary": "Secure networks and data through programming, security tools and ethical practice.",
+      "description": "Builds skills in securing a whole network, including programming, databases, configuring security tools with open-source and proprietary software, and professional ethics. Formerly the Diploma in Network Security.",
+      "duration": "6 semesters (3 years)",
+      "intake": "January and July",
+      "studyMode": "Full time",
+      "fee": "RM33,324 tuition for Malaysian students. RM35,024 with miscellaneous fees, RM35,524 with the deposit and RM40,924 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Penetration Testing / Vulnerability Assessment",
+        "Network Management System",
+        "Network Forensics",
+        "Open Source Network Tools",
+        "Networking",
+        "Operating Systems Administration",
+        "Programming",
+        "Attacking and Defending Activities",
+        "Mobile Application",
+        "Internet of Things",
+        "Cryptography & Network Security"
+      ],
+      "certificates": [],
+      "careers": [
+        "IT Infrastructure Support",
+        "Technical Support Officer",
+        "NOC Technician",
+        "Computer Service Technician",
+        "Web and Mobile Application Development",
+        "Cybersecurity Analyst",
+        "Security Engineer / Architect",
+        "Penetration Tester",
+        "Security Consultant",
+        "Ethical Hacker"
+      ],
+      "progression": [
+        "Further study at universities in Malaysia, Germany, the United Kingdom or Australia"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "IT Essential",
+            "Cyber Security Technology & Ethics",
+            "Basic of Programming",
+            "German Language 1",
+            "Discrete Mathematics",
+            "Effective Communication Skills",
+            "Network Fundamental"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Database Management System",
+            "English for Professional Purposes 1",
+            "German Language 2",
+            "Routing & Switching Essentials",
+            "Calculus & Algebra",
+            "Penghayatan Etika dan Peradaban",
+            "Bahasa Kebangsaan A",
+            "Secured Object Oriented Programming"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Network Programming",
+            "Operating Systems Administration",
+            "English for Professional Purposes 2",
+            "Kursus Integriti dan Antirasuah",
+            "Community Service",
+            "Scaling Network",
+            "Web Programming"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "IT Project Management",
+            "Wireless Network & Security",
+            "Penetration Testing",
+            "Intrusion Detection & Prevention Systems",
+            "CBS Project Proposal",
+            "Digital Entrepreneurship",
+            "Securing Network"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Digital Forensics & Incident Response",
+            "Cryptography",
+            "Internet of Things",
+            "CBS Final Project",
+            "Network Management & Monitoring Systems",
+            "Mobile Application Development"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": null
+    },
+    {
+      "id": "gapp",
+      "name": "German University Preparatory Programme (GAPP)",
+      "category": "GAPP",
+      "department": "Foundation, Pre-University & General Studies",
+      "code": "(R3/0011/3/0134) (04/27) (A 7643)",
+      "credits": 64,
+      "summary": "Prepare for engineering study at Universities of Applied Sciences in Germany.",
+      "description": "A 3-in-1 preparatory programme launched in 2001, combining Cambridge A-Levels, certified German language and a pre-study technical internship, for students who want to study engineering at a University of Applied Sciences in Germany.",
+      "duration": "20 months at GMI, then 6 months of intensive German in Germany",
+      "intake": "January, May and August",
+      "studyMode": null,
+      "fee": "RM42,400 tuition for 4 semesters for Malaysian students. RM52,000 with miscellaneous and examination fees, and RM55,600 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Cambridge GCE A-Level",
+        "German language certification (TELC, levels A2 to C1)",
+        "440 hours of Vorpraktikum (pre-study technical internship)"
+      ],
+      "certificates": [],
+      "careers": [],
+      "progression": [
+        "Apply to any University of Applied Sciences (Hochschule) in Germany"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Cambridge A-Level subjects",
+          "subjects": [
+            "Mathematics 9709",
+            "Physics 9702",
+            "Chemistry 9701",
+            "German 8027"
+          ]
+        },
+        {
+          "label": "6 months at language centres in Germany",
+          "subjects": [
+            "German from B2 to TestDaF",
+            "Intercultural and study skills workshop",
+            "Advice on study placement",
+            "Technical German",
+            "Internship, depending on placement"
+          ]
+        }
+      ],
+      "entryGroupId": "G"
+    },
+    {
+      "id": "gufp",
+      "name": "GMI-UTP Foundation Programme (GUFP)",
+      "category": "GUFP",
+      "department": "Foundation, Pre-University & General Studies",
+      "code": "(R/0011/3/0218) (10/30) (MQA/FA 13871)",
+      "credits": 50,
+      "summary": "A one-year foundation that qualifies you to start a degree at UTP.",
+      "description": "A one-year Engineering and Science foundation run with Universiti Teknologi PETRONAS and based on UTP's foundation syllabus. It is taught in English, with weekly German classes. Completing it qualifies students to start an undergraduate programme at UTP.",
+      "duration": "1 year (3 trimesters)",
+      "intake": "April and July",
+      "studyMode": null,
+      "fee": "RM16,050 tuition for Malaysian students. RM18,100 with miscellaneous fees, and RM20,500 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Foundation in Engineering and Science",
+        "Introduction to German language and culture"
+      ],
+      "certificates": [],
+      "careers": [],
+      "progression": [
+        "Bachelor's degrees with Honours at UTP in Chemical, Civil, Electrical & Electronics, Integrated, Mechanical, Petroleum, Computer and Material Engineering",
+        "BSc (Hons) at UTP in Applied Physics, Applied Chemistry and Petroleum Geoscience",
+        "BSc at UTP in Industrial Physics"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Trimester 1 (18 credits)",
+          "subjects": [
+            "Chemistry I (5)",
+            "Physics I (5)",
+            "Mathematics I (5)",
+            "Proficiency English (3)"
+          ]
+        },
+        {
+          "label": "Trimester 2 (16 credits)",
+          "subjects": [
+            "Thinking Skills (3)",
+            "Islamic Studies / Moral Studies (3)",
+            "Structured Algorithms & Programming (5)",
+            "Technical English (4)",
+            "Co-curriculum (1)"
+          ]
+        },
+        {
+          "label": "Trimester 3 (16 credits)",
+          "subjects": [
+            "Physics II (5)",
+            "Chemistry II (5)",
+            "Mathematics II (5)",
+            "Co-curriculum (1)"
+          ]
+        }
+      ],
+      "entryGroupId": "F"
+    }
+  ],
+  "entryGroups": [
+    {
+      "id": "A",
+      "standard": "MQA Programme Standard: Engineering and Engineering Technology",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Pass SPM or an equivalent qualification with at least a credit in 3 subjects: Mathematics, 1 Science/Technical/Vocational subject and 1 other subject, and a pass in English."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Pass O-Level with at least Grade C in 3 subjects, including Mathematics, 1 Science/Technical/Vocational subject and 1 other subject, and a pass in English."
+        },
+        {
+          "qualification": "UEC",
+          "requirement": "Pass UEC with at least Grade B in 3 subjects, including Mathematics, 1 subject related to Science/Technical/Vocational and 1 other subject from any field, and a pass in English."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Pass STPM with at least 1 principal in any subject, and pass Mathematics, English and 1 other subject at SPM level."
+        },
+        {
+          "qualification": "Certificate",
+          "requirement": "Pass a Certificate in a related field from a Higher Education Provider recognised by the Government of Malaysia, with a minimum CGPA of 2.00."
+        },
+        {
+          "qualification": "Skills Certificate",
+          "requirement": "Pass a Technical and Vocational Certificate or Skills Certificate in a related field, with 1 year of relevant work experience or at least 1 semester of a bridging programme, and pass SPM with at least 1 credit. SKM must be at Level 3."
+        },
+        {
+          "qualification": "Pre-Diploma or Matriculation",
+          "requirement": "Pass Pre-Diploma or Matriculation in a related field with a minimum CGPA of 2.00, pass SPM with at least 3 credits including Bahasa Melayu and 2 other subjects, and pass English."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 and appropriate experience as determined by the institution."
+        },
+        {
+          "qualification": "Other",
+          "requirement": "Other qualifications recognised as equivalent by the Government of Malaysia."
+        }
+      ],
+      "notes": [
+        "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
+        "International students need TOEFL 500, IELTS 5.0 or equivalent.",
+        "No physical disabilities that would hinder practical work and no colour blindness. Applicants must pass a medical examination and urine test."
+      ]
+    },
+    {
+      "id": "B",
+      "standard": "BEM Standard (ETAC)",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Pass SPM with at least 3 credits, including Mathematics, 1 Science/Technical subject and 1 other subject."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Pass O-Level with at least Grade C in 3 subjects, including Mathematics, 1 Science/Technical/Vocational subject and 1 other subject, and a pass in English."
+        },
+        {
+          "qualification": "SKM Level 3",
+          "requirement": "Pass SKM Level 3 in a related field and pass SPM with at least 1 credit. A bridging programme of up to 1 year or 2 semesters may be needed."
+        },
+        {
+          "qualification": "Sijil Kolej Komuniti",
+          "requirement": "Pass Sijil Kolej Komuniti equivalent to MQF Level 3 in a related field and pass SPM with at least 1 credit. A bridging programme may be required."
+        },
+        {
+          "qualification": "Certificate",
+          "requirement": "Pass an MQF Level 3 Certificate in a related field with a minimum CGPA of 2.00."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 and appropriate experience as determined by the institution."
+        },
+        {
+          "qualification": "Other",
+          "requirement": "Other qualifications recognised as equivalent by the Government of Malaysia."
+        }
+      ],
+      "notes": [
+        "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
+        "International students need TOEFL 500, IELTS 5.0 or equivalent.",
+        "No physical disabilities that would hinder practical work and no colour blindness. Applicants must pass a medical examination and urine test."
+      ]
+    },
+    {
+      "id": "C",
+      "standard": "MBOT Standard",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Pass SPM with at least 3 credits in any subjects."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Pass O-Level with at least Grade C in 3 subjects."
+        },
+        {
+          "qualification": "UEC",
+          "requirement": "Pass UEC with at least Grade B in 3 subjects."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Pass STPM or an equivalent qualification with at least Grade C (CGPA 2.00) in any subject."
+        },
+        {
+          "qualification": "STAM",
+          "requirement": "Pass STAM (Maqbul) or an equivalent qualification."
+        },
+        {
+          "qualification": "Pre-Diploma",
+          "requirement": "Pass at least 1 semester of a pre-diploma programme, with SPM or an equivalent qualification and at least 3 credits in any subjects."
+        },
+        {
+          "qualification": "SKM Level 3",
+          "requirement": "Pass SKM Level 3 in a related field, pass SPM with at least 1 credit, and complete 1 semester of a bridging programme."
+        },
+        {
+          "qualification": "Certificate",
+          "requirement": "Pass an MQF Level 3 Certificate with a minimum CGPA of 2.00 or equivalent."
+        },
+        {
+          "qualification": "Vocational Certificate",
+          "requirement": "Pass a recognised Vocational Certificate in a related field or an equivalent qualification with a minimum CGPA of 2.00."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 and appropriate experience as determined by the institution."
+        },
+        {
+          "qualification": "Other",
+          "requirement": "Other qualifications recognised as equivalent by the Government of Malaysia."
+        }
+      ],
+      "notes": [
+        "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
+        "International students need TOEFL 500, IELTS 5.0 or equivalent.",
+        "No physical disabilities that would hinder practical work and no colour blindness. Applicants must pass a medical examination and urine test."
+      ]
+    },
+    {
+      "id": "D",
+      "standard": "MQA Programme Standard: Computing",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Pass SPM with at least 3 credits in any subjects, including Mathematics, or an equivalent qualification."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Pass O-Level with at least Grade C in 3 subjects, including Mathematics."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Pass STPM with at least Grade C (2.00) in a subject, and a credit in Mathematics at SPM level or equivalent."
+        },
+        {
+          "qualification": "STAM",
+          "requirement": "Pass STAM with at least Maqbul, and a credit in Mathematics at SPM level or equivalent."
+        },
+        {
+          "qualification": "SKM Level 3",
+          "requirement": "Pass SKM Level 3 in a related field. Candidates without Mathematics can be admitted after a rigorous assessment of their Mathematics competency."
+        },
+        {
+          "qualification": "Certificate",
+          "requirement": "A Certificate (MQF Level 3) in a related field with at least a CGPA of 2.00."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 and appropriate experience as determined by the institution."
+        },
+        {
+          "qualification": "Other",
+          "requirement": "Other qualifications recognised as equivalent by the Government of Malaysia."
+        }
+      ],
+      "notes": [
+        "Candidates without a pass in Mathematics at SPM level or equivalent can be admitted but must take and pass a reinforcement Mathematics subject.",
+        "A credit in a Computing-related subject at SPM level or equivalent may earn preferential consideration.",
+        "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
+        "International students need TOEFL 500, IELTS 5.0 or equivalent.",
+        "GMI's offer conditions require applicants to be confirmed healthy and pass a medical examination and drug test, with no serious physical disability and no colour blindness."
+      ]
+    },
+    {
+      "id": "E",
+      "standard": "MQA Programme Standard: Creative Multimedia Technology",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Pass SPM or an equivalent qualification with at least 3 credits."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Pass O-Level with at least Grade C in 3 subjects, including Mathematics, 1 Science/Technical/Vocational subject and 1 other subject, and a pass in English."
+        },
+        {
+          "qualification": "SKM Level 3",
+          "requirement": "SKM Level 3 and SPM with at least 1 credit."
+        },
+        {
+          "qualification": "Certificate",
+          "requirement": "A recognised Creative Multimedia Certificate or an equivalent qualification."
+        },
+        {
+          "qualification": "Vocational Certificate",
+          "requirement": "A recognised Technical and Vocational Certificate in a related field or an equivalent qualification, with 1 year of relevant work experience or 1 semester of a bridging programme."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 and appropriate experience as determined by the institution."
+        },
+        {
+          "qualification": "Other",
+          "requirement": "Other qualifications recognised as equivalent by the Government of Malaysia."
+        }
+      ],
+      "notes": [
+        "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
+        "International students need TOEFL 500, IELTS 5.0 or equivalent.",
+        "GMI's offer conditions require applicants to be confirmed healthy and pass a medical examination and drug test, with no serious physical disability and no colour blindness."
+      ]
+    },
+    {
+      "id": "F",
+      "standard": "GMI-UTP Foundation Programme",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Pass SPM with at least Grade C in Bahasa Melayu, Mathematics, English, Additional Mathematics, Physics and Chemistry."
+        },
+        {
+          "qualification": "O-Level / IGCSE",
+          "requirement": "Pass IGCSE or O-Level with at least a credit (Grade C) or 60% in 5 subjects, including Mathematics, Physics, Chemistry, Additional Mathematics and 1 other subject."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "G",
+      "standard": "German University Preparatory Programme",
+      "routes": [
+        {
+          "qualification": "Self-sponsored",
+          "requirement": "SPM, IGCSE or O-Level with at least Grade C in English, Mathematics, Additional Mathematics, Physics and Chemistry. Open to local and international students. Apply through GMI."
+        },
+        {
+          "qualification": "YTP MARA",
+          "requirement": "Bumiputera candidates. SPM with A in English, Physics, Additional Mathematics, Chemistry and 4 other subjects. Apply through MARA. Terms and conditions apply."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "SPM",
+      "name": "SPM",
+      "grades": [
+        "A+",
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "C+",
+        "C",
+        "D",
+        "E",
+        "G"
+      ],
+      "requiredSubjects": [
+        "Bahasa Melayu",
+        "English",
+        "Mathematics",
+        "Sejarah"
+      ],
+      "defaultSubjects": [],
+      "subjects": [
+        "Additional Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Science",
+        "Additional Science",
+        "Pendidikan Islam",
+        "Pendidikan Moral",
+        "Computer Science",
+        "Engineering Drawing",
+        "Mechanical Engineering Studies",
+        "Civil Engineering Studies",
+        "Electrical and Electronics Engineering Studies",
+        "Invention",
+        "Graphic Communication Technical",
+        "Vocational (MPV) subject",
+        "Accounting",
+        "Business",
+        "Economics",
+        "Geography",
+        "Pendidikan Seni Visual",
+        "Bahasa Arab",
+        "Bahasa Cina",
+        "Bahasa Tamil",
+        "Literature in English",
+        "Kesusasteraan Melayu",
+        "Other subject 1",
+        "Other subject 2"
+      ],
+      "supportingQualificationId": null,
+      "supportingSubjects": []
+    },
+    {
+      "id": "OLEVEL",
+      "name": "O-Level / IGCSE",
+      "grades": [
+        "A*",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "U"
+      ],
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "English",
+        "Mathematics"
+      ],
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Additional Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Computer Science",
+        "Information and Communication Technology",
+        "Design and Technology",
+        "Bahasa Melayu",
+        "Economics",
+        "Business Studies",
+        "Accounting",
+        "Geography",
+        "History",
+        "Other subject 1",
+        "Other subject 2"
+      ],
+      "supportingQualificationId": null,
+      "supportingSubjects": []
+    },
+    {
+      "id": "UEC",
+      "name": "UEC",
+      "grades": [
+        "A1",
+        "A2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "C7",
+        "C8",
+        "F9"
+      ],
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "English",
+        "Mathematics"
+      ],
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Advanced Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Bahasa Malaysia",
+        "Chinese",
+        "History",
+        "Geography",
+        "Commerce",
+        "Bookkeeping and Accounting",
+        "Economics",
+        "Computer Studies",
+        "Art",
+        "Other subject 1",
+        "Other subject 2"
+      ],
+      "supportingQualificationId": null,
+      "supportingSubjects": []
+    },
+    {
+      "id": "STPM",
+      "name": "STPM",
+      "grades": [
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "B-",
+        "C+",
+        "C",
+        "C-",
+        "D+",
+        "D",
+        "F"
+      ],
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Pengajian Am"
+      ],
+      "subjects": [
+        "Pengajian Am",
+        "Mathematics (T)",
+        "Mathematics (M)",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Economics",
+        "Business Studies",
+        "Accounting",
+        "Information and Communications Technology",
+        "Bahasa Melayu",
+        "Sejarah",
+        "Geografi",
+        "Other subject 1",
+        "Other subject 2"
+      ],
+      "supportingQualificationId": "SPM",
+      "supportingSubjects": [
+        "Mathematics",
+        "English",
+        "Other SPM subject"
+      ]
+    }
+  ]
+}
