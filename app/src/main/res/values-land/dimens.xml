@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Landscape phones are too short for the full-size splash logo. -->
+    <dimen name="splash_logo_size">200dp</dimen>
+    <dimen name="splash_title_offset">176dp</dimen>
+</resources>

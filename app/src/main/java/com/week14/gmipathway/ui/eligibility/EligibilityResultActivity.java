@@ -59,7 +59,7 @@ public class EligibilityResultActivity extends BaseActivity
                 getString(R.string.eligibility_result_summary, qualification.getName()));
         showNoMatchCardIfNeeded(outcomes);
         ((RecyclerView) findViewById(R.id.outcome_list))
-                .setAdapter(new OutcomeAdapter(this, outcomes, this));
+                .setAdapter(new OutcomeAdapter(outcomes, this));
     }
 
     /** Gives a friendly next step when no programme is a clear match. */

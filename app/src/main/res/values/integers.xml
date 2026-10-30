@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="screen_transition_ms">220</integer>
+    <integer name="splash_text_fade_ms">400</integer>
+</resources>

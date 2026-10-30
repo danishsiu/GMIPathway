@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android's dropdown list keeps a row on one line when the row itself is a TextView, so the text
+     sits inside a frame. Long subject and programme names can then wrap on narrow phones. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/option_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_touch_target"
+        android:paddingHorizontal="@dimen/spacing_medium"
+        android:paddingVertical="@dimen/spacing_small"
+        android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+</FrameLayout>

@@ -28,6 +28,7 @@
         <item name="colorSurfaceContainerHighest">@color/md_surface_container_highest</item>
         <item name="colorSurfaceDim">@color/md_surface_dim</item>
         <item name="colorSurfaceBright">@color/md_surface_bright</item>
+        <item name="android:windowAnimationStyle">@style/Animation.GMIPathway.Activity</item>
     </style>
 
     <style name="Theme.GMIPathway" parent="Base.Theme.GMIPathway" />
@@ -35,8 +36,16 @@
     <!-- System splash shown first; Android 12 and later use it natively, older versions through the compat library. -->
     <style name="Theme.GMIPathway.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/app_bar_background</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_app_emblem</item>
         <item name="postSplashScreenTheme">@style/Theme.GMIPathway</item>
+    </style>
+
+    <!-- Every screen change uses the same short slide and fade. -->
+    <style name="Animation.GMIPathway.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/screen_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/screen_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/screen_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/screen_close_exit</item>
     </style>
 
     <style name="Widget.GMIPathway.Toolbar" parent="Widget.Material3.Toolbar">

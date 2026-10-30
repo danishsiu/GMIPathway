@@ -3,6 +3,7 @@ package com.week14.gmipathway.ui.home;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,8 +11,10 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
+import androidx.core.graphics.Insets;
 
 import com.week14.gmipathway.R;
+import com.week14.gmipathway.data.CourseRepository;
 import com.week14.gmipathway.ui.common.BaseActivity;
 import com.week14.gmipathway.ui.common.ExternalLinks;
 import com.week14.gmipathway.ui.courses.CourseListActivity;
@@ -20,7 +23,7 @@ import com.week14.gmipathway.ui.enquiry.AboutUsActivity;
 import com.week14.gmipathway.ui.enquiry.ContactUsActivity;
 
 /**
- * Home screen: a welcome header and shortcuts to every part of the app.
+ * Home screen: a welcome header, key facts and shortcuts to every part of the app.
  */
 public class MainActivity extends BaseActivity {
 
@@ -29,6 +32,13 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         applyWindowInsets();
+
+        int programmeCount = CourseRepository.getInstance(this).getCourses().size();
+        bindStat(R.id.stat_programmes, String.valueOf(programmeCount), R.string.home_stat_programmes);
+        bindStat(R.id.stat_centres, getString(R.string.home_stat_centres_value),
+                R.string.home_stat_centres);
+        bindStat(R.id.stat_practical, getString(R.string.home_stat_practical_value),
+                R.string.home_stat_practical);
 
         bindCard(R.id.card_courses, R.drawable.ic_school, R.string.home_courses_title,
                 R.string.home_courses_subtitle, CourseListActivity.class);
@@ -43,10 +53,30 @@ public class MainActivity extends BaseActivity {
                 ExternalLinks.openWebPage(this, getString(R.string.url_online_application)));
     }
 
-    /** The home screen has no toolbar, so its header extends behind the status bar instead. */
+    /** The home screen has no toolbar: the header fills this space, or a strip in landscape. */
     @Override
-    protected View getTopInsetView() {
-        return findViewById(R.id.home_header);
+    protected View[] getTopInsetViews() {
+        return new View[]{findViewById(R.id.home_header), findViewById(R.id.home_status_strip)};
+    }
+
+    /** The landscape welcome panel runs behind the cutout and navigation bar. */
+    @Override
+    protected void onInsetsApplied(Insets bars, int bottomInset) {
+        View panel = findViewById(R.id.home_panel);
+        if (panel != null) {
+            panel.setPadding(bars.left, 0, 0, bottomInset);
+            ViewGroup.MarginLayoutParams params =
+                    (ViewGroup.MarginLayoutParams) panel.getLayoutParams();
+            params.leftMargin = -bars.left;
+            params.bottomMargin = -bottomInset;
+            panel.setLayoutParams(params);
+        }
+    }
+
+    private void bindStat(@IdRes int statId, String value, @StringRes int labelRes) {
+        View stat = findViewById(statId);
+        ((TextView) stat.findViewById(R.id.stat_value)).setText(value);
+        ((TextView) stat.findViewById(R.id.stat_label)).setText(labelRes);
     }
 
     private void bindCard(@IdRes int cardId, @DrawableRes int iconRes, @StringRes int titleRes,

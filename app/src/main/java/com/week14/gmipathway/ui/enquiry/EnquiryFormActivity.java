@@ -6,6 +6,8 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Patterns;
 
+import android.widget.ArrayAdapter;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -109,7 +111,8 @@ public class EnquiryFormActivity extends BaseActivity {
         for (Course course : CourseRepository.getInstance(this).getCourses()) {
             options.add(course.getName());
         }
-        programmeInput.setSimpleItems(options.toArray(new String[0]));
+        programmeInput.setAdapter(new ArrayAdapter<>(this, R.layout.item_dropdown_option,
+                R.id.option_text, options));
         programmeInput.setText(selectedProgramme, false);
         programmeInput.setOnItemClickListener((parent, view, position, id) -> {
             selectedProgramme = options.get(position);

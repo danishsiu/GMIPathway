@@ -27,11 +27,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Lists results grouped by status, with the action that suits each one.
+ * Lists results in collapsible sections by status, with the action that suits each one.
  */
 class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_OUTCOME = 1;
+    private static final float CHEVRON_EXPANDED = 180f;
+    private static final float CHEVRON_COLLAPSED = 0f;
 
     private static final EligibilityStatus[] DISPLAY_ORDER = {
             EligibilityStatus.ELIGIBLE,
@@ -48,11 +50,26 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         void onContactClick();
     }
 
-    /** Holds a section title (String) or an EligibilityOutcome, in display order. */
+    /** One status group and whether its cards are showing. */
+    private static final class Section {
+        final EligibilityStatus status;
+        final List<EligibilityOutcome> outcomes;
+        boolean expanded;
+
+        Section(EligibilityStatus status, List<EligibilityOutcome> outcomes) {
+            this.status = status;
+            this.outcomes = outcomes;
+            // "Not assessed" says little, so it starts closed to keep the useful results in view.
+            this.expanded = status != EligibilityStatus.NOT_ASSESSED;
+        }
+    }
+
+    private final List<Section> sections = new ArrayList<>();
+    /** Holds a Section or an EligibilityOutcome, in display order. */
     private final List<Object> rows = new ArrayList<>();
     private final Listener listener;
 
-    OutcomeAdapter(Context context, List<EligibilityOutcome> outcomes, Listener listener) {
+    OutcomeAdapter(List<EligibilityOutcome> outcomes, Listener listener) {
         this.listener = listener;
         for (EligibilityStatus status : DISPLAY_ORDER) {
             List<EligibilityOutcome> matches = new ArrayList<>();
@@ -62,10 +79,31 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 }
             }
             if (!matches.isEmpty()) {
-                rows.add(context.getString(R.string.eligibility_section_title,
-                        context.getString(getSectionTitle(status)), matches.size()));
-                rows.addAll(matches);
+                sections.add(new Section(status, matches));
             }
+        }
+        rebuildRows();
+    }
+
+    private void rebuildRows() {
+        rows.clear();
+        for (Section section : sections) {
+            rows.add(section);
+            if (section.expanded) {
+                rows.addAll(section.outcomes);
+            }
+        }
+    }
+
+    private void toggle(Section section) {
+        int headerPosition = rows.indexOf(section);
+        section.expanded = !section.expanded;
+        rebuildRows();
+        notifyItemChanged(headerPosition);
+        if (section.expanded) {
+            notifyItemRangeInserted(headerPosition + 1, section.outcomes.size());
+        } else {
+            notifyItemRangeRemoved(headerPosition + 1, section.outcomes.size());
         }
     }
 
@@ -105,10 +143,19 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         Object row = rows.get(position);
         if (holder instanceof HeaderViewHolder) {
-            ((HeaderViewHolder) holder).title.setText((String) row);
+            bindSection((HeaderViewHolder) holder, (Section) row);
             return;
         }
         bindOutcome((OutcomeViewHolder) holder, (EligibilityOutcome) row);
+    }
+
+    private void bindSection(HeaderViewHolder holder, Section section) {
+        Context context = holder.itemView.getContext();
+        holder.title.setText(context.getString(R.string.eligibility_section_title,
+                context.getString(getSectionTitle(section.status)), section.outcomes.size()));
+        holder.chevron.setRotation(section.expanded ? CHEVRON_EXPANDED : CHEVRON_COLLAPSED);
+        DetailViews.updateExpandedState(holder.itemView, section.expanded);
+        holder.itemView.setOnClickListener(view -> toggle(section));
     }
 
     private void bindOutcome(OutcomeViewHolder holder, EligibilityOutcome outcome) {
@@ -159,10 +206,17 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     static class HeaderViewHolder extends RecyclerView.ViewHolder {
         final TextView title;
+        final ImageView chevron;
 
         HeaderViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.header_title);
+            chevron = itemView.findViewById(R.id.header_chevron);
+            itemView.findViewById(R.id.header_icon).setVisibility(View.GONE);
+            itemView.findViewById(R.id.header_count).setVisibility(View.GONE);
+            chevron.setVisibility(View.VISIBLE);
+            itemView.setClickable(true);
+            itemView.setFocusable(true);
         }
     }
 
