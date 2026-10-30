@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The GMI Pathway design system: type scale, shapes and component styles.
+     Every text style names a single font file, which works the same way on every Android version. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Type scale. All sizes are in sp, so they follow the phone's text size setting. -->
+    <style name="TextAppearance.GMIPathway.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_headline_large</item>
+        <item name="lineHeight">@dimen/type_headline_large_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_headline_large_line</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_headline_medium</item>
+        <item name="lineHeight">@dimen/type_headline_medium_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_headline_medium_line</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_headline_small</item>
+        <item name="lineHeight">@dimen/type_headline_small_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_headline_small_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_title_large</item>
+        <item name="lineHeight">@dimen/type_title_large_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_title_large_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_body_large</item>
+        <item name="lineHeight">@dimen/type_body_large_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_body_large_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_body_medium</item>
+        <item name="lineHeight">@dimen/type_label_large_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_label_large_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/figtree</item>
+        <item name="android:fontFamily">@font/figtree</item>
+        <item name="android:textSize">@dimen/type_body_large</item>
+        <item name="lineHeight">@dimen/type_body_large_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_body_large_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/figtree</item>
+        <item name="android:fontFamily">@font/figtree</item>
+        <item name="android:textSize">@dimen/type_body_medium</item>
+        <item name="lineHeight">@dimen/type_body_medium_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_body_medium_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/figtree</item>
+        <item name="android:fontFamily">@font/figtree</item>
+        <item name="android:textSize">@dimen/type_small</item>
+        <item name="lineHeight">@dimen/type_small_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_small_line</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/figtree_semibold</item>
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        <item name="android:textSize">@dimen/type_body_medium</item>
+        <item name="lineHeight">@dimen/type_label_large_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_label_large_line</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="TextAppearance.GMIPathway.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/figtree_medium</item>
+        <item name="android:fontFamily">@font/figtree_medium</item>
+        <item name="android:textSize">@dimen/type_small</item>
+        <item name="lineHeight">@dimen/type_label_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_label_line</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Material's default is 11sp. The project's minimum is 12sp. -->
+    <style name="TextAppearance.GMIPathway.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/figtree_medium</item>
+        <item name="android:fontFamily">@font/figtree_medium</item>
+        <item name="android:textSize">@dimen/type_small</item>
+        <item name="lineHeight">@dimen/type_label_line</item>
+        <item name="android:lineHeight" tools:targetApi="28">@dimen/type_label_line</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <!-- Shapes -->
+    <style name="ShapeAppearance.GMIPathway.Control" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_control</item>
+    </style>
+
+    <style name="ShapeAppearance.GMIPathway.Card" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_card</item>
+    </style>
+
+    <!-- Buttons. Primary navigates, Action means Apply and nothing else. -->
+    <style name="Widget.GMIPathway.Button.Primary" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Control</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Button.Action" parent="Widget.GMIPathway.Button.Primary">
+        <item name="backgroundTint">?attr/colorTertiary</item>
+        <item name="android:textColor">?attr/colorOnTertiary</item>
+        <item name="iconTint">?attr/colorOnTertiary</item>
+    </style>
+
+    <!-- Inside a list card. Full-width buttons would stack into a wall of red on a long list. -->
+    <style name="Widget.GMIPathway.Button.Action.Compact">
+        <item name="android:insetTop">@dimen/spacing_xsmall</item>
+        <item name="android:insetBottom">@dimen/spacing_xsmall</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Control</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Button.Secondary.Compact">
+        <item name="android:insetTop">@dimen/spacing_xsmall</item>
+        <item name="android:insetBottom">@dimen/spacing_xsmall</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Control</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+    </style>
+
+    <!-- Cards use a hairline border, not a shadow, so pages stay calm and flat. -->
+    <style name="Widget.GMIPathway.Card.Standard" parent="Widget.Material3.CardView.Outlined">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Card</item>
+        <item name="strokeColor">?attr/colorOutlineVariant</item>
+        <item name="strokeWidth">@dimen/stroke_hairline</item>
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainerLowest</item>
+    </style>
+
+    <!-- For the few blocks that must stand out, such as Vision and Mission. -->
+    <style name="Widget.GMIPathway.Card.Emphasis" parent="Widget.Material3.CardView.Filled">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Card</item>
+        <item name="cardBackgroundColor">?attr/colorPrimaryContainer</item>
+    </style>
+
+    <!-- Inputs -->
+    <style name="Widget.GMIPathway.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Control</item>
+    </style>
+
+    <style name="Widget.GMIPathway.Select" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="shapeAppearance">@style/ShapeAppearance.GMIPathway.Control</item>
+    </style>
+
+    <!-- Tabs and the app bar -->
+    <!-- Gold appears only on blue, where it has strong contrast. -->
+    <style name="Widget.GMIPathway.Tabs" parent="Widget.Material3.TabLayout">
+        <item name="android:background">@color/app_bar_background</item>
+        <item name="tabTextAppearance">?attr/textAppearanceLabelLarge</item>
+        <item name="tabTextColor">@color/on_app_bar_muted</item>
+        <item name="tabSelectedTextColor">@color/on_app_bar</item>
+        <item name="tabIndicatorColor">@color/brand_gold</item>
+    </style>
+
+    <style name="Widget.GMIPathway.AppBar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/app_bar_background</item>
+        <item name="titleTextColor">@color/on_app_bar</item>
+        <item name="titleTextAppearance">?attr/textAppearanceTitleLarge</item>
+        <item name="navigationIconTint">@color/on_app_bar</item>
+    </style>
+</resources>

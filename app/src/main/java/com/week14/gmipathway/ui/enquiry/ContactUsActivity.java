@@ -70,6 +70,7 @@ public class ContactUsActivity extends BaseActivity {
         DetailViews.bindInfoRow(row, iconRes, labelRes, value);
         if (action != null) {
             row.setOnClickListener(action);
+            row.findViewById(R.id.row_chevron).setVisibility(View.VISIBLE);
         }
     }
 

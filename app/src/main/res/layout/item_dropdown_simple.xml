@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Short options, such as grades. Material's default row is under the 48dp touch target. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:maxLines="1"
+    android:minHeight="@dimen/min_touch_target"
+    android:paddingHorizontal="@dimen/spacing_medium"
+    android:textAppearance="?attr/textAppearanceBodyLarge" />

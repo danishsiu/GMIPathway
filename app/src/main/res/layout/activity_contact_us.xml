@@ -20,10 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/spacing_medium">
+            android:padding="@dimen/screen_padding">
 
+            <!-- The location card stands in for an embedded map, which would need an API key. -->
             <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.GMIPathway.Card"
+                style="@style/Widget.GMIPathway.Card.Standard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -31,11 +32,36 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingVertical="@dimen/spacing_small">
+                    android:paddingTop="@dimen/spacing_small">
 
                     <include
                         android:id="@+id/row_address"
                         layout="@layout/view_info_row" />
+
+                    <Button
+                        android:id="@+id/button_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_small_plus"
+                        android:text="@string/contact_map_button"
+                        app:icon="@drawable/ic_map"
+                        app:iconGravity="textStart" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.GMIPathway.Card.Standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small_plus">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/spacing_small">
 
                     <include
                         android:id="@+id/row_phone"
@@ -66,20 +92,11 @@
             </com.google.android.material.card.MaterialCardView>
 
             <Button
-                android:id="@+id/button_map"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_medium"
-                android:text="@string/contact_map_button"
-                app:icon="@drawable/ic_map"
-                app:iconGravity="textStart" />
-
-            <Button
                 android:id="@+id/button_enquiry"
-                style="@style/Widget.Material3.Button.OutlinedButton"
+                style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small_plus"
                 android:text="@string/contact_enquiry_button"
                 app:icon="@drawable/ic_edit_note"
                 app:iconGravity="textStart" />
@@ -91,54 +108,77 @@
                 android:text="@string/contact_social_title"
                 android:textAppearance="?attr/textAppearanceTitleMedium" />
 
-            <com.google.android.material.chip.ChipGroup
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small">
+                android:layout_marginTop="@dimen/spacing_small"
+                android:orientation="horizontal">
 
-                <com.google.android.material.chip.Chip
+                <Button
                     android:id="@+id/chip_facebook"
-                    style="@style/Widget.Material3.Chip.Assist"
-                    android:layout_width="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
                     android:text="@string/social_facebook" />
 
-                <com.google.android.material.chip.Chip
+                <Button
                     android:id="@+id/chip_instagram"
-                    style="@style/Widget.Material3.Chip.Assist"
-                    android:layout_width="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
                     android:text="@string/social_instagram" />
 
-                <com.google.android.material.chip.Chip
+                <Button
                     android:id="@+id/chip_x"
-                    style="@style/Widget.Material3.Chip.Assist"
-                    android:layout_width="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
                     android:text="@string/social_x" />
 
-                <com.google.android.material.chip.Chip
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:orientation="horizontal">
+
+                <Button
                     android:id="@+id/chip_youtube"
-                    style="@style/Widget.Material3.Chip.Assist"
-                    android:layout_width="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
                     android:text="@string/social_youtube" />
 
-                <com.google.android.material.chip.Chip
+                <Button
                     android:id="@+id/chip_tiktok"
-                    style="@style/Widget.Material3.Chip.Assist"
-                    android:layout_width="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
                     android:text="@string/social_tiktok" />
 
-                <com.google.android.material.chip.Chip
+                <Button
                     android:id="@+id/chip_linkedin"
-                    style="@style/Widget.Material3.Chip.Assist"
-                    android:layout_width="wrap_content"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
                     android:text="@string/social_linkedin" />
 
-            </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
 
         </LinearLayout>
 

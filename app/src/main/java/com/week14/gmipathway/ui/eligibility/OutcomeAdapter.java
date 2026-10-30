@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.color.MaterialColors;
 import com.week14.gmipathway.R;
 import com.week14.gmipathway.model.Course;
@@ -183,6 +184,8 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         holder.department.setText(course.getDepartment());
         holder.name.setText(course.getName());
         holder.itemView.setOnClickListener(view -> listener.onCourseClick(course));
+        holder.applyButton.setVisibility(View.GONE);
+        holder.contactButton.setVisibility(View.GONE);
 
         List<String> lines = new ArrayList<>();
         for (EligibilityReason reason : outcome.getReasons()) {
@@ -194,26 +197,28 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         switch (outcome.getStatus()) {
             case ELIGIBLE:
-                holder.showStatus(R.drawable.ic_check_circle, R.string.eligibility_status_eligible,
-                        androidx.appcompat.R.attr.colorPrimary);
-                holder.showAction(R.string.apply_now, view -> listener.onApplyClick());
+                holder.showEmphasis(true);
+                holder.hideStatus();
+                holder.applyButton.setVisibility(View.VISIBLE);
+                holder.applyButton.setOnClickListener(view -> listener.onApplyClick());
                 break;
             case CONTACT_GMI:
+                holder.showEmphasis(true);
                 holder.showStatus(R.drawable.ic_help, R.string.eligibility_status_contact,
-                        com.google.android.material.R.attr.colorTertiary);
-                holder.showAction(R.string.eligibility_guided_button,
-                        view -> listener.onContactClick());
+                        androidx.appcompat.R.attr.colorPrimary);
+                holder.contactButton.setVisibility(View.VISIBLE);
+                holder.contactButton.setOnClickListener(view -> listener.onContactClick());
                 break;
             case NOT_ELIGIBLE:
+                holder.showEmphasis(false);
                 holder.showStatus(R.drawable.ic_cancel, R.string.eligibility_status_not_eligible,
-                        androidx.appcompat.R.attr.colorError);
-                holder.action.setVisibility(View.GONE);
+                        com.google.android.material.R.attr.colorOnSurfaceVariant);
                 break;
             case NOT_ASSESSED:
             default:
+                holder.showEmphasis(false);
                 holder.showStatus(R.drawable.ic_help, R.string.eligibility_status_not_assessed,
                         com.google.android.material.R.attr.colorOnSurfaceVariant);
-                holder.action.setVisibility(View.GONE);
                 break;
         }
     }
@@ -245,7 +250,8 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         final ImageView statusIcon;
         final TextView status;
         final TextView details;
-        final Button action;
+        final Button applyButton;
+        final Button contactButton;
 
         OutcomeViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -254,21 +260,36 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             statusIcon = itemView.findViewById(R.id.outcome_status_icon);
             status = itemView.findViewById(R.id.outcome_status);
             details = itemView.findViewById(R.id.outcome_reasons);
-            action = itemView.findViewById(R.id.outcome_action);
+            applyButton = itemView.findViewById(R.id.outcome_apply);
+            contactButton = itemView.findViewById(R.id.outcome_contact);
+        }
+
+        /** Programmes a prospect can act on stand out. The rest step back. */
+        void showEmphasis(boolean emphasised) {
+            int colorAttr = emphasised ? androidx.appcompat.R.attr.colorPrimary
+                    : com.google.android.material.R.attr.colorOnSurfaceVariant;
+            department.setTextColor(MaterialColors.getColor(itemView, colorAttr));
+            name.setTextColor(MaterialColors.getColor(itemView, emphasised
+                    ? com.google.android.material.R.attr.colorOnSurface
+                    : com.google.android.material.R.attr.colorOnSurfaceVariant));
+            ((MaterialCardView) itemView).setStrokeColor(MaterialColors.getColor(itemView,
+                    emphasised ? androidx.appcompat.R.attr.colorPrimary
+                            : com.google.android.material.R.attr.colorOutlineVariant));
+        }
+
+        void hideStatus() {
+            statusIcon.setVisibility(View.GONE);
+            status.setVisibility(View.GONE);
         }
 
         void showStatus(@DrawableRes int iconRes, @StringRes int textRes, @AttrRes int colorAttr) {
             int color = MaterialColors.getColor(itemView, colorAttr);
+            statusIcon.setVisibility(View.VISIBLE);
+            status.setVisibility(View.VISIBLE);
             statusIcon.setImageResource(iconRes);
             statusIcon.setImageTintList(ColorStateList.valueOf(color));
             status.setText(textRes);
             status.setTextColor(color);
-        }
-
-        void showAction(@StringRes int textRes, View.OnClickListener onClick) {
-            action.setVisibility(View.VISIBLE);
-            action.setText(textRes);
-            action.setOnClickListener(onClick);
         }
     }
 }

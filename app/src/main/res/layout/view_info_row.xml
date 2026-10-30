@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?attr/selectableItemBackground"
+    android:minHeight="@dimen/min_touch_target"
     android:paddingHorizontal="@dimen/spacing_medium"
     android:paddingVertical="@dimen/spacing_small">
 
@@ -23,7 +24,7 @@
         android:layout_marginStart="@dimen/spacing_medium"
         android:textAppearance="?attr/textAppearanceLabelMedium"
         android:textColor="?attr/colorOnSurfaceVariant"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/row_chevron"
         app:layout_constraintStart_toEndOf="@id/row_icon"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,9 +33,24 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_medium"
-        android:textAppearance="?attr/textAppearanceBodyMedium"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toStartOf="@id/row_chevron"
         app:layout_constraintStart_toEndOf="@id/row_icon"
         app:layout_constraintTop_toBottomOf="@id/row_label" />
+
+    <!-- Shows the row can be tapped. Rows with no action, such as fax, leave it hidden. -->
+    <ImageView
+        android:id="@+id/row_chevron"
+        android:layout_width="@dimen/icon_medium"
+        android:layout_height="@dimen/icon_medium"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_chevron_right"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/row_value"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorOnSurfaceVariant" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

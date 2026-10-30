@@ -23,7 +23,7 @@
             android:padding="@dimen/spacing_medium">
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.GMIPathway.Card"
+                style="@style/Widget.GMIPathway.Card.Standard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -79,7 +79,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.GMIPathway.Card"
+                style="@style/Widget.GMIPathway.Card.Standard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium">

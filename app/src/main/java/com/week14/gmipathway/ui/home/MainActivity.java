@@ -51,7 +51,7 @@ public class MainActivity extends BaseActivity {
                 R.string.home_contact_subtitle, ContactUsActivity.class);
         bindCard(R.id.card_about, R.drawable.ic_info, R.string.home_about_title,
                 R.string.home_about_subtitle, AboutUsActivity.class);
-        bindCard(R.id.card_saved, R.drawable.ic_bookmark, R.string.home_saved_title,
+        bindCard(R.id.card_saved, R.drawable.ic_bookmark_border, R.string.home_saved_title,
                 R.string.home_saved_subtitle, SavedCoursesActivity.class);
         bindCard(R.id.card_faq, R.drawable.ic_help, R.string.home_faq_title,
                 R.string.home_faq_subtitle, FaqActivity.class);

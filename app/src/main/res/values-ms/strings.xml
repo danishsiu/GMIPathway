@@ -82,6 +82,8 @@
     <!-- Eligibility Checker -->
     <string name="eligibility_title">Semakan Kelayakan</string>
     <string name="eligibility_intro">Pilih kelayakan anda dan masukkan keputusan anda. Semakan ini kemudian menunjukkan program GMI yang sepadan.</string>
+    <string name="eligibility_step_one">Langkah 1 daripada 2</string>
+    <string name="eligibility_step_two">Langkah 2 daripada 2</string>
     <string name="eligibility_qualification_hint">Kelayakan anda</string>
     <string name="eligibility_other_option">Kelayakan lain</string>
     <string name="eligibility_subjects_heading">Subjek dan gred anda</string>
@@ -100,8 +102,10 @@
     <string name="eligibility_guided_button">Hubungi GMI</string>
     <string name="eligibility_result_title">Keputusan Anda</string>
     <string name="eligibility_result_summary">Keputusan anda untuk %1$s</string>
+    <plurals name="eligibility_result_headline">
+        <item quantity="other">Anda layak untuk %d program</item>
+    </plurals>
     <string name="eligibility_disclaimer">Ini ialah panduan berdasarkan syarat yang diterbitkan oleh GMI. GMI membuat keputusan kemasukan muktamad, dan diploma juga memerlukan pemeriksaan perubatan.</string>
-    <string name="eligibility_status_eligible">Anda layak</string>
     <string name="eligibility_status_not_eligible">Tidak layak</string>
     <string name="eligibility_status_contact">Tanya GMI</string>
     <string name="eligibility_status_not_assessed">Tidak dinilai</string>
@@ -142,7 +146,9 @@
     <string name="enquiry_intro">Isikan butiran anda. Aplikasi e-mel anda akan dibuka dengan mesej yang sedia untuk dihantar kepada GMI.</string>
     <string name="enquiry_name_hint">Nama penuh</string>
     <string name="enquiry_email_hint">Alamat e-mel</string>
+    <string name="enquiry_email_helper">Supaya GMI boleh membalas kepada anda.</string>
     <string name="enquiry_phone_hint">Nombor telefon</string>
+    <string name="enquiry_phone_helper">Contohnya, 012 345 6789</string>
     <string name="enquiry_programme_hint">Program yang diminati</string>
     <string name="enquiry_general_option">Pertanyaan umum</string>
     <string name="enquiry_message_hint">Mesej anda</string>

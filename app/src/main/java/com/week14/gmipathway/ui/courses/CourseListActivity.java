@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
+import androidx.core.content.ContextCompat;
+import androidx.core.widget.TextViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -64,6 +66,7 @@ public class CourseListActivity extends BaseActivity {
         SearchView searchView = (SearchView) searchItem.getActionView();
         searchView.setQueryHint(getString(R.string.courses_search_hint));
         searchView.setMaxWidth(Integer.MAX_VALUE);
+        styleSearchText(searchView);
 
         // Runs before the listener is added, so restoring a search does not clear it.
         if (!query.isEmpty()) {
@@ -88,6 +91,13 @@ public class CourseListActivity extends BaseActivity {
             }
         });
         return true;
+    }
+
+    /** The search box is built by AppCompat, so it needs the app's text style applied here. */
+    private void styleSearchText(SearchView searchView) {
+        TextView text = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
+        TextViewCompat.setTextAppearance(text, R.style.TextAppearance_GMIPathway_BodyLarge);
+        text.setTextColor(ContextCompat.getColor(this, R.color.on_app_bar));
     }
 
     private void showSearch(String text) {

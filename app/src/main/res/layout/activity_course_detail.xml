@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/spacing_medium">
+            android:padding="@dimen/screen_padding">
 
             <TextView
                 android:id="@+id/course_department"
@@ -34,18 +34,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_xsmall"
-                android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+                android:textAppearance="?attr/textAppearanceHeadlineMedium" />
 
             <TextView
                 android:id="@+id/course_summary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_small"
-                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
                 android:textColor="?attr/colorOnSurfaceVariant" />
 
             <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.GMIPathway.Card"
+                style="@style/Widget.GMIPathway.Card.Standard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium">
@@ -63,6 +63,7 @@
                 android:id="@+id/section_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
                 android:orientation="vertical" />
 
         </LinearLayout>
@@ -75,10 +76,11 @@
 
     <Button
         android:id="@+id/button_apply"
-        style="@style/Widget.GMIPathway.Button.Apply"
+        style="@style/Widget.GMIPathway.Button.Action"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/spacing_small"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:layout_marginVertical="@dimen/spacing_small_plus"
         android:text="@string/apply_online"
         app:icon="@drawable/ic_open_in_new"
         app:iconGravity="textStart" />

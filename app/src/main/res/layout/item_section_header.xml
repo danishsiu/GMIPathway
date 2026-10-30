@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="@dimen/min_touch_target"
-    android:paddingBottom="@dimen/spacing_xsmall">
+    android:paddingBottom="@dimen/spacing_small">
 
     <ImageView
         android:id="@+id/header_icon"
