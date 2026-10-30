@@ -1,5 +1,5 @@
 {
-  "source": "Built from GMI's Programme Guide (May 2026), gmi.edu.my and the Malaysian Qualifications Register, accessed 30 October 2026. See research/gmi_research.md and research/eligibility_rules.md.",
+  "source": "Built from GMI's Programme Guide (May 2026), gmi.edu.my, UTeM-GMI documents and the Malaysian Qualifications Register, accessed 30 October 2026. See research/gmi_research.md and research/eligibility_rules.md.",
   "courses": [
     {
       "id": "mechatronics",
@@ -1537,7 +1537,7 @@
     {
       "id": "gapp",
       "name": "German University Preparatory Programme (GAPP)",
-      "category": "GAPP",
+      "category": "PRE_UNIVERSITY",
       "department": "Foundation, Pre-University & General Studies",
       "code": "(R3/0011/3/0134) (04/27) (A 7643)",
       "credits": 64,
@@ -1583,7 +1583,7 @@
     {
       "id": "gufp",
       "name": "GMI-UTP Foundation Programme (GUFP)",
-      "category": "GUFP",
+      "category": "PRE_UNIVERSITY",
       "department": "Foundation, Pre-University & General Studies",
       "code": "(R/0011/3/0218) (10/30) (MQA/FA 13871)",
       "credits": 50,
@@ -1635,6 +1635,159 @@
         }
       ],
       "entryGroupId": "F"
+    },
+    {
+      "id": "belt",
+      "name": "Bachelor of Electrical Engineering Technology with Honours (BELT)",
+      "category": "DEGREE",
+      "department": "Electrical Engineering",
+      "code": "(MQA/FA 9760)",
+      "credits": 140,
+      "summary": "A four-year honours degree with UTeM, taught at GMI's Kajang campus.",
+      "description": "UTeM's Bachelor of Electrical Engineering Technology with Honours, offered at GMI as an off-campus learning centre under an agreement signed in September 2025. It combines theory, laboratory work, design projects and industrial training, and students choose an elective track in Renewable Energy or Electrical Transportation.",
+      "duration": "4 years (8 semesters)",
+      "intake": "March and October",
+      "studyMode": "Full time",
+      "fee": "RM69,000 tuition for Malaysian students. RM75,958 with other fees, and RM83,158 with optional hostel. Fees are subject to change.",
+      "coreAreas": [
+        "Industrial Automation",
+        "Robotics",
+        "Control Systems",
+        "Embedded Systems"
+      ],
+      "certificates": [
+        "IoT Fundamentals: Big Data & Analytics",
+        "IoT Fundamentals: Connecting Things",
+        "Cisco Certified Network Associate Routing & Switching (Preparation)",
+        "Programmable Logic Controller (PLC) Level 1 and Level 2",
+        "SMCT MT1: Practical Mechatronics 1",
+        "Energy Efficiency for Lighting"
+      ],
+      "careers": [
+        "Building Maintenance Services Engineer",
+        "Plant and Facilities Maintenance",
+        "Electrical Power Engineer",
+        "Industrial Research and Development",
+        "HVAC Controller",
+        "Oil and Gas Engineer"
+      ],
+      "progression": [],
+      "subjectGroups": [
+        {
+          "label": "Semester 1 (18 credits)",
+          "subjects": [
+            "Technical Mathematics",
+            "Technical Physics",
+            "Measurement and Instrumentation System",
+            "Computer Aided Design",
+            "Electrical Circuit Fundamental",
+            "English for Academic Purpose",
+            "Cocurriculum I"
+          ]
+        },
+        {
+          "label": "Semester 2 (19 credits)",
+          "subjects": [
+            "Calculus for Technology",
+            "Electronics Workshop",
+            "Electrics & Magnetism",
+            "Digital Electronics & System",
+            "Advanced Electrical Circuit",
+            "Cocurriculum II",
+            "Philosophy and Current Issue"
+          ]
+        },
+        {
+          "label": "Semester 3 (18 credits)",
+          "subjects": [
+            "Applied Calculus",
+            "Electrical Installation I",
+            "Electronic Principle",
+            "Computer Programming",
+            "Electrical Technology",
+            "Third Language (local students) or Malay Language for Communication I (international students)"
+          ]
+        },
+        {
+          "label": "Semester 4 (19 credits)",
+          "subjects": [
+            "Statistical Methods",
+            "Embedded Systems",
+            "Electrical Installation II",
+            "Control System Fundamental",
+            "Signal System & Communication",
+            "Academic Writing",
+            "Integrity and Anti-Corruption"
+          ]
+        },
+        {
+          "label": "Semester 5 (20 credits)",
+          "subjects": [
+            "Electrical Machines",
+            "Power Electronics Devices",
+            "Power System Technology",
+            "Industrial Automation",
+            "Appreciation of Ethics and Civilisations (local students) or Malaysian Culture (international students)",
+            "Elective I",
+            "Elective II"
+          ]
+        },
+        {
+          "label": "Semester 6 (16 credits)",
+          "subjects": [
+            "Engineering Seminar",
+            "Bachelor Degree Project I",
+            "Power Electronics Systems",
+            "Integrated Design Project",
+            "English for Professional Interaction",
+            "Elective III"
+          ]
+        },
+        {
+          "label": "Semester 7 (18 credits)",
+          "subjects": [
+            "Engineering Ethics & OSHE",
+            "Bachelor Degree Project II",
+            "Energy Efficiency",
+            "Power Distribution System",
+            "Technology Entrepreneurship",
+            "Elective IV"
+          ]
+        },
+        {
+          "label": "Semester 8 (12 credits)",
+          "subjects": [
+            "Industrial Training"
+          ]
+        },
+        {
+          "label": "Elective track 1: Renewable Energy",
+          "subjects": [
+            "Renewable Energy System",
+            "Energy Storage Technology",
+            "PV System Design",
+            "Power Electronics Application",
+            "Power System Electromagnetic Compatibility",
+            "Electricity Market and System Economics",
+            "Power Quality",
+            "Artificial Intelligence"
+          ]
+        },
+        {
+          "label": "Elective track 2: Electrical Transportation",
+          "subjects": [
+            "Introduction to Electric Transportation System",
+            "Energy Storage Technology",
+            "Power Electronics Application",
+            "Motor Drive and Traction System",
+            "Power System Electromagnetic Compatibility",
+            "Artificial Intelligence",
+            "Modern Drive System",
+            "Hybrid Electric Vehicle"
+          ]
+        }
+      ],
+      "entryGroupId": "H"
     }
   ],
   "entryGroups": [
@@ -1683,6 +1836,109 @@
         "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
         "International students need TOEFL 500, IELTS 5.0 or equivalent.",
         "No physical disabilities that would hinder practical work and no colour blindness. Applicants must pass a medical examination and urine test."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "English"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "English"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "UEC",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics",
+                "Advanced Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "English"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "STPM",
+          "minSubjects": 1,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Mathematics"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "English"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Melayu",
+                "Sejarah",
+                "Additional Mathematics"
+              ],
+              "supporting": true
+            }
+          ]
+        }
       ]
     },
     {
@@ -1722,6 +1978,49 @@
         "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
         "International students need TOEFL 500, IELTS 5.0 or equivalent.",
         "No physical disabilities that would hinder practical work and no colour blindness. Applicants must pass a medical examination and urine test."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL"
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "English"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -1777,6 +2076,33 @@
         "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
         "International students need TOEFL 500, IELTS 5.0 or equivalent.",
         "No physical disabilities that would hinder practical work and no colour blindness. Applicants must pass a medical examination and urine test."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "UEC",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "STPM",
+          "minSubjects": 1,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        }
       ]
     },
     {
@@ -1822,6 +2148,55 @@
         "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
         "International students need TOEFL 500, IELTS 5.0 or equivalent.",
         "GMI's offer conditions require applicants to be confirmed healthy and pass a medical examination and drug test, with no serious physical disability and no colour blindness."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ],
+              "contactIfMissing": true
+            }
+          ],
+          "contactNote": "GMI may admit candidates without this if they take and pass a reinforcement Mathematics subject."
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ],
+              "contactIfMissing": true
+            }
+          ],
+          "contactNote": "GMI may admit candidates without this if they take and pass a reinforcement Mathematics subject."
+        },
+        {
+          "qualificationId": "STPM",
+          "minSubjects": 1,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ],
+              "supporting": true,
+              "contactIfMissing": true
+            }
+          ],
+          "contactNote": "GMI may admit candidates without this if they take and pass a reinforcement Mathematics subject."
+        }
       ]
     },
     {
@@ -1861,6 +2236,38 @@
         "SVM holders also need at least C in BM 1104, a pass in Sejarah 1251, at least 3 credits in vocational subjects equivalent to SPM electives, a minimum CGPA of 2.00 (Academic) and 2.67 (Vocational), and competency in all vocational modules.",
         "International students need TOEFL 500, IELTS 5.0 or equivalent.",
         "GMI's offer conditions require applicants to be confirmed healthy and pass a medical examination and drug test, with no serious physical disability and no colour blindness."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "English"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -1876,7 +2283,82 @@
           "requirement": "Pass IGCSE or O-Level with at least a credit (Grade C) or 60% in 5 subjects, including Mathematics, Physics, Chemistry, Additional Mathematics and 1 other subject."
         }
       ],
-      "notes": []
+      "notes": [],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "English"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Additional Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Chemistry"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 5,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Chemistry"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Additional Mathematics"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "G",
@@ -1891,7 +2373,329 @@
           "requirement": "Bumiputera candidates. SPM with A in English, Physics, Additional Mathematics, Chemistry and 4 other subjects. Apply through MARA. Terms and conditions apply."
         }
       ],
-      "notes": []
+      "notes": [],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "English"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Additional Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Chemistry"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "English"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Additional Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Chemistry"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 8,
+          "minSubjectGrade": "A-",
+          "requirements": [
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "English"
+              ]
+            },
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Physics"
+              ]
+            },
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Additional Mathematics"
+              ]
+            },
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Chemistry"
+              ]
+            }
+          ],
+          "note": "You also meet the academic level for MARA YTP sponsorship, which is open to Bumiputera candidates. Apply through MARA. Terms and conditions apply.",
+          "noteOnly": true
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "standard": "UTeM and GMI requirements, version September 2025",
+      "routes": [
+        {
+          "qualification": "Engineering Technology Diploma",
+          "requirement": "Pass an Engineering Technology Diploma, a Diploma in a related field or an equivalent qualification with a minimum CGPA of 2.30, and pass SPM with a credit in Bahasa Melayu and a pass in Sejarah."
+        },
+        {
+          "qualification": "Engineering Diploma",
+          "requirement": "Pass an Engineering Diploma or an equivalent qualification with a minimum CGPA of 2.00, and pass SPM with a credit in Bahasa Melayu and a pass in Sejarah."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Pass STPM with at least Grade C (2.00) in Pengajian Am, Mathematics (M) or (T), and Physics, Chemistry or Biology. SPM must include a credit in Bahasa Melayu, a pass in Sejarah and a credit in Mathematics or Additional Mathematics."
+        },
+        {
+          "qualification": "Matriculation or Foundation",
+          "requirement": "Pass Matriculation KPM, Foundation UM, Foundation UiTM, Foundation PINTAR UKM or another recognised foundation with at least Grade C (2.00) in Mathematics and one of Physics, Chemistry, Biology, Mechanical Engineering, Electrical & Electronic Engineering, Civil Engineering or Basic Engineering. SPM must include a credit in Bahasa Melayu and a pass in Sejarah. Candidates with Biology also need a credit in SPM Physics."
+        },
+        {
+          "qualification": "DKM or DLKM",
+          "requirement": "Pass Diploma Kemahiran Malaysia or Diploma Lanjutan Kemahiran Malaysia in a related field with a minimum CGPA of 3.00 or a score of 80%. SPM must include a credit in Bahasa Melayu, a pass in Sejarah, a pass in Mathematics, Physics or Science, and at least Grade E in English. Admission is for Year 1 only, with no credit exemptions."
+        },
+        {
+          "qualification": "GCE A-Level or IB",
+          "requirement": "Pass GCE A-Level with at least 9 points, or the IB Diploma with at least 24 points, and pass SPM with a credit in Bahasa Melayu and a pass in Sejarah."
+        }
+      ],
+      "notes": [
+        "MUET at least Band 2.0 is required on every route (Band 2 for examinations up to 2020). A-Level and IB applicants may use TOEFL 500 or IELTS 5.5 instead.",
+        "Diploma holders must pass or complete the diploma before the application deadline. Credit exemption depends on the Faculty's approval.",
+        "International students need GCE A-Level or IB with at least Grade C in Mathematics, Physics and 1 other subject after 12 years of education, or a related Diploma with a CGPA of at least 3.00, plus TOEFL 500, IELTS 5.0 or MUET Band 3."
+      ],
+      "rules": [
+        {
+          "qualificationId": "DIPLOMA",
+          "requirements": [
+            {
+              "minGrade": "2.30+",
+              "subjects": [
+                "Engineering Technology diploma",
+                "Diploma in a related field"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "You also need MUET at least Band 2.0, and the diploma must be completed before the application deadline."
+        },
+        {
+          "qualificationId": "DIPLOMA",
+          "requirements": [
+            {
+              "minGrade": "2.00+",
+              "subjects": [
+                "Engineering diploma"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "You also need MUET at least Band 2.0, and the diploma must be completed before the application deadline."
+        },
+        {
+          "qualificationId": "STPM",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Pengajian Am"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics (M)",
+                "Mathematics (T)"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics",
+                "Chemistry",
+                "Biology"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics",
+                "Additional Mathematics"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "You also need MUET at least Band 2.0."
+        },
+        {
+          "qualificationId": "FOUNDATION",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics",
+                "Chemistry",
+                "Mechanical Engineering",
+                "Electrical & Electronic Engineering",
+                "Civil Engineering",
+                "Basic Engineering"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "You also need MUET at least Band 2.0."
+        },
+        {
+          "qualificationId": "FOUNDATION",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Mathematics"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Biology"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Physics"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "You also need MUET at least Band 2.0."
+        }
+      ]
     }
   ],
   "qualifications": [
@@ -1909,6 +2713,12 @@
         "D",
         "E",
         "G"
+      ],
+      "creditGrade": "C",
+      "passGrade": "E",
+      "certificateSubjects": [
+        "Bahasa Melayu",
+        "Sejarah"
       ],
       "requiredSubjects": [
         "Bahasa Melayu",
@@ -1933,6 +2743,10 @@
         "Electrical and Electronics Engineering Studies",
         "Invention",
         "Graphic Communication Technical",
+        "Asas Kelestarian",
+        "Agriculture",
+        "Home Science",
+        "Sports Science",
         "Vocational (MPV) subject",
         "Accounting",
         "Business",
@@ -1947,8 +2761,45 @@
         "Other subject 1",
         "Other subject 2"
       ],
-      "supportingQualificationId": null,
-      "supportingSubjects": []
+      "subjectGroups": {
+        "SCIENCE_TECHNICAL": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Science",
+          "Additional Science",
+          "Engineering Drawing",
+          "Mechanical Engineering Studies",
+          "Civil Engineering Studies",
+          "Electrical and Electronics Engineering Studies",
+          "Invention",
+          "Graphic Communication Technical",
+          "Computer Science",
+          "Asas Kelestarian",
+          "Agriculture",
+          "Home Science",
+          "Sports Science"
+        ],
+        "SCIENCE_TECHNICAL_VOCATIONAL": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Science",
+          "Additional Science",
+          "Engineering Drawing",
+          "Mechanical Engineering Studies",
+          "Civil Engineering Studies",
+          "Electrical and Electronics Engineering Studies",
+          "Invention",
+          "Graphic Communication Technical",
+          "Computer Science",
+          "Asas Kelestarian",
+          "Agriculture",
+          "Home Science",
+          "Sports Science",
+          "Vocational (MPV) subject"
+        ]
+      }
     },
     {
       "id": "OLEVEL",
@@ -1964,6 +2815,8 @@
         "G",
         "U"
       ],
+      "creditGrade": "C",
+      "passGrade": "E",
       "requiredSubjects": [],
       "defaultSubjects": [
         "English",
@@ -1988,8 +2841,24 @@
         "Other subject 1",
         "Other subject 2"
       ],
-      "supportingQualificationId": null,
-      "supportingSubjects": []
+      "subjectGroups": {
+        "SCIENCE_TECHNICAL": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Computer Science",
+          "Information and Communication Technology",
+          "Design and Technology"
+        ],
+        "SCIENCE_TECHNICAL_VOCATIONAL": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Computer Science",
+          "Information and Communication Technology",
+          "Design and Technology"
+        ]
+      }
     },
     {
       "id": "UEC",
@@ -2005,6 +2874,8 @@
         "C8",
         "F9"
       ],
+      "creditGrade": "B6",
+      "passGrade": "C8",
       "requiredSubjects": [],
       "defaultSubjects": [
         "English",
@@ -2029,8 +2900,20 @@
         "Other subject 1",
         "Other subject 2"
       ],
-      "supportingQualificationId": null,
-      "supportingSubjects": []
+      "subjectGroups": {
+        "SCIENCE_TECHNICAL": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Computer Studies"
+        ],
+        "SCIENCE_TECHNICAL_VOCATIONAL": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "Computer Studies"
+        ]
+      }
     },
     {
       "id": "STPM",
@@ -2048,6 +2931,8 @@
         "D",
         "F"
       ],
+      "creditGrade": "C",
+      "passGrade": "D",
       "requiredSubjects": [],
       "defaultSubjects": [
         "Pengajian Am"
@@ -2071,9 +2956,86 @@
       ],
       "supportingQualificationId": "SPM",
       "supportingSubjects": [
+        "Bahasa Melayu",
+        "Sejarah",
         "Mathematics",
-        "English",
-        "Other SPM subject"
+        "English"
+      ],
+      "supportingOptionalSubjects": [
+        "Additional Mathematics"
+      ]
+    },
+    {
+      "id": "DIPLOMA",
+      "name": "Diploma",
+      "subjectLabel": "Diploma type",
+      "gradeLabel": "CGPA",
+      "grades": [
+        "3.00+",
+        "2.30+",
+        "2.00+",
+        "<2.00"
+      ],
+      "creditGrade": "2.00+",
+      "passGrade": "2.00+",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Engineering Technology diploma"
+      ],
+      "subjects": [
+        "Engineering Technology diploma",
+        "Engineering diploma",
+        "Diploma in a related field",
+        "Other diploma"
+      ],
+      "supportingQualificationId": "SPM",
+      "supportingSubjects": [
+        "Bahasa Melayu",
+        "Sejarah"
+      ]
+    },
+    {
+      "id": "FOUNDATION",
+      "name": "Matriculation / Foundation",
+      "grades": [
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "B-",
+        "C+",
+        "C",
+        "C-",
+        "D+",
+        "D",
+        "F"
+      ],
+      "creditGrade": "C",
+      "passGrade": "D",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Mathematics",
+        "Physics"
+      ],
+      "subjects": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Mechanical Engineering",
+        "Electrical & Electronic Engineering",
+        "Civil Engineering",
+        "Basic Engineering",
+        "Other subject 1",
+        "Other subject 2"
+      ],
+      "supportingQualificationId": "SPM",
+      "supportingSubjects": [
+        "Bahasa Melayu",
+        "Sejarah"
+      ],
+      "supportingOptionalSubjects": [
+        "Physics"
       ]
     }
   ]

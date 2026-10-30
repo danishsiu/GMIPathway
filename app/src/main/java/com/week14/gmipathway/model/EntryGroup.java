@@ -5,12 +5,14 @@ import java.util.List;
 
 /**
  * Entry requirements shared by every programme under the same accreditation standard.
+ * Routes and notes are shown on the course page. Rules are what the Eligibility Checker applies.
  */
 public class EntryGroup {
     private String id;
     private String standard;
     private List<EntryRoute> routes;
     private List<String> notes;
+    private List<EntryRule> rules;
 
     public String getId() {
         return id;
@@ -26,5 +28,9 @@ public class EntryGroup {
 
     public List<String> getNotes() {
         return notes == null ? Collections.emptyList() : notes;
+    }
+
+    public List<EntryRule> getRules() {
+        return rules == null ? Collections.emptyList() : rules;
     }
 }

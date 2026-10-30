@@ -124,6 +124,9 @@ public class EligibilityActivity extends BaseActivity {
         for (String subject : qualification.getSupportingSubjects()) {
             input.getSupportingGrades().add(new SubjectGrade(subject, null));
         }
+        for (String subject : qualification.getSupportingOptionalSubjects()) {
+            input.getSupportingGrades().add(new SubjectGrade(subject, null));
+        }
     }
 
     /** Rebuilds the form from {@link #input}, including after a screen rotation. */
@@ -153,7 +156,7 @@ public class EligibilityActivity extends BaseActivity {
         refreshSubjectOptions();
     }
 
-    /** STPM routes also look at SPM results, so those are collected in a second section. */
+    /** Some routes also look at SPM results, so those are collected in a second section. */
     private void renderSupportingRows(Qualification qualification) {
         Qualification supporting = repository.findQualification(
                 qualification.getSupportingQualificationId() == null
@@ -165,17 +168,28 @@ public class EligibilityActivity extends BaseActivity {
         ((TextView) findViewById(R.id.supporting_heading)).setText(
                 getString(R.string.eligibility_supporting_heading, supporting.getName()));
         for (SubjectGrade entry : input.getSupportingGrades()) {
-            addRow(supportingRows, entry, true, supporting.getGrades());
+            boolean optional =
+                    qualification.getSupportingOptionalSubjects().contains(entry.getSubject());
+            addRow(supportingRows, entry, true, optional, supporting.getGrades());
         }
     }
 
     private void addPrimaryRow(SubjectGrade entry, Qualification qualification) {
         boolean required = qualification.getRequiredSubjects().contains(entry.getSubject());
-        addRow(primaryRows, entry, required, qualification.getGrades());
+        View row = addRow(primaryRows, entry, required, !required, qualification.getGrades());
+        if (qualification.getSubjectLabel() != null) {
+            ((TextInputLayout) row.findViewById(R.id.subject_layout))
+                    .setHint(qualification.getSubjectLabel());
+        }
+        if (qualification.getGradeLabel() != null) {
+            ((TextInputLayout) row.findViewById(R.id.grade_layout))
+                    .setHint(qualification.getGradeLabel());
+        }
     }
 
-    /** Adds one subject and grade row. A fixed row cannot be changed or removed. */
-    private void addRow(ViewGroup container, SubjectGrade entry, boolean fixed, List<String> grades) {
+    /** Adds one row. A locked subject cannot be changed, and only a removable row has an X. */
+    private View addRow(ViewGroup container, SubjectGrade entry, boolean subjectLocked,
+                        boolean removable, List<String> grades) {
         View row = getLayoutInflater().inflate(R.layout.item_subject_grade, container, false);
         row.setTag(entry);
         TextInputLayout subjectLayout = row.findViewById(R.id.subject_layout);
@@ -192,21 +206,22 @@ public class EligibilityActivity extends BaseActivity {
         });
 
         subjectInput.setText(entry.getSubject(), false);
-        if (fixed) {
+        if (subjectLocked) {
             // Not disabled, because a disabled field is too faint to read comfortably.
             subjectLayout.setEndIconMode(TextInputLayout.END_ICON_NONE);
             subjectInput.setFocusable(false);
             subjectInput.setClickable(false);
-            removeButton.setVisibility(View.GONE);
         } else {
             subjectInput.setOnItemClickListener((parent, view, position, id) -> {
                 entry.setSubject(parent.getItemAtPosition(position).toString());
                 subjectLayout.setError(null);
                 refreshSubjectOptions();
             });
-            removeButton.setOnClickListener(view -> removeRow(row, entry));
         }
+        removeButton.setVisibility(removable ? View.VISIBLE : View.GONE);
+        removeButton.setOnClickListener(view -> removeRow(container, row, entry));
         container.addView(row);
+        return row;
     }
 
     private void addEmptyRow() {
@@ -224,9 +239,10 @@ public class EligibilityActivity extends BaseActivity {
         refreshSubjectOptions();
     }
 
-    private void removeRow(View row, SubjectGrade entry) {
+    private void removeRow(ViewGroup container, View row, SubjectGrade entry) {
         input.getGrades().remove(entry);
-        primaryRows.removeView(row);
+        input.getSupportingGrades().remove(entry);
+        container.removeView(row);
         refreshSubjectOptions();
     }
 
@@ -239,6 +255,9 @@ public class EligibilityActivity extends BaseActivity {
         for (int i = 0; i < primaryRows.getChildCount(); i++) {
             View row = primaryRows.getChildAt(i);
             SubjectGrade entry = (SubjectGrade) row.getTag();
+            if (qualification.getRequiredSubjects().contains(entry.getSubject())) {
+                continue;
+            }
             MaterialAutoCompleteTextView subjectInput = row.findViewById(R.id.subject_input);
             subjectInput.setSimpleItems(
                     getAvailableSubjects(qualification, entry).toArray(new String[0]));

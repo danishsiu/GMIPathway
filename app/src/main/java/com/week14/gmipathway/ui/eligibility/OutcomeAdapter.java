@@ -19,14 +19,26 @@ import com.google.android.material.color.MaterialColors;
 import com.week14.gmipathway.R;
 import com.week14.gmipathway.model.Course;
 import com.week14.gmipathway.model.EligibilityOutcome;
+import com.week14.gmipathway.model.EligibilityReason;
+import com.week14.gmipathway.model.EligibilityStatus;
 import com.week14.gmipathway.ui.common.DetailViews;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Shows each programme's result as a card, with the action that suits its status.
+ * Lists results grouped by status, with the action that suits each one.
  */
-class OutcomeAdapter extends RecyclerView.Adapter<OutcomeAdapter.OutcomeViewHolder> {
+class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    private static final int TYPE_HEADER = 0;
+    private static final int TYPE_OUTCOME = 1;
+
+    private static final EligibilityStatus[] DISPLAY_ORDER = {
+            EligibilityStatus.ELIGIBLE,
+            EligibilityStatus.CONTACT_GMI,
+            EligibilityStatus.NOT_ELIGIBLE,
+            EligibilityStatus.NOT_ASSESSED
+    };
 
     interface Listener {
         void onCourseClick(Course course);
@@ -36,73 +48,139 @@ class OutcomeAdapter extends RecyclerView.Adapter<OutcomeAdapter.OutcomeViewHold
         void onContactClick();
     }
 
-    private final List<EligibilityOutcome> outcomes;
+    /** Holds a section title (String) or an EligibilityOutcome, in display order. */
+    private final List<Object> rows = new ArrayList<>();
     private final Listener listener;
 
-    OutcomeAdapter(List<EligibilityOutcome> outcomes, Listener listener) {
-        this.outcomes = outcomes;
+    OutcomeAdapter(Context context, List<EligibilityOutcome> outcomes, Listener listener) {
         this.listener = listener;
+        for (EligibilityStatus status : DISPLAY_ORDER) {
+            List<EligibilityOutcome> matches = new ArrayList<>();
+            for (EligibilityOutcome outcome : outcomes) {
+                if (outcome.getStatus() == status) {
+                    matches.add(outcome);
+                }
+            }
+            if (!matches.isEmpty()) {
+                rows.add(context.getString(R.string.eligibility_section_title,
+                        context.getString(getSectionTitle(status)), matches.size()));
+                rows.addAll(matches);
+            }
+        }
+    }
+
+    @StringRes
+    private static int getSectionTitle(EligibilityStatus status) {
+        switch (status) {
+            case ELIGIBLE:
+                return R.string.eligibility_section_eligible;
+            case CONTACT_GMI:
+                return R.string.eligibility_section_contact;
+            case NOT_ELIGIBLE:
+                return R.string.eligibility_section_not_eligible;
+            case NOT_ASSESSED:
+            default:
+                return R.string.eligibility_section_not_assessed;
+        }
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return rows.get(position) instanceof EligibilityOutcome ? TYPE_OUTCOME : TYPE_HEADER;
     }
 
     @NonNull
     @Override
-    public OutcomeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_eligibility_outcome, parent, false);
-        return new OutcomeViewHolder(view);
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        if (viewType == TYPE_HEADER) {
+            return new HeaderViewHolder(
+                    inflater.inflate(R.layout.item_section_header, parent, false));
+        }
+        return new OutcomeViewHolder(
+                inflater.inflate(R.layout.item_eligibility_outcome, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull OutcomeViewHolder holder, int position) {
-        EligibilityOutcome outcome = outcomes.get(position);
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        Object row = rows.get(position);
+        if (holder instanceof HeaderViewHolder) {
+            ((HeaderViewHolder) holder).title.setText((String) row);
+            return;
+        }
+        bindOutcome((OutcomeViewHolder) holder, (EligibilityOutcome) row);
+    }
+
+    private void bindOutcome(OutcomeViewHolder holder, EligibilityOutcome outcome) {
         Context context = holder.itemView.getContext();
-        holder.name.setText(outcome.getCourse().getName());
-        holder.reasons.setText(DetailViews.bulletList(context, outcome.getReasons()));
-        holder.reasons.setVisibility(outcome.getReasons().isEmpty() ? View.GONE : View.VISIBLE);
-        holder.itemView.setOnClickListener(view -> listener.onCourseClick(outcome.getCourse()));
+        Course course = outcome.getCourse();
+        holder.department.setText(course.getDepartment());
+        holder.name.setText(course.getName());
+        holder.itemView.setOnClickListener(view -> listener.onCourseClick(course));
+
+        List<String> lines = new ArrayList<>();
+        for (EligibilityReason reason : outcome.getReasons()) {
+            lines.add(ReasonFormatter.format(context, reason));
+        }
+        lines.addAll(outcome.getNotes());
+        holder.details.setText(DetailViews.bulletList(context, lines));
+        holder.details.setVisibility(lines.isEmpty() ? View.GONE : View.VISIBLE);
 
         switch (outcome.getStatus()) {
             case ELIGIBLE:
                 holder.showStatus(R.drawable.ic_check_circle, R.string.eligibility_status_eligible,
                         androidx.appcompat.R.attr.colorPrimary);
-                holder.action.setVisibility(View.VISIBLE);
-                holder.action.setText(R.string.apply_now);
-                holder.action.setOnClickListener(view -> listener.onApplyClick());
+                holder.showAction(R.string.apply_now, view -> listener.onApplyClick());
+                break;
+            case CONTACT_GMI:
+                holder.showStatus(R.drawable.ic_help, R.string.eligibility_status_contact,
+                        com.google.android.material.R.attr.colorTertiary);
+                holder.showAction(R.string.eligibility_guided_button,
+                        view -> listener.onContactClick());
                 break;
             case NOT_ELIGIBLE:
                 holder.showStatus(R.drawable.ic_cancel, R.string.eligibility_status_not_eligible,
                         androidx.appcompat.R.attr.colorError);
                 holder.action.setVisibility(View.GONE);
                 break;
-            case CONTACT_GMI:
+            case NOT_ASSESSED:
             default:
-                holder.showStatus(R.drawable.ic_help, R.string.eligibility_status_contact,
+                holder.showStatus(R.drawable.ic_help, R.string.eligibility_status_not_assessed,
                         com.google.android.material.R.attr.colorOnSurfaceVariant);
-                holder.action.setVisibility(View.VISIBLE);
-                holder.action.setText(R.string.eligibility_guided_button);
-                holder.action.setOnClickListener(view -> listener.onContactClick());
+                holder.action.setVisibility(View.GONE);
                 break;
         }
     }
 
     @Override
     public int getItemCount() {
-        return outcomes.size();
+        return rows.size();
+    }
+
+    static class HeaderViewHolder extends RecyclerView.ViewHolder {
+        final TextView title;
+
+        HeaderViewHolder(@NonNull View itemView) {
+            super(itemView);
+            title = itemView.findViewById(R.id.header_title);
+        }
     }
 
     static class OutcomeViewHolder extends RecyclerView.ViewHolder {
+        final TextView department;
         final TextView name;
         final ImageView statusIcon;
         final TextView status;
-        final TextView reasons;
+        final TextView details;
         final Button action;
 
         OutcomeViewHolder(@NonNull View itemView) {
             super(itemView);
+            department = itemView.findViewById(R.id.outcome_department);
             name = itemView.findViewById(R.id.outcome_name);
             statusIcon = itemView.findViewById(R.id.outcome_status_icon);
             status = itemView.findViewById(R.id.outcome_status);
-            reasons = itemView.findViewById(R.id.outcome_reasons);
+            details = itemView.findViewById(R.id.outcome_reasons);
             action = itemView.findViewById(R.id.outcome_action);
         }
 
@@ -112,6 +190,12 @@ class OutcomeAdapter extends RecyclerView.Adapter<OutcomeAdapter.OutcomeViewHold
             statusIcon.setImageTintList(ColorStateList.valueOf(color));
             status.setText(textRes);
             status.setTextColor(color);
+        }
+
+        void showAction(@StringRes int textRes, View.OnClickListener onClick) {
+            action.setVisibility(View.VISIBLE);
+            action.setText(textRes);
+            action.setOnClickListener(onClick);
         }
     }
 }

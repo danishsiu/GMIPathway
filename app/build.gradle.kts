@@ -33,6 +33,11 @@ android {
     }
 }
 
+// The unit tests read courses.json directly, so changing it must run them again.
+tasks.withType<Test>().configureEach {
+    inputs.dir("src/main/assets")
+}
+
 dependencies {
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)

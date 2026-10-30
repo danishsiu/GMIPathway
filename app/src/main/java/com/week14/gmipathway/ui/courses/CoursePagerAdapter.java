@@ -33,10 +33,10 @@ class CoursePagerAdapter extends FragmentStateAdapter {
     @StringRes
     static int getTitleRes(int position) {
         switch (CATEGORIES[position]) {
-            case GAPP:
-                return R.string.tab_gapp;
-            case GUFP:
-                return R.string.tab_gufp;
+            case PRE_UNIVERSITY:
+                return R.string.tab_pre_university;
+            case DEGREE:
+                return R.string.tab_degree;
             case DIPLOMA:
             default:
                 return R.string.tab_diploma;
