@@ -7,6 +7,7 @@ import android.text.SpannableStringBuilder;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.week14.gmipathway.R;
@@ -24,8 +25,12 @@ import com.week14.gmipathway.ui.common.ExternalLinks;
  */
 public class CourseDetailActivity extends BaseActivity {
     private static final String EXTRA_COURSE_ID = "courseId";
+    private static final String STATE_SUBJECTS_EXPANDED = "subjectsExpanded";
+    private static final String STATE_ENTRY_EXPANDED = "entryExpanded";
 
     private CourseRepository repository;
+    private boolean subjectsExpanded;
+    private boolean entryExpanded;
 
     public static Intent createIntent(Context context, String courseId) {
         return new Intent(context, CourseDetailActivity.class)
@@ -39,6 +44,11 @@ public class CourseDetailActivity extends BaseActivity {
         setUpToolbar(R.string.course_detail_title);
         applyWindowInsets();
 
+        if (savedInstanceState != null) {
+            subjectsExpanded = savedInstanceState.getBoolean(STATE_SUBJECTS_EXPANDED);
+            entryExpanded = savedInstanceState.getBoolean(STATE_ENTRY_EXPANDED);
+        }
+
         repository = CourseRepository.getInstance(this);
         Course course = repository.findCourse(getIntent().getStringExtra(EXTRA_COURSE_ID));
         if (course == null) {
@@ -51,6 +61,13 @@ public class CourseDetailActivity extends BaseActivity {
         bindSections(course);
         findViewById(R.id.button_apply).setOnClickListener(view ->
                 ExternalLinks.openWebPage(this, getString(R.string.url_online_application)));
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean(STATE_SUBJECTS_EXPANDED, subjectsExpanded);
+        outState.putBoolean(STATE_ENTRY_EXPANDED, entryExpanded);
     }
 
     private void bindHeader(Course course) {
@@ -81,11 +98,14 @@ public class CourseDetailActivity extends BaseActivity {
                 DetailViews.bulletList(this, course.getCoreAreas()));
         DetailViews.addSection(sections, R.string.course_section_certificates,
                 formatCertificates(course));
-        DetailViews.addSection(sections, R.string.course_section_subjects, formatSubjects(course));
+        DetailViews.addExpandableSection(sections, R.string.course_section_subjects,
+                formatSubjects(course), subjectsExpanded,
+                expanded -> subjectsExpanded = expanded);
         DetailViews.addSection(sections, R.string.course_section_careers,
                 DetailViews.bulletList(this, course.getCareers()));
-        DetailViews.addSection(sections, R.string.course_section_entry,
-                formatEntryRequirements(course));
+        DetailViews.addExpandableSection(sections, R.string.course_section_entry,
+                formatEntryRequirements(course), entryExpanded,
+                expanded -> entryExpanded = expanded);
         DetailViews.addSection(sections, R.string.course_section_progression,
                 DetailViews.bulletList(this, course.getProgression()));
     }

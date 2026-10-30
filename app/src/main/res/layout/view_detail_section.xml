@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Widget.GMIPathway.Card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,12 +12,31 @@
         android:orientation="vertical"
         android:padding="@dimen/spacing_medium">
 
-        <TextView
-            android:id="@+id/section_title"
+        <LinearLayout
+            android:id="@+id/section_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceTitleMedium"
-            android:textColor="?attr/colorPrimary" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/section_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="?attr/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/section_chevron"
+                android:layout_width="@dimen/icon_medium"
+                android:layout_height="@dimen/icon_medium"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_expand_more"
+                android:visibility="gone"
+                app:tint="?attr/colorPrimary" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/section_body"

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Round version of the app mark. 288dp with the art inside the centre 192dp is the size the
+     Android 12 splash screen requires, so the same drawable also works on the home screen. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108"
+    tools:ignore="VectorRaster">
+    <group>
+        <clip-path android:pathData="M54,18a36,36 0 1,0 0,72a36,36 0 1,0 0,-72z" />
+        <path
+            android:fillColor="@color/emblem_background"
+            android:pathData="M18,18h72v72h-72z" />
+        <path
+            android:fillColor="@color/brand_gold"
+            android:pathData="M16,108 C38,97 63,90 61,76 C59,66 47,63 50.5,52 L57.5,52 C57,60 73,65 75,78 C77,92 66,100 62,108 Z" />
+        <path
+            android:fillColor="@color/app_bar_background"
+            android:pathData="M53.5,56.5 L55.5,56.5 L55.5,60 L54.2,60 Z" />
+        <path
+            android:fillColor="@color/app_bar_background"
+            android:pathData="M60.5,64.5 L63,63.2 L65.5,67 L63,68.5 Z" />
+        <path
+            android:fillColor="@color/app_bar_background"
+            android:pathData="M67,74.5 L70,74.5 L70,81 L67,81 Z" />
+        <path
+            android:fillColor="@color/app_bar_background"
+            android:pathData="M63,88 L66.5,89.5 L62,96 L57.5,93.5 Z" />
+    </group>
+    <path
+        android:fillColor="@color/on_app_bar"
+        android:pathData="M38.5,43 L38.5,47.5 C42,52 66,52 69.5,47.5 L69.5,43 L54,49.5 Z" />
+    <path
+        android:fillColor="@color/on_app_bar"
+        android:pathData="M54,22 L83,34.5 L54,47 L25,34.5 Z" />
+    <path
+        android:fillColor="@color/brand_gold"
+        android:pathData="M77.2,37 L79.6,36 L79.6,48 L77.2,48 Z" />
+    <path
+        android:fillColor="@color/brand_gold"
+        android:pathData="M75.4,48 L81.4,48 L82.4,57 L74.4,57 Z" />
+</vector>

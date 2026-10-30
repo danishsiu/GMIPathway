@@ -5,6 +5,9 @@
     <color name="app_bar_background_end">#2A1FC4</color>
     <color name="on_app_bar">#FFFFFF</color>
     <color name="on_app_bar_muted">#D6D3FF</color>
+    <color name="brand_gold">#FFC928</color>
+    <color name="icon_background_end">#3A2FD6</color>
+    <color name="emblem_background">#2A1FC4</color>
 
     <!-- Material 3 colour roles for light mode -->
     <color name="md_primary">#1004A0</color>

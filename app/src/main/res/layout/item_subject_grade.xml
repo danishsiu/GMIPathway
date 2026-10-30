@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Rows share these ids and are rebuilt from saved data, so automatic state saving is off. -->
+<!-- Rows share these ids and are rebuilt from saved data, so automatic state saving is off.
+     The compact padding and arrow leave room for subject names on 360dp phones. -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/eligibility_subject_hint"
         android:saveEnabled="false"
+        app:endIconMinSize="@dimen/dropdown_arrow_size"
         app:layout_constraintEnd_toStartOf="@id/grade_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +24,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
-            android:saveEnabled="false" />
+            android:paddingStart="@dimen/form_field_padding"
+            android:paddingEnd="@dimen/spacing_xsmall"
+            android:saveEnabled="false"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -34,6 +39,7 @@
         android:layout_marginStart="@dimen/spacing_small"
         android:hint="@string/eligibility_grade_hint"
         android:saveEnabled="false"
+        app:endIconMinSize="@dimen/dropdown_arrow_size"
         app:layout_constraintEnd_toStartOf="@id/button_remove"
         app:layout_constraintStart_toEndOf="@id/subject_layout"
         app:layout_constraintTop_toTopOf="parent">
@@ -43,7 +49,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
-            android:saveEnabled="false" />
+            android:paddingStart="@dimen/form_field_padding"
+            android:paddingEnd="@dimen/spacing_xsmall"
+            android:saveEnabled="false"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -1,10 +1,13 @@
 package com.week14.gmipathway.ui.courses;
 
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +15,9 @@ import com.week14.gmipathway.R;
 import com.week14.gmipathway.model.Course;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Shows courses as cards under a heading for each department.
@@ -25,21 +30,48 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         void onCourseClick(Course course);
     }
 
-    /** Holds a department name (String) or a Course, in display order. */
+    /** A department heading and how many programmes it has. */
+    private static final class DepartmentHeader {
+        final String name;
+        final int courseCount;
+
+        DepartmentHeader(String name, int courseCount) {
+            this.name = name;
+            this.courseCount = courseCount;
+        }
+    }
+
+    /** Holds a DepartmentHeader or a Course, in display order. */
     private final List<Object> rows = new ArrayList<>();
     private final OnCourseClickListener listener;
 
-    /** Expects courses from the same department to be next to each other. */
     CourseAdapter(List<Course> courses, OnCourseClickListener listener) {
         this.listener = listener;
-        String currentDepartment = null;
+        Map<String, List<Course>> departments = new LinkedHashMap<>();
         for (Course course : courses) {
-            if (!course.getDepartment().equals(currentDepartment)) {
-                currentDepartment = course.getDepartment();
-                rows.add(currentDepartment);
+            if (!departments.containsKey(course.getDepartment())) {
+                departments.put(course.getDepartment(), new ArrayList<>());
             }
-            rows.add(course);
+            departments.get(course.getDepartment()).add(course);
         }
+        for (Map.Entry<String, List<Course>> department : departments.entrySet()) {
+            rows.add(new DepartmentHeader(department.getKey(), department.getValue().size()));
+            rows.addAll(department.getValue());
+        }
+    }
+
+    @DrawableRes
+    private static int getDepartmentIcon(String department) {
+        if (department.startsWith("Electrical")) {
+            return R.drawable.ic_bolt;
+        }
+        if (department.startsWith("Mechanical")) {
+            return R.drawable.ic_precision_manufacturing;
+        }
+        if (department.startsWith("Computer")) {
+            return R.drawable.ic_computer;
+        }
+        return R.drawable.ic_school;
     }
 
     @Override
@@ -62,7 +94,7 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         Object row = rows.get(position);
         if (holder instanceof HeaderViewHolder) {
-            ((HeaderViewHolder) holder).title.setText((String) row);
+            ((HeaderViewHolder) holder).bind((DepartmentHeader) row);
             return;
         }
         Course course = (Course) row;
@@ -80,11 +112,23 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     static class HeaderViewHolder extends RecyclerView.ViewHolder {
+        final ImageView icon;
         final TextView title;
+        final TextView count;
 
         HeaderViewHolder(@NonNull View itemView) {
             super(itemView);
+            icon = itemView.findViewById(R.id.header_icon);
             title = itemView.findViewById(R.id.header_title);
+            count = itemView.findViewById(R.id.header_count);
+        }
+
+        void bind(DepartmentHeader header) {
+            Resources resources = itemView.getResources();
+            icon.setImageResource(getDepartmentIcon(header.name));
+            title.setText(header.name);
+            count.setText(resources.getQuantityString(
+                    R.plurals.course_count, header.courseCount, header.courseCount));
         }
     }
 

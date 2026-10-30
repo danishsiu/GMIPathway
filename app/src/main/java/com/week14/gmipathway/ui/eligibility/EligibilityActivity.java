@@ -5,6 +5,7 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -205,6 +206,7 @@ public class EligibilityActivity extends BaseActivity {
             gradeLayout.setError(null);
         });
 
+        subjectInput.setDropDownWidth(getSubjectListWidth());
         subjectInput.setText(entry.getSubject(), false);
         if (subjectLocked) {
             // Not disabled, because a disabled field is too faint to read comfortably.
@@ -222,6 +224,12 @@ public class EligibilityActivity extends BaseActivity {
         removeButton.setOnClickListener(view -> removeRow(container, row, entry));
         container.addView(row);
         return row;
+    }
+
+    /** Long subject names need more room than the narrow subject field has on small phones. */
+    private int getSubjectListWidth() {
+        int margins = 2 * getResources().getDimensionPixelSize(R.dimen.spacing_medium);
+        return getResources().getDisplayMetrics().widthPixels - margins;
     }
 
     private void addEmptyRow() {
@@ -259,8 +267,8 @@ public class EligibilityActivity extends BaseActivity {
                 continue;
             }
             MaterialAutoCompleteTextView subjectInput = row.findViewById(R.id.subject_input);
-            subjectInput.setSimpleItems(
-                    getAvailableSubjects(qualification, entry).toArray(new String[0]));
+            subjectInput.setAdapter(new ArrayAdapter<>(this, R.layout.item_dropdown_option,
+                    R.id.option_text, getAvailableSubjects(qualification, entry)));
             subjectInput.setText(entry.getSubject(), false);
         }
     }

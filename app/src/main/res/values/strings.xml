@@ -27,16 +27,24 @@
     <string name="apply_now">Apply Now</string>
     <string name="apply_online">Apply Online</string>
     <string name="bullet_item">• %1$s</string>
+    <string name="section_expanded">Expanded</string>
+    <string name="section_collapsed">Collapsed</string>
     <string name="error_no_browser">No app found to open this link.</string>
     <string name="error_no_dialer">No phone app found on this device.</string>
     <string name="error_no_email">No email app found on this device.</string>
 
     <!-- Splash -->
     <string name="splash_tagline">Your path to studying at GMI</string>
+    <string name="splash_loading">Loading</string>
 
     <!-- Home -->
     <string name="home_welcome">Welcome to</string>
     <string name="home_tagline">Explore GMI\'s programmes, check your eligibility and apply online.</string>
+    <string name="home_stat_programmes">Programmes</string>
+    <string name="home_stat_centres_value" translatable="false">22</string>
+    <string name="home_stat_centres">Technology centres</string>
+    <string name="home_stat_practical_value" formatted="false" translatable="false">70%</string>
+    <string name="home_stat_practical">Practical learning</string>
     <string name="home_explore">Get started</string>
     <string name="home_courses_title">Courses</string>
     <string name="home_courses_subtitle">Diploma, Pre-University and Degree</string>
@@ -52,6 +60,10 @@
     <string name="tab_diploma">Diploma</string>
     <string name="tab_pre_university">Pre-University</string>
     <string name="tab_degree">Degree</string>
+    <plurals name="course_count">
+        <item quantity="one">%d programme</item>
+        <item quantity="other">%d programmes</item>
+    </plurals>
     <string name="course_detail_title">Course Details</string>
     <string name="course_info_code">Programme code</string>
     <string name="course_info_duration">Duration</string>
@@ -157,6 +169,7 @@
 
     <!-- About Us. Source: research/gmi_research.md, section 1 -->
     <string name="about_title">About Us</string>
+    <string name="about_banner_subtitle">Kajang, Selangor. Established in 1991.</string>
     <string name="about_section_who">Who we are</string>
     <string name="about_who_body">The German-Malaysian Institute (GMI) is a technical education institute on a 75-acre campus in Kajang, Selangor. It began as a joint venture between the Governments of Malaysia and Germany, and describes itself as a pioneer of German-style technical and vocational education and training (TVET) in Malaysia.</string>
     <string name="about_section_history">Our history</string>
