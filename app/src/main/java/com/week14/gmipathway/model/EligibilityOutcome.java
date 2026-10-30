@@ -4,17 +4,21 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * The result of checking one programme, with the reasons shown to the prospect.
+ * The result of checking one programme.
+ * Reasons explain a shortfall. Notes are extra guidance, such as a MUET requirement.
  */
 public class EligibilityOutcome {
     private final Course course;
     private final EligibilityStatus status;
-    private final List<String> reasons;
+    private final List<EligibilityReason> reasons;
+    private final List<String> notes;
 
-    public EligibilityOutcome(Course course, EligibilityStatus status, List<String> reasons) {
+    public EligibilityOutcome(Course course, EligibilityStatus status,
+                              List<EligibilityReason> reasons, List<String> notes) {
         this.course = course;
         this.status = status;
         this.reasons = Collections.unmodifiableList(reasons);
+        this.notes = Collections.unmodifiableList(notes);
     }
 
     public Course getCourse() {
@@ -25,7 +29,11 @@ public class EligibilityOutcome {
         return status;
     }
 
-    public List<String> getReasons() {
+    public List<EligibilityReason> getReasons() {
         return reasons;
+    }
+
+    public List<String> getNotes() {
+        return notes;
     }
 }

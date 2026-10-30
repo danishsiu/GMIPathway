@@ -39,7 +39,7 @@
     <string name="home_tagline">Explore GMI\'s programmes, check your eligibility and apply online.</string>
     <string name="home_explore">Get started</string>
     <string name="home_courses_title">Courses</string>
-    <string name="home_courses_subtitle">Diploma, GAPP and GUFP</string>
+    <string name="home_courses_subtitle">Diploma, Pre-University and Degree</string>
     <string name="home_eligibility_title">Eligibility Checker</string>
     <string name="home_eligibility_subtitle">See what you qualify for</string>
     <string name="home_contact_title">Contact Us</string>
@@ -50,8 +50,8 @@
     <!-- Courses -->
     <string name="courses_title">Courses</string>
     <string name="tab_diploma">Diploma</string>
-    <string name="tab_gapp">GAPP</string>
-    <string name="tab_gufp">GUFP</string>
+    <string name="tab_pre_university">Pre-University</string>
+    <string name="tab_degree">Degree</string>
     <string name="course_detail_title">Course Details</string>
     <string name="course_info_code">Programme code</string>
     <string name="course_info_duration">Duration</string>
@@ -88,19 +88,35 @@
     <string name="eligibility_error_no_subjects">Please add at least one subject.</string>
     <string name="eligibility_error_no_more_subjects">All listed subjects have been added.</string>
     <string name="eligibility_guided_title">Other entry routes</string>
-    <string name="eligibility_guided_body">GMI also accepts STAM, SKM Level 3, MQF Level 3 Certificates, Pre-Diploma, Matriculation, SVM and APEL for some programmes. These depend on your documents and field of study, so GMI\'s admissions team needs to assess them. Each course page lists the routes it accepts.</string>
+    <string name="eligibility_guided_body">GMI also accepts STAM, SKM Level 3, MQF Level 3 Certificates, Pre-Diploma, SVM, DKM, DLKM, GCE A-Level, IB and APEL for some programmes. These depend on your documents and field of study, so GMI\'s admissions team needs to assess them. Each course page lists the routes it accepts.</string>
     <string name="eligibility_guided_button">Contact GMI</string>
     <string name="eligibility_result_title">Your Results</string>
-    <plurals name="eligibility_result_summary">
-        <item quantity="one">%1$s, %2$d subject entered</item>
-        <item quantity="other">%1$s, %2$d subjects entered</item>
-    </plurals>
-    <string name="eligibility_disclaimer">This is a guide based on GMI\'s published requirements. GMI makes the final admission decision.</string>
+    <string name="eligibility_result_summary">Your results for %1$s</string>
+    <string name="eligibility_disclaimer">This is a guide based on GMI\'s published requirements. GMI makes the final admission decision, and diplomas also need a medical check.</string>
     <string name="eligibility_status_eligible">You qualify</string>
     <string name="eligibility_status_not_eligible">Not eligible</string>
-    <string name="eligibility_status_contact">Contact GMI</string>
-    <!-- Temporary: removed when the eligibility rules are connected in Phase 3 -->
-    <string name="eligibility_pending_reason">Not checked yet. The eligibility rules are connected in Phase 3.</string>
+    <string name="eligibility_status_contact">Ask GMI</string>
+    <string name="eligibility_status_not_assessed">Not assessed</string>
+    <string name="eligibility_section_title">%1$s (%2$d)</string>
+    <string name="eligibility_section_eligible">You qualify</string>
+    <string name="eligibility_section_contact">Ask GMI</string>
+    <string name="eligibility_section_not_eligible">Not eligible yet</string>
+    <string name="eligibility_section_not_assessed">Not assessed</string>
+    <string name="eligibility_no_match_title">No match yet</string>
+    <string name="eligibility_no_match_body">Your results do not meet the published requirements for a programme yet, but GMI\'s admissions team can advise you on other routes.</string>
+    <string name="eligibility_list_or">" or "</string>
+    <string name="eligibility_list_and">" and "</string>
+    <string name="eligibility_reason_certificate">SPM needs a pass in %1$s.</string>
+    <string name="eligibility_reason_subject">Needs at least %1$s in %2$s.</string>
+    <string name="eligibility_reason_supporting">Needs at least %1$s in SPM %2$s.</string>
+    <string name="eligibility_reason_science_technical">Needs at least %1$s in 1 Science or Technical subject.</string>
+    <string name="eligibility_reason_science_technical_vocational">Needs at least %1$s in 1 Science, Technical or Vocational subject.</string>
+    <plurals name="eligibility_reason_count">
+        <item quantity="one">Needs at least %1$d subject at %2$s or better.</item>
+        <item quantity="other">Needs at least %1$d subjects at %2$s or better.</item>
+    </plurals>
+    <string name="eligibility_reason_no_rule">This checker has no rule for your qualification on this programme. See its entry requirements or ask GMI.</string>
+    <string name="eligibility_reason_unpublished">GMI has not published entry requirements for this programme.</string>
 
     <!-- Contact Us -->
     <string name="contact_title">Contact Us</string>

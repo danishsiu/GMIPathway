@@ -53,6 +53,10 @@ public final class CourseRepository {
         return new Gson().fromJson(reader, CourseCatalog.class);
     }
 
+    public CourseCatalog getCatalog() {
+        return catalog;
+    }
+
     public List<Course> getCourses() {
         return catalog.getCourses();
     }

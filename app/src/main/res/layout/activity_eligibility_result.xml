@@ -27,6 +27,47 @@
         android:textAppearance="?attr/textAppearanceBodySmall"
         android:textColor="?attr/colorOnSurfaceVariant" />
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/no_match_card"
+        style="@style/Widget.GMIPathway.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eligibility_no_match_title"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="?attr/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="@string/eligibility_no_match_body"
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+            <Button
+                android:id="@+id/button_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="@string/eligibility_guided_button" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/outcome_list"
         android:layout_width="match_parent"

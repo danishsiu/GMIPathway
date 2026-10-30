@@ -1,6 +1,6 @@
 # Eligibility Rules (Phase 0)
 
-This is the source for the Eligibility Checker. Rules are copied from GMI's **Programme Guide, May 2026**, pp.36-40, 45 and 50 [S1], and from the GMI programme pages [S16, S18]. Pages 36, 39, 45 and 50 were also checked visually against the rendered PDF.
+This is the source for the Eligibility Checker. Rules are copied from GMI's **Programme Guide, May 2026**, pp.21-22, 36-40, 45 and 50 [S1], GMI's **BELT entry requirements, September 2025** [S36] and the GMI programme pages [S16, S18]. Pages 36, 37, 39, 40, 45 and 50 and the BELT sheet were also checked visually against the original. The rules themselves live in `app/src/main/assets/courses.json`.
 
 **Accessed:** 30 October 2026. Source codes match `gmi_research.md`.
 
@@ -8,7 +8,7 @@ This is the source for the Eligibility Checker. Rules are copied from GMI's **Pr
 
 ## 1. Rule groups
 
-Programmes that share an accreditation standard share the same rules, so there are 7 rule groups. The checker can store each set once.
+Programmes that share an accreditation standard share the same rules, so there are 8 rule groups. The checker stores each set once.
 
 | Group | Standard | Programmes |
 |---|---|---|
@@ -19,6 +19,7 @@ Programmes that share an accreditation standard share the same rules, so there a
 | **E** | MQA: Creative Multimedia Technology | Creative Multimedia |
 | **F** | GUFP | GMI-UTP Foundation Programme |
 | **G** | GAPP | German University Preparatory Programme |
+| **H** | UTeM and GMI (September 2025) | Bachelor of Electrical Engineering Technology with Honours (BELT) |
 | **?** | **Not published** | **Cyber Security Technology** (see Q1 in `open_questions.md`) |
 
 ---
@@ -43,7 +44,7 @@ Programmes that share an accreditation standard share the same rules, so there a
 | **SVM** (additional rules, section 6) | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
 | **APEL.A T-4** | ✓ | ✓ | ✓ | ✓ | ✓ | – | – |
 
-**SPM and O-Level cover every group with published rules**, so they alone meet the rubric's requirement of SPM plus one other qualification.
+**SPM and O-Level cover every diploma and pre-university group**, so they alone meet the rubric's requirement of SPM plus one other qualification. They do not lead to the degree: BELT needs a diploma, STPM, Matriculation, Foundation, DKM/DLKM, A-Level or IB.
 
 ---
 
@@ -82,6 +83,21 @@ These look like mistakes but are exactly what GMI publishes. Implement them as w
 | **YTP MARA** (sponsored) | Bumiputera. SPM with A in **all 8**: English, Physics, Additional Mathematics, Chemistry and 4 other subjects. Terms and conditions apply | MARA (www.mara.gov.my), not the GMI portal |
 
 **Recommended handling of YTP MARA:** the app should not ask for ethnicity. If the grades meet the YTP level, show a note: "You meet the academic level for MARA YTP, which is open to Bumiputera candidates. Apply through MARA." The self-sponsored result still links to GMI's portal.
+
+---
+
+### BELT (Group H)
+
+Every route also needs MUET at least Band 2.0 (Band 2 for examinations up to 2020). The checker cannot verify MUET, so it adds a reminder to an eligible result.
+
+| Route | Requirement | SPM conditions |
+|---|---|---|
+| **Engineering Technology Diploma**, or a related Diploma | CGPA at least 2.30 | Credit in BM, pass in Sejarah |
+| **Engineering Diploma** | CGPA at least 2.00 | Credit in BM, pass in Sejarah |
+| **STPM** | At least Grade C in Pengajian Am, Mathematics (M) or (T), and Physics, Chemistry or Biology | Credit in BM, pass in Sejarah, credit in Mathematics or Additional Mathematics |
+| **Matriculation or Foundation** | At least Grade C in Mathematics and one of Physics, Chemistry, Biology, Mechanical Engineering, Electrical & Electronic Engineering, Civil Engineering or Basic Engineering | Credit in BM, pass in Sejarah. With Biology, also a credit in Physics |
+| **DKM or DLKM** (guided) | CGPA at least 3.00 or 80%, related field. Year 1 entry only | Credit in BM, pass in Sejarah, pass in Mathematics, Physics or Science, Grade E in English |
+| **GCE A-Level or IB** (guided) | A-Level at least 9 points, or IB at least 24 points | Credit in BM, pass in Sejarah |
 
 ---
 
@@ -131,6 +147,8 @@ The guide's notes add flexibility around its main rule. [S1 p.37]
 | **UEC** | A1, A2, B3, B4, B5, B6, C7, C8, F9 | B6 or better | C8 or better | S25 |
 | **STPM** | A, A-, B+, B, B-, C+, C, C-, D+, D, F | Full pass: C (2.00) or better | Partial: C-, D+, D. Fail: F | S24 |
 | **STAM** | Mumtaz, Jayyid Jiddan, Jayyid, Maqbul, Rasib | | Maqbul or better | S27 |
+| **Diploma** | CGPA bands: 3.00+, 2.30+, 2.00+, below 2.00 | | | S36 |
+| **Matriculation / Foundation** | Uses the STPM-style letters | C or better | | S36 |
 
 Notes on the scale evidence:
 
@@ -172,15 +190,19 @@ TOEFL 500 or IELTS 5.0 or equivalent.
 
 ---
 
-## 7. Proposed subject groups: needs confirmation
+## 7. Subject groups: based on the Ministry of Education, not GMI
 
-GMI does not define "Science/Technical/Vocational" or list qualifying subjects. The list below is **my proposal, not GMI's**. It must be confirmed (Q2) and will be easy to change because it will sit in the data file.
+GMI does not define "Science/Technical/Vocational" or list qualifying subjects, so this is still **an interpretation, not GMI's list** (Q2). It now rests on a national source: the Ministry of Education groups SPM electives into pure science, applied science and technology, and vocational subjects (MPV). [S39, S40] Additional Science, Engineering Studies, Engineering Drawing and Graphic Communication Technical are also accepted as science or technical subjects by other Malaysian institutions.
 
-| Group | Proposed SPM subjects |
+| Group | SPM subjects used by the checker |
 |---|---|
 | **Science** | Physics; Chemistry; Biology; Science; Additional Science |
-| **Technical** | Engineering Studies subjects (Mechanical, Civil, Electrical & Electronics); Engineering Drawing; Invention; Graphic Communication Technical; Computer Science |
+| **Technical and applied** | Engineering Studies subjects (Mechanical, Civil, Electrical & Electronics); Engineering Drawing; Invention; Graphic Communication Technical; Computer Science; Asas Kelestarian; Agriculture; Home Science; Sports Science |
 | **Vocational** | Vocational (MPV) subjects |
+
+Additional Mathematics is not counted as a Science subject here, because GMI treats it as a Mathematics subject. The O-Level and UEC lists follow the same idea.
+
+For UEC, Mathematics and Advanced Mathematics both count as Mathematics, because UEC science-stream students take Advanced Mathematics instead.
 
 Interpretation of "Mathematics + 1 subject + 1 other":
 
@@ -194,12 +216,14 @@ Interpretation of "Mathematics + 1 subject + 1 other":
 
 | Level | Qualifications | Result shown |
 |---|---|---|
-| **Full check** | SPM, O-Level/IGCSE, UEC, STPM | Eligible or not eligible, with reasons |
-| **Guided** | STAM, SKM, Certificates, Pre-Diploma, Matriculation, SVM, APEL | Explains the route and sends the prospect to GMI |
+| **Full check** | SPM, O-Level/IGCSE, UEC, STPM, Diploma, Matriculation/Foundation | Qualifies or not, with reasons |
+| **Guided** | STAM, SKM, Certificates, Pre-Diploma, SVM, DKM, DLKM, A-Level, IB, APEL | Explains the route and sends the prospect to GMI |
 
 This goes beyond the rubric, which asks for SPM plus one other. Because the rules are data, more qualifications can be added later without new logic.
 
-STPM and STAM also need SPM results for some groups, so those forms should collect the relevant SPM grades too.
+STPM, Diploma and Matriculation/Foundation routes also need SPM results, so those forms collect the relevant SPM grades too.
+
+Where a qualification has no rule for a programme, the result says "Not assessed" rather than "not eligible", because GMI also accepts recognised equivalents.
 
 ### Wording the app must include
 

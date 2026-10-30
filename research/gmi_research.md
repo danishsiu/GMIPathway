@@ -72,7 +72,7 @@ Two official wordings exist. **The app uses the May 2026 guide wording**, becaus
 
 ## 2. Programme catalogue
 
-**Total for the assignment: 17 programmes** (15 Diploma, 1 GAPP, 1 GUFP).
+**Total: 18 programmes** (15 Diploma, 2 Pre-University, 1 Degree), grouped the way GMI's Programme Guide groups them.
 
 Cross-checked against the Programme Guide [S1], the diploma overview page [S9], all three department pages [S10-S12] and the MQA register [S8].
 
@@ -107,9 +107,16 @@ Programme 15 is **not** in the May 2026 Programme Guide or the diploma overview 
 
 **GAPP and GUFP are single programmes, not families of pathways.** GAPP has two *entry routes* (YTP MARA and self-sponsored). GUFP has one stream, Engineering and Science.
 
-### Outside the assignment scope
+### Degree programme (1)
 
-- **Bachelor of Electrical Engineering Technology with Honours (BELT)**, MQA/FA 9760, run with UTeM. Intakes March and October. A possible extra for the app. [S1 pp.10, 20]
+| # | Name | Department | Code |
+|---|---|---|---|
+| 18 | Bachelor of Electrical Engineering Technology with Honours (BELT) | Electrical Engineering | (MQA/FA 9760) |
+
+See section 6A. BELT is the only current degree: it is the only one in the May 2026 guide, the website menu and GMI's register entries. GMI said in January 2025 that it planned degrees in "engineering and computer science", but no computer science degree appears in any current source. [S1 p.10, S2, S8, S33]
+
+### Outside the app
+
 - **Short courses:** Short Term and Customized Courses, IELTS Preparatory Course, GMI Industries 4.0, German Dual Vocational Training (GDVT). [S2]
 
 ### Not offered: do not list
@@ -422,6 +429,46 @@ Descriptions are paraphrased. Core areas, skills certificates and careers come f
 
 ---
 
+## 6A. Degree: Bachelor of Electrical Engineering Technology with Honours (BELT)
+
+| Item | Detail | Source |
+|---|---|---|
+| Full name | Bachelor of Electrical Engineering Technology with Honours (BELT) | S1 p.20, S28 |
+| Partner | Universiti Teknikal Malaysia Melaka (UTeM) | S1 p.10, S30 |
+| GMI's role | Off-campus learning centre for UTeM's BELT, under a Memorandum of Agreement signed in Melaka on 5 September 2025 | S30 |
+| First intake | Registration and briefing held on 13 October 2025 | S31 |
+| Register | Listed under UTeM, not GMI: MQA/FA9760, Bachelors Degree, MQF Level 6, NEC 0712 (Electricity and energy), Board of Engineers Malaysia | S32 |
+| Credits | 140 | S32, S29 |
+| Duration | 4 years (8 semesters) at GMI. The register allows 4 to 6 years | S32, S34, S29 |
+| Mode of study | Full time | S32 |
+| Intake | March and October | S1 p.10 |
+| Accreditation | MQA, and ETAC according to GMI | S1 p.20 |
+| Awarding body | Not stated by GMI. The register lists UTeM as the institution. `UNVERIFIED` | S30, S32 |
+| Fees, local | Tuition RM69,000 (RM8,625 per semester × 8); RM75,958 with other fees; RM83,158 with optional hostel | S1 p.25, S35 |
+| Fees, international | Tuition RM79,999; RM86,957 with other fees | S1 p.26 |
+
+**Core study areas** [S1 p.20]: Industrial Automation; Robotics; Control Systems; Embedded Systems.
+
+**Skills** [S1 p.20]: Renewable Energy System; Energy Storage Technology; PV System Design; Energy Efficiency; Electrical Transportation System; Hybrid Electrical Vehicle; Industrial Training. Software: Siemens TIA Portal, Solidworks, Arduino, Proteus, Multisim, Powerworld, C++, PSCAD.
+
+**Careers** [S1 p.20]: Building Maintenance Services Engineer; Plant and Facilities Maintenance; Electrical Power Engineer; Research and Development; HVAC Controller; Oil and Gas Engineer.
+
+**Curriculum** (Handbook 2025/2026, 140 credits) [S29]
+
+- Sem 1 (18): Technical Mathematics; Technical Physics; Measurement and Instrumentation System; Computer Aided Design; Electrical Circuit Fundamental; English for Academic Purpose; Cocurriculum I
+- Sem 2 (19): Calculus for Technology; Electronics Workshop; Electrics & Magnetism; Digital Electronics & System; Advanced Electrical Circuit; Cocurriculum II; Philosophy and Current Issue
+- Sem 3 (18): Applied Calculus; Electrical Installation I; Electronic Principle; Computer Programming; Electrical Technology; Third Language (local) or Malay Language for Communication I (international)
+- Sem 4 (19): Statistical Methods; Embedded Systems; Electrical Installation II; Control System Fundamental; Signal System & Communication; Academic Writing; Integrity and Anti-Corruption
+- Sem 5 (20): Electrical Machines; Power Electronics Devices; Power System Technology; Industrial Automation; Appreciation of Ethics and Civilisations (local) or Malaysian Culture (international); Elective I; Elective II
+- Sem 6 (16): Engineering Seminar; Bachelor Degree Project I; Power Electronics Systems; Integrated Design Project; English for Professional Interaction; Elective III
+- Sem 7 (18): Engineering Ethics & OSHE; Bachelor Degree Project II; Energy Efficiency; Power Distribution System; Technology Entrepreneurship; Elective IV
+- Sem 8 (12): Industrial Training
+- Elective tracks: Renewable Energy, or Electrical Transportation
+
+**Optional professional certificates** (choose one) [S29]: IoT Fundamentals: Big Data & Analytics; IoT Fundamentals: Connecting Things; CCNA Routing & Switching (Preparation); PLC Level 1 and Level 2; SMCT MT1 Practical Mechatronics 1; Energy Efficiency for Lighting.
+
+---
+
 ## 7. Financial assistance
 
 - Financial assistance is for Malaysian students only. [S17]
@@ -493,6 +540,10 @@ Some programme pages list mobile numbers that appear to belong to staff. These a
 | C12 | GUFP's deposit row shows RM500 for Semester 1, but RM1,000 as its total. | Typo in the guide. All other totals reconcile using RM500, so RM18,100 and RM20,500 stand. |
 | C13 | The register shows 5 long semesters for Precision Tooling and Innovative Product Design; GMI says 6 semesters for both. | Use GMI's 6 semesters / 3 years. The register's total duration is also 3 years. |
 | C14 | Third-party sites list a diploma intake in April and older fees. | Ignored. The guide's January and July and its fees are used. |
+| C15 | GMI's August 2025 BELT poster asks for a credit in BM and Sejarah. Its September 2025 sheet and the May 2026 guide ask for a credit in BM and a **pass** in Sejarah. | Use the pass, which is the newer wording in both later documents. |
+| C16 | The guide's general requirements accept GCE A-Level (9 points) and IB (24 points), but the September 2025 sheet does not list them. | Show them on the course page. The checker sends those applicants to GMI. |
+| C17 | BELT is missing from GMI's register entries. | Not a problem: the register lists it under UTeM, the programme owner. |
+| C18 | The guide calls BELT a "Bachelor's Degree in Electrical Engineering Technology", and its first section lists it as "Bachelor of". | Use the register's title, Bachelor of Electrical Engineering Technology with Honours. |
 
 ---
 
@@ -531,6 +582,19 @@ All accessed 30 October 2026. Final APA 7th references will be prepared in Phase
 | S25 | StudyMalaysia, Studying for the UEC | https://studymalaysia.com/education/top-stories/studying-for-the-uec-and-your-education-pathway-at-tertiary-level |
 | S26 | Cambridge International, IGCSE and O Level differences | https://help.cambridgeinternational.org/hc/en-gb/articles/115004449425-What-is-the-difference-between-Cambridge-IGCSE-and-Cambridge-O-Levels |
 | S27 | Public Service Commission of Malaysia, STAM Qualification (seen in search results only) | https://spa.gov.my/spa/en/guidelines/academic-qualification/stam |
+| S28 | GMI BELT page | https://www.gmi.edu.my/bachelor-electrical-engineering-technology-belt/ |
+| S29 | BELT Curriculum Structure, Handbook 2025/2026 | https://www.gmi.edu.my/wp-content/uploads/2025/10/BELT_Curiculum-Structure-2025_2026.pdf |
+| S30 | GMI news, Strategic Collaboration with UTeM, 9 October 2025 | https://www.gmi.edu.my/news/strategic-collaboration-gmi-to-offer-utems-bachelor-of-electrical-engineering-technology-with-honours/ |
+| S31 | GMI news, First Cohort of BELT, 8 January 2026 | https://www.gmi.edu.my/news/welcome-the-first-cohort-of-bachelor-of-electrical-engineering-technology-with-honour-belt-in-gmi/ |
+| S32 | Malaysian Qualifications Register, MQA/FA9760 under UTeM | https://www2.mqa.gov.my/mqr/ |
+| S33 | GMI news, Commitment to Innovation and Excellence in 2025, 15 January 2025 | https://www.gmi.edu.my/news/gmis-commitment-to-innovation-and-excellence-in-2025/ |
+| S34 | UTeM ACCESS, Open Route programme list | https://utemaccess.utem.edu.my/en/programmes/open-access.html |
+| S35 | GMI-UTeM BELT fees, REV2025/1/FAD-JUNE2025 | https://www.gmi.edu.my/wp-content/uploads/2025/10/03072025-GMI-UTEM-BELT-FEES-v2.0.pdf |
+| S36 | GMI BELT entry requirements, Malaysian students, September 2025 | https://www.gmi.edu.my/wp-content/uploads/2025/10/Degree-requirement-local-scaled.jpg |
+| S37 | GMI BELT entry requirements, international students | https://www.gmi.edu.my/wp-content/uploads/2025/10/Degree-requirement-international-scaled.jpg |
+| S38 | GMI Degree Poster and Entry Requirements v2, August 2025 | https://www.gmi.edu.my/wp-content/uploads/2025/08/Degree-Poster-and-Entry-Requirements-v2.pdf |
+| S39 | UPU circular for SPM leavers, session 2026/2027 | https://upu.mohe.gov.my/PEKELILING%20KEMASUKAN%20LEPASAN%20SPM%20KE%20UA,%20POLITEKNIK,%20KK%20DAN%20MARA%20BPT%20SESI%20AKADEMIK%202627.pdf |
+| S40 | eCentral, STEM subject packages, citing KPM Surat Siaran Bil 1 Tahun 2021 | https://ecentral.my/stem/ |
 
 ### Sources that could not be used
 
@@ -539,4 +603,5 @@ All accessed 30 October 2026. Final APA 7th references will be prepared in Phase
 | KEDU2U | No listing found in search; kedu2u.com and www.kedu2u.my did not resolve. Link needed from you. |
 | Astro Awani article on the upgrade | Could not be opened, directly or through the web archive |
 | Education Malaysia listing | Returned HTTP 403 |
+| GMI Degree Intake page | Returned HTTP 404; the page no longer exists |
 | GMI's Facebook page | Not opened; no information here relies on it |
