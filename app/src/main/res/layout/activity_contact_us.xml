@@ -115,68 +115,63 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/chip_facebook"
-                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/social_facebook"
+                    style="@style/Widget.GMIPathway.Button.Social"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingHorizontal="@dimen/spacing_xsmall"
-                    android:text="@string/social_facebook" />
+                    android:contentDescription="@string/social_facebook"
+                    app:icon="@drawable/ic_social_facebook" />
 
                 <Button
-                    android:id="@+id/chip_instagram"
-                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/social_instagram"
+                    style="@style/Widget.GMIPathway.Button.Social"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/spacing_small"
+                    android:layout_marginStart="@dimen/spacing_small"
                     android:layout_weight="1"
-                    android:paddingHorizontal="@dimen/spacing_xsmall"
-                    android:text="@string/social_instagram" />
+                    android:contentDescription="@string/social_instagram"
+                    app:icon="@drawable/ic_social_instagram" />
 
                 <Button
-                    android:id="@+id/chip_x"
-                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/social_x"
+                    style="@style/Widget.GMIPathway.Button.Social"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
                     android:layout_weight="1"
-                    android:paddingHorizontal="@dimen/spacing_xsmall"
-                    android:text="@string/social_x" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:orientation="horizontal">
+                    android:contentDescription="@string/social_x"
+                    app:icon="@drawable/ic_social_x" />
 
                 <Button
-                    android:id="@+id/chip_youtube"
-                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/social_youtube"
+                    style="@style/Widget.GMIPathway.Button.Social"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
                     android:layout_weight="1"
-                    android:paddingHorizontal="@dimen/spacing_xsmall"
-                    android:text="@string/social_youtube" />
+                    android:contentDescription="@string/social_youtube"
+                    app:icon="@drawable/ic_social_youtube" />
 
                 <Button
-                    android:id="@+id/chip_tiktok"
-                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/social_tiktok"
+                    style="@style/Widget.GMIPathway.Button.Social"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/spacing_small"
+                    android:layout_marginStart="@dimen/spacing_small"
                     android:layout_weight="1"
-                    android:paddingHorizontal="@dimen/spacing_xsmall"
-                    android:text="@string/social_tiktok" />
+                    android:contentDescription="@string/social_tiktok"
+                    app:icon="@drawable/ic_social_tiktok" />
 
                 <Button
-                    android:id="@+id/chip_linkedin"
-                    style="?attr/materialButtonOutlinedStyle"
+                    android:id="@+id/social_linkedin"
+                    style="@style/Widget.GMIPathway.Button.Social"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
                     android:layout_weight="1"
-                    android:paddingHorizontal="@dimen/spacing_xsmall"
-                    android:text="@string/social_linkedin" />
+                    android:contentDescription="@string/social_linkedin"
+                    app:icon="@drawable/ic_social_linkedin" />
 
             </LinearLayout>
 

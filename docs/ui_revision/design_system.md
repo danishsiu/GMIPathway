@@ -96,6 +96,7 @@ All styles are in `res/values/styles.xml`.
 | `Widget.GMIPathway.Button.Primary` | Main action, such as Check Eligibility |
 | `Widget.GMIPathway.Button.Secondary` | Outlined, such as Send an Enquiry |
 | `Widget.GMIPathway.Button.Secondary.Compact` | Contact GMI inside a result card |
+| `Widget.GMIPathway.Button.Social` | Logo-only buttons for the Follow GMI row |
 | `Widget.GMIPathway.Button.Text` | Low emphasis, such as Add subject |
 | `Widget.GMIPathway.Card.Standard` | Default card, with a hairline border |
 | `Widget.GMIPathway.Card.Emphasis` | Tinted card for key blocks, such as Vision and Mission |

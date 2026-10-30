@@ -27,12 +27,12 @@ public class ContactUsActivity extends BaseActivity {
         applyWindowInsets();
 
         bindContactRows();
-        bindSocialChip(R.id.chip_facebook, R.string.url_facebook);
-        bindSocialChip(R.id.chip_instagram, R.string.url_instagram);
-        bindSocialChip(R.id.chip_x, R.string.url_x);
-        bindSocialChip(R.id.chip_youtube, R.string.url_youtube);
-        bindSocialChip(R.id.chip_tiktok, R.string.url_tiktok);
-        bindSocialChip(R.id.chip_linkedin, R.string.url_linkedin);
+        bindSocialLink(R.id.social_facebook, R.string.url_facebook);
+        bindSocialLink(R.id.social_instagram, R.string.url_instagram);
+        bindSocialLink(R.id.social_x, R.string.url_x);
+        bindSocialLink(R.id.social_youtube, R.string.url_youtube);
+        bindSocialLink(R.id.social_tiktok, R.string.url_tiktok);
+        bindSocialLink(R.id.social_linkedin, R.string.url_linkedin);
 
         findViewById(R.id.button_map).setOnClickListener(view ->
                 ExternalLinks.openCampusMap(this));
@@ -74,8 +74,8 @@ public class ContactUsActivity extends BaseActivity {
         }
     }
 
-    private void bindSocialChip(@IdRes int chipId, @StringRes int urlRes) {
-        findViewById(chipId).setOnClickListener(view ->
+    private void bindSocialLink(@IdRes int buttonId, @StringRes int urlRes) {
+        findViewById(buttonId).setOnClickListener(view ->
                 ExternalLinks.openWebPage(this, getString(urlRes)));
     }
 }
