@@ -209,7 +209,6 @@ public class EligibilityActivity extends BaseActivity {
             gradeLayout.setError(null);
         });
 
-        subjectInput.setDropDownWidth(getSubjectListWidth());
         subjectInput.setText(entry.getSubject(), false);
         if (subjectLocked) {
             showAsPlainText(subjectLayout, subjectInput);
@@ -237,12 +236,6 @@ public class EligibilityActivity extends BaseActivity {
         input.setPadding(0, 0, 0, 0);
         input.setMinHeight(getResources().getDimensionPixelSize(R.dimen.field_height));
         input.setGravity(Gravity.CENTER_VERTICAL);
-    }
-
-    /** Long subject names need more room than the narrow subject field has on small phones. */
-    private int getSubjectListWidth() {
-        int margins = 2 * getResources().getDimensionPixelSize(R.dimen.spacing_medium);
-        return getResources().getDisplayMetrics().widthPixels - margins;
     }
 
     private void addEmptyRow() {
