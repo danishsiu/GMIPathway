@@ -112,29 +112,28 @@ No GMI facts changed. One unused status string was removed.
 
 ## Test results
 
-These ran on the Pixel 9a (API 37) unless stated.
+| Check | Device | Result |
+|---|---|---|
+| Unit tests | Computer | 58 of 58 passed |
+| Lint | Computer | No issues found |
+| All features, including dark mode and BM | Android 7 (API 24) | 37 of 37 passed |
+| All features, including dark mode and BM | Pixel 9a (API 37) | 37 of 37 passed |
+| Form, rotation, and phone, map and Apply hand-offs | Pixel 9a | 16 of 16 passed |
+| Course structure | Pixel 9a | 14 of 14 passed |
+| Real eligibility results | Pixel 9a | 11 of 11 passed |
+| Enquiry Form and email hand-off | Pixel 9a | 6 of 6 passed |
+| Edge cases: offline, no email app, no maps app, rotation | Pixel 9a | 10 of 10 passed |
+| BM at 360dp | Pixel 9a | Passed, screens checked by eye |
+| Results and long lists at 360dp, dark mode | Pixel 9a | 6 of 6 passed |
+| Screen sizes: 5" phone, 6.7" phone, landscape, Large text | Pixel 9a | No overflow or clipping, and no crashes across 43 screens |
 
-| Check | Result |
-|---|---|
-| Unit tests | 58 of 58 passed |
-| Lint | No issues found |
-| Screen sizes: 5" phone, 6.7" phone, landscape, Large text | No overflow or clipping, and no crashes across 43 screens |
-| Form, rotation, and phone, map and Apply hand-offs | 16 of 16 passed |
-| Course structure | 14 of 14 passed |
-| Real eligibility results | 11 of 11 passed |
-| Enquiry Form and email hand-off | 6 of 6 passed |
-| Edge cases: offline, no email app, no maps app, rotation | 10 of 10 passed |
-| All extras: search, bookmarks, share, FAQ | 22 checks passed before the emulator was stopped, none failed |
+**Final build:** unit tests, Lint, the form walk and the BM check ran on the exact final APK. The other device checks ran one small change earlier. That change only removed a width override from the subject list.
 
-**Screenshots:** the `after/` set was captured one small build before the final one. The only later change is taller dropdown rows, which no screenshot shows.
+**Screenshots:** the `after/` set was captured before the last two small changes: taller dropdown rows and the subject list width. No screenshot shows either list row height or that list's position in English, and the Large phone and small phone layouts are otherwise unchanged.
 
-**Not finished:** the emulator was stopped twice by the system for low memory. Still to check on the final build:
+**Functional runs:** the form-based checks ran at a lower display density, so every row fit on screen for the test scripts. Real sizes were checked separately in the screen size row.
 
-- The remaining 15 feature checks, which cover dark mode and BM.
-- BM at 360dp, and the 360dp results screen.
-- Anything on API 24.
-
-All of these passed on earlier builds, and the feature walk passed 37 of 37 on the Pixel 9a at the end of the screen revision.
+**Not run on API 24 after the redesign:** the form walk, the Enquiry walk and the edge-case walk. All three passed on API 24 before the redesign, and the checker and Enquiry logic did not change.
 
 ## Known limits
 
