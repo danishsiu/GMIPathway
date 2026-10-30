@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="faq_title">Soalan Lazim</string>
+    <string name="faq_intro">Jawapan adalah berdasarkan maklumat yang diterbitkan oleh GMI. Sila sahkan butiran dengan GMI sebelum memohon.</string>
+
+    <string-array name="faq_questions">
+        <item>Bagaimana saya memohon ke GMI?</item>
+        <item>Bilakah pengambilan pelajar?</item>
+        <item>Berapa lama tempoh program?</item>
+        <item>Berapakah yuran pengajian?</item>
+        <item>Bolehkah saya mendapat pinjaman atau tajaan?</item>
+        <item>Adakah GMI menyediakan asrama?</item>
+        <item>Sejauh mana pembelajaran bersifat amali?</item>
+        <item>Adakah saya akan belajar Bahasa Jerman?</item>
+        <item>Adakah program GMI diiktiraf?</item>
+        <item>Bolehkah saya menyambung ke ijazah di GMI?</item>
+        <item>Adakah keputusan Semakan Kelayakan muktamad?</item>
+        <item>Bagaimana jika kelayakan saya tiada dalam semakan?</item>
+    </string-array>
+
+    <string-array name="faq_answers">
+        <item>Mohon melalui portal permohonan dalam talian GMI. Ketik Mohon Sekarang pada skrin utama atau pada mana-mana halaman program. Pemohon baharu mendaftar di portal tersebut, yang mengesyorkan versi terkini Chrome.</item>
+        <item>Diploma: Januari dan Julai. GAPP: Januari, Mei dan Ogos. GUFP: April dan Julai. BELT: Mac dan Oktober.</item>
+        <item>Diploma mengambil masa 3 tahun (6 semester). GAPP mengambil masa 20 bulan di GMI, kemudian 6 bulan Bahasa Jerman intensif di Jerman. GUFP mengambil masa 1 tahun (3 trimester). BELT mengambil masa 4 tahun (8 semester).</item>
+        <item>Bagi pelajar Malaysia, yuran pengajian ialah RM33,324 untuk diploma, RM42,400 untuk GAPP, RM16,050 untuk GUFP dan RM69,000 untuk BELT. Yuran lain dan asrama pilihan dikenakan berasingan, dan setiap halaman program menunjukkan jumlahnya. Semua yuran tertakluk kepada perubahan.</item>
+        <item>Pelajar diploma warganegara Malaysia boleh memohon pinjaman pendidikan melalui MARA dan PTPTN. GMI juga menyenaraikan penaja lain seperti Kumpulan Wang Simpanan Pekerja, Yayasan Negeri dan badan zakat. Hanya satu pinjaman atau tajaan dibenarkan pada satu masa. GMI tidak meluluskan pinjaman, jadi diterima masuk ke GMI tidak menjamin pinjaman.</item>
+        <item>Ya, penginapan asrama adalah pilihan. Bagi diploma, kosnya RM900 satu semester. Setiap halaman program menunjukkan jumlah termasuk asrama.</item>
+        <item>Pendekatan yang dinyatakan oleh GMI ialah 70% amali dan 30% teori, dan GMI mempunyai 22 Pusat Teknologi Termaju.</item>
+        <item>Bahasa Jerman 1 dan 2 ialah sebahagian daripada kurikulum diploma. GAPP merangkumi pensijilan Bahasa Jerman, dan GUFP mempunyai kelas Bahasa Jerman setiap minggu.</item>
+        <item>Semua program dalam aplikasi ini disenaraikan dalam Daftar Kelayakan Malaysia. Diploma berada pada MQF Tahap 4. BELT didaftarkan di bawah UTeM, universiti rakan kongsi.</item>
+        <item>Boleh. GMI ialah pusat pembelajaran luar kampus bagi Bachelor of Electrical Engineering Technology with Honours oleh UTeM. Pemegang diploma Teknologi Kejuruteraan memerlukan CGPA sekurang-kurangnya 2.30, serta syarat lain di halaman BELT.</item>
+        <item>Tidak. Ia ialah panduan berdasarkan syarat yang diterbitkan oleh GMI. GMI membuat keputusan kemasukan muktamad, dan terdapat syarat lain seperti pemeriksaan perubatan.</item>
+        <item>Pilih Kelayakan lain. GMI juga menerima laluan seperti STAM, SKM Tahap 3, Sijil MQF Tahap 3, SVM, DKM, DLKM, GCE A-Level, IB dan APEL untuk sesetengah program. Pasukan kemasukan GMI menilai laluan ini, dan setiap halaman kursus menyenaraikan laluan yang diterima.</item>
+    </string-array>
+</resources>

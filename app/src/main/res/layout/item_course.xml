@@ -18,9 +18,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textAppearance="?attr/textAppearanceTitleMedium"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/course_bookmark"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- The icon sits in a full touch target, shifted into the corner to line up with the title. -->
+        <ImageButton
+            android:id="@+id/course_bookmark"
+            android:layout_width="@dimen/min_touch_target"
+            android:layout_height="@dimen/min_touch_target"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/course_save"
+            android:src="@drawable/ic_bookmark_border"
+            android:translationX="@dimen/course_bookmark_shift_x"
+            android:translationY="@dimen/course_bookmark_shift_y"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorPrimary" />
 
         <TextView
             android:id="@+id/course_summary"

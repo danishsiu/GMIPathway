@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">GMI Pathway</string>
+    <string name="app_name" translatable="false">GMI Pathway</string>
     <string name="institute_name" translatable="false">German-Malaysian Institute</string>
+
+    <!-- These two change with the language, so the app needs no language checks in its code. -->
+    <string name="language_tag">en</string>
+    <string name="catalog_file">courses.json</string>
 
     <!-- Fixed GMI data. Source: research/gmi_research.md, section 8 -->
     <string name="phone_main" translatable="false">+603-8921 9000</string>
@@ -26,7 +30,7 @@
     <!-- Shared -->
     <string name="apply_now">Apply Now</string>
     <string name="apply_online">Apply Online</string>
-    <string name="bullet_item">• %1$s</string>
+    <string name="bullet_item" translatable="false">• %1$s</string>
     <string name="section_expanded">Expanded</string>
     <string name="section_collapsed">Collapsed</string>
     <string name="error_no_browser">No app found to open this link.</string>
@@ -54,12 +58,19 @@
     <string name="home_contact_subtitle">Phone, email and map</string>
     <string name="home_about_title">About Us</string>
     <string name="home_about_subtitle">GMI\'s story and vision</string>
+    <string name="home_saved_title">Saved</string>
+    <string name="home_saved_subtitle">Your bookmarked programmes</string>
+    <string name="home_faq_title">FAQ</string>
+    <string name="home_faq_subtitle">Answers to common questions</string>
 
     <!-- Courses -->
     <string name="courses_title">Courses</string>
     <string name="tab_diploma">Diploma</string>
     <string name="tab_pre_university">Pre-University</string>
     <string name="tab_degree">Degree</string>
+    <string name="courses_search">Search</string>
+    <string name="courses_search_hint">Search programmes</string>
+    <string name="courses_search_empty">No programmes match \"%1$s\".</string>
     <plurals name="course_count">
         <item quantity="one">%d programme</item>
         <item quantity="other">%d programmes</item>
@@ -81,7 +92,20 @@
     <string name="course_certificates_note">Terms and conditions apply.</string>
     <string name="course_subjects_unavailable">Please contact GMI for the current subject list.</string>
     <string name="course_entry_unpublished">GMI has not published entry requirements for this programme. Please contact GMI to confirm them.</string>
-    <string name="course_entry_standard">Standard: %1$s</string>
+    <string name="course_entry_standard">Based on: %1$s</string>
+    <string name="course_save">Save programme</string>
+    <string name="course_unsave">Remove from saved</string>
+    <string name="course_bookmark_add">Save %1$s</string>
+    <string name="course_bookmark_remove">Remove %1$s from saved</string>
+    <string name="course_share">Share programme</string>
+    <string name="course_share_chooser">Share with</string>
+    <string name="course_share_text">%1$s\n%2$s\n\nDuration: %3$s\nIntake: %4$s\n\nApply online: %5$s</string>
+
+    <!-- Saved programmes -->
+    <string name="saved_title">Saved Programmes</string>
+    <string name="saved_empty_title">Nothing saved yet</string>
+    <string name="saved_empty_body">Tap the bookmark on a programme to keep it here for later.</string>
+    <string name="saved_browse">Browse Courses</string>
 
     <!-- Eligibility Checker -->
     <string name="eligibility_title">Eligibility Checker</string>
@@ -109,7 +133,7 @@
     <string name="eligibility_status_not_eligible">Not eligible</string>
     <string name="eligibility_status_contact">Ask GMI</string>
     <string name="eligibility_status_not_assessed">Not assessed</string>
-    <string name="eligibility_section_title">%1$s (%2$d)</string>
+    <string name="eligibility_section_title" translatable="false">%1$s (%2$d)</string>
     <string name="eligibility_section_eligible">You qualify</string>
     <string name="eligibility_section_contact">Ask GMI</string>
     <string name="eligibility_section_not_eligible">Not eligible yet</string>
@@ -167,6 +191,17 @@
     <string name="enquiry_email_subject">GMI Pathway enquiry: %1$s</string>
     <string name="enquiry_email_body">Name: %1$s\nEmail: %2$s\nPhone: %3$s\nProgramme: %4$s\n\n%5$s</string>
 
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_language_english" translatable="false">English</string>
+    <string name="settings_language_malay" translatable="false">Bahasa Melayu</string>
+    <string name="settings_language_note">Official programme names and codes, curriculum subjects, core study areas, career titles, and GMI\'s vision and mission stay in English, as GMI publishes them.</string>
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_appearance_system">System</string>
+    <string name="settings_appearance_light">Light</string>
+    <string name="settings_appearance_dark">Dark</string>
+
     <!-- About Us. Source: research/gmi_research.md, section 1 -->
     <string name="about_title">About Us</string>
     <string name="about_banner_subtitle">Kajang, Selangor. Established in 1991.</string>
@@ -179,9 +214,9 @@
     <string name="about_history_2008">2008: GMI moved to its campus in Kajang.</string>
     <string name="about_history_2024">2024: GMI reported Ministry of Higher Education approval to upgrade to GMI University College of Applied Sciences.</string>
     <string name="about_section_vision">Vision</string>
-    <string name="about_vision_body">To be an internationally competitive higher learning institution delivering advanced technical education, training and services; empowering a skilled workforce to reach its fullest potential.</string>
+    <string name="about_vision_body" translatable="false">To be an internationally competitive higher learning institution delivering advanced technical education, training and services; empowering a skilled workforce to reach its fullest potential.</string>
     <string name="about_section_mission">Mission</string>
-    <string name="about_mission_body">To provide cutting-edge industrial solutions in advanced technical education and training through innovative blended methodologies, fostering lifelong learning and responsive to global industry demands.</string>
+    <string name="about_mission_body" translatable="false">To provide cutting-edge industrial solutions in advanced technical education and training through innovative blended methodologies, fostering lifelong learning and responsive to global industry demands.</string>
     <string name="about_section_german">German-based education</string>
     <string name="about_german_practical" formatted="false">A learning approach of 70% practical and 30% theory</string>
     <string name="about_german_centres">22 Advanced Technology Centres, many linked to industry names</string>

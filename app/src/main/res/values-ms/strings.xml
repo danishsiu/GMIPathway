@@ -1,0 +1,188 @@
+<resources>
+    <string name="language_tag">ms</string>
+    <string name="catalog_file">courses_ms.json</string>
+
+    <!-- Shared -->
+    <string name="apply_now">Mohon Sekarang</string>
+    <string name="apply_online">Mohon Dalam Talian</string>
+    <string name="section_expanded">Dibuka</string>
+    <string name="section_collapsed">Ditutup</string>
+    <string name="error_no_browser">Tiada aplikasi untuk membuka pautan ini.</string>
+    <string name="error_no_dialer">Tiada aplikasi telefon pada peranti ini.</string>
+    <string name="error_no_email">Tiada aplikasi e-mel pada peranti ini.</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Laluan anda untuk belajar di GMI</string>
+    <string name="splash_loading">Memuatkan</string>
+
+    <!-- Home -->
+    <string name="home_welcome">Selamat datang ke</string>
+    <string name="home_tagline">Terokai program GMI, semak kelayakan anda dan mohon dalam talian.</string>
+    <string name="home_stat_programmes">Program</string>
+    <string name="home_stat_centres">Pusat teknologi</string>
+    <string name="home_stat_practical">Pembelajaran amali</string>
+    <string name="home_explore">Mula di sini</string>
+    <string name="home_courses_title">Kursus</string>
+    <string name="home_courses_subtitle">Diploma, Pra-Universiti dan Ijazah</string>
+    <string name="home_eligibility_title">Semakan Kelayakan</string>
+    <string name="home_eligibility_subtitle">Lihat program yang anda layak</string>
+    <string name="home_contact_title">Hubungi Kami</string>
+    <string name="home_contact_subtitle">Telefon, e-mel dan peta</string>
+    <string name="home_about_title">Tentang Kami</string>
+    <string name="home_about_subtitle">Kisah dan visi GMI</string>
+    <string name="home_saved_title">Disimpan</string>
+    <string name="home_saved_subtitle">Program yang anda tanda</string>
+    <string name="home_faq_title">Soalan Lazim</string>
+    <string name="home_faq_subtitle">Jawapan kepada soalan biasa</string>
+
+    <!-- Courses -->
+    <string name="courses_title">Kursus</string>
+    <string name="tab_diploma">Diploma</string>
+    <string name="tab_pre_university">Pra-Universiti</string>
+    <string name="tab_degree">Ijazah</string>
+    <string name="courses_search">Cari</string>
+    <string name="courses_search_hint">Cari program</string>
+    <string name="courses_search_empty">Tiada program sepadan dengan \"%1$s\".</string>
+    <plurals name="course_count">
+        <item quantity="other">%d program</item>
+    </plurals>
+    <string name="course_detail_title">Butiran Kursus</string>
+    <string name="course_info_code">Kod program</string>
+    <string name="course_info_duration">Tempoh</string>
+    <string name="course_info_intake">Pengambilan</string>
+    <string name="course_info_mode">Mod pengajian</string>
+    <string name="course_info_credits">Kredit</string>
+    <string name="course_info_fee">Yuran</string>
+    <string name="course_section_about">Tentang program ini</string>
+    <string name="course_section_core">Bidang pengajian teras</string>
+    <string name="course_section_certificates">Sijil profesional</string>
+    <string name="course_section_subjects">Subjek</string>
+    <string name="course_section_careers">Prospek kerjaya</string>
+    <string name="course_section_entry">Syarat kemasukan</string>
+    <string name="course_section_progression">Laluan selepas tamat pengajian</string>
+    <string name="course_certificates_note">Terma dan syarat dikenakan.</string>
+    <string name="course_subjects_unavailable">Sila hubungi GMI untuk senarai subjek terkini.</string>
+    <string name="course_entry_unpublished">GMI belum menerbitkan syarat kemasukan untuk program ini. Sila hubungi GMI untuk pengesahan.</string>
+    <string name="course_entry_standard">Berdasarkan: %1$s</string>
+    <string name="course_save">Simpan program</string>
+    <string name="course_unsave">Buang daripada simpanan</string>
+    <string name="course_bookmark_add">Simpan %1$s</string>
+    <string name="course_bookmark_remove">Buang %1$s daripada simpanan</string>
+    <string name="course_share">Kongsi program</string>
+    <string name="course_share_chooser">Kongsi dengan</string>
+    <string name="course_share_text">%1$s\n%2$s\n\nTempoh: %3$s\nPengambilan: %4$s\n\nMohon dalam talian: %5$s</string>
+
+    <!-- Saved programmes -->
+    <string name="saved_title">Program Disimpan</string>
+    <string name="saved_empty_title">Belum ada yang disimpan</string>
+    <string name="saved_empty_body">Ketik ikon penanda pada program untuk menyimpannya di sini.</string>
+    <string name="saved_browse">Lihat Kursus</string>
+
+    <!-- Eligibility Checker -->
+    <string name="eligibility_title">Semakan Kelayakan</string>
+    <string name="eligibility_intro">Pilih kelayakan anda dan masukkan keputusan anda. Semakan ini kemudian menunjukkan program GMI yang sepadan.</string>
+    <string name="eligibility_qualification_hint">Kelayakan anda</string>
+    <string name="eligibility_other_option">Kelayakan lain</string>
+    <string name="eligibility_subjects_heading">Subjek dan gred anda</string>
+    <string name="eligibility_subject_hint">Subjek</string>
+    <string name="eligibility_grade_hint">Gred</string>
+    <string name="eligibility_add_subject">Tambah subjek</string>
+    <string name="eligibility_remove_subject">Buang subjek</string>
+    <string name="eligibility_supporting_heading">Keputusan %1$s anda</string>
+    <string name="eligibility_check_button">Semak Kelayakan</string>
+    <string name="eligibility_error_required">Wajib</string>
+    <string name="eligibility_error_incomplete">Sila lengkapkan ruangan yang ditanda.</string>
+    <string name="eligibility_error_no_subjects">Sila tambah sekurang-kurangnya satu subjek.</string>
+    <string name="eligibility_error_no_more_subjects">Semua subjek yang disenaraikan telah ditambah.</string>
+    <string name="eligibility_guided_title">Laluan kemasukan lain</string>
+    <string name="eligibility_guided_body">GMI juga menerima STAM, SKM Tahap 3, Sijil MQF Tahap 3, Pra-Diploma, SVM, DKM, DLKM, GCE A-Level, IB dan APEL untuk sesetengah program. Laluan ini bergantung pada dokumen dan bidang pengajian anda, jadi pasukan kemasukan GMI perlu menilainya. Setiap halaman kursus menyenaraikan laluan yang diterima.</string>
+    <string name="eligibility_guided_button">Hubungi GMI</string>
+    <string name="eligibility_result_title">Keputusan Anda</string>
+    <string name="eligibility_result_summary">Keputusan anda untuk %1$s</string>
+    <string name="eligibility_disclaimer">Ini ialah panduan berdasarkan syarat yang diterbitkan oleh GMI. GMI membuat keputusan kemasukan muktamad, dan diploma juga memerlukan pemeriksaan perubatan.</string>
+    <string name="eligibility_status_eligible">Anda layak</string>
+    <string name="eligibility_status_not_eligible">Tidak layak</string>
+    <string name="eligibility_status_contact">Tanya GMI</string>
+    <string name="eligibility_status_not_assessed">Tidak dinilai</string>
+    <string name="eligibility_section_eligible">Anda layak</string>
+    <string name="eligibility_section_contact">Tanya GMI</string>
+    <string name="eligibility_section_not_eligible">Belum layak</string>
+    <string name="eligibility_section_not_assessed">Tidak dinilai</string>
+    <string name="eligibility_no_match_title">Belum ada padanan</string>
+    <string name="eligibility_no_match_body">Keputusan anda belum memenuhi syarat yang diterbitkan untuk mana-mana program, tetapi pasukan kemasukan GMI boleh menasihati anda tentang laluan lain.</string>
+    <string name="eligibility_list_or">" atau "</string>
+    <string name="eligibility_list_and">" dan "</string>
+    <string name="eligibility_reason_certificate">SPM memerlukan lulus %1$s.</string>
+    <string name="eligibility_reason_subject">Memerlukan sekurang-kurangnya %1$s dalam %2$s.</string>
+    <string name="eligibility_reason_supporting">Memerlukan sekurang-kurangnya %1$s dalam %2$s SPM.</string>
+    <string name="eligibility_reason_science_technical">Memerlukan sekurang-kurangnya %1$s dalam 1 subjek Sains atau Teknikal.</string>
+    <string name="eligibility_reason_science_technical_vocational">Memerlukan sekurang-kurangnya %1$s dalam 1 subjek Sains, Teknikal atau Vokasional.</string>
+    <plurals name="eligibility_reason_count">
+        <item quantity="other">Memerlukan sekurang-kurangnya %1$d subjek pada gred %2$s atau lebih baik.</item>
+    </plurals>
+    <string name="eligibility_reason_no_rule">Semakan ini tiada peraturan untuk kelayakan anda bagi program ini. Lihat syarat kemasukannya atau tanya GMI.</string>
+    <string name="eligibility_reason_unpublished">GMI belum menerbitkan syarat kemasukan untuk program ini.</string>
+
+    <!-- Contact Us -->
+    <string name="contact_title">Hubungi Kami</string>
+    <string name="contact_address_label">Alamat</string>
+    <string name="contact_phone_label">Talian utama</string>
+    <string name="contact_admissions_label">Kemasukan</string>
+    <string name="contact_fax_label">Faks</string>
+    <string name="contact_email_label">E-mel</string>
+    <string name="contact_whatsapp_label">WhatsApp</string>
+    <string name="contact_website_label">Laman web</string>
+    <string name="contact_map_button">Buka dalam Peta</string>
+    <string name="contact_enquiry_button">Hantar Pertanyaan</string>
+    <string name="contact_social_title">Ikuti GMI</string>
+
+    <!-- Enquiry Form -->
+    <string name="enquiry_title">Borang Pertanyaan</string>
+    <string name="enquiry_intro">Isikan butiran anda. Aplikasi e-mel anda akan dibuka dengan mesej yang sedia untuk dihantar kepada GMI.</string>
+    <string name="enquiry_name_hint">Nama penuh</string>
+    <string name="enquiry_email_hint">Alamat e-mel</string>
+    <string name="enquiry_phone_hint">Nombor telefon</string>
+    <string name="enquiry_programme_hint">Program yang diminati</string>
+    <string name="enquiry_general_option">Pertanyaan umum</string>
+    <string name="enquiry_message_hint">Mesej anda</string>
+    <string name="enquiry_submit">Hantar Pertanyaan</string>
+    <string name="enquiry_error_name">Sila masukkan nama anda.</string>
+    <string name="enquiry_error_email">Sila masukkan alamat e-mel yang sah.</string>
+    <string name="enquiry_error_phone">Sila masukkan nombor telefon yang sah.</string>
+    <string name="enquiry_error_programme">Sila pilih program.</string>
+    <string name="enquiry_error_message">Sila masukkan mesej anda.</string>
+    <string name="enquiry_email_subject">Pertanyaan GMI Pathway: %1$s</string>
+    <string name="enquiry_email_body">Nama: %1$s\nE-mel: %2$s\nTelefon: %3$s\nProgram: %4$s\n\n%5$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Tetapan</string>
+    <string name="settings_language_title">Bahasa</string>
+    <string name="settings_language_note">Nama dan kod rasmi program, subjek kurikulum, bidang pengajian teras, tajuk kerjaya, serta visi dan misi GMI dikekalkan dalam Bahasa Inggeris seperti yang diterbitkan oleh GMI.</string>
+    <string name="settings_appearance_title">Paparan</string>
+    <string name="settings_appearance_system">Sistem</string>
+    <string name="settings_appearance_light">Cerah</string>
+    <string name="settings_appearance_dark">Gelap</string>
+
+    <!-- About Us -->
+    <string name="about_title">Tentang Kami</string>
+    <string name="about_banner_subtitle">Kajang, Selangor. Ditubuhkan pada 1991.</string>
+    <string name="about_section_who">Siapa kami</string>
+    <string name="about_who_body">German-Malaysian Institute (GMI) ialah institut pendidikan teknikal di kampus seluas 75 ekar di Kajang, Selangor. Ia bermula sebagai usaha sama antara Kerajaan Malaysia dan Jerman, dan menggambarkan dirinya sebagai perintis pendidikan dan latihan teknikal dan vokasional (TVET) gaya Jerman di Malaysia.</string>
+    <string name="about_section_history">Sejarah kami</string>
+    <string name="about_history_1991">1991: GMI ditubuhkan.</string>
+    <string name="about_history_1992">1992: Pelajar pertama mendaftar, dan Tun Dr Mahathir Mohamad merasmikan pembukaan utama.</string>
+    <string name="about_history_2001">2001: German University Preparatory Programme (GAPP) dilancarkan.</string>
+    <string name="about_history_2008">2008: GMI berpindah ke kampusnya di Kajang.</string>
+    <string name="about_history_2024">2024: GMI melaporkan kelulusan Kementerian Pendidikan Tinggi untuk dinaik taraf kepada GMI University College of Applied Sciences.</string>
+    <string name="about_section_vision">Visi</string>
+    <string name="about_section_mission">Misi</string>
+    <string name="about_section_german">Pendidikan berasaskan Jerman</string>
+    <string name="about_german_practical" formatted="false">Pendekatan pembelajaran 70% amali dan 30% teori</string>
+    <string name="about_german_centres">22 Pusat Teknologi Termaju, kebanyakannya berkait dengan nama industri</string>
+    <string name="about_german_language">Bahasa Jerman dalam kurikulum diploma</string>
+    <string name="about_german_industry">Majlis Penasihat Industri yang dianggotai rakan industri</string>
+    <string name="about_section_governance">Tadbir urus</string>
+    <string name="about_governance_body">GMI ialah Syarikat Berhad Menurut Jaminan yang diasaskan oleh Majlis Amanah Rakyat (MARA) dan Malaysian-German Chamber of Commerce and Industry (MGCC). Agensi pelaksananya ialah MARA dan GIZ GmbH, dan Lembaga Pengarah seramai 10 ahli mentadbir institut ini.</string>
+    <string name="about_section_accreditation">Akreditasi</string>
+    <string name="about_accreditation_body">Program GMI disenaraikan dalam Daftar Kelayakan Malaysia. Kebanyakan diploma mengikut standard Lembaga Jurutera Malaysia atau Lembaga Teknologis Malaysia. GMI juga merupakan pusat peperiksaan Cambridge dan pusat peperiksaan bertauliah TELC.</string>
+</resources>

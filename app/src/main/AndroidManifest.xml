@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".GmiPathwayApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -48,6 +49,25 @@
         <activity
             android:name=".ui.enquiry.AboutUsActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.enquiry.FaqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.courses.SavedCoursesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false" />
+
+        <!-- Lets AppCompat remember the chosen language on Android 12 and older. -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
     </application>
 
 </manifest>

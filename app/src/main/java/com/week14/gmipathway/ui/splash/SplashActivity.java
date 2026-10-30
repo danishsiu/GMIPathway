@@ -7,9 +7,12 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 import androidx.core.splashscreen.SplashScreen;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.week14.gmipathway.R;
 import com.week14.gmipathway.data.CourseRepository;
@@ -45,16 +48,31 @@ public class SplashActivity extends BaseActivity {
         SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        keepInstituteNameAboveNavigationBar();
         animateText(findViewById(R.id.splash_title));
         animateText(findViewById(R.id.splash_tagline));
         loadDataThenOpenHome();
+    }
+
+    /** Only this text moves. The logo must stay centred so it lines up with the system splash. */
+    private void keepInstituteNameAboveNavigationBar() {
+        int baseMargin = getResources().getDimensionPixelSize(R.dimen.spacing_xlarge);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.splash_institute),
+                (view, insets) -> {
+                    ViewGroup.MarginLayoutParams params =
+                            (ViewGroup.MarginLayoutParams) view.getLayoutParams();
+                    params.bottomMargin = baseMargin
+                            + insets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom;
+                    view.setLayoutParams(params);
+                    return insets;
+                });
     }
 
     /** Reads the course data away from the main thread, so the screen never freezes. */
     private void loadDataThenOpenHome() {
         long startedAt = SystemClock.uptimeMillis();
         loader.execute(() -> {
-            CourseRepository.getInstance(getApplicationContext());
+            CourseRepository.getInstance(this);
             long elapsed = SystemClock.uptimeMillis() - startedAt;
             handler.postDelayed(openHome, Math.max(0, MIN_DISPLAY_MS - elapsed));
         });
