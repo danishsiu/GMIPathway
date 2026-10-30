@@ -37,6 +37,14 @@ public final class ExternalLinks {
         start(context, intent, R.string.error_no_email);
     }
 
+    /** Lets the prospect choose an app to share the text with. */
+    public static void shareText(Context context, String chooserTitle, String text) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, text);
+        context.startActivity(Intent.createChooser(intent, chooserTitle));
+    }
+
     /** Opens the campus in a maps app, or in the browser if there is no maps app. */
     public static void openCampusMap(Context context) {
         Uri location = Uri.parse(context.getString(R.string.map_geo_uri));

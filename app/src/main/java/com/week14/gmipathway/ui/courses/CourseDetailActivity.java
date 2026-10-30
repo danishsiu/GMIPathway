@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -11,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.week14.gmipathway.R;
+import com.week14.gmipathway.data.BookmarkStore;
 import com.week14.gmipathway.data.CourseRepository;
 import com.week14.gmipathway.model.Course;
 import com.week14.gmipathway.model.EntryGroup;
@@ -29,6 +32,8 @@ public class CourseDetailActivity extends BaseActivity {
     private static final String STATE_ENTRY_EXPANDED = "entryExpanded";
 
     private CourseRepository repository;
+    private BookmarkStore bookmarks;
+    private Course course;
     private boolean subjectsExpanded;
     private boolean entryExpanded;
 
@@ -50,7 +55,8 @@ public class CourseDetailActivity extends BaseActivity {
         }
 
         repository = CourseRepository.getInstance(this);
-        Course course = repository.findCourse(getIntent().getStringExtra(EXTRA_COURSE_ID));
+        bookmarks = new BookmarkStore(this);
+        course = repository.findCourse(getIntent().getStringExtra(EXTRA_COURSE_ID));
         if (course == null) {
             finish();
             return;
@@ -68,6 +74,39 @@ public class CourseDetailActivity extends BaseActivity {
         super.onSaveInstanceState(outState);
         outState.putBoolean(STATE_SUBJECTS_EXPANDED, subjectsExpanded);
         outState.putBoolean(STATE_ENTRY_EXPANDED, entryExpanded);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_course_detail, menu);
+        return true;
+    }
+
+    /** Shows whether this course is saved. Runs again after invalidateOptionsMenu. */
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        boolean saved = bookmarks.isSaved(course.getId());
+        MenuItem bookmark = menu.findItem(R.id.action_bookmark);
+        bookmark.setIcon(saved ? R.drawable.ic_bookmark : R.drawable.ic_bookmark_border);
+        bookmark.setTitle(saved ? R.string.course_unsave : R.string.course_save);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_bookmark) {
+            bookmarks.toggle(course.getId());
+            invalidateOptionsMenu();
+            return true;
+        }
+        if (item.getItemId() == R.id.action_share) {
+            ExternalLinks.shareText(this, getString(R.string.course_share_chooser),
+                    getString(R.string.course_share_text, course.getName(),
+                            getString(R.string.institute_name), course.getDuration(),
+                            course.getIntake(), getString(R.string.url_online_application)));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void bindHeader(Course course) {

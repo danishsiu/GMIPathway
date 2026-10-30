@@ -8,10 +8,15 @@ import java.util.List;
  * Optional text fields are null when GMI has not published them.
  */
 public class Course {
+    public static final String DEPARTMENT_ELECTRICAL = "ELECTRICAL";
+    public static final String DEPARTMENT_MECHANICAL = "MECHANICAL";
+    public static final String DEPARTMENT_COMPUTER = "COMPUTER";
+
     private String id;
     private String name;
     private ProgrammeCategory category;
     private String department;
+    private String departmentId;
     private String code;
     private int credits;
     private String summary;
@@ -41,6 +46,11 @@ public class Course {
 
     public String getDepartment() {
         return department;
+    }
+
+    /** Stays the same in every language, unlike the department name. */
+    public String getDepartmentId() {
+        return departmentId;
     }
 
     public String getCode() {

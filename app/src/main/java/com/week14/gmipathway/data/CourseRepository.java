@@ -3,6 +3,7 @@ package com.week14.gmipathway.data;
 import android.content.Context;
 
 import com.google.gson.Gson;
+import com.week14.gmipathway.R;
 import com.week14.gmipathway.model.Course;
 import com.week14.gmipathway.model.CourseCatalog;
 import com.week14.gmipathway.model.EntryGroup;
@@ -17,34 +18,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Gives the app one shared copy of the course data in assets/courses.json.
+ * Gives the app one shared copy of the course data, in the language the app is using.
+ * English is in assets/courses.json and Bahasa Melayu is in assets/courses_ms.json.
  */
 public final class CourseRepository {
-    private static final String CATALOG_FILE = "courses.json";
-
     private static CourseRepository instance;
 
+    private final String catalogFile;
     private final CourseCatalog catalog;
 
-    private CourseRepository(CourseCatalog catalog) {
+    private CourseRepository(String catalogFile, CourseCatalog catalog) {
+        this.catalogFile = catalogFile;
         this.catalog = catalog;
     }
 
-    /** Returns the shared repository, loading the data the first time it is needed. */
+    /**
+     * Returns the shared repository, loading the data the first time it is needed and again if
+     * the language changes. Pass an Activity, because only it knows the language chosen in the app.
+     */
     public static synchronized CourseRepository getInstance(Context context) {
-        if (instance == null) {
-            instance = new CourseRepository(loadCatalog(context.getApplicationContext()));
+        String file = context.getString(R.string.catalog_file);
+        if (instance == null || !instance.catalogFile.equals(file)) {
+            instance = new CourseRepository(file, loadCatalog(context, file));
         }
         return instance;
     }
 
-    private static CourseCatalog loadCatalog(Context context) {
+    private static CourseCatalog loadCatalog(Context context, String file) {
         try (Reader reader = new InputStreamReader(
-                context.getAssets().open(CATALOG_FILE), StandardCharsets.UTF_8)) {
+                context.getAssets().open(file), StandardCharsets.UTF_8)) {
             return parseCatalog(reader);
         } catch (IOException e) {
             // The file ships inside the app, so this only fails if the build itself is broken.
-            throw new IllegalStateException("Could not read " + CATALOG_FILE, e);
+            throw new IllegalStateException("Could not read " + file, e);
         }
     }
 

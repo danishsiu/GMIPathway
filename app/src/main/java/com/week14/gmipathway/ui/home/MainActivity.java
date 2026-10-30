@@ -18,9 +18,12 @@ import com.week14.gmipathway.data.CourseRepository;
 import com.week14.gmipathway.ui.common.BaseActivity;
 import com.week14.gmipathway.ui.common.ExternalLinks;
 import com.week14.gmipathway.ui.courses.CourseListActivity;
+import com.week14.gmipathway.ui.courses.SavedCoursesActivity;
 import com.week14.gmipathway.ui.eligibility.EligibilityActivity;
 import com.week14.gmipathway.ui.enquiry.AboutUsActivity;
 import com.week14.gmipathway.ui.enquiry.ContactUsActivity;
+import com.week14.gmipathway.ui.enquiry.FaqActivity;
+import com.week14.gmipathway.ui.settings.SettingsActivity;
 
 /**
  * Home screen: a welcome header, key facts and shortcuts to every part of the app.
@@ -48,9 +51,15 @@ public class MainActivity extends BaseActivity {
                 R.string.home_contact_subtitle, ContactUsActivity.class);
         bindCard(R.id.card_about, R.drawable.ic_info, R.string.home_about_title,
                 R.string.home_about_subtitle, AboutUsActivity.class);
+        bindCard(R.id.card_saved, R.drawable.ic_bookmark, R.string.home_saved_title,
+                R.string.home_saved_subtitle, SavedCoursesActivity.class);
+        bindCard(R.id.card_faq, R.drawable.ic_help, R.string.home_faq_title,
+                R.string.home_faq_subtitle, FaqActivity.class);
 
         findViewById(R.id.button_apply).setOnClickListener(view ->
                 ExternalLinks.openWebPage(this, getString(R.string.url_online_application)));
+        findViewById(R.id.button_settings).setOnClickListener(view ->
+                startActivity(new Intent(this, SettingsActivity.class)));
     }
 
     /** The home screen has no toolbar: the header fills this space, or a strip in landscape. */

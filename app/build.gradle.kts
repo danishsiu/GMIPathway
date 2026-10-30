@@ -31,6 +31,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    // Lists English and Bahasa Melayu in the phone's per-app language settings.
+    androidResources {
+        generateLocaleConfig = true
+    }
 }
 
 // The unit tests read courses.json directly, so changing it must run them again.

@@ -52,12 +52,20 @@ public final class DetailViews {
     public static void addExpandableSection(ViewGroup container, @StringRes int titleRes,
                                             CharSequence body, boolean expanded,
                                             OnSectionToggleListener listener) {
+        addExpandableSection(container, container.getContext().getString(titleRes), body, expanded,
+                listener);
+    }
+
+    /** Adds a titled card whose text opens and closes when the title is tapped. */
+    public static void addExpandableSection(ViewGroup container, CharSequence title,
+                                            CharSequence body, boolean expanded,
+                                            OnSectionToggleListener listener) {
         View section = LayoutInflater.from(container.getContext())
                 .inflate(R.layout.view_detail_section, container, false);
         View header = section.findViewById(R.id.section_header);
         View chevron = section.findViewById(R.id.section_chevron);
         TextView text = section.findViewById(R.id.section_body);
-        ((TextView) section.findViewById(R.id.section_title)).setText(titleRes);
+        ((TextView) section.findViewById(R.id.section_title)).setText(title);
         text.setText(body);
         chevron.setVisibility(View.VISIBLE);
         chevron.setRotation(expanded ? CHEVRON_EXPANDED : CHEVRON_COLLAPSED);

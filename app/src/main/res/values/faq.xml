@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Every answer is traced to a source in research/faq_sources.md. Keep the two arrays in the same order. -->
+<resources>
+    <string name="faq_title">FAQ</string>
+    <string name="faq_intro">Answers are based on information GMI has published. Please confirm details with GMI before you apply.</string>
+
+    <string-array name="faq_questions">
+        <item>How do I apply to GMI?</item>
+        <item>When are the intakes?</item>
+        <item>How long do the programmes take?</item>
+        <item>How much are the fees?</item>
+        <item>Can I get a loan or sponsorship?</item>
+        <item>Does GMI have a hostel?</item>
+        <item>How practical is the learning?</item>
+        <item>Will I learn German?</item>
+        <item>Are GMI\'s programmes accredited?</item>
+        <item>Can I continue to a degree at GMI?</item>
+        <item>Is the Eligibility Checker result final?</item>
+        <item>What if my qualification is not in the checker?</item>
+    </string-array>
+
+    <string-array name="faq_answers">
+        <item>Apply through GMI\'s online application portal. Tap Apply Now on the home screen or on any programme page. New applicants register on the portal, which recommends the latest version of Chrome.</item>
+        <item>Diplomas: January and July. GAPP: January, May and August. GUFP: April and July. BELT: March and October.</item>
+        <item>Diplomas take 3 years (6 semesters). GAPP takes 20 months at GMI, then 6 months of intensive German in Germany. GUFP takes 1 year (3 trimesters). BELT takes 4 years (8 semesters).</item>
+        <item>For Malaysian students, tuition is RM33,324 for a diploma, RM42,400 for GAPP, RM16,050 for GUFP and RM69,000 for BELT. Other fees and the optional hostel are extra, and each programme page shows the totals. All fees are subject to change.</item>
+        <item>Malaysian diploma students can apply for education loans through MARA and PTPTN. GMI also lists other sponsors, such as the Employees Provident Fund, Yayasan Negeri and zakat bodies. Only one loan or sponsorship is allowed at a time. GMI does not approve loans, so being accepted by GMI does not guarantee one.</item>
+        <item>Yes, hostel accommodation is optional. For diplomas it costs RM900 per semester. Each programme page shows the total with hostel.</item>
+        <item>GMI\'s stated approach is 70% practical and 30% theory, and it has 22 Advanced Technology Centres.</item>
+        <item>German Language 1 and 2 are part of the diploma curriculum. GAPP includes German language certification, and GUFP has weekly German classes.</item>
+        <item>All the programmes in this app are listed on the Malaysian Qualifications Register. Diplomas are at MQF Level 4. BELT is registered under UTeM, the partner university.</item>
+        <item>Yes. GMI is an off-campus learning centre for UTeM\'s Bachelor of Electrical Engineering Technology with Honours. Engineering Technology diploma holders need a CGPA of at least 2.30, plus the other requirements on the BELT page.</item>
+        <item>No. It is a guide based on GMI\'s published requirements. GMI makes the final admission decision, and there are other conditions, such as a medical examination.</item>
+        <item>Choose Other qualification. GMI also accepts routes such as STAM, SKM Level 3, MQF Level 3 Certificates, SVM, DKM, DLKM, GCE A-Level, IB and APEL for some programmes. GMI\'s admissions team assesses these, and each course page lists the routes it accepts.</item>
+    </string-array>
+</resources>

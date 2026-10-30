@@ -135,18 +135,23 @@ public class CourseCatalogTest {
         }
     }
 
-    /** A typing mistake in a rule would silently fail every prospect, so each name is checked. */
     @Test
     public void everyRuleUsesRealGradesAndSubjects() {
+        assertRulesAreValid(catalog);
+    }
+
+    /** A typing mistake in a rule would silently fail every prospect, so each name is checked. */
+    static void assertRulesAreValid(CourseCatalog catalog) {
         for (EntryGroup group : catalog.getEntryGroups()) {
             for (EntryRule rule : group.getRules()) {
-                Qualification qualification = findQualification(rule.getQualificationId());
+                Qualification qualification = findQualification(catalog, rule.getQualificationId());
                 if (rule.getMinSubjects() > 0) {
                     assertGradeExists(qualification, rule.getMinSubjectGrade());
                 }
                 for (EntryRequirement requirement : rule.getRequirements()) {
                     Qualification scale = requirement.isSupporting()
-                            ? findQualification(qualification.getSupportingQualificationId())
+                            ? findQualification(catalog,
+                                    qualification.getSupportingQualificationId())
                             : qualification;
                     assertGradeExists(scale, requirement.getMinGrade());
                     assertSubjectsExist(scale, requirement);
@@ -158,12 +163,12 @@ public class CourseCatalogTest {
         }
     }
 
-    private void assertGradeExists(Qualification qualification, String level) {
+    private static void assertGradeExists(Qualification qualification, String level) {
         assertTrue(qualification.getId() + " has no grade " + level,
                 qualification.getGrades().contains(qualification.resolveGrade(level)));
     }
 
-    private void assertSubjectsExist(Qualification scale, EntryRequirement requirement) {
+    private static void assertSubjectsExist(Qualification scale, EntryRequirement requirement) {
         if (requirement.getSubjectGroup() != null) {
             List<String> group = scale.getSubjectGroup(requirement.getSubjectGroup());
             assertFalse(requirement.getSubjectGroup(), group.isEmpty());
@@ -179,8 +184,8 @@ public class CourseCatalogTest {
     }
 
     /** A supporting requirement can only pass if the form collects at least one of its subjects. */
-    private void assertSupportingSubjectsCollected(Qualification qualification,
-                                                   EntryRequirement requirement) {
+    private static void assertSupportingSubjectsCollected(Qualification qualification,
+                                                          EntryRequirement requirement) {
         Set<String> collected = new HashSet<>(qualification.getSupportingSubjects());
         collected.addAll(qualification.getSupportingOptionalSubjects());
         collected.retainAll(requirement.getSubjects());
@@ -188,14 +193,14 @@ public class CourseCatalogTest {
                 collected.isEmpty());
     }
 
-    private Set<String> offeredBy(Qualification qualification) {
+    private static Set<String> offeredBy(Qualification qualification) {
         Set<String> subjects = new HashSet<>(qualification.getSubjects());
         subjects.addAll(qualification.getRequiredSubjects());
         subjects.addAll(qualification.getDefaultSubjects());
         return subjects;
     }
 
-    private Qualification findQualification(String id) {
+    private static Qualification findQualification(CourseCatalog catalog, String id) {
         for (Qualification qualification : catalog.getQualifications()) {
             if (qualification.getId().equals(id)) {
                 return qualification;

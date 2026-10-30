@@ -1,0 +1,3060 @@
+{
+  "source": "Built from GMI's Programme Guide (May 2026), gmi.edu.my, UTeM-GMI documents and the Malaysian Qualifications Register, accessed 30 October 2026. See research/gmi_research.md and research/eligibility_rules.md.",
+  "courses": [
+    {
+      "id": "mechatronics",
+      "name": "Diploma of Mechatronics Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Elektrik",
+      "departmentId": "ELECTRICAL",
+      "code": "(R3/0713/4/0041) (07/30) (MQA/FA 14611)",
+      "credits": 98,
+      "summary": "Bina sistem pintar dan automatik dengan menggabungkan reka bentuk mekanikal, elektronik dan kawalan komputer.",
+      "description": "Menggabungkan reka bentuk mekanikal, elektronik dan kawalan komputer pintar untuk membina sistem pintar dan automatik bagi persekitaran Industri 4.0.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "PLC & Human Machine Interface",
+        "Computer Integrated Manufacturing",
+        "Industrial Robotics",
+        "Machine Design"
+      ],
+      "certificates": [
+        "FESTO Pneumatics",
+        "FESTO Hydraulics",
+        "FESTO Introduction to Industry 4.0 (IND401)",
+        "FESTO Modular Production System"
+      ],
+      "careers": [
+        "Assistant Mechatronics Engineer",
+        "Automation Technical Specialist",
+        "Automation System Designer",
+        "ROV Supervisor"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Basic Metal Work",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Technical English 1",
+            "German Language 2",
+            "Electronics Workshop",
+            "Calculus",
+            "Basic Turning & Milling",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Sensor & Transducer",
+            "Basic Engineering Metrology",
+            "Digital Systems",
+            "Technical English 2",
+            "Pneumatics & Hydraulics Technology",
+            "Machine Elements",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Electrical Machines & Control",
+            "Electrical Installation",
+            "Digital Entrepreneurship",
+            "Programmable Logic Controller",
+            "Machine Design",
+            "MEC Project Proposal",
+            "Industrial Management",
+            "Control Systems Application"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Industrial Robotics",
+            "Computer Integrated Manufacturing",
+            "MEC Final Project",
+            "Engineering Materials",
+            "Microcontroller",
+            "Power Electronics & Modern Drive Technology"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "instrumentation_control",
+      "name": "Diploma of Engineering Technology (Instrumentation and Control)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Elektrik",
+      "departmentId": "ELECTRICAL",
+      "code": "(R3/0741/4/0012) (07/30) (MQA/FA 14612)",
+      "credits": 99,
+      "summary": "Kendali dan selenggara sistem automatik yang mengukur dan mengawal proses industri.",
+      "description": "Melatih pelajar mengendali dan menyelenggara sistem automatik yang mengukur dan mengawal pemboleh ubah proses seperti suhu, tekanan, aras dan aliran di loji industri.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Distributed Control System",
+        "Process Control Instrumentation",
+        "Instrument Calibration & Maintenance",
+        "Sensor & Transducer",
+        "SCADA"
+      ],
+      "certificates": [],
+      "careers": [
+        "Field Assistant Engineer",
+        "Control & Instrumentation Technologist",
+        "Service Assistant Engineer",
+        "Process Assistant Engineer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer & Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Digital Systems",
+            "Technical English 1",
+            "German Language 2",
+            "Electronics Workshop",
+            "Calculus",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Sensor & Transducer",
+            "Electrical Machines & Control",
+            "Technical English 2",
+            "Data Acquisition Technology",
+            "Pneumatics & Hydraulics Technology",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services",
+            "Control Systems Application"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Programmable Logic Controllers",
+            "Electrical Installation",
+            "PIC Project Proposal",
+            "Process Measurement Technology",
+            "Digital Entrepreneurship",
+            "Process Technology System",
+            "Process Control Instrumentation",
+            "Industrial Management"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Power Electronics & Modern Drive Technology",
+            "PIC Final Project",
+            "Instrument Calibration & Maintenance",
+            "Basic Metal Work & Welding",
+            "Distributed Control System & Applications"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "electronics_computer",
+      "name": "Diploma of Electronics Engineering Technology (Computer)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Elektrik",
+      "departmentId": "ELECTRICAL",
+      "code": "(R3/0741/4/0013) (07/30) (MQA/FA 14613)",
+      "credits": 97,
+      "summary": "Reka bentuk dan bina sistem elektronik dan berasaskan komputer untuk industri berteknologi tinggi.",
+      "description": "Mengajar pelajar mereka bentuk dan membina sistem elektronik dan berasaskan komputer, merangkumi litar, telekomunikasi dan kawalan komputer.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Computer Programming",
+        "Embedded Controller",
+        "Computer Interfacing Technology",
+        "Microelectromechanical System",
+        "Apps Development",
+        "Internet of Things",
+        "Artificial Intelligence",
+        "Radio Frequency & Data Communication"
+      ],
+      "certificates": [],
+      "careers": [
+        "IT Assistant",
+        "System Programmer / Analyst / Manager",
+        "Telecommunication Technologist",
+        "Electronics Support Specialist",
+        "Junior Software Developer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer & Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Digital Systems",
+            "Technical English 1",
+            "German Language 2",
+            "Calculus",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Data Management"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Electrical Control Systems",
+            "Electronic Circuit Analysis",
+            "Technical English 2",
+            "Electronics Workshop",
+            "Microprocessor",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services",
+            "Control Systems Application"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Network Design & Administration",
+            "Communication Principles",
+            "Microelectromechanical Systems",
+            "EIT Project Proposal",
+            "Industrial Management",
+            "Microcontroller",
+            "Digital Entrepreneurship",
+            "Programming in Visual Basic",
+            "FPGA & Applications"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Data Communication Systems",
+            "Broadband Technology",
+            "EIT Final Project",
+            "Programming in JAVA",
+            "Computer Interfacing Technology"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "sustainable_energy",
+      "name": "Diploma in Engineering Technology (Sustainable Energy and Power Distribution)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Elektrik",
+      "departmentId": "ELECTRICAL",
+      "code": "(R2/522/4/0017) (10/27) (MQA/FA 17923)",
+      "credits": 96,
+      "summary": "Bekerja dengan tenaga solar, angin, hidro dan biojisim, serta sistem pengagihan kuasa.",
+      "description": "Merangkumi teknologi boleh baharu utama (solar PV, angin, hidro dan biojisim) daripada pemasangan dan pentauliahan hingga penyelenggaraan, serta pengurusan tenaga dan pengagihan kuasa.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Photovoltaic Principles & Materials",
+        "Hydro & Wind Energy System",
+        "Renewable Energy System",
+        "Energy Audit",
+        "Energy Management",
+        "Power Distribution"
+      ],
+      "certificates": [],
+      "careers": [
+        "Renewable Energy Technician",
+        "Power Distribution Engineer",
+        "Energy Consultant",
+        "Electrical Maintenance Supervisor",
+        "Smart Grid Technician",
+        "Solar Installer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Computer & Programming",
+            "Electrical Principles",
+            "German Language 1",
+            "Pre-Calculus",
+            "Engineering Science",
+            "Effective Communication Skills",
+            "Technical Drawing & CAD"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Electronics",
+            "Digital Systems",
+            "Technical English 1",
+            "German Language 2",
+            "Electronics Workshop",
+            "Calculus",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Sensor & Transducer",
+            "Electrical Machines & Control",
+            "Technical English 2",
+            "Electrical Installation",
+            "Kursus Integriti dan Antirasuah",
+            "Community Services",
+            "Microcontroller",
+            "Sustainable Energy Technology & System",
+            "Photovoltaic Principles & Materials"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Power Electronics & Modern Drive Technology",
+            "SPD Project Proposal",
+            "Programmable Logic Controllers",
+            "Electrical Devices",
+            "Digital Entrepreneurship",
+            "Hydro & Wind Energy System",
+            "Solar System Design & Application",
+            "Control Systems Application",
+            "Industrial Management"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Power Distribution System",
+            "SPD Final Project",
+            "Biomass Energy",
+            "Field Technology",
+            "Power Management & Analysis"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "autotronics",
+      "name": "Diploma in Autotronics Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Elektrik",
+      "departmentId": "ELECTRICAL",
+      "code": "(R2/0741/4/0009) (12/29) (MQA/FA 17922)",
+      "credits": 99,
+      "summary": "Diagnosis dan selenggara sistem elektronik kenderaan moden, termasuk kenderaan hibrid dan elektrik.",
+      "description": "Memberi tumpuan kepada elektronik kenderaan moden, termasuk kenderaan hibrid dan elektrik, pengurusan enjin, rangkaian CAN dan LIN, serta alat diagnostik termaju.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Hybrid & Electric Vehicle Technologies",
+        "Automotive Electrical Systems",
+        "Engine Management & Diagnostics",
+        "Digital Communication in Automotive"
+      ],
+      "certificates": [],
+      "careers": [
+        "Automotive Electrical Technician",
+        "Automotive Diagnostician",
+        "Service Advisor (EV & HEV)",
+        "Sales & Application Engineer (EV Components)",
+        "Research and Development Engineer",
+        "Automotive Maintenance Entrepreneur"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Basic Metal Work & Welding",
+            "Effective Communication Skills",
+            "Electrical Principles",
+            "Health, Safety & Environment",
+            "Engineering Science",
+            "German Language 1",
+            "Technical Drawing & CAD",
+            "Pre-Calculus"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Calculus",
+            "Electronics",
+            "Technical English 1",
+            "German Language 2",
+            "Engine Structure",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Pneumatics & Hydraulics Technology"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Automotive Control Systems",
+            "Automotive Electrical Systems",
+            "Automotive Sensor & Actuator",
+            "Kursus Integriti dan Antirasuah",
+            "Community Service",
+            "Engine Performance",
+            "Technical English 2",
+            "Vehicle Air Conditioning System"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "AHS Project Proposal",
+            "Auxiliary System",
+            "Engine Management System",
+            "Digital Entrepreneurship",
+            "Hybrid Technology",
+            "Automotive Communication System",
+            "Transmission Systems",
+            "Industrial Management"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "AHS Final Project",
+            "Alternative Energy Sources & Storage Devices",
+            "Automotive Troubleshooting & Maintenance",
+            "Electric Vehicle",
+            "Engineering Ethics"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "cnc_precision",
+      "name": "Diploma of Mechanical Engineering Technology (CNC Precision)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R3/0714/4/0025) (12/27) (MQA/FA 14870)",
+      "credits": 101,
+      "summary": "Aturcara, sedia dan kendali mesin CNC untuk menghasilkan komponen mengikut spesifikasi yang tepat.",
+      "description": "Mengajar pelajar mengaturcara, menyedia dan mengendali mesin CNC, menggunakan perisian CAD/CAM untuk menghasilkan komponen mengikut spesifikasi yang tepat.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Engineering Drawing",
+        "CAD/CAM 3 & 5 Axis",
+        "CNC Milling & Turning Technology",
+        "Tool Cutter Grinder",
+        "Electrical Discharge Machining Technology",
+        "Jigs & Fixtures Design & Manufacturing",
+        "CNC Milling & Turning Multi Axis"
+      ],
+      "certificates": [],
+      "careers": [
+        "CNC Machinist",
+        "CAD Designer",
+        "CNC Programmer",
+        "CAM Programmer",
+        "Production Executive",
+        "Maintenance & Servicing Specialist",
+        "Assistant Engineer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Manufacturing Processes",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing",
+            "Electrical Technology"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Geometrical Dimensioning & Tolerancing",
+            "Computer Aided Design",
+            "Kursus Integriti dan Antirasuah"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "CAD CAM 2 & 3 Axis",
+            "CNC Milling & Turning Technology",
+            "Technical English 2",
+            "German Language 1",
+            "Jigs & Fixtures Manufacturing",
+            "Jigs & Fixtures Design",
+            "Engineering Mechanics",
+            "Further Calculus",
+            "Community Service"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "CAD CAM 4 & 5 Axis",
+            "Reverse Engineering",
+            "CNC Milling Multi Axis & Programming",
+            "CNC Grinding",
+            "CNC Turning Multi Axis & Programming",
+            "Digital Entrepreneurship",
+            "German Language 2",
+            "Industrial Management",
+            "Welding",
+            "CPT Project Proposal"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "EDM Technology",
+            "Machine Tool Maintenance",
+            "Pneumatics & Hydraulics",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Bahasa Kebangsaan A",
+            "CPT Final Project"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "manufacturing",
+      "name": "Diploma of Mechanical Engineering Technology (Manufacturing)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R2/0714/4/0011) (02/28) (MQA/FA 14871)",
+      "credits": 101,
+      "summary": "Pelajari cara mesin, proses dan kawalan berfungsi bersama dalam kilang moden.",
+      "description": "Meneliti cara peralatan, proses dan kawalan pembuatan berfungsi bersama dalam kilang moden, dengan kerja melibatkan robotik, PLC dan sistem pengeluaran automatik.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Automated Manufacturing",
+        "Manufacturing Processes",
+        "Computer Integrated Manufacturing System",
+        "Production Planning Control",
+        "Fundamental Statics & Dynamics"
+      ],
+      "certificates": [],
+      "careers": [
+        "Manufacturing Assistant Engineer",
+        "Industrial Assistant Engineer",
+        "Automation Technical Assistant",
+        "Production Assistant Engineer / Technical Supervisor"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Manufacturing Process",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Geometrical Dimensioning & Tolerancing",
+            "Computer Aided Design",
+            "Kursus Integriti dan Antirasuah"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "CNC Programming & CAD CAM",
+            "Electrical Technology",
+            "Technical English 2",
+            "German Language 1",
+            "Further Calculus",
+            "Community Service",
+            "Automated Manufacturing",
+            "Flexible Manufacturing System",
+            "Statics & Dynamics"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "German Language 2",
+            "Pneumatics & Hydraulics",
+            "Industrial Management",
+            "Welding",
+            "Electro-Mechanics",
+            "Computer Integrated Manufacturing System (CIMS)",
+            "Machine Elements Design & Operation",
+            "MSD Project Proposal",
+            "Digital Entrepreneurship"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Engineering Analysis",
+            "Robust Industrial Design",
+            "Statistical Process Control",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi",
+            "Bahasa Kebangsaan A",
+            "Production Planning Control",
+            "MSD Final Project"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "industrial_quality",
+      "name": "Diploma in Industrial Quality Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R/0741/4/0001) (10/28) (MQA/FA 10032)",
+      "credits": 99,
+      "summary": "Bina kemahiran pemeriksaan dan pengurusan kualiti untuk menyelesaikan masalah kualiti di tempat kerja.",
+      "description": "Membina kemahiran pemeriksaan dan pengurusan kualiti supaya graduan dapat menyelesaikan masalah kualiti di tempat kerja.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Total Quality Management",
+        "Quality Standards & Auditing",
+        "Geometrical Dimension & Tolerance Inspection",
+        "Six Sigma Management System",
+        "Lean Manufacturing",
+        "Continuous Improvement"
+      ],
+      "certificates": [
+        "Lean Six Sigma Green Belt",
+        "Ergonomic Trained Person Level 1 (Initial), DOSH"
+      ],
+      "careers": [
+        "QA Assistant Engineer",
+        "Quality Assurance Supervisor",
+        "Quality Management System Coordinator",
+        "Audit Assistant Engineer",
+        "Assistant Industrial Engineer",
+        "Process Improvement Coordinator"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Basic Cutting Process",
+            "Manufacturing Processes",
+            "Total Quality Management",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Quality Tools",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Kursus Integriti dan Antirasuah",
+            "Computer Aided Design"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "CNC Milling & Turning Technology",
+            "Electrical & Electronics for Industry",
+            "Technical English 2",
+            "German Language 1",
+            "Further Calculus",
+            "Community Services",
+            "Ergonomics in Industry",
+            "Continuous Improvement Technique",
+            "Lean Manufacturing"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "German Language 2",
+            "Six Sigma Management System",
+            "Industrial Management",
+            "Quality Standard & Auditing",
+            "Mechanical Instrument Calibration",
+            "GD&T Inspection",
+            "IQM Project Proposal",
+            "Digital Entrepreneurship"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Operational Safety, Health & Environment",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi",
+            "Inspection and Testing",
+            "IQM Final Project",
+            "Instrument Calibration & Maintenance"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "B"
+    },
+    {
+      "id": "precision_tooling",
+      "name": "Diploma in Precision Tooling Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R3/0714/4/0013) (10/30) (A 5005)",
+      "credits": 93,
+      "summary": "Reka bentuk dan hasilkan alat, dai, acuan dan komponen jitu berketepatan tinggi.",
+      "description": "Mengkhusus dalam reka bentuk dan pembuatan berketepatan tinggi bagi alat, dai, acuan, kepingan logam dan komponen jitu, menggabungkan teori dengan projek industri.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Tool & Die Design",
+        "Mould Design",
+        "Sheet Metal Design & Development",
+        "CNC Machining and Programming",
+        "Computer-Aided Design",
+        "Computer-Aided Manufacturing",
+        "Mould and Die Fabrication"
+      ],
+      "certificates": [],
+      "careers": [
+        "Production Engineer",
+        "Mould & Die Design Engineer",
+        "Machinist Expert",
+        "Quality Assurance Executive",
+        "Technical Trainer or Consultant",
+        "Application Engineer",
+        "Production Supervisor",
+        "Multi Skill Technician"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [],
+      "entryGroupId": "A"
+    },
+    {
+      "id": "innovative_product_design",
+      "name": "Diploma in Innovative Product Design Engineering Technology",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R3/0741/4/0006) (01/31) (A 7165)",
+      "credits": 102,
+      "summary": "Bawa produk sebenar daripada idea pertama hingga prototaip dan pengeluaran.",
+      "description": "Membimbing pelajar mereka bentuk produk sebenar, menggabungkan kejuruteraan dengan CAD/CAM, pembuatan prototaip, fabrikasi digital dan amalan lestari.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Design Conceptualisation & Ideation",
+        "Creativity & Innovation",
+        "Model Making Techniques",
+        "Prototype Technology & Application",
+        "Ergonomics",
+        "Design for Manufacture & Assembly",
+        "Digital Design & Styling"
+      ],
+      "certificates": [],
+      "careers": [
+        "Product Designer",
+        "CAD Application Assistant Engineer",
+        "R&D Assistant Engineer",
+        "Quality Assurance Executive"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Manufacturing Processes",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Geometrical Dimensioning & Tolerancing",
+            "Kursus Integriti dan Antirasuah",
+            "Computer Aided Design"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Design Conceptualization & Ideation",
+            "Creativity & Innovation",
+            "Model Making Techniques",
+            "Electrical Technology",
+            "Technical English 2",
+            "German Language 1",
+            "Engineering Mechanics",
+            "Further Calculus",
+            "Plastic Product Design & Tooling",
+            "Community Service"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Design for Manufacturing & Assembly",
+            "Ergonomics",
+            "Digital Design & Styling",
+            "German Language 2",
+            "Industrial Management",
+            "Digital Entrepreneurship",
+            "Prototype Technology & Application",
+            "Welding",
+            "PDM Project Proposal",
+            "Sheet Metal Design & Tooling"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "CNC Programming & CAD CAM",
+            "Reverse Engineering",
+            "Engineering Analysis",
+            "Pneumatics & Hydraulics",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Product Development & Marketing",
+            "Bahasa Kebangsaan A",
+            "PDM Final Project"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "A"
+    },
+    {
+      "id": "industrial_design",
+      "name": "Diploma in Engineering Technology (Industrial Design)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R2/0741/4/0010) (02/30) (MQA/FA 4785)",
+      "credits": 100,
+      "summary": "Reka bentuk produk yang mengimbangi fungsi, nilai dan rupa, daripada taklimat hingga hasil siap.",
+      "description": "Menyediakan pereka yang kreatif dan praktikal untuk membawa produk daripada taklimat hingga reka bentuk siap, mengimbangi fungsi, nilai dan rupa.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Industrial Design Project (Product, Automotive and Furniture Design)",
+        "Digital Design & Styling",
+        "Prototype Technology & Applications",
+        "3D Modeling (Design, Rendering, Animation)"
+      ],
+      "certificates": [],
+      "careers": [
+        "Product / Industrial Designer",
+        "3D Visualiser",
+        "3D Modeller",
+        "CAD / CAID Specialist",
+        "Prototype Specialist",
+        "Model Maker",
+        "Draftsman",
+        "Product Planner",
+        "Graphic Designer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Design History",
+            "Engineering Drawing",
+            "Engineering Methodology",
+            "Basic Cutting Process",
+            "Effective Communication Skills",
+            "Machine Tool Operation",
+            "Manufacturing Processes",
+            "Pre-Calculus"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Design Studio 1 (Sketching)",
+            "Computer Aided Design",
+            "Kursus Integriti dan Antirasuah",
+            "Engineering Materials",
+            "Engineering Science",
+            "Workshop Practice",
+            "Technical English 1",
+            "Calculus"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Design Project 1",
+            "Form Study 1",
+            "Creativity & Innovation",
+            "Engineering Mechanics",
+            "Community Services",
+            "Technical English 2",
+            "German Language 1",
+            "Ergonomics",
+            "Electrical Technology"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Design Project 2",
+            "Design Studio 2 (Sketching)",
+            "Digital Design & Styling 1",
+            "Form 2",
+            "German Language 2",
+            "IDE Project Proposal",
+            "Industrial Management",
+            "Digital Entrepreneurship"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Design Project 3",
+            "Digital Design & Styling 2",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi",
+            "IDE Final Project",
+            "Product Development & Marketing",
+            "Prototype Technology & Applications"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "C"
+    },
+    {
+      "id": "machine_tools",
+      "name": "Diploma in Engineering Technology (Machine Tools Maintenance)",
+      "category": "DIPLOMA",
+      "department": "Kejuruteraan Mekanikal",
+      "departmentId": "MECHANICAL",
+      "code": "(R2/0741/4/0008) (12/29) (MQA/FA 4786)",
+      "credits": 102,
+      "summary": "Pastikan mesin alat CNC terus beroperasi melalui diagnostik dan penyelenggaraan pencegahan.",
+      "description": "Menyediakan pelajar untuk memastikan mesin alat CNC terus beroperasi, merangkumi sistem elektrik, pneumatik, hidraulik, PLC dan mekanikal, serta diagnostik dan penyelenggaraan pencegahan.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Machine Systems & Applications",
+        "Machine Maintenance & Restoration",
+        "Machine Upgrades & System Improvements",
+        "Electrical Faults & Diagnostics"
+      ],
+      "certificates": [],
+      "careers": [
+        "Machine Maintenance & Industrial Automation Specialist",
+        "Machine Design & Retrofitting Expert",
+        "Operation & Maintenance Engineer",
+        "Precision Machine Tool Technician",
+        "Manufacturing Systems & Maintenance Project Engineer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia",
+        "Bachelor of Electrical Engineering Technology with Honours (BELT) bersama UTeM di GMI, untuk pemegang diploma yang memenuhi syarat kemasukannya"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Electrical Technology",
+            "Machine Tool Operation",
+            "Pre-Calculus",
+            "Basic Cutting Process",
+            "Manufacturing Process",
+            "Effective Communication Skills",
+            "Engineering Metrology",
+            "Engineering Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Technical English 1",
+            "Workshop Practice",
+            "Calculus",
+            "Engineering Science",
+            "Engineering Materials",
+            "Kursus Integriti dan Antirasuah",
+            "Geometrical Dimensioning & Tolerancing"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Community Service",
+            "Engineering Mechanics",
+            "Technical English 2",
+            "German Language",
+            "Maintenance Fundamentals",
+            "Motion & Systems Control",
+            "Pneumatic & Hydraulics System Maintenance",
+            "Programmable Logic Controllers",
+            "Further Calculus"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "CNC Operation",
+            "Digital Entrepreneurship",
+            "German Language 2",
+            "Industrial Management",
+            "Machine Electrical Faults & Diagnosis",
+            "Machine Electrical Design & Operation",
+            "Machine Tolerances & Calibration",
+            "MTM Project Proposal"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Occupational Safety, Health & Environment",
+            "Machine Repair & Retrofit",
+            "MTM Final Project",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Bahasa Kebangsaan A",
+            "Total Productive Maintenance",
+            "Welding"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "C"
+    },
+    {
+      "id": "software_engineering",
+      "name": "Diploma in Software Engineering",
+      "category": "DIPLOMA",
+      "department": "Komputer & Maklumat",
+      "departmentId": "COMPUTER",
+      "code": "(R/0612/4/0007) (03/28) (MQA/FA 9541)",
+      "credits": 95,
+      "summary": "Bangunkan dan uji perisian pintar, menggunakan Android, AI dan IoT.",
+      "description": "Merangkumi pembangunan dan pengujian perisian pintar sepanjang kitaran hayat pembangunan perisian dan pengujian perisian, menggunakan C, Java, PHP dan Android, dengan tumpuan kepada AI, IoT dan pengujian automatik.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Artificial Intelligence",
+        "Android Programming",
+        "Internet of Things",
+        "Laravel Web Development"
+      ],
+      "certificates": [
+        "Cisco IT Essentials",
+        "Cisco CCNA Network Fundamental",
+        "Cisco Internet of Things"
+      ],
+      "careers": [
+        "Software Engineer",
+        "Software Tester",
+        "IoT Engineer",
+        "Android Programmer",
+        "AI Engineer"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Discrete Mathematics",
+            "Effective Communication Skills",
+            "German Language 1",
+            "IT Essentials",
+            "Computer Ethics & Values",
+            "Basic of Software Engineering",
+            "Operating Systems"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "English for Professional Purposes 1",
+            "German Language 2",
+            "Networking Fundamentals",
+            "Basic of Programming",
+            "Basic of Software Testing",
+            "Software Modelling & Requirements Engineering",
+            "Calculus & Algebra"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "English for Professional Purposes 2",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Dinamika Islam di Malaysia / Etika & Moral Masyarakat Malaysia",
+            "Co-Curricular Activities & Community Services",
+            "Database Management System",
+            "Data Structure & Algorithm",
+            "Secured Object Oriented Programming"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Human Computer Interaction",
+            "SET Project Proposal",
+            "IT Project Management",
+            "Web Programming",
+            "Test Automation & Configuration",
+            "Digital Entrepreneurship",
+            "IoT Application & Software"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "SET Final Project",
+            "Android Programming",
+            "Quality Assurance & Control",
+            "Artificial Intelligence in Modern Computing",
+            "Advanced Web Programming"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "D"
+    },
+    {
+      "id": "creative_multimedia",
+      "name": "Diploma in Creative Multimedia",
+      "category": "DIPLOMA",
+      "department": "Komputer & Maklumat",
+      "departmentId": "COMPUTER",
+      "code": "(R2/0211/4/0171) (07/30) (MQA/FA 6035)",
+      "credits": 92,
+      "summary": "Hasilkan karya digital 2D dan 3D, daripada pra-produksi hingga pasca-produksi.",
+      "description": "Memperkenalkan keseluruhan proses penghasilan karya digital 2D dan 3D, daripada pra-produksi hingga pasca-produksi, termasuk animasi dan suntingan bunyi studio, serta menggalakkan keusahawanan digital.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Sketching & Drawing",
+        "Graphic Design & Desktop Publishing",
+        "Modelling & Animation in 2D & 3D",
+        "Interactive Courseware",
+        "Games Application",
+        "Audio Editing & Mixing",
+        "Video Editing & Rendering",
+        "Photography",
+        "Website & Mobile Application"
+      ],
+      "certificates": [
+        "Adobe Certified Professional, Visual Design using Adobe Photoshop"
+      ],
+      "careers": [
+        "Creative Media Editor",
+        "Web Designer",
+        "Creative Designer",
+        "Graphic Designer",
+        "2D/3D Animator"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "Visual Communication",
+            "Effective Communication Skills",
+            "German Language 1",
+            "Multimedia in Concept",
+            "Storyboard Visualization",
+            "Computer & Programming",
+            "Computer Ethics & Values",
+            "Sketching & Drawing"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "English for Professional Purposes 1",
+            "German Language 2",
+            "Multimedia OOP",
+            "Digital Imaging",
+            "Multimedia Instructional Design",
+            "Graphic Design & Composition",
+            "Artificial Intelligence in Multimedia Technologies",
+            "Bahasa Kebangsaan A"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "English for Professional Purposes 2",
+            "Penghayatan Etika dan Peradaban / Bahasa Melayu Komunikasi 1",
+            "Community Services",
+            "Web Programming with HTML",
+            "Database Management System",
+            "2D Animation",
+            "Multimedia Authoring"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "Digital Video & Audio",
+            "Human Computer Interaction",
+            "Digital Entrepreneurship",
+            "3D Animation",
+            "CRM Project Proposal"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "CRM Final Project",
+            "Web Programming with PHP",
+            "Mobile Application Development",
+            "Multimedia Project Management"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": "E"
+    },
+    {
+      "id": "cyber_security",
+      "name": "Diploma in Cyber Security Technology",
+      "category": "DIPLOMA",
+      "department": "Komputer & Maklumat",
+      "departmentId": "COMPUTER",
+      "code": "(R3/0613/4/0043) (07/31) (MQA/FA15748-01)",
+      "credits": 96,
+      "summary": "Lindungi rangkaian dan data melalui pengaturcaraan, alat keselamatan dan amalan beretika.",
+      "description": "Membina kemahiran melindungi keseluruhan rangkaian, termasuk pengaturcaraan, pangkalan data, konfigurasi alat keselamatan dengan perisian sumber terbuka dan proprietari, serta etika profesional. Dahulunya Diploma in Network Security.",
+      "duration": "6 semester (3 tahun)",
+      "intake": "Januari dan Julai",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM33,324 untuk pelajar Malaysia. RM35,024 termasuk yuran pelbagai, RM35,524 termasuk deposit dan RM40,924 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Penetration Testing / Vulnerability Assessment",
+        "Network Management System",
+        "Network Forensics",
+        "Open Source Network Tools",
+        "Networking",
+        "Operating Systems Administration",
+        "Programming",
+        "Attacking and Defending Activities",
+        "Mobile Application",
+        "Internet of Things",
+        "Cryptography & Network Security"
+      ],
+      "certificates": [],
+      "careers": [
+        "IT Infrastructure Support",
+        "Technical Support Officer",
+        "NOC Technician",
+        "Computer Service Technician",
+        "Web and Mobile Application Development",
+        "Cybersecurity Analyst",
+        "Security Engineer / Architect",
+        "Penetration Tester",
+        "Security Consultant",
+        "Ethical Hacker"
+      ],
+      "progression": [
+        "Melanjutkan pengajian di universiti di Malaysia, Jerman, United Kingdom atau Australia"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Semester 1",
+          "subjects": [
+            "IT Essential",
+            "Cyber Security Technology & Ethics",
+            "Basic of Programming",
+            "German Language 1",
+            "Discrete Mathematics",
+            "Effective Communication Skills",
+            "Network Fundamental"
+          ]
+        },
+        {
+          "label": "Semester 2",
+          "subjects": [
+            "Database Management System",
+            "English for Professional Purposes 1",
+            "German Language 2",
+            "Routing & Switching Essentials",
+            "Calculus & Algebra",
+            "Penghayatan Etika dan Peradaban",
+            "Bahasa Kebangsaan A",
+            "Secured Object Oriented Programming"
+          ]
+        },
+        {
+          "label": "Semester 3",
+          "subjects": [
+            "Network Programming",
+            "Operating Systems Administration",
+            "English for Professional Purposes 2",
+            "Kursus Integriti dan Antirasuah",
+            "Community Service",
+            "Scaling Network",
+            "Web Programming"
+          ]
+        },
+        {
+          "label": "Semester 4",
+          "subjects": [
+            "IT Project Management",
+            "Wireless Network & Security",
+            "Penetration Testing",
+            "Intrusion Detection & Prevention Systems",
+            "CBS Project Proposal",
+            "Digital Entrepreneurship",
+            "Securing Network"
+          ]
+        },
+        {
+          "label": "Semester 5",
+          "subjects": [
+            "Digital Forensics & Incident Response",
+            "Cryptography",
+            "Internet of Things",
+            "CBS Final Project",
+            "Network Management & Monitoring Systems",
+            "Mobile Application Development"
+          ]
+        },
+        {
+          "label": "Semester 6",
+          "subjects": [
+            "Industrial Training"
+          ]
+        }
+      ],
+      "entryGroupId": null
+    },
+    {
+      "id": "gapp",
+      "name": "German University Preparatory Programme (GAPP)",
+      "category": "PRE_UNIVERSITY",
+      "department": "Asasi, Pra-Universiti & Pengajian Umum",
+      "departmentId": "GENERAL",
+      "code": "(R3/0011/3/0134) (04/27) (A 7643)",
+      "credits": 64,
+      "summary": "Bersedia untuk pengajian kejuruteraan di Universities of Applied Sciences di Jerman.",
+      "description": "Program persediaan 3-dalam-1 yang dilancarkan pada 2001, menggabungkan Cambridge A-Level, Bahasa Jerman bertauliah dan latihan amali teknikal pra-pengajian, untuk pelajar yang ingin mempelajari kejuruteraan di University of Applied Sciences di Jerman.",
+      "duration": "20 bulan di GMI, kemudian 6 bulan Bahasa Jerman intensif di Jerman",
+      "intake": "Januari, Mei dan Ogos",
+      "studyMode": null,
+      "fee": "Yuran pengajian RM42,400 untuk 4 semester bagi pelajar Malaysia. RM52,000 termasuk yuran pelbagai dan peperiksaan, dan RM55,600 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Cambridge GCE A-Level",
+        "German language certification (TELC, levels A2 to C1)",
+        "440 hours of Vorpraktikum (pre-study technical internship)"
+      ],
+      "certificates": [],
+      "careers": [],
+      "progression": [
+        "Memohon ke mana-mana University of Applied Sciences (Hochschule) di Jerman"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Subjek Cambridge A-Level",
+          "subjects": [
+            "Mathematics 9709",
+            "Physics 9702",
+            "Chemistry 9701",
+            "German 8027"
+          ]
+        },
+        {
+          "label": "6 bulan di pusat bahasa di Jerman",
+          "subjects": [
+            "German from B2 to TestDaF",
+            "Intercultural and study skills workshop",
+            "Advice on study placement",
+            "Technical German",
+            "Internship, depending on placement"
+          ]
+        }
+      ],
+      "entryGroupId": "G"
+    },
+    {
+      "id": "gufp",
+      "name": "GMI-UTP Foundation Programme (GUFP)",
+      "category": "PRE_UNIVERSITY",
+      "department": "Asasi, Pra-Universiti & Pengajian Umum",
+      "departmentId": "GENERAL",
+      "code": "(R/0011/3/0218) (10/30) (MQA/FA 13871)",
+      "credits": 50,
+      "summary": "Program asasi setahun yang melayakkan anda memulakan ijazah di UTP.",
+      "description": "Program asasi Kejuruteraan dan Sains selama setahun yang dijalankan bersama Universiti Teknologi PETRONAS dan berasaskan sukatan pelajaran asasi UTP. Ia diajar dalam Bahasa Inggeris, dengan kelas Bahasa Jerman setiap minggu. Pelajar yang menamatkannya layak memulakan program ijazah sarjana muda di UTP.",
+      "duration": "1 tahun (3 trimester)",
+      "intake": "April dan Julai",
+      "studyMode": null,
+      "fee": "Yuran pengajian RM16,050 untuk pelajar Malaysia. RM18,100 termasuk yuran pelbagai, dan RM20,500 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Foundation in Engineering and Science",
+        "Introduction to German language and culture"
+      ],
+      "certificates": [],
+      "careers": [],
+      "progression": [
+        "Ijazah sarjana muda dengan kepujian di UTP dalam Kejuruteraan Kimia, Awam, Elektrik & Elektronik, Bersepadu, Mekanikal, Petroleum, Komputer dan Bahan",
+        "BSc (Hons) di UTP dalam Applied Physics, Applied Chemistry dan Petroleum Geoscience",
+        "BSc di UTP dalam Industrial Physics"
+      ],
+      "subjectGroups": [
+        {
+          "label": "Trimester 1 (18 kredit)",
+          "subjects": [
+            "Chemistry I (5)",
+            "Physics I (5)",
+            "Mathematics I (5)",
+            "Proficiency English (3)"
+          ]
+        },
+        {
+          "label": "Trimester 2 (16 kredit)",
+          "subjects": [
+            "Thinking Skills (3)",
+            "Islamic Studies / Moral Studies (3)",
+            "Structured Algorithms & Programming (5)",
+            "Technical English (4)",
+            "Co-curriculum (1)"
+          ]
+        },
+        {
+          "label": "Trimester 3 (16 kredit)",
+          "subjects": [
+            "Physics II (5)",
+            "Chemistry II (5)",
+            "Mathematics II (5)",
+            "Co-curriculum (1)"
+          ]
+        }
+      ],
+      "entryGroupId": "F"
+    },
+    {
+      "id": "belt",
+      "name": "Bachelor of Electrical Engineering Technology with Honours (BELT)",
+      "category": "DEGREE",
+      "department": "Kejuruteraan Elektrik",
+      "departmentId": "ELECTRICAL",
+      "code": "(MQA/FA 9760)",
+      "credits": 140,
+      "summary": "Ijazah sarjana muda kepujian empat tahun bersama UTeM, diajar di kampus GMI di Kajang.",
+      "description": "Bachelor of Electrical Engineering Technology with Honours oleh UTeM, ditawarkan di GMI sebagai pusat pembelajaran luar kampus di bawah perjanjian yang ditandatangani pada September 2025. Ia menggabungkan teori, kerja makmal, projek reka bentuk dan latihan industri, dan pelajar memilih trek elektif dalam Tenaga Boleh Baharu atau Pengangkutan Elektrik.",
+      "duration": "4 tahun (8 semester)",
+      "intake": "Mac dan Oktober",
+      "studyMode": "Sepenuh masa",
+      "fee": "Yuran pengajian RM69,000 untuk pelajar Malaysia. RM75,958 termasuk yuran lain, dan RM83,158 termasuk asrama pilihan. Yuran tertakluk kepada perubahan.",
+      "coreAreas": [
+        "Industrial Automation",
+        "Robotics",
+        "Control Systems",
+        "Embedded Systems"
+      ],
+      "certificates": [
+        "IoT Fundamentals: Big Data & Analytics",
+        "IoT Fundamentals: Connecting Things",
+        "Cisco Certified Network Associate Routing & Switching (Preparation)",
+        "Programmable Logic Controller (PLC) Level 1 and Level 2",
+        "SMCT MT1: Practical Mechatronics 1",
+        "Energy Efficiency for Lighting"
+      ],
+      "careers": [
+        "Building Maintenance Services Engineer",
+        "Plant and Facilities Maintenance",
+        "Electrical Power Engineer",
+        "Industrial Research and Development",
+        "HVAC Controller",
+        "Oil and Gas Engineer"
+      ],
+      "progression": [],
+      "subjectGroups": [
+        {
+          "label": "Semester 1 (18 kredit)",
+          "subjects": [
+            "Technical Mathematics",
+            "Technical Physics",
+            "Measurement and Instrumentation System",
+            "Computer Aided Design",
+            "Electrical Circuit Fundamental",
+            "English for Academic Purpose",
+            "Cocurriculum I"
+          ]
+        },
+        {
+          "label": "Semester 2 (19 kredit)",
+          "subjects": [
+            "Calculus for Technology",
+            "Electronics Workshop",
+            "Electrics & Magnetism",
+            "Digital Electronics & System",
+            "Advanced Electrical Circuit",
+            "Cocurriculum II",
+            "Philosophy and Current Issue"
+          ]
+        },
+        {
+          "label": "Semester 3 (18 kredit)",
+          "subjects": [
+            "Applied Calculus",
+            "Electrical Installation I",
+            "Electronic Principle",
+            "Computer Programming",
+            "Electrical Technology",
+            "Third Language (local students) or Malay Language for Communication I (international students)"
+          ]
+        },
+        {
+          "label": "Semester 4 (19 kredit)",
+          "subjects": [
+            "Statistical Methods",
+            "Embedded Systems",
+            "Electrical Installation II",
+            "Control System Fundamental",
+            "Signal System & Communication",
+            "Academic Writing",
+            "Integrity and Anti-Corruption"
+          ]
+        },
+        {
+          "label": "Semester 5 (20 kredit)",
+          "subjects": [
+            "Electrical Machines",
+            "Power Electronics Devices",
+            "Power System Technology",
+            "Industrial Automation",
+            "Appreciation of Ethics and Civilisations (local students) or Malaysian Culture (international students)",
+            "Elective I",
+            "Elective II"
+          ]
+        },
+        {
+          "label": "Semester 6 (16 kredit)",
+          "subjects": [
+            "Engineering Seminar",
+            "Bachelor Degree Project I",
+            "Power Electronics Systems",
+            "Integrated Design Project",
+            "English for Professional Interaction",
+            "Elective III"
+          ]
+        },
+        {
+          "label": "Semester 7 (18 kredit)",
+          "subjects": [
+            "Engineering Ethics & OSHE",
+            "Bachelor Degree Project II",
+            "Energy Efficiency",
+            "Power Distribution System",
+            "Technology Entrepreneurship",
+            "Elective IV"
+          ]
+        },
+        {
+          "label": "Semester 8 (12 kredit)",
+          "subjects": [
+            "Industrial Training"
+          ]
+        },
+        {
+          "label": "Trek elektif 1: Tenaga Boleh Baharu",
+          "subjects": [
+            "Renewable Energy System",
+            "Energy Storage Technology",
+            "PV System Design",
+            "Power Electronics Application",
+            "Power System Electromagnetic Compatibility",
+            "Electricity Market and System Economics",
+            "Power Quality",
+            "Artificial Intelligence"
+          ]
+        },
+        {
+          "label": "Trek elektif 2: Pengangkutan Elektrik",
+          "subjects": [
+            "Introduction to Electric Transportation System",
+            "Energy Storage Technology",
+            "Power Electronics Application",
+            "Motor Drive and Traction System",
+            "Power System Electromagnetic Compatibility",
+            "Artificial Intelligence",
+            "Modern Drive System",
+            "Hybrid Electric Vehicle"
+          ]
+        }
+      ],
+      "entryGroupId": "H"
+    }
+  ],
+  "entryGroups": [
+    {
+      "id": "A",
+      "standard": "Standard Program MQA: Kejuruteraan dan Teknologi Kejuruteraan",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Lulus SPM atau kelayakan yang setara dengan sekurang-kurangnya kepujian dalam 3 subjek: Matematik, 1 subjek Sains/Teknikal/Vokasional dan 1 subjek lain, serta lulus Bahasa Inggeris."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Lulus O-Level dengan sekurang-kurangnya Gred C dalam 3 subjek, termasuk Matematik, 1 subjek Sains/Teknikal/Vokasional dan 1 subjek lain, serta lulus Bahasa Inggeris."
+        },
+        {
+          "qualification": "UEC",
+          "requirement": "Lulus UEC dengan sekurang-kurangnya Gred B dalam 3 subjek, termasuk Matematik, 1 subjek berkaitan Sains/Teknikal/Vokasional dan 1 subjek lain daripada mana-mana bidang, serta lulus Bahasa Inggeris."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Lulus STPM dengan sekurang-kurangnya 1 prinsipal dalam mana-mana subjek, serta lulus Matematik, Bahasa Inggeris dan 1 subjek lain di peringkat SPM."
+        },
+        {
+          "qualification": "Sijil",
+          "requirement": "Lulus Sijil dalam bidang berkaitan daripada Penyedia Pendidikan Tinggi yang diiktiraf oleh Kerajaan Malaysia, dengan CGPA minimum 2.00."
+        },
+        {
+          "qualification": "Sijil Kemahiran",
+          "requirement": "Lulus Sijil Teknikal dan Vokasional atau Sijil Kemahiran dalam bidang berkaitan, dengan 1 tahun pengalaman kerja yang relevan atau sekurang-kurangnya 1 semester program perantaraan, serta lulus SPM dengan sekurang-kurangnya 1 kepujian. SKM mestilah pada Tahap 3."
+        },
+        {
+          "qualification": "Pra-Diploma atau Matrikulasi",
+          "requirement": "Lulus Pra-Diploma atau Matrikulasi dalam bidang berkaitan dengan CGPA minimum 2.00, lulus SPM dengan sekurang-kurangnya 3 kepujian termasuk Bahasa Melayu dan 2 subjek lain, serta lulus Bahasa Inggeris."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 dan pengalaman yang sesuai seperti yang ditentukan oleh institusi."
+        },
+        {
+          "qualification": "Lain-lain",
+          "requirement": "Kelayakan lain yang diiktiraf setara oleh Kerajaan Malaysia."
+        }
+      ],
+      "notes": [
+        "Pemegang SVM juga memerlukan sekurang-kurangnya C dalam BM 1104, lulus Sejarah 1251, sekurang-kurangnya 3 kepujian dalam subjek vokasional yang setara dengan subjek elektif SPM, CGPA minimum 2.00 (Akademik) dan 2.67 (Vokasional), serta kecekapan dalam semua modul vokasional.",
+        "Pelajar antarabangsa memerlukan TOEFL 500, IELTS 5.0 atau yang setara.",
+        "Tiada kecacatan fizikal yang menghalang kerja amali dan tidak buta warna. Pemohon mesti lulus pemeriksaan perubatan dan ujian air kencing."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "UEC",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik",
+                "Matematik Lanjutan"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "STPM",
+          "minSubjects": 1,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Matematik"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Inggeris"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Melayu",
+                "Sejarah",
+                "Matematik Tambahan"
+              ],
+              "supporting": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "standard": "Standard BEM (ETAC)",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Lulus SPM dengan sekurang-kurangnya 3 kepujian, termasuk Matematik, 1 subjek Sains/Teknikal dan 1 subjek lain."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Lulus O-Level dengan sekurang-kurangnya Gred C dalam 3 subjek, termasuk Matematik, 1 subjek Sains/Teknikal/Vokasional dan 1 subjek lain, serta lulus Bahasa Inggeris."
+        },
+        {
+          "qualification": "SKM Tahap 3",
+          "requirement": "Lulus SKM Tahap 3 dalam bidang berkaitan dan lulus SPM dengan sekurang-kurangnya 1 kepujian. Program perantaraan sehingga 1 tahun atau 2 semester mungkin diperlukan."
+        },
+        {
+          "qualification": "Sijil Kolej Komuniti",
+          "requirement": "Lulus Sijil Kolej Komuniti yang setara dengan MQF Tahap 3 dalam bidang berkaitan dan lulus SPM dengan sekurang-kurangnya 1 kepujian. Program perantaraan mungkin diperlukan."
+        },
+        {
+          "qualification": "Sijil",
+          "requirement": "Lulus Sijil MQF Tahap 3 dalam bidang berkaitan dengan CGPA minimum 2.00."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 dan pengalaman yang sesuai seperti yang ditentukan oleh institusi."
+        },
+        {
+          "qualification": "Lain-lain",
+          "requirement": "Kelayakan lain yang diiktiraf setara oleh Kerajaan Malaysia."
+        }
+      ],
+      "notes": [
+        "Pemegang SVM juga memerlukan sekurang-kurangnya C dalam BM 1104, lulus Sejarah 1251, sekurang-kurangnya 3 kepujian dalam subjek vokasional yang setara dengan subjek elektif SPM, CGPA minimum 2.00 (Akademik) dan 2.67 (Vokasional), serta kecekapan dalam semua modul vokasional.",
+        "Pelajar antarabangsa memerlukan TOEFL 500, IELTS 5.0 atau yang setara.",
+        "Tiada kecacatan fizikal yang menghalang kerja amali dan tidak buta warna. Pemohon mesti lulus pemeriksaan perubatan dan ujian air kencing."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL"
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "standard": "Standard MBOT",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Lulus SPM dengan sekurang-kurangnya 3 kepujian dalam mana-mana subjek."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Lulus O-Level dengan sekurang-kurangnya Gred C dalam 3 subjek."
+        },
+        {
+          "qualification": "UEC",
+          "requirement": "Lulus UEC dengan sekurang-kurangnya Gred B dalam 3 subjek."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Lulus STPM atau kelayakan yang setara dengan sekurang-kurangnya Gred C (CGPA 2.00) dalam mana-mana subjek."
+        },
+        {
+          "qualification": "STAM",
+          "requirement": "Lulus STAM (Maqbul) atau kelayakan yang setara."
+        },
+        {
+          "qualification": "Pra-Diploma",
+          "requirement": "Lulus sekurang-kurangnya 1 semester program pra-diploma, dengan SPM atau kelayakan yang setara dan sekurang-kurangnya 3 kepujian dalam mana-mana subjek."
+        },
+        {
+          "qualification": "SKM Tahap 3",
+          "requirement": "Lulus SKM Tahap 3 dalam bidang berkaitan, lulus SPM dengan sekurang-kurangnya 1 kepujian, dan tamatkan 1 semester program perantaraan."
+        },
+        {
+          "qualification": "Sijil",
+          "requirement": "Lulus Sijil MQF Tahap 3 dengan CGPA minimum 2.00 atau yang setara."
+        },
+        {
+          "qualification": "Sijil Vokasional",
+          "requirement": "Lulus Sijil Vokasional yang diiktiraf dalam bidang berkaitan atau kelayakan yang setara dengan CGPA minimum 2.00."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 dan pengalaman yang sesuai seperti yang ditentukan oleh institusi."
+        },
+        {
+          "qualification": "Lain-lain",
+          "requirement": "Kelayakan lain yang diiktiraf setara oleh Kerajaan Malaysia."
+        }
+      ],
+      "notes": [
+        "Pemegang SVM juga memerlukan sekurang-kurangnya C dalam BM 1104, lulus Sejarah 1251, sekurang-kurangnya 3 kepujian dalam subjek vokasional yang setara dengan subjek elektif SPM, CGPA minimum 2.00 (Akademik) dan 2.67 (Vokasional), serta kecekapan dalam semua modul vokasional.",
+        "Pelajar antarabangsa memerlukan TOEFL 500, IELTS 5.0 atau yang setara.",
+        "Tiada kecacatan fizikal yang menghalang kerja amali dan tidak buta warna. Pemohon mesti lulus pemeriksaan perubatan dan ujian air kencing."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "UEC",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "STPM",
+          "minSubjects": 1,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "standard": "Standard Program MQA: Pengkomputeran",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Lulus SPM dengan sekurang-kurangnya 3 kepujian dalam mana-mana subjek, termasuk Matematik, atau kelayakan yang setara."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Lulus O-Level dengan sekurang-kurangnya Gred C dalam 3 subjek, termasuk Matematik."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Lulus STPM dengan sekurang-kurangnya Gred C (2.00) dalam satu subjek, dan kepujian dalam Matematik di peringkat SPM atau yang setara."
+        },
+        {
+          "qualification": "STAM",
+          "requirement": "Lulus STAM dengan sekurang-kurangnya Maqbul, dan kepujian dalam Matematik di peringkat SPM atau yang setara."
+        },
+        {
+          "qualification": "SKM Tahap 3",
+          "requirement": "Lulus SKM Tahap 3 dalam bidang berkaitan. Calon tanpa Matematik boleh diterima masuk selepas penilaian teliti terhadap kecekapan Matematik mereka."
+        },
+        {
+          "qualification": "Sijil",
+          "requirement": "Sijil (MQF Tahap 3) dalam bidang berkaitan dengan CGPA sekurang-kurangnya 2.00."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 dan pengalaman yang sesuai seperti yang ditentukan oleh institusi."
+        },
+        {
+          "qualification": "Lain-lain",
+          "requirement": "Kelayakan lain yang diiktiraf setara oleh Kerajaan Malaysia."
+        }
+      ],
+      "notes": [
+        "Calon yang tidak lulus Matematik di peringkat SPM atau yang setara boleh diterima masuk tetapi mesti mengambil dan lulus subjek pengukuhan Matematik.",
+        "Kepujian dalam subjek berkaitan Pengkomputeran di peringkat SPM atau yang setara boleh diberi pertimbangan keutamaan.",
+        "Pemegang SVM juga memerlukan sekurang-kurangnya C dalam BM 1104, lulus Sejarah 1251, sekurang-kurangnya 3 kepujian dalam subjek vokasional yang setara dengan subjek elektif SPM, CGPA minimum 2.00 (Akademik) dan 2.67 (Vokasional), serta kecekapan dalam semua modul vokasional.",
+        "Pelajar antarabangsa memerlukan TOEFL 500, IELTS 5.0 atau yang setara.",
+        "Syarat tawaran GMI memerlukan pemohon disahkan sihat serta lulus pemeriksaan perubatan dan ujian dadah, tanpa kecacatan fizikal yang serius dan tidak buta warna."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ],
+              "contactIfMissing": true
+            }
+          ],
+          "contactNote": "GMI boleh menerima calon tanpa syarat ini jika mereka mengambil dan lulus subjek pengukuhan Matematik."
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ],
+              "contactIfMissing": true
+            }
+          ],
+          "contactNote": "GMI boleh menerima calon tanpa syarat ini jika mereka mengambil dan lulus subjek pengukuhan Matematik."
+        },
+        {
+          "qualificationId": "STPM",
+          "minSubjects": 1,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ],
+              "supporting": true,
+              "contactIfMissing": true
+            }
+          ],
+          "contactNote": "GMI boleh menerima calon tanpa syarat ini jika mereka mengambil dan lulus subjek pengukuhan Matematik."
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "standard": "Standard Program MQA: Teknologi Multimedia Kreatif",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Lulus SPM atau kelayakan yang setara dengan sekurang-kurangnya 3 kepujian."
+        },
+        {
+          "qualification": "O-Level",
+          "requirement": "Lulus O-Level dengan sekurang-kurangnya Gred C dalam 3 subjek, termasuk Matematik, 1 subjek Sains/Teknikal/Vokasional dan 1 subjek lain, serta lulus Bahasa Inggeris."
+        },
+        {
+          "qualification": "SKM Tahap 3",
+          "requirement": "SKM Tahap 3 dan SPM dengan sekurang-kurangnya 1 kepujian."
+        },
+        {
+          "qualification": "Sijil",
+          "requirement": "Sijil Multimedia Kreatif yang diiktiraf atau kelayakan yang setara."
+        },
+        {
+          "qualification": "Sijil Vokasional",
+          "requirement": "Sijil Teknikal dan Vokasional yang diiktiraf dalam bidang berkaitan atau kelayakan yang setara, dengan 1 tahun pengalaman kerja yang relevan atau 1 semester program perantaraan."
+        },
+        {
+          "qualification": "APEL",
+          "requirement": "APEL.A T-4 dan pengalaman yang sesuai seperti yang ditentukan oleh institusi."
+        },
+        {
+          "qualification": "Lain-lain",
+          "requirement": "Kelayakan lain yang diiktiraf setara oleh Kerajaan Malaysia."
+        }
+      ],
+      "notes": [
+        "Pemegang SVM juga memerlukan sekurang-kurangnya C dalam BM 1104, lulus Sejarah 1251, sekurang-kurangnya 3 kepujian dalam subjek vokasional yang setara dengan subjek elektif SPM, CGPA minimum 2.00 (Akademik) dan 2.67 (Vokasional), serta kecekapan dalam semua modul vokasional.",
+        "Pelajar antarabangsa memerlukan TOEFL 500, IELTS 5.0 atau yang setara.",
+        "Syarat tawaran GMI memerlukan pemohon disahkan sihat serta lulus pemeriksaan perubatan dan ujian dadah, tanpa kecacatan fizikal yang serius dan tidak buta warna."
+      ],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": []
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 3,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjectGroup": "SCIENCE_TECHNICAL_VOCATIONAL"
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "standard": "GMI-UTP Foundation Programme",
+      "routes": [
+        {
+          "qualification": "SPM",
+          "requirement": "Lulus SPM dengan sekurang-kurangnya Gred C dalam Bahasa Melayu, Matematik, Bahasa Inggeris, Matematik Tambahan, Fizik dan Kimia."
+        },
+        {
+          "qualification": "O-Level / IGCSE",
+          "requirement": "Lulus IGCSE atau O-Level dengan sekurang-kurangnya kepujian (Gred C) atau 60% dalam 5 subjek, termasuk Matematik, Fizik, Kimia, Matematik Tambahan dan 1 subjek lain."
+        }
+      ],
+      "notes": [],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik Tambahan"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Kimia"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "minSubjects": 5,
+          "minSubjectGrade": "CREDIT",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Kimia"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik Tambahan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "standard": "German University Preparatory Programme",
+      "routes": [
+        {
+          "qualification": "Pembiayaan sendiri",
+          "requirement": "SPM, IGCSE atau O-Level dengan sekurang-kurangnya Gred C dalam Bahasa Inggeris, Matematik, Matematik Tambahan, Fizik dan Kimia. Terbuka kepada pelajar tempatan dan antarabangsa. Mohon melalui GMI."
+        },
+        {
+          "qualification": "YTP MARA",
+          "requirement": "Calon Bumiputera. SPM dengan A dalam Bahasa Inggeris, Fizik, Matematik Tambahan, Kimia dan 4 subjek lain. Mohon melalui MARA. Terma dan syarat dikenakan."
+        }
+      ],
+      "notes": [],
+      "rules": [
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik Tambahan"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Kimia"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "OLEVEL",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik Tambahan"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Kimia"
+              ]
+            }
+          ]
+        },
+        {
+          "qualificationId": "SPM",
+          "certificateRequired": true,
+          "minSubjects": 8,
+          "minSubjectGrade": "A-",
+          "requirements": [
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Bahasa Inggeris"
+              ]
+            },
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Fizik"
+              ]
+            },
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Matematik Tambahan"
+              ]
+            },
+            {
+              "minGrade": "A-",
+              "subjects": [
+                "Kimia"
+              ]
+            }
+          ],
+          "note": "Anda juga memenuhi tahap akademik untuk tajaan YTP MARA, yang terbuka kepada calon Bumiputera. Mohon melalui MARA. Terma dan syarat dikenakan.",
+          "noteOnly": true
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "standard": "Syarat UTeM dan GMI, versi September 2025",
+      "routes": [
+        {
+          "qualification": "Diploma Teknologi Kejuruteraan",
+          "requirement": "Lulus Diploma Teknologi Kejuruteraan, Diploma dalam bidang berkaitan atau kelayakan yang setara dengan CGPA minimum 2.30, serta lulus SPM dengan kepujian dalam Bahasa Melayu dan lulus Sejarah."
+        },
+        {
+          "qualification": "Diploma Kejuruteraan",
+          "requirement": "Lulus Diploma Kejuruteraan atau kelayakan yang setara dengan CGPA minimum 2.00, serta lulus SPM dengan kepujian dalam Bahasa Melayu dan lulus Sejarah."
+        },
+        {
+          "qualification": "STPM",
+          "requirement": "Lulus STPM dengan sekurang-kurangnya Gred C (2.00) dalam Pengajian Am, Matematik (M) atau (T), dan Fizik, Kimia atau Biologi. SPM mesti merangkumi kepujian dalam Bahasa Melayu, lulus Sejarah dan kepujian dalam Matematik atau Matematik Tambahan."
+        },
+        {
+          "qualification": "Matrikulasi atau Asasi",
+          "requirement": "Lulus Matrikulasi KPM, Asasi UM, Asasi UiTM, Asasi PINTAR UKM atau program asasi lain yang diiktiraf dengan sekurang-kurangnya Gred C (2.00) dalam Matematik dan salah satu daripada Fizik, Kimia, Biologi, Kejuruteraan Mekanikal, Kejuruteraan Elektrik & Elektronik, Kejuruteraan Awam atau Kejuruteraan Asas. SPM mesti merangkumi kepujian dalam Bahasa Melayu dan lulus Sejarah. Calon dengan Biologi juga memerlukan kepujian dalam Fizik SPM."
+        },
+        {
+          "qualification": "DKM atau DLKM",
+          "requirement": "Lulus Diploma Kemahiran Malaysia atau Diploma Lanjutan Kemahiran Malaysia dalam bidang berkaitan dengan CGPA minimum 3.00 atau skor 80%. SPM mesti merangkumi kepujian dalam Bahasa Melayu, lulus Sejarah, lulus Matematik, Fizik atau Sains, dan sekurang-kurangnya Gred E dalam Bahasa Inggeris. Kemasukan adalah untuk Tahun 1 sahaja, tanpa pengecualian kredit."
+        },
+        {
+          "qualification": "GCE A-Level atau IB",
+          "requirement": "Lulus GCE A-Level dengan sekurang-kurangnya 9 mata, atau IB Diploma dengan sekurang-kurangnya 24 mata, serta lulus SPM dengan kepujian dalam Bahasa Melayu dan lulus Sejarah."
+        }
+      ],
+      "notes": [
+        "MUET sekurang-kurangnya Band 2.0 diperlukan bagi setiap laluan (Band 2 untuk peperiksaan sehingga 2020). Pemohon A-Level dan IB boleh menggunakan TOEFL 500 atau IELTS 5.5 sebagai ganti.",
+        "Pemegang diploma mesti lulus atau menamatkan diploma sebelum tarikh tutup permohonan. Pengecualian kredit bergantung pada kelulusan Fakulti.",
+        "Pelajar antarabangsa memerlukan GCE A-Level atau IB dengan sekurang-kurangnya Gred C dalam Matematik, Fizik dan 1 subjek lain selepas 12 tahun pendidikan, atau Diploma berkaitan dengan CGPA sekurang-kurangnya 3.00, serta TOEFL 500, IELTS 5.0 atau MUET Band 3."
+      ],
+      "rules": [
+        {
+          "qualificationId": "DIPLOMA",
+          "requirements": [
+            {
+              "minGrade": "2.30+",
+              "subjects": [
+                "Diploma Teknologi Kejuruteraan",
+                "Diploma dalam bidang berkaitan"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "Anda juga memerlukan MUET sekurang-kurangnya Band 2.0, dan diploma mesti ditamatkan sebelum tarikh tutup permohonan."
+        },
+        {
+          "qualificationId": "DIPLOMA",
+          "requirements": [
+            {
+              "minGrade": "2.00+",
+              "subjects": [
+                "Diploma Kejuruteraan"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "Anda juga memerlukan MUET sekurang-kurangnya Band 2.0, dan diploma mesti ditamatkan sebelum tarikh tutup permohonan."
+        },
+        {
+          "qualificationId": "STPM",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Pengajian Am"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik (M)",
+                "Matematik (T)"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik",
+                "Kimia",
+                "Biologi"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik",
+                "Matematik Tambahan"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "Anda juga memerlukan MUET sekurang-kurangnya Band 2.0."
+        },
+        {
+          "qualificationId": "FOUNDATION",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik",
+                "Kimia",
+                "Kejuruteraan Mekanikal",
+                "Kejuruteraan Elektrik & Elektronik",
+                "Kejuruteraan Awam",
+                "Kejuruteraan Asas"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "Anda juga memerlukan MUET sekurang-kurangnya Band 2.0."
+        },
+        {
+          "qualificationId": "FOUNDATION",
+          "requirements": [
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Matematik"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Biologi"
+              ]
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Fizik"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "CREDIT",
+              "subjects": [
+                "Bahasa Melayu"
+              ],
+              "supporting": true
+            },
+            {
+              "minGrade": "PASS",
+              "subjects": [
+                "Sejarah"
+              ],
+              "supporting": true
+            }
+          ],
+          "note": "Anda juga memerlukan MUET sekurang-kurangnya Band 2.0."
+        }
+      ]
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "SPM",
+      "name": "SPM",
+      "grades": [
+        "A+",
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "C+",
+        "C",
+        "D",
+        "E",
+        "G"
+      ],
+      "creditGrade": "C",
+      "passGrade": "E",
+      "certificateSubjects": [
+        "Bahasa Melayu",
+        "Sejarah"
+      ],
+      "requiredSubjects": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Sejarah"
+      ],
+      "defaultSubjects": [],
+      "subjects": [
+        "Matematik Tambahan",
+        "Fizik",
+        "Kimia",
+        "Biologi",
+        "Sains",
+        "Sains Tambahan",
+        "Pendidikan Islam",
+        "Pendidikan Moral",
+        "Sains Komputer",
+        "Lukisan Kejuruteraan",
+        "Pengajian Kejuruteraan Mekanikal",
+        "Pengajian Kejuruteraan Awam",
+        "Pengajian Kejuruteraan Elektrik dan Elektronik",
+        "Reka Cipta",
+        "Grafik Komunikasi Teknikal",
+        "Asas Kelestarian",
+        "Pertanian",
+        "Sains Rumah Tangga",
+        "Sains Sukan",
+        "Subjek vokasional (MPV)",
+        "Perakaunan",
+        "Perniagaan",
+        "Ekonomi",
+        "Geografi",
+        "Pendidikan Seni Visual",
+        "Bahasa Arab",
+        "Bahasa Cina",
+        "Bahasa Tamil",
+        "Kesusasteraan dalam Bahasa Inggeris",
+        "Kesusasteraan Melayu",
+        "Subjek lain 1",
+        "Subjek lain 2"
+      ],
+      "subjectGroups": {
+        "SCIENCE_TECHNICAL": [
+          "Fizik",
+          "Kimia",
+          "Biologi",
+          "Sains",
+          "Sains Tambahan",
+          "Lukisan Kejuruteraan",
+          "Pengajian Kejuruteraan Mekanikal",
+          "Pengajian Kejuruteraan Awam",
+          "Pengajian Kejuruteraan Elektrik dan Elektronik",
+          "Reka Cipta",
+          "Grafik Komunikasi Teknikal",
+          "Sains Komputer",
+          "Asas Kelestarian",
+          "Pertanian",
+          "Sains Rumah Tangga",
+          "Sains Sukan"
+        ],
+        "SCIENCE_TECHNICAL_VOCATIONAL": [
+          "Fizik",
+          "Kimia",
+          "Biologi",
+          "Sains",
+          "Sains Tambahan",
+          "Lukisan Kejuruteraan",
+          "Pengajian Kejuruteraan Mekanikal",
+          "Pengajian Kejuruteraan Awam",
+          "Pengajian Kejuruteraan Elektrik dan Elektronik",
+          "Reka Cipta",
+          "Grafik Komunikasi Teknikal",
+          "Sains Komputer",
+          "Asas Kelestarian",
+          "Pertanian",
+          "Sains Rumah Tangga",
+          "Sains Sukan",
+          "Subjek vokasional (MPV)"
+        ]
+      }
+    },
+    {
+      "id": "OLEVEL",
+      "name": "O-Level / IGCSE",
+      "grades": [
+        "A*",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "U"
+      ],
+      "creditGrade": "C",
+      "passGrade": "E",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Bahasa Inggeris",
+        "Matematik"
+      ],
+      "subjects": [
+        "Bahasa Inggeris",
+        "Matematik",
+        "Matematik Tambahan",
+        "Fizik",
+        "Kimia",
+        "Biologi",
+        "Sains Komputer",
+        "Teknologi Maklumat dan Komunikasi",
+        "Reka Bentuk dan Teknologi",
+        "Bahasa Melayu",
+        "Ekonomi",
+        "Pengajian Perniagaan",
+        "Perakaunan",
+        "Geografi",
+        "Sejarah",
+        "Subjek lain 1",
+        "Subjek lain 2"
+      ],
+      "subjectGroups": {
+        "SCIENCE_TECHNICAL": [
+          "Fizik",
+          "Kimia",
+          "Biologi",
+          "Sains Komputer",
+          "Teknologi Maklumat dan Komunikasi",
+          "Reka Bentuk dan Teknologi"
+        ],
+        "SCIENCE_TECHNICAL_VOCATIONAL": [
+          "Fizik",
+          "Kimia",
+          "Biologi",
+          "Sains Komputer",
+          "Teknologi Maklumat dan Komunikasi",
+          "Reka Bentuk dan Teknologi"
+        ]
+      }
+    },
+    {
+      "id": "UEC",
+      "name": "UEC",
+      "grades": [
+        "A1",
+        "A2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "C7",
+        "C8",
+        "F9"
+      ],
+      "creditGrade": "B6",
+      "passGrade": "C8",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Bahasa Inggeris",
+        "Matematik"
+      ],
+      "subjects": [
+        "Bahasa Inggeris",
+        "Matematik",
+        "Matematik Lanjutan",
+        "Fizik",
+        "Kimia",
+        "Biologi",
+        "Bahasa Malaysia",
+        "Bahasa Cina",
+        "Sejarah",
+        "Geografi",
+        "Perdagangan",
+        "Simpan Kira dan Perakaunan",
+        "Ekonomi",
+        "Pengajian Komputer",
+        "Seni",
+        "Subjek lain 1",
+        "Subjek lain 2"
+      ],
+      "subjectGroups": {
+        "SCIENCE_TECHNICAL": [
+          "Fizik",
+          "Kimia",
+          "Biologi",
+          "Pengajian Komputer"
+        ],
+        "SCIENCE_TECHNICAL_VOCATIONAL": [
+          "Fizik",
+          "Kimia",
+          "Biologi",
+          "Pengajian Komputer"
+        ]
+      }
+    },
+    {
+      "id": "STPM",
+      "name": "STPM",
+      "grades": [
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "B-",
+        "C+",
+        "C",
+        "C-",
+        "D+",
+        "D",
+        "F"
+      ],
+      "creditGrade": "C",
+      "passGrade": "D",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Pengajian Am"
+      ],
+      "subjects": [
+        "Pengajian Am",
+        "Matematik (T)",
+        "Matematik (M)",
+        "Fizik",
+        "Kimia",
+        "Biologi",
+        "Ekonomi",
+        "Pengajian Perniagaan",
+        "Perakaunan",
+        "Teknologi Maklumat dan Komunikasi",
+        "Bahasa Melayu",
+        "Sejarah",
+        "Geografi",
+        "Subjek lain 1",
+        "Subjek lain 2"
+      ],
+      "supportingQualificationId": "SPM",
+      "supportingSubjects": [
+        "Bahasa Melayu",
+        "Sejarah",
+        "Matematik",
+        "Bahasa Inggeris"
+      ],
+      "supportingOptionalSubjects": [
+        "Matematik Tambahan"
+      ]
+    },
+    {
+      "id": "DIPLOMA",
+      "name": "Diploma",
+      "subjectLabel": "Jenis diploma",
+      "gradeLabel": "CGPA",
+      "grades": [
+        "3.00+",
+        "2.30+",
+        "2.00+",
+        "<2.00"
+      ],
+      "creditGrade": "2.00+",
+      "passGrade": "2.00+",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Diploma Teknologi Kejuruteraan"
+      ],
+      "subjects": [
+        "Diploma Teknologi Kejuruteraan",
+        "Diploma Kejuruteraan",
+        "Diploma dalam bidang berkaitan",
+        "Diploma lain"
+      ],
+      "supportingQualificationId": "SPM",
+      "supportingSubjects": [
+        "Bahasa Melayu",
+        "Sejarah"
+      ]
+    },
+    {
+      "id": "FOUNDATION",
+      "name": "Matrikulasi / Asasi",
+      "grades": [
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "B-",
+        "C+",
+        "C",
+        "C-",
+        "D+",
+        "D",
+        "F"
+      ],
+      "creditGrade": "C",
+      "passGrade": "D",
+      "requiredSubjects": [],
+      "defaultSubjects": [
+        "Matematik",
+        "Fizik"
+      ],
+      "subjects": [
+        "Matematik",
+        "Fizik",
+        "Kimia",
+        "Biologi",
+        "Kejuruteraan Mekanikal",
+        "Kejuruteraan Elektrik & Elektronik",
+        "Kejuruteraan Awam",
+        "Kejuruteraan Asas",
+        "Subjek lain 1",
+        "Subjek lain 2"
+      ],
+      "supportingQualificationId": "SPM",
+      "supportingSubjects": [
+        "Bahasa Melayu",
+        "Sejarah"
+      ],
+      "supportingOptionalSubjects": [
+        "Fizik"
+      ]
+    }
+  ]
+}

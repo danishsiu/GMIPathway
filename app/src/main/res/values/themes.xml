@@ -54,6 +54,15 @@
         <item name="navigationIconTint">@color/on_app_bar</item>
     </style>
 
+    <!-- Keeps the search box and its icons readable on the blue toolbar in light and dark mode. -->
+    <style name="ThemeOverlay.GMIPathway.Toolbar" parent="">
+        <item name="colorControlNormal">@color/on_app_bar</item>
+        <item name="colorControlActivated">@color/on_app_bar</item>
+        <item name="colorOnSurfaceVariant">@color/on_app_bar</item>
+        <item name="android:textColorPrimary">@color/on_app_bar</item>
+        <item name="android:textColorHint">@color/on_app_bar_muted</item>
+    </style>
+
     <style name="Widget.GMIPathway.TabLayout" parent="Widget.Material3.TabLayout">
         <item name="android:background">@color/app_bar_background</item>
         <item name="tabTextColor">@color/on_app_bar_muted</item>
