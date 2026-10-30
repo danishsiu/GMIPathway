@@ -85,6 +85,25 @@ class OutcomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         rebuildRows();
     }
 
+    /** Returns the sections that are open, so the screen can keep them after rotation. */
+    ArrayList<String> getExpandedSections() {
+        ArrayList<String> expanded = new ArrayList<>();
+        for (Section section : sections) {
+            if (section.expanded) {
+                expanded.add(section.status.name());
+            }
+        }
+        return expanded;
+    }
+
+    /** Call this before the list shows the adapter. */
+    void setExpandedSections(List<String> expanded) {
+        for (Section section : sections) {
+            section.expanded = expanded.contains(section.status.name());
+        }
+        rebuildRows();
+    }
+
     private void rebuildRows() {
         rows.clear();
         for (Section section : sections) {

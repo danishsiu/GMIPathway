@@ -7,14 +7,9 @@ import java.util.List;
  * Everything stored in assets/courses.json.
  */
 public class CourseCatalog {
-    private String source;
     private List<Course> courses;
     private List<EntryGroup> entryGroups;
     private List<Qualification> qualifications;
-
-    public String getSource() {
-        return source;
-    }
 
     public List<Course> getCourses() {
         return courses == null ? Collections.emptyList() : courses;

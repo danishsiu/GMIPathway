@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.IntentCompat;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,6 +32,9 @@ import java.util.List;
 public class EligibilityResultActivity extends BaseActivity
         implements OutcomeAdapter.Listener {
     private static final String EXTRA_INPUT = "input";
+    private static final String STATE_EXPANDED = "expandedSections";
+
+    private OutcomeAdapter adapter;
 
     public static Intent createIntent(Context context, EligibilityInput input) {
         return new Intent(context, EligibilityResultActivity.class).putExtra(EXTRA_INPUT, input);
@@ -58,8 +62,19 @@ public class EligibilityResultActivity extends BaseActivity
         ((TextView) findViewById(R.id.result_summary)).setText(
                 getString(R.string.eligibility_result_summary, qualification.getName()));
         showNoMatchCardIfNeeded(outcomes);
-        ((RecyclerView) findViewById(R.id.outcome_list))
-                .setAdapter(new OutcomeAdapter(outcomes, this));
+        adapter = new OutcomeAdapter(outcomes, this);
+        if (savedInstanceState != null) {
+            adapter.setExpandedSections(savedInstanceState.getStringArrayList(STATE_EXPANDED));
+        }
+        ((RecyclerView) findViewById(R.id.outcome_list)).setAdapter(adapter);
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (adapter != null) {
+            outState.putStringArrayList(STATE_EXPANDED, adapter.getExpandedSections());
+        }
     }
 
     /** Gives a friendly next step when no programme is a clear match. */

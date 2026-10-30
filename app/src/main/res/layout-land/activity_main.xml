@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Landscape puts the welcome panel beside the menu, so the menu fits without much scrolling. -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
-    android:orientation="vertical"
     tools:context=".ui.home.MainActivity">
 
     <!-- The status bar icons are light, so this strip keeps them readable across the whole width. -->
@@ -18,8 +17,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_status_strip"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
@@ -52,4 +51,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

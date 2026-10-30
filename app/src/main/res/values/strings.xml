@@ -34,6 +34,7 @@
     <string name="section_expanded">Expanded</string>
     <string name="section_collapsed">Collapsed</string>
     <string name="error_no_browser">No app found to open this link.</string>
+    <string name="error_no_internet">No internet connection. Please connect and try again.</string>
     <string name="error_no_dialer">No phone app found on this device.</string>
     <string name="error_no_email">No email app found on this device.</string>
 
