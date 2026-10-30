@@ -30,7 +30,6 @@
     <!-- Shared -->
     <string name="apply_now">Apply Now</string>
     <string name="apply_online">Apply Online</string>
-    <string name="bullet_item" translatable="false">• %1$s</string>
     <string name="section_expanded">Expanded</string>
     <string name="section_collapsed">Collapsed</string>
     <string name="error_no_browser">No app found to open this link.</string>
@@ -111,6 +110,8 @@
     <!-- Eligibility Checker -->
     <string name="eligibility_title">Eligibility Checker</string>
     <string name="eligibility_intro">Choose your qualification and enter your results. The checker then shows which GMI programmes match.</string>
+    <string name="eligibility_step_one">Step 1 of 2</string>
+    <string name="eligibility_step_two">Step 2 of 2</string>
     <string name="eligibility_qualification_hint">Your qualification</string>
     <string name="eligibility_other_option">Other qualification</string>
     <string name="eligibility_subjects_heading">Your subjects and grades</string>
@@ -129,8 +130,11 @@
     <string name="eligibility_guided_button">Contact GMI</string>
     <string name="eligibility_result_title">Your Results</string>
     <string name="eligibility_result_summary">Your results for %1$s</string>
+    <plurals name="eligibility_result_headline">
+        <item quantity="one">You qualify for %d programme</item>
+        <item quantity="other">You qualify for %d programmes</item>
+    </plurals>
     <string name="eligibility_disclaimer">This is a guide based on GMI\'s published requirements. GMI makes the final admission decision, and diplomas also need a medical check.</string>
-    <string name="eligibility_status_eligible">You qualify</string>
     <string name="eligibility_status_not_eligible">Not eligible</string>
     <string name="eligibility_status_contact">Ask GMI</string>
     <string name="eligibility_status_not_assessed">Not assessed</string>
@@ -179,7 +183,9 @@
     <string name="enquiry_intro">Fill in your details. Your email app will open with the message ready to send to GMI.</string>
     <string name="enquiry_name_hint">Full name</string>
     <string name="enquiry_email_hint">Email address</string>
+    <string name="enquiry_email_helper">So GMI can reply to you.</string>
     <string name="enquiry_phone_hint">Phone number</string>
+    <string name="enquiry_phone_helper">For example, 012 345 6789</string>
     <string name="enquiry_programme_hint">Programme of interest</string>
     <string name="enquiry_general_option">General enquiry</string>
     <string name="enquiry_message_hint">Your message</string>

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Shared by the portrait and landscape home layouts. -->
+<!-- Shared by the portrait and landscape home layouts.
+     Apply Now sits above the cards, so it stays on screen on small phones. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_medium">
 
     <com.google.android.material.card.MaterialCardView
-        style="@style/Widget.GMIPathway.Card"
+        style="@style/Widget.GMIPathway.Card.Standard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium">
+        android:layout_marginHorizontal="@dimen/screen_padding">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,10 +46,21 @@
 
     </com.google.android.material.card.MaterialCardView>
 
+    <Button
+        android:id="@+id/button_apply"
+        style="@style/Widget.GMIPathway.Button.Action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/spacing_small_plus"
+        android:text="@string/apply_now"
+        app:icon="@drawable/ic_open_in_new"
+        app:iconGravity="textStart" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginHorizontal="@dimen/screen_padding"
         android:layout_marginTop="@dimen/spacing_large"
         android:text="@string/home_explore"
         android:textAppearance="?attr/textAppearanceTitleMedium" />
@@ -55,7 +68,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium"
+        android:layout_marginHorizontal="@dimen/screen_padding"
         android:layout_marginTop="@dimen/spacing_small"
         android:baselineAligned="false"
         android:orientation="horizontal">
@@ -65,7 +78,7 @@
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_xsmall"
             android:layout_weight="1" />
 
         <include
@@ -73,7 +86,7 @@
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_xsmall"
             android:layout_weight="1" />
 
     </LinearLayout>
@@ -81,8 +94,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium"
-        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/spacing_small"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
@@ -91,7 +104,7 @@
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_xsmall"
             android:layout_weight="1" />
 
         <include
@@ -99,7 +112,7 @@
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_xsmall"
             android:layout_weight="1" />
 
     </LinearLayout>
@@ -107,8 +120,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_medium"
-        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/spacing_small"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
@@ -117,7 +130,7 @@
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_xsmall"
             android:layout_weight="1" />
 
         <include
@@ -125,19 +138,9 @@
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_xsmall"
             android:layout_weight="1" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button_apply"
-        style="@style/Widget.GMIPathway.Button.Apply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/spacing_medium"
-        android:text="@string/apply_now"
-        app:icon="@drawable/ic_open_in_new"
-        app:iconGravity="textStart" />
 
 </LinearLayout>

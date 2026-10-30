@@ -61,7 +61,7 @@ public class EligibilityResultActivity extends BaseActivity
         Qualification qualification = repository.findQualification(input.getQualificationId());
         ((TextView) findViewById(R.id.result_summary)).setText(
                 getString(R.string.eligibility_result_summary, qualification.getName()));
-        showNoMatchCardIfNeeded(outcomes);
+        showHeadline(outcomes);
         adapter = new OutcomeAdapter(outcomes, this);
         if (savedInstanceState != null) {
             adapter.setExpandedSections(savedInstanceState.getStringArrayList(STATE_EXPANDED));
@@ -77,13 +77,21 @@ public class EligibilityResultActivity extends BaseActivity
         }
     }
 
-    /** Gives a friendly next step when no programme is a clear match. */
-    private void showNoMatchCardIfNeeded(List<EligibilityOutcome> outcomes) {
+    /** Answers the main question first, with a friendly next step if nothing matches. */
+    private void showHeadline(List<EligibilityOutcome> outcomes) {
+        int eligible = 0;
         for (EligibilityOutcome outcome : outcomes) {
             if (outcome.getStatus() == EligibilityStatus.ELIGIBLE) {
-                return;
+                eligible++;
             }
         }
+        TextView headline = findViewById(R.id.result_headline);
+        if (eligible > 0) {
+            headline.setText(getResources().getQuantityString(
+                    R.plurals.eligibility_result_headline, eligible, eligible));
+            return;
+        }
+        headline.setText(R.string.eligibility_no_match_title);
         findViewById(R.id.no_match_card).setVisibility(View.VISIBLE);
         findViewById(R.id.button_contact).setOnClickListener(view -> onContactClick());
     }

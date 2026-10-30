@@ -26,9 +26,9 @@ public class AboutUsActivity extends BaseActivity {
         ViewGroup sections = findViewById(R.id.section_container);
         DetailViews.addSection(sections, R.string.about_section_who,
                 getString(R.string.about_who_body));
-        DetailViews.addSection(sections, R.string.about_section_vision,
+        DetailViews.addHighlightSection(sections, R.string.about_section_vision,
                 getString(R.string.about_vision_body));
-        DetailViews.addSection(sections, R.string.about_section_mission,
+        DetailViews.addHighlightSection(sections, R.string.about_section_mission,
                 getString(R.string.about_mission_body));
         DetailViews.addSection(sections, R.string.about_section_german,
                 DetailViews.bulletList(this, Arrays.asList(
@@ -36,13 +36,12 @@ public class AboutUsActivity extends BaseActivity {
                         getString(R.string.about_german_centres),
                         getString(R.string.about_german_language),
                         getString(R.string.about_german_industry))));
-        DetailViews.addSection(sections, R.string.about_section_history,
-                DetailViews.bulletList(this, Arrays.asList(
-                        getString(R.string.about_history_1991),
-                        getString(R.string.about_history_1992),
-                        getString(R.string.about_history_2001),
-                        getString(R.string.about_history_2008),
-                        getString(R.string.about_history_2024))));
+        DetailViews.addTimeline(sections, R.string.about_section_history, Arrays.asList(
+                getString(R.string.about_history_1991),
+                getString(R.string.about_history_1992),
+                getString(R.string.about_history_2001),
+                getString(R.string.about_history_2008),
+                getString(R.string.about_history_2024)));
         DetailViews.addSection(sections, R.string.about_section_governance,
                 getString(R.string.about_governance_body));
         DetailViews.addSection(sections, R.string.about_section_accreditation,

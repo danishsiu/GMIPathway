@@ -3,6 +3,7 @@ package com.week14.gmipathway.ui.eligibility;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -135,7 +136,7 @@ public class EligibilityActivity extends BaseActivity {
         Qualification qualification = getSelectedQualification();
         boolean showForm = qualification != null;
         formGroup.setVisibility(showForm ? View.VISIBLE : View.GONE);
-        checkButton.setVisibility(showForm ? View.VISIBLE : View.GONE);
+        findViewById(R.id.check_bar).setVisibility(showForm ? View.VISIBLE : View.GONE);
         guidedCard.setVisibility(otherRouteSelected ? View.VISIBLE : View.GONE);
 
         if (otherRouteSelected) {
@@ -191,7 +192,9 @@ public class EligibilityActivity extends BaseActivity {
     /** Adds one row. A locked subject cannot be changed, and only a removable row has an X. */
     private View addRow(ViewGroup container, SubjectGrade entry, boolean subjectLocked,
                         boolean removable, List<String> grades) {
-        View row = getLayoutInflater().inflate(R.layout.item_subject_grade, container, false);
+        // Fixed names fit beside the grade. Chosen subjects can be long, so they get their own line.
+        View row = getLayoutInflater().inflate(subjectLocked
+                ? R.layout.item_subject_grade : R.layout.item_subject_grade_open, container, false);
         row.setTag(entry);
         TextInputLayout subjectLayout = row.findViewById(R.id.subject_layout);
         TextInputLayout gradeLayout = row.findViewById(R.id.grade_layout);
@@ -209,10 +212,7 @@ public class EligibilityActivity extends BaseActivity {
         subjectInput.setDropDownWidth(getSubjectListWidth());
         subjectInput.setText(entry.getSubject(), false);
         if (subjectLocked) {
-            // Not disabled, because a disabled field is too faint to read comfortably.
-            subjectLayout.setEndIconMode(TextInputLayout.END_ICON_NONE);
-            subjectInput.setFocusable(false);
-            subjectInput.setClickable(false);
+            showAsPlainText(subjectLayout, subjectInput);
         } else {
             subjectInput.setOnItemClickListener((parent, view, position, id) -> {
                 entry.setSubject(parent.getItemAtPosition(position).toString());
@@ -224,6 +224,19 @@ public class EligibilityActivity extends BaseActivity {
         removeButton.setOnClickListener(view -> removeRow(container, row, entry));
         container.addView(row);
         return row;
+    }
+
+    /** A fixed subject reads as a label, so it does not look like a field that can be edited. */
+    private void showAsPlainText(TextInputLayout layout, MaterialAutoCompleteTextView input) {
+        layout.setEndIconMode(TextInputLayout.END_ICON_NONE);
+        layout.setBoxBackgroundMode(TextInputLayout.BOX_BACKGROUND_NONE);
+        layout.setHintEnabled(false);
+        input.setBackground(null);
+        input.setFocusable(false);
+        input.setClickable(false);
+        input.setPadding(0, 0, 0, 0);
+        input.setMinHeight(getResources().getDimensionPixelSize(R.dimen.field_height));
+        input.setGravity(Gravity.CENTER_VERTICAL);
     }
 
     /** Long subject names need more room than the narrow subject field has on small phones. */

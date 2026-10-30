@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Every card has the same structure, so a long list is easy to scan.
+     The full description is on the details page, so the list shows two lines of it. -->
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/Widget.GMIPathway.Card"
+    style="@style/Widget.GMIPathway.Card.Standard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/spacing_medium"
+    android:layout_marginBottom="@dimen/spacing_small_plus"
     android:clickable="true"
     android:focusable="true">
 
@@ -41,55 +43,73 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_xsmall"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
             android:textAppearance="?attr/textAppearanceBodyMedium"
             android:textColor="?attr/colorOnSurfaceVariant"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/course_name" />
 
-        <ImageView
-            android:id="@+id/course_duration_icon"
-            android:layout_width="@dimen/icon_small"
-            android:layout_height="@dimen/icon_small"
-            android:layout_marginTop="@dimen/spacing_small"
-            android:importantForAccessibility="no"
-            android:src="@drawable/ic_schedule"
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/course_divider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small_plus"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/course_summary"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            app:layout_constraintTop_toBottomOf="@id/course_summary" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/course_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/course_duration_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small_plus"
+            android:text="@string/course_info_duration"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toStartOf="@id/course_middle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/course_divider" />
 
         <TextView
             android:id="@+id/course_duration"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_small"
-            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            app:layout_constraintEnd_toStartOf="@id/course_middle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/course_duration_label" />
+
+        <TextView
+            android:id="@+id/course_intake_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small_plus"
+            android:text="@string/course_info_intake"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
             android:textColor="?attr/colorOnSurfaceVariant"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/course_duration_icon"
-            app:layout_constraintTop_toTopOf="@id/course_duration_icon" />
-
-        <ImageView
-            android:id="@+id/course_intake_icon"
-            android:layout_width="@dimen/icon_small"
-            android:layout_height="@dimen/icon_small"
-            android:layout_marginTop="@dimen/spacing_xsmall"
-            android:importantForAccessibility="no"
-            android:src="@drawable/ic_event"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/course_duration"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            app:layout_constraintStart_toEndOf="@id/course_middle"
+            app:layout_constraintTop_toBottomOf="@id/course_divider" />
 
         <TextView
             android:id="@+id/course_intake"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_small"
-            android:textAppearance="?attr/textAppearanceBodySmall"
-            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/course_intake_icon"
-            app:layout_constraintTop_toTopOf="@id/course_intake_icon" />
+            app:layout_constraintStart_toEndOf="@id/course_middle"
+            app:layout_constraintTop_toBottomOf="@id/course_intake_label" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

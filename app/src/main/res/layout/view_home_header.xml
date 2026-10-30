@@ -34,7 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:textAppearance="?attr/textAppearanceHeadlineLarge"
         android:textColor="@color/on_app_bar"
         app:layout_constraintBottom_toBottomOf="@id/home_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,16 +52,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/on_app_bar" />
 
+    <View
+        android:id="@+id/home_accent"
+        android:layout_width="@dimen/accent_rule_width"
+        android:layout_height="@dimen/accent_rule_height"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small_plus"
+        android:background="@drawable/bg_accent_rule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_logo" />
+
     <TextView
         android:id="@+id/home_tagline"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small_plus"
         android:text="@string/home_tagline"
         android:textAppearance="?attr/textAppearanceBodyMedium"
         android:textColor="@color/on_app_bar_muted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_logo" />
+        app:layout_constraintTop_toBottomOf="@id/home_accent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

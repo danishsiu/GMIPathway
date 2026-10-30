@@ -9,7 +9,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/subject_layout"
-        style="@style/Widget.GMIPathway.Dropdown"
+        style="@style/Widget.GMIPathway.Select"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/eligibility_subject_hint"
@@ -33,7 +33,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/grade_layout"
-        style="@style/Widget.GMIPathway.Dropdown"
+        style="@style/Widget.GMIPathway.Select"
         android:layout_width="@dimen/grade_field_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_small"
@@ -52,7 +52,8 @@
             android:paddingStart="@dimen/form_field_padding"
             android:paddingEnd="@dimen/spacing_xsmall"
             android:saveEnabled="false"
-            android:textAppearance="?attr/textAppearanceBodyMedium" />
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            app:simpleItemLayout="@layout/item_dropdown_simple" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -22,6 +22,10 @@
     <color name="md_on_tertiary">#FFFFFF</color>
     <color name="md_tertiary_container">#FFDAD8</color>
     <color name="md_on_tertiary_container">#410007</color>
+    <color name="md_error">#B3261E</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_error_container">#F9DEDC</color>
+    <color name="md_on_error_container">#410E0B</color>
     <color name="md_surface">#FBF8FF</color>
     <color name="md_on_surface">#1B1B21</color>
     <color name="md_surface_variant">#E4E1EC</color>

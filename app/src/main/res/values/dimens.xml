@@ -9,12 +9,42 @@
 
     <dimen name="icon_small">20dp</dimen>
     <dimen name="icon_medium">24dp</dimen>
-    <dimen name="icon_large">32dp</dimen>
 
-    <dimen name="corner_large">16dp</dimen>
     <dimen name="corner_header">24dp</dimen>
 
     <dimen name="min_touch_target">48dp</dimen>
+
+    <!-- Design system: spacing, shape and component sizes -->
+    <dimen name="spacing_small_plus">12dp</dimen>
+    <dimen name="screen_padding">@dimen/spacing_medium</dimen>
+    <dimen name="corner_control">8dp</dimen>
+    <dimen name="corner_card">12dp</dimen>
+    <dimen name="stroke_hairline">1dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="field_height">56dp</dimen>
+    <dimen name="icon_tile">40dp</dimen>
+    <dimen name="accent_rule_width">32dp</dimen>
+    <dimen name="accent_rule_height">3dp</dimen>
+    <dimen name="timeline_dot">10dp</dimen>
+
+    <!-- Design system: type scale, as size and line height -->
+    <dimen name="type_headline_large">30sp</dimen>
+    <dimen name="type_headline_large_line">38sp</dimen>
+    <dimen name="type_headline_medium">26sp</dimen>
+    <dimen name="type_headline_medium_line">34sp</dimen>
+    <dimen name="type_headline_small">22sp</dimen>
+    <dimen name="type_headline_small_line">30sp</dimen>
+    <dimen name="type_title_large">20sp</dimen>
+    <dimen name="type_title_large_line">28sp</dimen>
+    <dimen name="type_body_large">16sp</dimen>
+    <dimen name="type_body_large_line">24sp</dimen>
+    <dimen name="type_body_medium">14sp</dimen>
+    <dimen name="type_body_medium_line">21sp</dimen>
+    <dimen name="type_label_large_line">20sp</dimen>
+    <dimen name="type_small">12sp</dimen>
+    <dimen name="type_small_line">18sp</dimen>
+    <dimen name="type_label_line">16sp</dimen>
+
     <dimen name="course_bookmark_shift_x">12dp</dimen>
     <dimen name="course_bookmark_shift_y">-12dp</dimen>
     <dimen name="empty_state_icon">64dp</dimen>
@@ -25,7 +55,6 @@
     <dimen name="splash_progress_width">120dp</dimen>
     <dimen name="splash_text_shift">16dp</dimen>
     <dimen name="home_header_logo_size">88dp</dimen>
-    <dimen name="home_card_min_height">132dp</dimen>
     <dimen name="home_header_bottom_padding">48dp</dimen>
     <dimen name="home_menu_top_margin">-32dp</dimen>
     <dimen name="about_banner_logo_size">72dp</dimen>

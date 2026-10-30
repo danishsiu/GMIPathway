@@ -28,9 +28,9 @@
 
 ### 2. Home (30 seconds)
 
-**Show:** the key figures and the six shortcut cards.
+**Show:** the key figures, the red Apply Now button and the six shortcut cards.
 
-**Say:** "The home screen gives prospects the main facts and one tap to every feature. The programme count comes from the data, so it stays correct if the list changes."
+**Say:** "The home screen gives prospects the main facts and one tap to every feature. Each colour has one job: blue navigates, and red always means Apply. The programme count comes from the data, so it stays correct if the list changes."
 
 ### 3. Courses and search (1.5 minutes)
 
@@ -41,7 +41,7 @@
 4. Clear the search and open **Diploma in Software Engineering**.
 5. Show the fees, then open **Subjects** and **Entry requirements**.
 
-**Say:** "There are 18 programmes, grouped the way GMI groups them. Every course page comes from one data file, so GMI's details can change without changing the code. Long sections collapse, so the page stays easy to read."
+**Say:** "There are 18 programmes, grouped the way GMI groups them. Every card has the same structure, so they are easy to compare. Every course page comes from one data file, so GMI's details can change without changing the code. Long sections collapse, so the page stays easy to read."
 
 ### 4. Bookmarks and share (45 seconds)
 
@@ -58,22 +58,22 @@ This is the main feature. **Swap speakers here.**
 
 **Do:** open **Eligibility Checker** and choose **SPM**. Tap **Check Eligibility** with nothing filled in to show validation. Then enter Scenario 1 below.
 
-**Say:** "The required subjects are already on the form, and validation stops incomplete entries. The rules are stored as data, and the checker explains every result."
+**Say:** "The form has two clear steps. The required subjects are already listed as labels, and validation stops incomplete entries. The rules are stored as data, and the checker explains every result."
 
-**Result:** You qualify (16), Ask GMI (1), Not assessed (1).
+**Result:** the headline says "You qualify for 16 programmes", followed by You qualify (16), Ask GMI (1) and Not assessed (1).
 
 **Point out:**
 - Cyber Security says **Ask GMI**, because GMI has not published its entry requirements. The app does not guess.
 - BELT says **Not assessed**, because SPM alone is not an entry route for the degree.
 - **Apply Now** goes to GMI's online application portal.
 
-**Then:** go back and enter Scenario 2 to show the opposite result. Point out **No match yet**, the **Contact GMI** button, and the reasons, such as "Needs at least C in Mathematics."
+**Then:** go back and enter Scenario 2 to show the opposite result. Point out the **No match yet** headline, the **Contact GMI** button, and the grey cards with reasons, such as "Needs at least C in Mathematics." Say that not-eligible programmes are grey so that red only ever means Apply.
 
 ### 6. Second qualification: O-Level / IGCSE (1 minute)
 
 **Do:** go back and choose **O-Level / IGCSE**. Enter Scenario 3.
 
-**Say:** "Each qualification has its own grades and rules. This student qualifies for 14 programmes, but not GAPP or GUFP, because those need Additional Mathematics."
+**Say:** "Each qualification has its own grades and rules. The headline says this student qualifies for 14 programmes, but not GAPP or GUFP, because those need Additional Mathematics."
 
 **Optional, if time allows:** Scenario 5 shows a diploma holder qualifying for the degree.
 
@@ -84,13 +84,13 @@ This is the main feature. **Swap speakers here.**
 2. Tap **Open in Maps**. Go back.
 3. Tap **Send an Enquiry**, fill in the form, choose a programme and tap **Send Enquiry**.
 
-**Say:** "These use Intents to hand over to the phone, maps and email apps. If an app is missing, the app explains that instead of crashing, and the map falls back to the browser."
+**Say:** "Rows with an arrow can be tapped. They use Intents to hand over to the phone, maps and email apps. If an app is missing, the app explains that instead of crashing, and the map falls back to the browser."
 
 ### 8. Extras (1.5 minutes)
 
 **Do:**
 1. Open **FAQ** and tap a question.
-2. Open **About Us** and scroll briefly.
+2. Open **About Us** and scroll past the highlighted Vision and Mission to the timeline.
 3. Tap the **gear** on Home. Choose **Dark**, then **Light**.
 4. Choose **Bahasa Melayu**. Go back to Home and open a course.
 5. Rotate the phone on any screen, then rotate it back.
@@ -118,7 +118,7 @@ These results are proven by `app/src/test/java/com/week14/gmipathway/logic/DemoS
 | Physics | B |
 | Chemistry | C |
 
-**Result:** You qualify (16), Ask GMI (1), Not assessed (1). "Add subject" adds the last three rows.
+**Result:** "You qualify for 16 programmes", then You qualify (16), Ask GMI (1), Not assessed (1). "Add subject" adds the last three rows.
 
 ### Scenario 2: SPM, not eligible
 
@@ -142,7 +142,7 @@ These results are proven by `app/src/test/java/com/week14/gmipathway/logic/DemoS
 | Physics | C |
 | Chemistry | C |
 
-**Result:** You qualify (14), Ask GMI (1), Not eligible yet (2), Not assessed (1). GAPP and GUFP are the two not eligible, because Additional Mathematics is missing.
+**Result:** "You qualify for 14 programmes", then You qualify (14), Ask GMI (1), Not eligible yet (2), Not assessed (1). GAPP and GUFP are the two not eligible, because Additional Mathematics is missing.
 
 ### Scenario 4: O-Level / IGCSE, not eligible (second qualification)
 
@@ -163,7 +163,7 @@ These results are proven by `app/src/test/java/com/week14/gmipathway/logic/DemoS
 | SPM Bahasa Melayu | C |
 | SPM Sejarah | E |
 
-**Result:** You qualify (1), which is BELT, with Ask GMI (1) and Not assessed (16). The result also reminds the student about MUET.
+**Result:** "You qualify for 1 programme", which is BELT, with Ask GMI (1) and Not assessed (16). The result also reminds the student about MUET.
 
 ## Likely questions
 
@@ -176,6 +176,8 @@ These results are proven by `app/src/test/java/com/week14/gmipathway/logic/DemoS
 | How do you know BM gives the same results? | `MalayCatalogTest` runs both languages at every grade level and requires identical outcomes. |
 | Does it need the internet? | Only for web links. Courses and the checker work offline, and web links explain when there is no connection. |
 | Why is the logo not GMI's? | We did not have permission, so we designed our own. |
+| Why this font? | Figtree fits long programme names and BM words in less space than the old font, so titles wrap less on small phones. |
+| Why are "Not eligible" cards grey? | So that red only ever means Apply, and the useful actions stand out. |
 
 ## If something goes wrong
 
