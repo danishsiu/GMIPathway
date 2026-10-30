@@ -1,4 +1,4 @@
-package com.week14.gmipathway;
+package com.week14.gmipathway.ui.home;
 
 import android.os.Bundle;
 
@@ -8,6 +8,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.week14.gmipathway.R;
+
+/**
+ * Home screen of the app. The dashboard navigation is added in Phase 2.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
