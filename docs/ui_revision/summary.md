@@ -129,7 +129,7 @@ No GMI facts changed. One unused status string was removed.
 
 **Final build:** unit tests, Lint, the form walk and the BM check ran on the exact final APK. The other device checks ran one small change earlier. That change only removed a width override from the subject list.
 
-**Screenshots:** the `after/` set was captured before the last two small changes: taller dropdown rows and the subject list width. No screenshot shows either list row height or that list's position in English, and the Large phone and small phone layouts are otherwise unchanged.
+**Screenshots:** the `after/` set was captured before the last two small changes: 48dp rows in the qualification and grade lists, and the subject list width. One screenshot is affected: `after_12` shows the subject list 12dp to the right of where it now sits. No other screen changed.
 
 **Functional runs:** the form-based checks ran at a lower display density, so every row fit on screen for the test scripts. Real sizes were checked separately in the screen size row.
 
