@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.enquiry.ContactUsActivity">
+
+    <include layout="@layout/view_app_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.GMIPathway.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/spacing_small">
+
+                    <include
+                        android:id="@+id/row_address"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/row_phone"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/row_admissions"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/row_fax"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/row_email"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/row_whatsapp"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/row_website"
+                        layout="@layout/view_info_row" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/button_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="@string/contact_map_button"
+                app:icon="@drawable/ic_map"
+                app:iconGravity="textStart" />
+
+            <Button
+                android:id="@+id/button_enquiry"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="@string/contact_enquiry_button"
+                app:icon="@drawable/ic_edit_note"
+                app:iconGravity="textStart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="@string/contact_social_title"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_facebook"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_facebook" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_instagram"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_instagram" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_x"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_x" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_youtube"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_youtube" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_tiktok"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_tiktok" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_linkedin"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_linkedin" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

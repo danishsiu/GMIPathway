@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Temporary splash mark. Phase 4 replaces it with the app's own icon design. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960">
+    <group
+        android:pivotX="480"
+        android:pivotY="480"
+        android:scaleX="0.5"
+        android:scaleY="0.5">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M480,840L200,688L200,448L40,360L480,120L920,360L920,680L840,680L840,404L760,448L760,688L480,840ZM480,508L754,360L480,212L206,360L480,508ZM480,749L680,641L680,490L480,600L280,490L280,641L480,749ZM480,508L480,508L480,508L480,508L480,508ZM480,598L480,598L480,598L480,598L480,598L480,598L480,598L480,598L480,598ZM480,598L480,598L480,598L480,598L480,598L480,598L480,598L480,598L480,598Z" />
+    </group>
+</vector>
