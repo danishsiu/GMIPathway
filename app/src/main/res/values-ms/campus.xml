@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bahasa Melayu. Keep in step with values/campus.xml. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Kad laman utama -->
+    <string name="home_campus_title">Kampus</string>
+    <string name="home_campus_subtitle">Kemudahan dan foto</string>
+    <string name="home_centres_title">Pusat Teknologi</string>
+    <string name="home_centres_subtitle">Makmal industri secara amali</string>
+    <string name="home_aid_title">Bantuan Kewangan</string>
+    <string name="home_aid_subtitle">Pinjaman dan biasiswa</string>
+    <string name="home_news_title">Berita GMI</string>
+    <string name="home_news_subtitle">Terkini dari kampus</string>
+
+    <!-- Bahagian laman utama dan sorotan -->
+    <string name="home_section_highlights">Sorotan</string>
+    <string name="home_section_discover">Kenali GMI</string>
+    <string name="home_section_help">Bantuan &amp; sokongan</string>
+    <string name="highlight_intake_label">Pengambilan</string>
+    <string name="highlight_intake_title">Pengambilan Januari 2027</string>
+    <string name="highlight_intake_body">GMI menerima permohonan untuk Diploma dan GAPP. Ketik untuk mohon dalam talian.</string>
+    <string name="highlight_belt_label">Ijazah</string>
+    <string name="highlight_belt_title">Ijazah UTeM di kampus GMI</string>
+    <string name="highlight_belt_body">Sarjana Muda Teknologi Kejuruteraan Elektrik dengan Kepujian, diajar di GMI.</string>
+    <string name="highlight_gapp_label">Pencapaian</string>
+    <string name="highlight_gapp_title">Terbaik di dunia bagi Matematik A-Level</string>
+    <string name="highlight_gapp_body">Anugerah Cambridge Learner pada 2010, 2013, 2017 dan 2019. Lihat GAPP.</string>
+
+    <!-- Kampus -->
+    <string name="campus_title">Kampus &amp; Kemudahan</string>
+    <string name="campus_hero_description">Bangunan kampus GMI, dilihat dari halaman</string>
+    <string name="campus_hero_caption">Kampus seluas 75 ekar di Kajang</string>
+    <string name="campus_intro">Setiap jabatan mempunyai bengkel, makmal dan studio sendiri. Kampus ini juga mempunyai perpustakaan, kemudahan sukan, asrama dan surau. Leret deretan foto, atau ketik satu foto untuk melihatnya dalam skrin penuh.</string>
+    <string name="campus_centres_link_subtitle">Makmal bertaraf industri, banyak yang dibina bersama rakan seperti ZEISS, Emerson dan Cisco</string>
+    <plurals name="campus_photo_count">
+        <item quantity="other">%d foto</item>
+    </plurals>
+    <string name="campus_tour_title">Lawatan maya</string>
+    <string name="campus_tour_body">Lawatan 360° GMI membolehkan anda melihat tempat-tempat ini di kampus:</string>
+    <string name="campus_tour_spots_description">Tempat dalam lawatan: %1$s</string>
+    <string name="campus_tour_button">Buka Lawatan Maya 360°</string>
+    <string name="campus_photo_credit">Foto © German-Malaysian Institute, dari gmi.edu.my, digunakan untuk projek pelajar ini.</string>
+
+    <!-- Kemudahan -->
+    <string name="facility_mechanical">Makmal Kejuruteraan Mekanikal</string>
+    <string name="facility_mechanical_summary">Bengkel CNC, bengkel mesin, tekanan logam, peralatan pengukuran ZEISS dan pencetak 3D.</string>
+    <string name="facility_electrical">Makmal Kejuruteraan Elektrik</string>
+    <string name="facility_electrical_summary">Makmal autotronik, elektronik digital dan kawalan proses, dengan sistem kawalan Emerson dan Siemens.</string>
+    <string name="facility_computer">Makmal Komputer &amp; Maklumat</string>
+    <string name="facility_computer_summary">Makmal komputer, rangkaian dan keselamatan siber, serta studio multimedia, pascaproduksi dan sinematik.</string>
+    <string name="facility_pre_university">Pra-Universiti &amp; Pengajian Umum</string>
+    <string name="facility_pre_university_summary">Bilik darjah, makmal kimia dan dewan kuliah.</string>
+    <string name="facility_library">Perpustakaan</string>
+    <string name="facility_library_summary">Ruang belajar dan buku di kampus. Pelajar juga boleh menggunakan koleksi e-buku GMI, perpustakaan digital U-Pustaka, repositori institusi GMI dan kamus dalam talian.</string>
+    <string name="facility_sport">Sukan</string>
+    <string name="facility_sport_summary">Gimnasium, dewan badminton, gelanggang futsal tertutup, gelanggang tenis, padang bola sepak dan gelanggang bola jaring.</string>
+    <string name="facility_hostel">Asrama</string>
+    <string name="facility_hostel_summary">Bilik di dalam kampus. Bagi pelajar diploma warganegara Malaysia, asrama adalah pilihan dan berharga RM900 satu semester. Yuran tertakluk kepada perubahan.</string>
+    <string name="facility_surau">Surau</string>
+    <string name="facility_surau_summary">Ruang solat kampus, dinamakan Surau An-Najah dalam lawatan maya GMI.</string>
+
+    <!-- Kapsyen foto -->
+    <string name="photo_cnc_workshop">Bengkel CNC</string>
+    <string name="photo_dmg_workshop">Bengkel CNC DMG MORI</string>
+    <string name="photo_machine_shop">Bengkel mesin</string>
+    <string name="photo_stamping">Mesin tekan logam</string>
+    <string name="photo_zeiss">Stesen pengukuran ZEISS</string>
+    <string name="photo_3d_printers">Pencetak 3D</string>
+    <string name="photo_autotronics">Bengkel autotronik</string>
+    <string name="photo_dcs_emerson">Makmal kawalan proses Emerson</string>
+    <string name="photo_dcs_siemens">Makmal kawalan proses Siemens</string>
+    <string name="photo_digital_lab">Makmal elektronik digital</string>
+    <string name="photo_computer_lab">Makmal komputer</string>
+    <string name="photo_network_lab">Makmal rangkaian</string>
+    <string name="photo_cyber_lab">Makmal keselamatan siber</string>
+    <string name="photo_multimedia_lab">Makmal multimedia</string>
+    <string name="photo_post_production">Studio pascaproduksi</string>
+    <string name="photo_cinematic">Studio sinematik</string>
+    <string name="photo_chemistry_lab">Makmal kimia</string>
+    <string name="photo_lecture_hall">Dewan kuliah</string>
+    <string name="photo_classroom">Bilik darjah</string>
+    <string name="photo_library">Perpustakaan</string>
+    <string name="photo_gym">Gimnasium</string>
+    <string name="photo_badminton">Dewan badminton</string>
+    <string name="photo_futsal">Gelanggang futsal tertutup</string>
+    <string name="photo_tennis">Gelanggang tenis</string>
+    <string name="photo_football_field">Padang bola sepak</string>
+    <string name="photo_netball">Gelanggang bola jaring</string>
+    <string name="photo_hostel_block">Blok asrama</string>
+    <string name="photo_hostel_room">Bilik asrama</string>
+    <string name="photo_surau_outside">Surau</string>
+    <string name="photo_surau_hall">Ruang solat</string>
+    <string name="photo_surau_inside">Di dalam surau</string>
+
+    <!-- Pusat teknologi. Nama rasmi pusat kekal dalam bahasa Inggeris, seperti yang diterbitkan GMI. -->
+    <string name="centres_title">Pusat Teknologi</string>
+    <string name="centres_intro">GMI menyatakan ia mempunyai 22 Pusat Teknologi Termaju. Ini ialah pusat yang mempunyai halaman sendiri di laman web GMI.</string>
+    <string name="centres_partner">Bersama %1$s</string>
+    <string name="centres_visit_page">Lawati halaman</string>
+    <string name="centres_visit_page_for">Lawati halaman %1$s</string>
+    <string name="centres_exam_title">Pusat peperiksaan</string>
+    <string name="centres_exam_intro">GMI juga mengendalikan peperiksaan antarabangsa di kampus.</string>
+    <string name="centre_precision_machining_body">Siri mesin CNC canggih untuk latihan menghasilkan komponen kompleks, seperti yang digunakan dalam industri aeroangkasa, automotif, minyak dan gas, serta perubatan.</string>
+    <string name="centre_metrology_body">Dibina bersama ZEISS untuk pengukuran dimensi yang tepat dan pemeriksaan kualiti menggunakan Mesin Pengukur Koordinat (CMM).</string>
+    <string name="centre_robotics_body">Pengaturcaraan robot dengan alat pengajar (teach pendant) dan simulasi luar talian, dengan aplikasi industri sebenar di setiap sel kerja robot.</string>
+    <string name="centre_digital_manufacturing_body">Perisian Pengurusan Kitaran Hayat Produk yang menggabungkan CAD, CAM dan CAE, supaya reka bentuk, pemesinan dan simulasi boleh dibuat sebagai kembar digital untuk Industri 4.0.</string>
+    <string name="centre_sheet_metal_body">Dibuka pada 4 Oktober 2018 dengan peralatan LVD untuk CAD/CAM, pemotongan dan pembengkokan kepingan logam, termasuk mesin tekan bengkok CNC.</string>
+    <string name="centre_injection_moulding_body">Latihan pengacuan suntikan plastik, dari asas hingga penyelesaian masalah lanjutan dan penyelenggaraan. Jurulatihnya diperakui oleh German Training Centre (Asia).</string>
+    <string name="centre_hydraulic_body">Kursus hidraulik asas dan berkadar, teknologi di sebalik kebanyakan jentera dalam pembinaan, pengeluaran dan pembungkusan.</string>
+    <string name="centre_dcs_siemens_body">Sistem kawalan proses dengan stesen automasi dan operator, instrumen lapangan dan loji berskala kecil, menggunakan Siemens PCS 7.</string>
+    <string name="centre_dcs_emerson_body">Sistem kawalan proses yang serupa, menggunakan Emerson DeltaV. Peserta mengkonfigurasi strategi kawalan, mencipta penggera dan menyelesaikan masalah sistem.</string>
+    <string name="centre_calibration_body">Latihan spesifikasi, penentukuran dan penyelenggaraan instrumen, dengan pelantar penentukuran aliran dan aras, sehingga menghasilkan laporan penentukuran yang sah.</string>
+    <string name="centre_cisco_body">Cisco Networking Academy sejak 2011, dengan suis, penghala, tembok api ASA dan telefon VoIP untuk latihan CCNA secara amali.</string>
+    <string name="centre_cyber_security_body">Pembelajaran amali tentang ancaman, serangan dan kelemahan siber yang paling biasa, dan cara perniagaan melindungi diri.</string>
+    <string name="exam_cambridge_body">GMI ialah pusat peperiksaan Cambridge untuk GCE A-Level, kelayakan yang disediakan oleh GAPP.</string>
+    <string name="exam_telc">Bahasa Jerman TELC</string>
+    <string name="exam_telc_body">Pusat bertauliah TELC untuk peperiksaan bahasa Jerman.</string>
+    <string name="exam_ielts_body">GMI juga menganjurkan peperiksaan bahasa Inggeris IELTS dan kursus persediaan IELTS.</string>
+
+    <!-- Bantuan kewangan -->
+    <string name="aid_title">Bantuan Kewangan</string>
+    <string name="aid_intro">GMI menyenaraikan pinjaman, biasiswa dan geran ini untuk pelajarnya. Setiap penaja menetapkan syarat dan membuat keputusan sendiri.</string>
+    <string name="aid_rules_title">Sebelum anda memohon</string>
+    <string name="aid_rule_malaysian">Buat masa ini, bantuan kewangan hanya untuk pelajar warganegara Malaysia.</string>
+    <string name="aid_rule_one_sponsor">Anda hanya boleh memegang satu pinjaman pendidikan atau biasiswa pada satu masa.</string>
+    <string name="aid_rule_approval">Hanya penaja boleh meluluskan pinjaman atau biasiswa. GMI tidak boleh meluluskan atau menjaminnya.</string>
+    <string name="aid_schemes_title">Penaja dan skim</string>
+    <string name="aid_schemes_hint">Ketik penaja untuk melihat butiran.</string>
+    <string name="aid_contact_title">Unit Pinjaman &amp; Tajaan GMI</string>
+    <string name="aid_contact_body" tools:ignore="TypographyDashes">Untuk bantuan permohonan: 03-8921 9008 / 9013 atau sponsorship@gmi.edu.my</string>
+    <string name="aid_call_button">Hubungi Unit</string>
+    <string name="aid_email_button">E-mel Unit</string>
+    <string name="aid_email_subject">Pertanyaan bantuan kewangan</string>
+    <string name="aid_website_button">Butiran penuh di laman web GMI</string>
+    <string name="aid_source_note">Jumlah adalah seperti yang disenaraikan oleh GMI. Sesetengah tarikh di halaman GMI adalah dari tahun 2025, jadi semak tarikh terkini dengan setiap penaja sebelum memohon.</string>
+    <string-array name="aid_scheme_titles">
+        <item>Program Penajaan Pendidikan Tinggi MARA (TESP)</item>
+        <item>Program Young Talent MARA (YTP)</item>
+        <item>Pinjaman pendidikan PTPTN</item>
+        <item>Yayasan Bank Rakyat</item>
+        <item>Affin Education Financing-i</item>
+        <item>Majlis agama negeri dan zakat</item>
+        <item>Bantuan negeri Sabah</item>
+        <item>Bantuan JAKOA untuk Orang Asli</item>
+    </string-array>
+    <string-array name="aid_scheme_bodies">
+        <item>Untuk pelajar diploma dan ijazah. Jika pendapatan ibu bapa anda RM12,000 sebulan atau kurang (atau RM150,000 setahun pendapatan bercukai), ia menanggung yuran pengajian serta RM730 sebulan untuk kos sara hidup. Bagi RM12,001 hingga RM20,000 sebulan (RM150,001 hingga RM250,000 setahun), ia menanggung yuran pengajian sahaja. Mohon melalui halaman TESP GMI dan portal pinjaman pendidikan MARA.</item>
+        <item>Untuk pelajar GAPP. Menanggung yuran pengajian dan elaun sara hidup di GMI dan di Jerman, serta penerbangan antara Malaysia dan Jerman.</item>
+        <item>Pelajar diploma memohon dari 2 Januari hingga 28 Februari, atau 1 Julai hingga 31 Ogos. Pelajar GUFP memohon pada bulan September atau Oktober melalui Unit Pinjaman &amp; Tajaan GMI, menggunakan surat tawaran UTP. PTPTN menetapkan kelayakan dan jumlah pinjaman.</item>
+        <item>Untuk pelajar diploma Jabatan Komputer &amp; Maklumat dengan sekurang-kurangnya 5A dalam SPM. RM11,000 setahun. Biasanya dibuka pada bulan Ogos.</item>
+        <item>Pinjaman pendidikan bank untuk warganegara Malaysia berumur 18 hingga 45 tahun, dengan ahli keluarga sebagai pemohon bersama. Ia boleh membiayai semester atau yuran yang tidak ditanggung oleh PTPTN, MARA atau bantuan seumpamanya.</item>
+        <item>MAIPk, Perak: RM1,000 sekali beri untuk pelajar diploma\nMAINS, Negeri Sembilan: RM1,000 sekali beri untuk pelajar diploma baharu\nMUIP, Pahang: RM700 atau RM800 sekali beri untuk pelajar kelahiran Pahang\nMAIK, Kelantan: RM1,000 hingga RM2,000 sekali beri untuk pelajar asnaf yang layak\nMAIDAM, Terengganu: bantuan pendidikan untuk pelajar asnaf miskin dan fisabilillah\nMAIJ, Johor: RM1,000 sekali beri semasa pendaftaran untuk keluarga berpendapatan rendah\nLembaga Zakat Selangor: bantuan yuran dan kos sara hidup untuk asnaf fakir dan miskin\nSetiap majlis mempunyai syarat sendiri tentang tempat tinggal dan pendapatan keluarga anda.</item>
+        <item>JPA Sabah dan Yayasan Sabah: biasiswa dan pinjaman untuk pengajian diploma dan ijazah\nMUIS Sabah: bantuan untuk pelajar asnaf, fakir, miskin dan mualaf\nPejabat Timbalan Setiausaha Kerajaan Negeri Sabah: bantuan pendaftaran sekali beri RM1,500 untuk pelajar diploma daripada keluarga B40</item>
+        <item>Untuk warganegara Malaysia yang diiktiraf sebagai Orang Asli, berumur 35 tahun atau kurang, yang belum menerima biasiswa, dermasiswa atau pinjaman lain.</item>
+    </string-array>
+
+    <!-- Berita -->
+    <string name="news_title">Berita GMI</string>
+    <string name="news_loading">Memuatkan berita</string>
+    <string name="news_refresh">Muat semula</string>
+    <string name="news_retry">Cuba Lagi</string>
+    <string name="news_error_title">Berita tidak dapat dimuatkan</string>
+    <string name="news_error_body">Berita GMI datang dari laman webnya, jadi ia memerlukan internet. Semak sambungan anda dan cuba lagi.</string>
+    <string name="news_offline_banner">Anda di luar talian. Memaparkan berita yang disimpan %1$s.</string>
+    <string name="news_saved_just_now">sebentar tadi</string>
+    <string name="news_read_more">Baca di gmi.edu.my</string>
+    <string name="news_item_description">%1$s. %2$s. Dibuka dalam pelayar anda.</string>
+</resources>

@@ -12,18 +12,29 @@ import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.core.graphics.Insets;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.week14.gmipathway.R;
 import com.week14.gmipathway.data.CourseRepository;
+import com.week14.gmipathway.ui.campus.CampusActivity;
+import com.week14.gmipathway.ui.campus.TechCentresActivity;
 import com.week14.gmipathway.ui.common.BaseActivity;
 import com.week14.gmipathway.ui.common.ExternalLinks;
+import com.week14.gmipathway.ui.courses.CourseDetailActivity;
 import com.week14.gmipathway.ui.courses.CourseListActivity;
 import com.week14.gmipathway.ui.courses.SavedCoursesActivity;
 import com.week14.gmipathway.ui.eligibility.EligibilityActivity;
 import com.week14.gmipathway.ui.enquiry.AboutUsActivity;
 import com.week14.gmipathway.ui.enquiry.ContactUsActivity;
 import com.week14.gmipathway.ui.enquiry.FaqActivity;
+import com.week14.gmipathway.ui.funding.FinancialAidActivity;
+import com.week14.gmipathway.ui.news.NewsActivity;
 import com.week14.gmipathway.ui.settings.SettingsActivity;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Home screen: a welcome header, key facts and shortcuts to every part of the app.
@@ -47,6 +58,15 @@ public class MainActivity extends BaseActivity {
                 R.string.home_courses_subtitle, CourseListActivity.class);
         bindCard(R.id.card_eligibility, R.drawable.ic_fact_check, R.string.home_eligibility_title,
                 R.string.home_eligibility_subtitle, EligibilityActivity.class);
+        bindCard(R.id.card_campus, R.drawable.ic_domain, R.string.home_campus_title,
+                R.string.home_campus_subtitle, CampusActivity.class);
+        bindCard(R.id.card_centres, R.drawable.ic_precision_manufacturing,
+                R.string.home_centres_title, R.string.home_centres_subtitle,
+                TechCentresActivity.class);
+        bindCard(R.id.card_aid, R.drawable.ic_payments, R.string.home_aid_title,
+                R.string.home_aid_subtitle, FinancialAidActivity.class);
+        bindCard(R.id.card_news, R.drawable.ic_article, R.string.home_news_title,
+                R.string.home_news_subtitle, NewsActivity.class);
         bindCard(R.id.card_contact, R.drawable.ic_call, R.string.home_contact_title,
                 R.string.home_contact_subtitle, ContactUsActivity.class);
         bindCard(R.id.card_about, R.drawable.ic_info, R.string.home_about_title,
@@ -55,6 +75,8 @@ public class MainActivity extends BaseActivity {
                 R.string.home_saved_subtitle, SavedCoursesActivity.class);
         bindCard(R.id.card_faq, R.drawable.ic_help, R.string.home_faq_title,
                 R.string.home_faq_subtitle, FaqActivity.class);
+
+        bindHighlights();
 
         findViewById(R.id.button_apply).setOnClickListener(view ->
                 ExternalLinks.openWebPage(this, getString(R.string.url_online_application)));
@@ -73,13 +95,41 @@ public class MainActivity extends BaseActivity {
     protected void onInsetsApplied(Insets bars, int bottomInset) {
         View panel = findViewById(R.id.home_panel);
         if (panel != null) {
-            panel.setPadding(bars.left, 0, 0, bottomInset);
+            // The photo fills the panel; only its content keeps clear of the bars.
+            findViewById(R.id.home_panel_content).setPadding(bars.left, 0, 0, bottomInset);
             ViewGroup.MarginLayoutParams params =
                     (ViewGroup.MarginLayoutParams) panel.getLayoutParams();
             params.leftMargin = -bars.left;
             params.bottomMargin = -bottomInset;
             panel.setLayoutParams(params);
         }
+    }
+
+    /**
+     * Fills the Highlights row. Every highlight is a fact GMI has published;
+     * the sources are listed in research/campus_research.md, section 7.
+     */
+    private void bindHighlights() {
+        List<HighlightAdapter.Highlight> highlights = Arrays.asList(
+                new HighlightAdapter.Highlight(R.drawable.fac_mech_dmg,
+                        R.string.highlight_intake_label, R.string.highlight_intake_title,
+                        R.string.highlight_intake_body,
+                        () -> ExternalLinks.openWebPage(this,
+                                getString(R.string.url_online_application))),
+                new HighlightAdapter.Highlight(R.drawable.fac_elec_dcs_siemens,
+                        R.string.highlight_belt_label, R.string.highlight_belt_title,
+                        R.string.highlight_belt_body,
+                        () -> startActivity(CourseDetailActivity.createIntent(this, "belt"))),
+                new HighlightAdapter.Highlight(R.drawable.fac_preu_chemistry,
+                        R.string.highlight_gapp_label, R.string.highlight_gapp_title,
+                        R.string.highlight_gapp_body,
+                        () -> startActivity(CourseDetailActivity.createIntent(this, "gapp"))));
+
+        RecyclerView row = findViewById(R.id.home_highlights);
+        row.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        row.setAdapter(new HighlightAdapter(highlights));
+        // Each swipe settles with one card neatly at the start of the row.
+        new LinearSnapHelper().attachToRecyclerView(row);
     }
 
     private void bindStat(@IdRes int statId, String value, @StringRes int labelRes) {

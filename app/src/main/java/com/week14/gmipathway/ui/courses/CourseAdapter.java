@@ -155,7 +155,16 @@ class CourseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     ? R.layout.item_department_header : R.layout.item_section_header,
                     parent, false));
         }
-        return new CourseViewHolder(inflater.inflate(R.layout.item_course, parent, false));
+        View card = inflater.inflate(R.layout.item_course, parent, false);
+        if (collapsible) {
+            // Indented under its department header, so an open department reads as one group.
+            ViewGroup.MarginLayoutParams params =
+                    (ViewGroup.MarginLayoutParams) card.getLayoutParams();
+            params.setMarginStart(parent.getResources()
+                    .getDimensionPixelSize(R.dimen.course_nested_indent));
+            card.setLayoutParams(params);
+        }
+        return new CourseViewHolder(card);
     }
 
     @Override

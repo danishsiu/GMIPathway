@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A stronger fade than bg_photo_scrim, because highlight cards carry three lines of text
+     over busy lab photos. White text on the lower half stays above WCAG AA contrast. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="90"
+        android:centerColor="#A6000000"
+        android:centerY="0.55"
+        android:endColor="#14000000"
+        android:startColor="#E6000000" />
+</shape>

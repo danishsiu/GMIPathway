@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Remembers which photo URL an ImageView is waiting for. -->
+    <item name="image_loader_url" type="id" />
+</resources>

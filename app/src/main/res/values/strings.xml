@@ -88,7 +88,17 @@
     <string name="course_section_subjects">Subjects</string>
     <string name="course_section_careers">Career prospects</string>
     <string name="course_section_entry">Entry requirements</string>
-    <string name="course_section_progression">Progression</string>
+    <string name="course_enquire">Enquire</string>
+    <!-- The pathway on each course page. Entry details are under Entry requirements. -->
+    <string name="pathway_title">Your pathway</string>
+    <string name="pathway_step_before">Before GMI</string>
+    <string name="pathway_step_during">At GMI</string>
+    <string name="pathway_step_after">After GMI</string>
+    <string name="pathway_entry_spm">SPM or an equivalent qualification. Entry requirements lists the grades you need.</string>
+    <string name="pathway_entry_degree">A diploma, STPM, matriculation, foundation or an equivalent qualification. Entry requirements lists the details.</string>
+    <string name="pathway_entry_unpublished">GMI has not published the entry requirements yet. Please ask GMI.</string>
+    <string name="pathway_during_body">Study for %1$s.</string>
+    <string name="pathway_after_careers">Graduate and start one of the careers listed under Career prospects.</string>
     <string name="course_certificates_note">Terms and conditions apply.</string>
     <string name="course_subjects_unavailable">Please contact GMI for the current subject list.</string>
     <string name="course_entry_unpublished">GMI has not published entry requirements for this programme. Please contact GMI to confirm them.</string>
@@ -197,6 +207,11 @@
     <string name="enquiry_error_message">Please enter your message.</string>
     <string name="enquiry_email_subject">GMI Pathway enquiry: %1$s</string>
     <string name="enquiry_email_body">Name: %1$s\nEmail: %2$s\nPhone: %3$s\nProgramme: %4$s\n\n%5$s</string>
+    <!-- Shown on returning from the email app. The app cannot see whether Send was tapped. -->
+    <string name="enquiry_sent_title">Almost done</string>
+    <string name="enquiry_sent_body">Your enquiry is ready in your email app. If you have not sent it yet, tap Send there. GMI will reply to %1$s.</string>
+    <string name="enquiry_sent_done">Done</string>
+    <string name="enquiry_sent_edit">Edit enquiry</string>
 
     <!-- Settings -->
     <string name="settings_title">Settings</string>

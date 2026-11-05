@@ -43,12 +43,14 @@ public final class ExternalLinks {
         start(context, new Intent(Intent.ACTION_DIAL, number), R.string.error_no_dialer);
     }
 
-    public static void composeEmail(Context context, String address, String subject, String body) {
+    /** Opens the email app with the message filled in. Returns false if there is no email app. */
+    public static boolean composeEmail(Context context, String address, String subject,
+                                       String body) {
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + address));
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{address});
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, body);
-        start(context, intent, R.string.error_no_email);
+        return start(context, intent, R.string.error_no_email);
     }
 
     /** Lets the prospect choose an app to share the text with. */
@@ -69,11 +71,14 @@ public final class ExternalLinks {
         }
     }
 
-    private static void start(Context context, Intent intent, @StringRes int errorRes) {
+    /** Starts the other app, or shows the error message if none can open it. */
+    private static boolean start(Context context, Intent intent, @StringRes int errorRes) {
         try {
             context.startActivity(intent);
+            return true;
         } catch (ActivityNotFoundException e) {
             Toast.makeText(context, errorRes, Toast.LENGTH_LONG).show();
+            return false;
         }
     }
 }

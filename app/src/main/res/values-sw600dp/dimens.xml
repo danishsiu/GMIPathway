@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tablets (smallest width 600dp or more). Phones, even in landscape, never use this.
+     Wider side margins keep lines of text to a comfortable reading length,
+     and photos get more height so they are not thin strips. -->
+<resources>
+    <dimen name="screen_padding">48dp</dimen>
+    <dimen name="home_header_padding">40dp</dimen>
+    <dimen name="campus_hero_height">280dp</dimen>
+    <dimen name="course_hero_height">240dp</dimen>
+    <dimen name="centre_photo_height">240dp</dimen>
+    <dimen name="news_image_height">280dp</dimen>
+    <dimen name="highlight_width">340dp</dimen>
+    <dimen name="highlight_height">200dp</dimen>
+    <dimen name="campus_thumb_width">200dp</dimen>
+    <dimen name="campus_thumb_height">136dp</dimen>
+</resources>

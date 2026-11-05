@@ -19,52 +19,67 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/screen_padding">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/course_department"
+            <!-- A photo of the department's labs. Decorative, so screen readers skip it. -->
+            <ImageView
+                android:id="@+id/course_hero"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?attr/textAppearanceLabelLarge"
-                android:textColor="?attr/colorPrimary" />
-
-            <TextView
-                android:id="@+id/course_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_xsmall"
-                android:textAppearance="?attr/textAppearanceHeadlineMedium" />
-
-            <TextView
-                android:id="@+id/course_summary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:textAppearance="?attr/textAppearanceBodyLarge"
-                android:textColor="?attr/colorOnSurfaceVariant" />
-
-            <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.GMIPathway.Card.Standard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_medium">
-
-                <LinearLayout
-                    android:id="@+id/info_container"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingVertical="@dimen/spacing_small" />
-
-            </com.google.android.material.card.MaterialCardView>
+                android:layout_height="@dimen/course_hero_height"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop" />
 
             <LinearLayout
-                android:id="@+id/section_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:orientation="vertical" />
+                android:orientation="vertical"
+                android:padding="@dimen/screen_padding">
+
+                <TextView
+                    android:id="@+id/course_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceLabelLarge"
+                    android:textColor="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xsmall"
+                    android:textAppearance="?attr/textAppearanceHeadlineMedium" />
+
+                <TextView
+                    android:id="@+id/course_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:textAppearance="?attr/textAppearanceBodyLarge"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.GMIPathway.Card.Standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium">
+
+                    <LinearLayout
+                        android:id="@+id/info_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/spacing_small" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/section_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -74,15 +89,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/button_apply"
-        style="@style/Widget.GMIPathway.Button.Action"
+    <!-- Always on screen: ask GMI about this programme, or apply for it. -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/screen_padding"
-        android:layout_marginVertical="@dimen/spacing_small_plus"
-        android:text="@string/apply_online"
-        app:icon="@drawable/ic_open_in_new"
-        app:iconGravity="textStart" />
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/screen_padding"
+        android:paddingVertical="@dimen/spacing_small_plus">
+
+        <Button
+            android:id="@+id/button_enquire"
+            style="@style/Widget.GMIPathway.Button.Secondary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_weight="1"
+            android:text="@string/course_enquire"
+            app:icon="@drawable/ic_mail"
+            app:iconGravity="textStart" />
+
+        <Button
+            android:id="@+id/button_apply"
+            style="@style/Widget.GMIPathway.Button.Action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/apply_online"
+            app:icon="@drawable/ic_open_in_new"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
 
 </LinearLayout>

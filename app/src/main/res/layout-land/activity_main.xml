@@ -29,7 +29,28 @@
             android:layout_weight="2"
             android:background="@drawable/bg_home_panel">
 
-            <include layout="@layout/view_home_header" />
+            <!-- The photo and tint fill the whole panel, behind the cutout and navigation bar.
+                 Only the content inside is padded clear of them. -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/campus_hero" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_home_panel_tint" />
+
+            <FrameLayout
+                android:id="@+id/home_panel_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/view_home_header" />
+
+            </FrameLayout>
 
         </FrameLayout>
 
