@@ -81,6 +81,28 @@ public final class DetailViews {
         container.addView(section);
     }
 
+    /**
+     * Adds a numbered study pathway, such as SPM, then a diploma at GMI, then a degree.
+     * Each step is a title and its text; the line joins each step to the next.
+     */
+    public static void addPathway(ViewGroup container, @StringRes int titleRes,
+                                  List<String> stepTitles, List<CharSequence> stepBodies) {
+        ViewGroup section = (ViewGroup) inflateSection(container);
+        ((TextView) section.findViewById(R.id.section_title)).setText(titleRes);
+        section.findViewById(R.id.section_body).setVisibility(View.GONE);
+        LayoutInflater inflater = LayoutInflater.from(container.getContext());
+        for (int i = 0; i < stepTitles.size(); i++) {
+            View row = inflater.inflate(R.layout.item_pathway_step, section, false);
+            ((TextView) row.findViewById(R.id.step_number)).setText(String.valueOf(i + 1));
+            ((TextView) row.findViewById(R.id.step_title)).setText(stepTitles.get(i));
+            ((TextView) row.findViewById(R.id.step_body)).setText(stepBodies.get(i));
+            boolean last = i == stepTitles.size() - 1;
+            row.findViewById(R.id.step_line).setVisibility(last ? View.INVISIBLE : View.VISIBLE);
+            section.addView(row);
+        }
+        container.addView(section);
+    }
+
     /** The first section on a page needs no line above it. */
     private static View inflateSection(ViewGroup container) {
         View section = LayoutInflater.from(container.getContext())

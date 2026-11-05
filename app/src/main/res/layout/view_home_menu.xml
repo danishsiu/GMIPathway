@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Shared by the portrait and landscape home layouts.
-     Apply Now sits above the cards, so it stays on screen on small phones. -->
+     Apply Now sits above the cards, so it stays on screen on small phones.
+     The cards are grouped so the two main tasks come first, then GMI, then help.
+     Every card repeats the ids card_icon, card_title and card_subtitle. That is safe because
+     MainActivity always looks them up inside one card, never across the whole screen. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/spacing_medium">
+    android:paddingBottom="@dimen/spacing_large"
+    tools:ignore="DuplicateIncludedIds">
 
     <com.google.android.material.card.MaterialCardView
         style="@style/Widget.GMIPathway.Card.Standard"
@@ -57,25 +62,23 @@
         app:icon="@drawable/ic_open_in_new"
         app:iconGravity="textStart" />
 
+    <!-- 1. The two main tasks, in tinted cards so they stand out from the rest. -->
     <TextView
+        style="@style/Widget.GMIPathway.HomeSectionTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/screen_padding"
-        android:layout_marginTop="@dimen/spacing_large"
-        android:text="@string/home_explore"
-        android:textAppearance="?attr/textAppearanceTitleMedium" />
+        android:text="@string/home_explore" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/screen_padding"
-        android:layout_marginTop="@dimen/spacing_small"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
         <include
             android:id="@+id/card_courses"
-            layout="@layout/view_home_card"
+            layout="@layout/view_home_card_primary"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/spacing_xsmall"
@@ -83,6 +86,53 @@
 
         <include
             android:id="@+id/card_eligibility"
+            layout="@layout/view_home_card_primary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_xsmall"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- 2. Highlights: verified GMI news, as photo cards that scroll sideways. -->
+    <TextView
+        style="@style/Widget.GMIPathway.HomeSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_section_highlights" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_highlights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/screen_padding" />
+
+    <!-- 3. Getting to know GMI. -->
+    <TextView
+        style="@style/Widget.GMIPathway.HomeSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_section_discover" />
+
+    <LinearLayout
+        style="@style/Widget.GMIPathway.HomeCardRow"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/card_campus"
+            layout="@layout/view_home_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/spacing_xsmall"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/card_centres"
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -92,15 +142,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/screen_padding"
-        android:layout_marginTop="@dimen/spacing_small"
+        style="@style/Widget.GMIPathway.HomeCardRow"
         android:baselineAligned="false"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <include
-            android:id="@+id/card_contact"
+            android:id="@+id/card_news"
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -117,16 +166,22 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <!-- 4. Help and support. -->
+    <TextView
+        style="@style/Widget.GMIPathway.HomeSectionTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/screen_padding"
-        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/home_section_help" />
+
+    <LinearLayout
+        style="@style/Widget.GMIPathway.HomeCardRow"
         android:baselineAligned="false"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <include
-            android:id="@+id/card_saved"
+            android:id="@+id/card_aid"
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -134,7 +189,32 @@
             android:layout_weight="1" />
 
         <include
+            android:id="@+id/card_contact"
+            layout="@layout/view_home_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_xsmall"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Widget.GMIPathway.HomeCardRow"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
             android:id="@+id/card_faq"
+            layout="@layout/view_home_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/spacing_xsmall"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/card_saved"
             layout="@layout/view_home_card"
             android:layout_width="0dp"
             android:layout_height="match_parent"

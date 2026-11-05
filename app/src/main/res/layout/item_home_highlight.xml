@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One highlight: a campus photo with a dark fade, a label, a headline and a line of detail.
+     The text sets the card's height (at least highlight_height), so large font sizes never
+     cut it off. The photo and fade stretch to fill whatever height that gives. -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.GMIPathway.Card.Standard"
+    android:layout_width="@dimen/highlight_width"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/spacing_small_plus"
+    android:clickable="true"
+    android:focusable="true"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/highlight_height">
+
+        <ImageView
+            android:id="@+id/highlight_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_highlight_scrim"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+            <TextView
+                android:id="@+id/highlight_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_highlight_label"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_xxsmall"
+                android:textAppearance="?attr/textAppearanceLabelMedium"
+                android:textColor="@color/on_highlight_label" />
+
+            <TextView
+                android:id="@+id/highlight_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="@color/on_app_bar" />
+
+            <TextView
+                android:id="@+id/highlight_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xxsmall"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="@color/on_app_bar_muted" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

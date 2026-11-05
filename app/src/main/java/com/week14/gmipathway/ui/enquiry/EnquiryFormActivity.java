@@ -1,5 +1,7 @@
 package com.week14.gmipathway.ui.enquiry;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -12,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -30,6 +33,14 @@ import java.util.regex.Pattern;
  */
 public class EnquiryFormActivity extends BaseActivity {
     private static final String STATE_PROGRAMME = "programme";
+    private static final String STATE_HANDED_OFF = "handedOff";
+    private static final String EXTRA_PROGRAMME = "programmeName";
+
+    /** Opens the form with a programme already chosen, for example from its course page. */
+    public static Intent createIntent(Context context, String programmeName) {
+        return new Intent(context, EnquiryFormActivity.class)
+                .putExtra(EXTRA_PROGRAMME, programmeName);
+    }
 
     /** Digits with an optional leading plus, spaces or hyphens; 9 to 15 digits in total. */
     private static final Pattern PHONE_PATTERN = Pattern.compile("^\\+?[0-9][0-9 -]{7,17}[0-9]$");
@@ -48,6 +59,9 @@ public class EnquiryFormActivity extends BaseActivity {
     /** The dropdown is rebuilt after rotation, so its value is kept here. */
     private String selectedProgramme;
 
+    /** True while the email app is open with this enquiry, so we can confirm on return. */
+    private boolean handedOff;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +72,10 @@ public class EnquiryFormActivity extends BaseActivity {
         bindViews();
         if (savedInstanceState != null) {
             selectedProgramme = savedInstanceState.getString(STATE_PROGRAMME);
+            handedOff = savedInstanceState.getBoolean(STATE_HANDED_OFF);
+        } else {
+            // Opened from a course page: that programme is already chosen.
+            selectedProgramme = getIntent().getStringExtra(EXTRA_PROGRAMME);
         }
         setUpProgrammeDropdown();
         findViewById(R.id.button_submit).setOnClickListener(view -> submit());
@@ -67,6 +85,24 @@ public class EnquiryFormActivity extends BaseActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString(STATE_PROGRAMME, selectedProgramme);
+        outState.putBoolean(STATE_HANDED_OFF, handedOff);
+    }
+
+    /** Back from the email app: say what happens next. The form keeps what was typed. */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!handedOff) {
+            return;
+        }
+        handedOff = false;
+        new MaterialAlertDialogBuilder(this)
+                .setIcon(R.drawable.ic_mail)
+                .setTitle(R.string.enquiry_sent_title)
+                .setMessage(getString(R.string.enquiry_sent_body, textOf(emailInput)))
+                .setPositiveButton(R.string.enquiry_sent_done, (dialog, which) -> finish())
+                .setNegativeButton(R.string.enquiry_sent_edit, null)
+                .show();
     }
 
     private void bindViews() {
@@ -138,7 +174,7 @@ public class EnquiryFormActivity extends BaseActivity {
             return;
         }
 
-        ExternalLinks.composeEmail(
+        handedOff = ExternalLinks.composeEmail(
                 this,
                 getString(R.string.email_enquiry),
                 getString(R.string.enquiry_email_subject, selectedProgramme),

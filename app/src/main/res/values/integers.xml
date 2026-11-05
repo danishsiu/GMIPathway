@@ -2,4 +2,5 @@
 <resources>
     <integer name="screen_transition_ms">220</integer>
     <integer name="splash_text_fade_ms">400</integer>
+    <integer name="list_item_enter_ms">200</integer>
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The header's brand blue, partly see-through so the campus photo shows behind it.
+     It is strongest on the left, where the title and tagline sit. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:endColor="@color/home_header_tint_end"
+        android:startColor="@color/home_header_tint_start" />
+    <corners
+        android:bottomLeftRadius="@dimen/corner_header"
+        android:bottomRightRadius="@dimen/corner_header" />
+</shape>

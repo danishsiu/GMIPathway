@@ -12,11 +12,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/saved_list"
+        android:layoutAnimation="@anim/layout_fade_up"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:clipToPadding="false"
-        android:paddingHorizontal="@dimen/spacing_medium"
+        android:paddingHorizontal="@dimen/screen_padding"
         android:paddingTop="@dimen/spacing_medium"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_course" />

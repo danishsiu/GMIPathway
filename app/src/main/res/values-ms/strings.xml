@@ -60,7 +60,16 @@
     <string name="course_section_subjects">Subjek</string>
     <string name="course_section_careers">Prospek kerjaya</string>
     <string name="course_section_entry">Syarat kemasukan</string>
-    <string name="course_section_progression">Laluan selepas tamat pengajian</string>
+    <string name="course_enquire">Tanya</string>
+    <string name="pathway_title">Laluan anda</string>
+    <string name="pathway_step_before">Sebelum GMI</string>
+    <string name="pathway_step_during">Di GMI</string>
+    <string name="pathway_step_after">Selepas GMI</string>
+    <string name="pathway_entry_spm">SPM atau kelayakan setaraf. Syarat kemasukan menyenaraikan gred yang diperlukan.</string>
+    <string name="pathway_entry_degree">Diploma, STPM, matrikulasi, asasi atau kelayakan setaraf. Syarat kemasukan menyenaraikan butirannya.</string>
+    <string name="pathway_entry_unpublished">GMI belum menerbitkan syarat kemasukan. Sila tanya GMI.</string>
+    <string name="pathway_during_body">Belajar selama %1$s.</string>
+    <string name="pathway_after_careers">Tamat pengajian dan mulakan salah satu kerjaya dalam Prospek kerjaya.</string>
     <string name="course_certificates_note">Terma dan syarat dikenakan.</string>
     <string name="course_subjects_unavailable">Sila hubungi GMI untuk senarai subjek terkini.</string>
     <string name="course_entry_unpublished">GMI belum menerbitkan syarat kemasukan untuk program ini. Sila hubungi GMI untuk pengesahan.</string>
@@ -160,6 +169,10 @@
     <string name="enquiry_error_message">Sila masukkan mesej anda.</string>
     <string name="enquiry_email_subject">Pertanyaan GMI Pathway: %1$s</string>
     <string name="enquiry_email_body">Nama: %1$s\nE-mel: %2$s\nTelefon: %3$s\nProgram: %4$s\n\n%5$s</string>
+    <string name="enquiry_sent_title">Hampir siap</string>
+    <string name="enquiry_sent_body">Pertanyaan anda sudah sedia dalam aplikasi e-mel. Jika belum dihantar, ketik Hantar di sana. GMI akan membalas ke %1$s.</string>
+    <string name="enquiry_sent_done">Selesai</string>
+    <string name="enquiry_sent_edit">Sunting pertanyaan</string>
 
     <!-- Settings -->
     <string name="settings_title">Tetapan</string>

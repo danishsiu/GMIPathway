@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Only the GMI News screen downloads anything. Everything else ships inside the app. -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".GmiPathwayApp"
@@ -59,6 +61,21 @@
             android:exported="false" />
         <activity
             android:name=".ui.settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.campus.CampusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.campus.PhotoViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.campus.TechCentresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.funding.FinancialAidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.news.NewsActivity"
             android:exported="false" />
 
         <!-- Lets AppCompat remember the chosen language on Android 12 and older. -->

@@ -39,4 +39,11 @@
     <color name="md_surface_container_highest">#E4E1E9</color>
     <color name="md_surface_dim">#DBD9E0</color>
     <color name="md_surface_bright">#FBF8FF</color>
+    <!-- The photo viewer's backdrop. Black in both themes, like any photo gallery. -->
+    <color name="photo_backdrop">#000000</color>
+    <!-- The header blues from above, at 88% and 72% opacity, laid over the home photo. -->
+    <!-- Dark navy text on the gold highlight labels, the same in both themes. -->
+    <color name="on_highlight_label">#0B006B</color>
+    <color name="home_header_tint_start">#E01004A0</color>
+    <color name="home_header_tint_end">#B82A1FC4</color>
 </resources>

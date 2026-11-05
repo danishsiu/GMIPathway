@@ -7,8 +7,10 @@ import android.text.SpannableStringBuilder;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -18,10 +20,14 @@ import com.week14.gmipathway.data.CourseRepository;
 import com.week14.gmipathway.model.Course;
 import com.week14.gmipathway.model.EntryGroup;
 import com.week14.gmipathway.model.EntryRoute;
+import com.week14.gmipathway.model.ProgrammeCategory;
 import com.week14.gmipathway.model.SubjectGroup;
 import com.week14.gmipathway.ui.common.BaseActivity;
 import com.week14.gmipathway.ui.common.DetailViews;
 import com.week14.gmipathway.ui.common.ExternalLinks;
+import com.week14.gmipathway.ui.enquiry.EnquiryFormActivity;
+
+import java.util.Arrays;
 
 /**
  * Shows everything about one course, with a button to apply online.
@@ -67,6 +73,8 @@ public class CourseDetailActivity extends BaseActivity {
         bindSections(course);
         findViewById(R.id.button_apply).setOnClickListener(view ->
                 ExternalLinks.openWebPage(this, getString(R.string.url_online_application)));
+        findViewById(R.id.button_enquire).setOnClickListener(view ->
+                startActivity(EnquiryFormActivity.createIntent(this, course.getName())));
     }
 
     @Override
@@ -110,6 +118,7 @@ public class CourseDetailActivity extends BaseActivity {
     }
 
     private void bindHeader(Course course) {
+        ((ImageView) findViewById(R.id.course_hero)).setImageResource(getHeroPhoto(course));
         ((TextView) findViewById(R.id.course_department)).setText(course.getDepartment());
         ((TextView) findViewById(R.id.course_name)).setText(course.getName());
         ((TextView) findViewById(R.id.course_summary)).setText(course.getSummary());
@@ -145,8 +154,47 @@ public class CourseDetailActivity extends BaseActivity {
         DetailViews.addExpandableSection(sections, R.string.course_section_entry,
                 formatEntryRequirements(course), entryExpanded,
                 expanded -> entryExpanded = expanded);
-        DetailViews.addSection(sections, R.string.course_section_progression,
-                DetailViews.bulletList(this, course.getProgression()));
+        addPathway(sections, course);
+    }
+
+    /** A photo of the labs in the programme's department, from the bundled campus photos. */
+    @DrawableRes
+    private static int getHeroPhoto(Course course) {
+        switch (course.getDepartmentId()) {
+            case Course.DEPARTMENT_ELECTRICAL:
+                return R.drawable.fac_elec_dcs_emerson;
+            case Course.DEPARTMENT_MECHANICAL:
+                return R.drawable.fac_mech_cnc;
+            case Course.DEPARTMENT_COMPUTER:
+                return R.drawable.fac_comp_computer_lab;
+            default:
+                return R.drawable.fac_preu_chemistry;
+        }
+    }
+
+    /**
+     * Shows the programme as three steps: what you need first, what you study at GMI,
+     * and where it leads. Without a progression list, step 3 points to Career prospects above.
+     */
+    private void addPathway(ViewGroup sections, Course course) {
+        CharSequence entry;
+        if (course.getEntryGroupId() == null) {
+            entry = getString(R.string.pathway_entry_unpublished);
+        } else if (course.getCategory() == ProgrammeCategory.DEGREE) {
+            entry = getString(R.string.pathway_entry_degree);
+        } else {
+            entry = getString(R.string.pathway_entry_spm);
+        }
+        CharSequence after = course.getProgression().isEmpty()
+                ? getString(R.string.pathway_after_careers)
+                : DetailViews.bulletList(this, course.getProgression());
+        DetailViews.addPathway(sections, R.string.pathway_title,
+                Arrays.asList(getString(R.string.pathway_step_before),
+                        getString(R.string.pathway_step_during),
+                        getString(R.string.pathway_step_after)),
+                Arrays.asList(entry,
+                        getString(R.string.pathway_during_body, course.getDuration()),
+                        after));
     }
 
     private CharSequence formatCertificates(Course course) {
