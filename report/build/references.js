@@ -6,6 +6,7 @@ const AD = { full: "Android Developers", short: "Android Developers" };
 const GOOGLE = { full: "Google", short: "Google" };
 const R30 = "October 30, 2026";
 const R31 = "October 31, 2026";
+const R5N = "November 5, 2026";
 const gmi = "https://www.gmi.edu.my";
 
 // year is null for n.d.; when is the part after the year, such as "May" or "October 10".
@@ -26,6 +27,10 @@ const ENTRIES = [
   { key: "lampiran", author: GMI, year: 2025, when: "April", title: "Lampiran A: Syarat tawaran dan panduan pendaftaran Diploma", note: "rev. 04", url: `${gmi}/wp-content/uploads/2025/04/Lampiran-A-Syarat-Tawaran-Panduan-Pendaftaran-Diploma.rev04-Apr2025.pdf`, got: R30 },
   { key: "pathway", author: GMI, year: 2019, when: "February", title: "GMI pathway", note: "Infographic", url: `${gmi}/wp-content/uploads/2019/06/FA-PG-D1-2018_VERSION-FEBRUARY-2019_Outline-31EDIT.jpg`, got: R30 },
   { key: "gapp", author: GMI, title: "German A-Level Preparatory Programme (GAPP)", url: `${gmi}/pre-university-programme/german-a-level-preparatory-programme-gapp/`, got: R30 },
+  { key: "facilities", author: GMI, title: "Facilities", url: `${gmi}/facilities/`, got: R5N },
+  { key: "centres", author: GMI, title: "Technology centres", url: `${gmi}/technology-center/`, got: R5N },
+  { key: "tour", author: GMI, title: "GMI virtual tour", url: `${gmi}/gmi-virtual-tour/`, got: R5N },
+  { key: "newsfeed", author: GMI, title: "News posts", note: "WordPress REST API", url: `${gmi}/wp-json/wp/v2/posts`, got: R5N },
   { key: "aid", author: GMI, title: "External sponsorships & financial aids", url: `${gmi}/external-sponsorships-financial-aids/`, got: R30 },
   { key: "gufp", author: GMI, title: "GMI-UTP Foundation Programme (GUFP)", url: `${gmi}/gmi-utp-foundation-studies-programme/`, got: R30 },
   { key: "contact", author: GMI, title: "Contact us", url: `${gmi}/contact-us/`, got: R30 },

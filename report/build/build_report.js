@@ -197,12 +197,17 @@ function sourceCode() {
     "ui/eligibility/EligibilityActivity.java", "ui/eligibility/EligibilityResultActivity.java",
     "ui/enquiry/ContactUsActivity.java", "ui/enquiry/EnquiryFormActivity.java", "ui/enquiry/AboutUsActivity.java",
     "ui/enquiry/FaqActivity.java", "ui/settings/SettingsActivity.java",
+    "ui/campus/CampusActivity.java", "ui/campus/PhotoViewerActivity.java", "ui/campus/TechCentresActivity.java",
+    "ui/funding/FinancialAidActivity.java", "ui/news/NewsActivity.java",
   ];
   const keyClasses = [
     "logic/EligibilityChecker.java", "logic/CourseSearch.java", "data/CourseRepository.java", "data/AppSettings.java",
     "data/BookmarkStore.java", "GmiPathwayApp.java", "ui/courses/CourseListFragment.java", "ui/courses/CoursePagerAdapter.java",
     "ui/courses/CourseAdapter.java", "ui/eligibility/OutcomeAdapter.java", "ui/eligibility/ReasonFormatter.java",
     "ui/common/DetailViews.java", "ui/common/ExternalLinks.java",
+    "ui/common/ZoomImageView.java", "ui/home/HighlightAdapter.java", "ui/campus/PhotoStripAdapter.java",
+    "data/CampusCatalog.java", "data/NewsRepository.java", "data/ImageLoader.java",
+    "ui/news/NewsViewModel.java", "ui/news/NewsAdapter.java",
   ];
   const models = fs.readdirSync(path.join(JAVA, "model")).filter((name) => name.endsWith(".java") && name !== "package-info.java").sort().map((name) => `model/${name}`);
   const layouts = fs.readdirSync(path.join(MAIN, "res", "layout")).sort().map((name) => `layout/${name}`);
@@ -226,7 +231,7 @@ function sourceCode() {
     h2("4.3 Activities"),
     ...activities.flatMap(java),
     h2("4.4 Key Classes"),
-    p("These classes hold the checker logic, the data access, the list adapters and the shared helpers."),
+    p("These classes hold the checker logic, the data access, the news download, the list adapters and the shared helpers, including the zoomable photo view."),
     ...keyClasses.flatMap(java),
     h2("4.5 Model Classes"),
     p("Gson fills these classes from the course data. `EntryRule` and `Qualification` matter most, because they hold the rules and the grade order the checker uses."),
@@ -238,6 +243,8 @@ function sourceCode() {
     h2("4.7 strings.xml"),
     p("All the text the app shows is kept in resources, apart from the course data. Fixed GMI data, such as phone numbers and links, is marked `translatable=\"false\"`, so it can never differ between languages."),
     ...res("values/strings.xml"),
+    p("The text for the campus, technology centre, financial aid and news screens is kept in its own file, `values/campus.xml`, with its Malay version in `values-ms/campus.xml`."),
+    ...res("values/campus.xml"),
     h2("4.8 App Icon"),
     p("The icon is our own design: a road leading up to a graduation cap, on a blue gradient. It is an adaptive icon with a separate background, foreground and monochrome layer. GMI's official logo is not used, because we did not have permission to use it."),
     ...figures([["app_icon", "The GMI Pathway app icon"]], 3.2),

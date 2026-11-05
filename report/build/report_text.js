@@ -5,7 +5,7 @@ const WHOLE_APP_PSEUDOCODE = `BEGIN GMI Pathway
     LOAD the saved language and appearance
     OUTPUT splash screen
     LOAD the course catalogue for the current language
-    OUTPUT home screen
+    OUTPUT home screen: key figures, Apply Now, highlights and ten cards
 
     WHILE the app is open
         INPUT choice
@@ -14,16 +14,41 @@ const WHOLE_APP_PSEUDOCODE = `BEGIN GMI Pathway
             OUTPUT tabs: Diploma, Pre-University, Degree
             INPUT search words or a selected programme
             IF a programme is selected THEN
-                OUTPUT programme details
+                OUTPUT programme details and its pathway: before, at and after GMI
                 IF "Save" is tapped THEN
                     add or remove the programme in the saved list
                 ENDIF
                 IF "Share" is tapped THEN
                     open the share sheet with the programme's details
                 ENDIF
+                IF "Enquire" is tapped THEN
+                    RUN Enquiry Form with this programme already chosen
+                ENDIF
             ENDIF
         ELSE IF choice = "Eligibility Checker" THEN
             RUN Eligibility Checker                  // Section 2.4
+        ELSE IF choice = "Campus" THEN
+            OUTPUT facility photos and the virtual tour spots
+            IF a photo is tapped THEN
+                OUTPUT the photo full screen, with pinch and double-tap zoom
+            ENDIF
+        ELSE IF choice = "Tech Centres" THEN
+            OUTPUT the technology and examination centres
+            IF "Visit page" is tapped THEN
+                RUN Open Web Page (the centre's page)
+            ENDIF
+        ELSE IF choice = "GMI News" THEN
+            download the latest posts from GMI's website
+            IF the download fails AND a saved copy exists THEN
+                OUTPUT the saved copy and an offline notice
+            ELSE IF the download fails THEN
+                OUTPUT "Could not load the news" and a Try Again button
+            ELSE
+                save a copy, then OUTPUT the posts
+            ENDIF
+        ELSE IF choice = "Financial Aid" THEN
+            OUTPUT the rules and the sponsors
+            INPUT call or email the Loan & Sponsorship Unit
         ELSE IF choice = "Contact Us" THEN
             OUTPUT address, phone numbers, email, website and social links
             INPUT contact action
@@ -78,6 +103,10 @@ const ENQUIRY_PSEUDOCODE = `BEGIN Enquiry Form
         open the email app with GMI's address, the subject and the message filled in
         IF no email app is found THEN
             OUTPUT "No email app found on this device."
+        ELSE
+            IF the prospect comes back from the email app THEN
+                OUTPUT "Almost done": tap Send there; GMI will reply to the email given
+            ENDIF
         ENDIF
     ENDIF
 END
@@ -201,21 +230,26 @@ const projectTree = `GMIPathway/
     assets/         courses.json, courses_ms.json, licences/
     java/com/week14/gmipathway/
       GmiPathwayApp.java
-      data/         CourseRepository, AppSettings, BookmarkStore
+      data/         CourseRepository, AppSettings, BookmarkStore, CampusCatalog,
+                    NewsRepository, ImageLoader
       logic/        EligibilityChecker, CourseSearch
       model/        Course, EntryRule, Qualification and other data classes
-      ui/common/    BaseActivity, DetailViews, ExternalLinks
+      ui/campus/    Campus, photo viewer, Technology Centres
+      ui/common/    BaseActivity, DetailViews, ExternalLinks, ZoomImageView
       ui/courses/   course list, details, saved programmes
       ui/eligibility/  checker form and results
       ui/enquiry/   Contact Us, Enquiry Form, About Us, FAQ
-      ui/home/      MainActivity
+      ui/funding/   Financial Aid
+      ui/home/      MainActivity, HighlightAdapter
+      ui/news/      GMI News
       ui/settings/  SettingsActivity
       ui/splash/    SplashActivity
     res/            layout, layout-land, values, values-ms, values-night, values-land,
-                    drawable, font, menu, mipmap
+                    values-sw600dp (tablets), drawable, drawable-nodpi (campus
+                    photos), anim, font, menu, mipmap
   app/src/test/     unit tests
   docs/             demo script and UI revision notes
-  research/         GMI research and eligibility rules
+  research/         GMI research, eligibility rules and campus sources
   report/           this report and the presentation outline`;
 
 function beforeCode(h, catalog) {
@@ -245,9 +279,10 @@ function beforeCode(h, catalog) {
     numbered("Deliver a clear, accessible app that works in English and Bahasa Melayu, on Android 7.0 and newer."),
 
     h2("1.4 Scope"),
-    p("The app works on one device and has no accounts or server. Course data and the checker run offline, because the data ships inside the app. The internet is needed only for web links."),
+    p("The app works on one device and has no accounts or server. Course data, the checker and the campus photos ship inside the app, so they work offline. The internet is needed only for GMI News and for web links."),
     bullet("**Covered:** 15 diplomas, 2 pre-university programmes and 1 degree, and the Eligibility Checker for SPM, O-Level / IGCSE, UEC, STPM, Diploma, and Matriculation / Foundation."),
     bullet("**Sent to GMI's admissions team:** other routes, such as STAM, SKM Level 3, SVM, GCE A-Level and APEL. These depend on documents and field of study, so the app explains this instead of guessing."),
+    bullet("**Also covered:** GMI's campus facilities, technology centres, financial aid and latest news, from GMI's website."),
     bullet("**Not included:** submitting an application inside the app. The app hands over to GMI's own online application portal."),
     p("The checker is a guide. GMI makes the final admission decision, and diplomas also need a medical check. The results screen says so."),
 
@@ -255,11 +290,16 @@ function beforeCode(h, catalog) {
     tableCaption("Main features of GMI Pathway"),
     table(["Feature", "What it does"], [
       ["Course List", "18 programmes under Diploma, Pre-University and Degree tabs, with Diploma departments as dropdowns, and search."],
-      ["Course Details", "Code, duration, intake, mode, credits, fees, subjects, careers, entry requirements and progression."],
+      ["Course Details", "Code, duration, intake, mode, credits, fees, subjects, careers and entry requirements, a three-step pathway, and Enquire and Apply buttons."],
       ["Eligibility Checker", "Compares entered results with each programme's rules. Shows You qualify, Ask GMI, Not eligible yet or Not assessed, with reasons."],
+      ["Home", "Key figures, Apply Now, highlight cards, and shortcuts grouped into Get started, Discover GMI and Help & support."],
       ["Online application", "Apply Now opens GMI's online application portal in the browser."],
       ["Contact Us", "Address and map, phone, WhatsApp, email, website and six social media links."],
-      ["Enquiry Form", "Checks five fields, then opens the email app with the message ready to send."],
+      ["Enquiry Form", "Checks five fields, then opens the email app with the message ready to send, and confirms the next step on return."],
+      ["Campus & Facilities", "Photos of eight facility groups, a full-screen viewer with zoom, and the virtual tour spots."],
+      ["Technology Centres", "12 technology centres and 3 examination centres, each linking to its page on GMI's website."],
+      ["Financial Aid", "The rules for aid and each sponsor GMI lists, with buttons to call or email GMI's sponsorship unit."],
+      ["GMI News", "The latest posts from GMI's website, with a saved copy for offline use."],
       ["About Us", "History, vision, mission, German-based education, governance and accreditation."],
       ["Saved and share", "Bookmarks that stay after the app closes, and sharing through any installed app."],
       ["FAQ", "Common questions, each answered from a recorded source."],
@@ -275,29 +315,35 @@ function beforeCode(h, catalog) {
       ["App ID", "`com.week14.gmipathway`, version 1.0"],
       ["Interface", `AndroidX, Material Components 1.14.0 (${cite("materiallib")}), RecyclerView (${cite("recyclerdoc")}), ViewPager2`],
       ["Data", `JSON files in assets, read with Gson 2.13.1 (${cite("gson")}); SharedPreferences for bookmarks and settings`],
+      ["Network", `HttpURLConnection reading GMI's public WordPress news feed (${cite("newsfeed")}); no extra library`],
+      ["Photos", `GMI's own campus photos, from its website (${cite("facilities", "centres")}), shown with a credit`],
       ["Splash and language", `AndroidX SplashScreen API (${cite("splashdoc")}); per-app language preferences (${cite("langdoc")})`],
       ["Font and icons", `Figtree, under the SIL Open Font License (${cite("figtree")}); Material Symbols, Apache 2.0 (${cite("symbols")}); Simple Icons 11.0.0, CC0, used only to link to GMI's official profiles, with the brands belonging to their owners (${cite("simple")})`],
-      ["Testing", "JUnit 4 unit tests, Android Lint, Android emulators on API 24 and API 37"],
+      ["Testing", "JUnit 4 unit tests, Android Lint, Android emulators on API 24 and API 37, and a simulated 10-inch tablet"],
     ], [2400, 6898]),
     spacer(),
 
     h2("1.7 Android Topics Applied"),
     tableCaption("Android topics and where the app uses them"),
     table(["Topic", "Where it is used"], [
-      ["Activities and explicit Intents", "12 screens. `EligibilityActivity` passes the results to `EligibilityResultActivity` in an Intent."],
+      ["Activities and explicit Intents", "17 screens. `EligibilityActivity` passes the results to `EligibilityResultActivity` in an Intent, and Course Details passes the programme to the Enquiry Form."],
       ["Implicit Intents", "`ExternalLinks` opens the browser, phone, email and share sheet. `ContactUsActivity` opens the map."],
-      ["Activity lifecycle and saved state", "`onSaveInstanceState` keeps form entries and open sections when the phone rotates."],
-      ["XML layouts", "33 layouts plus 3 landscape versions, using ConstraintLayout, LinearLayout, NestedScrollView, and `include` for shared parts."],
+      ["Activity lifecycle and saved state", "`onSaveInstanceState` keeps form entries and open sections when the phone rotates. `onResume` shows the enquiry confirmation after the email app."],
+      ["XML layouts", "47 layouts plus 3 landscape versions, using ConstraintLayout, LinearLayout, NestedScrollView, and `include` for shared parts. Tablets get wider margins from `values-sw600dp`."],
       ["Material components", "TextInputLayout, MaterialCardView, MaterialButton, TabLayout, AppBarLayout, Snackbar."],
-      ["RecyclerView and adapters", "`CourseAdapter` and `OutcomeAdapter` show expandable lists."],
-      ["Fragments and ViewPager2", "`CourseListFragment` is one tab, and `CoursePagerAdapter` supplies the three tabs."],
+      ["RecyclerView and adapters", "`CourseAdapter` and `OutcomeAdapter` show expandable lists. `HighlightAdapter` and the photo strips scroll sideways, and `NewsAdapter` lists the news."],
+      ["Fragments and ViewPager2", "`CourseListFragment` is one tab, and `CoursePagerAdapter` supplies the three tabs. ViewPager2 also pages through photos full screen."],
+      ["ViewModel and LiveData", "`NewsViewModel` keeps the downloaded news when the phone rotates, so it is not downloaded again."],
+      ["Networking", "`NewsRepository` and `ImageLoader` download on background threads, with a saved copy for offline use."],
+      ["Custom views and touch", "`ZoomImageView` uses ScaleGestureDetector and GestureDetector for pinch and double-tap zoom."],
+      ["Animation", "Screen transitions, a fade-up as course lists appear, and a fade-in for downloaded photos."],
       ["Menus and search", "Toolbar menus in the Course List and Course Details, and a SearchView in the Course List."],
       ["Data storage", "`BookmarkStore` and `AppSettings` use SharedPreferences."],
       ["Reading assets and JSON", "`CourseRepository` reads the catalogue with Gson."],
       ["Background work", "`SplashActivity` loads the data on a background thread, so the screen never freezes."],
       ["Input validation", "`EnquiryFormActivity` and `EligibilityActivity` show errors on the fields."],
       ["Resources", "Strings, plurals, styles, dimensions, fonts, Malay translations in `values-ms`, and dark colours in `values-night`."],
-      ["Unit testing", "58 JUnit tests run the checker against the real data."],
+      ["Unit testing", "68 JUnit tests run the checker against the real data and check the campus data and the news feed reader."],
     ], [3000, 6298]),
     spacer(),
 
@@ -316,7 +362,7 @@ function beforeCode(h, catalog) {
     spacer(),
 
     h2("1.9 Accuracy of the Information"),
-    p(`The information comes from GMI's published material, checked against the Malaysian Qualifications Register (${cite("mqr")}). All of these sources were accessed on 30 October 2026, and the app's data records this. Where official sources disagreed, the official GMI website was preferred unless a page was shown to be out of date. The register was treated as the final word on accreditation.`),
+    p(`The information comes from GMI's published material, checked against the Malaysian Qualifications Register (${cite("mqr")}). These sources were accessed on 30 October 2026, and the campus, financial aid and news sources on 5 November 2026. The app's data records this. Where official sources disagreed, the official GMI website was preferred unless a page was shown to be out of date. The register was treated as the final word on accreditation.`),
     tableCaption("Sources of the app's information"),
     table(["App content", "Sources"], [
       ["Programmes, codes, fees, subjects, careers", `${cite("guide", "software", "diplomas", "electrical", "mechanical", "computer", "cyber")}; ${cite("mqr")}`],
@@ -327,6 +373,7 @@ function beforeCode(h, catalog) {
       ["Intakes, admission and funding", `${cite("calendar", "admission", "aid", "portal")}`],
       ["About Us", `${cite("home", "history", "vision", "ucas", "convo", "commit", "pathway")}`],
       ["Contact details and map position", `${cite("contact")}; ${cite("osm")}`],
+      ["Campus, centres, aid and news", `${cite("facilities", "centres", "tour", "aid", "home")}; ${cite("newsfeed")}`],
     ], [3400, 5898]),
     spacer(),
     p("Three cases are handled openly in the app, instead of being guessed:"),
@@ -364,19 +411,20 @@ function beforeCode(h, catalog) {
     h1("3. Screenshots and Explanations"),
     p("All screenshots are real captures from the app running on a Pixel 9a emulator. The Malay screen in Section 3.11 was captured at a smaller display size, so that more of it fits."),
     h2("3.1 Splash and Home"),
-    p("The splash screen shows our own icon while the course data loads on a background thread. It stays for at least 1.5 seconds, so the branding can be read. Home then gives the key figures, a red Apply Now button, six shortcut cards and a Settings button. The programme count comes from the data, so it stays correct if the list changes."),
-    ...figures([["splash", "Splash screen"], ["home", "Home screen"]]),
+    p("The splash screen shows our own icon while the course data loads on a background thread. It stays for at least 1.5 seconds, so the branding can be read. Home opens with a campus photo behind the title, the key figures and a red Apply Now button. The shortcuts are grouped so the main tasks come first: **Get started** holds Courses and the Eligibility Checker in tinted cards, then a row of **Highlights** scrolls sideways, followed by **Discover GMI** and **Help & support**. Each highlight is a published GMI fact and opens the matching page: the January 2027 intake opens the online application, and the UTeM degree and the Cambridge awards open BELT and GAPP. The programme count comes from the data, so it stays correct if the list changes."),
+    ...figures([["splash", "Splash screen"], ["home", "Home screen"], ["home_lower", "Home: highlights and grouped shortcuts"]]),
 
     h2("3.2 Courses"),
-    p("The list holds all 18 programmes, grouped the way GMI groups them. On the **Diploma** tab the departments are dropdowns that start closed, so the tab opens as a short overview. Every card has the same structure, so programmes are easy to compare. The search icon finds programmes by name, department, summary or code, with the words in any order."),
+    p("The list holds all 18 programmes, grouped the way GMI groups them. On the **Diploma** tab the departments are dropdowns that start closed, so the tab opens as a short overview. Every card has the same structure, so programmes are easy to compare. When a department opens, its programmes are indented under it, so the group is clear. The search icon finds programmes by name, department, summary or code, with the words in any order."),
     ...figures([["courses_diploma", "Diploma tab, departments closed"], ["courses_open", "A department opened"], ["courses_preuni", "Pre-University tab"]]),
     ...figures([["courses_degree", "Degree tab"]]),
     tableCaption("The 18 programmes in the app"),
     table(["No.", "Programme", "Group", "MQA code", "Duration", "Intake"],
       programmeRows, [470, 3010, 1300, 1818, 1500, 1200]),
     spacer(),
-    p("Tapping a programme opens its details. The top of the page shows the programme code, duration, intake, mode of study and fees. Longer sections, such as Subjects and Entry requirements, collapse so the page stays easy to read. The toolbar has buttons to save and to share the programme, and the page has its own Apply button."),
+    p("Tapping a programme opens its details, under a photo of the department's labs. The top of the page shows the programme code, duration, intake, mode of study and fees. Longer sections, such as Subjects and Entry requirements, collapse so the page stays easy to read. **Your pathway** ends the page with three numbered steps: what the student needs before GMI, how long they study at GMI, and where the programme leads. The toolbar has buttons to save and to share the programme, and two buttons stay at the bottom of the screen: **Enquire**, which opens the Enquiry Form with this programme already chosen, and **Apply Online**."),
     ...figures([["detail_top", "Course Details, top"], ["detail_sections", "Collapsible sections"], ["detail_entry", "Entry requirements"]]),
+    ...figures([["detail_pathway", "Your pathway, with Enquire and Apply Online"]]),
 
     h2("3.3 Eligibility Checker: SPM"),
     p("The form has two clear steps. Step 1 is the qualification. Step 2 is the subjects and grades. For SPM, the four required subjects are already listed as plain labels, because they cannot be removed. **Add subject** adds a row, and each row offers only the subjects not yet used, so no subject can be entered twice."),
@@ -389,7 +437,7 @@ function beforeCode(h, catalog) {
     ...figures([["olevel_form", "O-Level / IGCSE form filled in"]]),
 
     h2("3.5 Eligible Result"),
-    p("The results screen answers the main question first, with a headline. The sections below are You qualify, Ask GMI, Not eligible yet and Not assessed, and each can be opened or closed. Eligible programmes have a blue border and a red Apply Now button. Figures 17 and 18 show test cases 1 and 3 from Table 7."),
+    p("The results screen answers the main question first, with a headline. The sections below are You qualify, Ask GMI, Not eligible yet and Not assessed, and each can be opened or closed. Eligible programmes have a blue border and a red Apply Now button. Figures 19 and 20 show test cases 1 and 3 from Table 7."),
     ...figures([["spm_results", "SPM result: You qualify for 16 programmes"], ["olevel_results", "O-Level / IGCSE result: You qualify for 14 programmes"]]),
     tableCaption("Test cases proved by DemoScenarioTest"),
     table(["Test case", "Entered results", "You qualify", "Ask GMI", "Not eligible", "Not assessed"], [
@@ -407,33 +455,42 @@ function beforeCode(h, catalog) {
     ...figures([["spm_notelig_top", "SPM result: No match yet"], ["spm_notelig_lower", "SPM result: reasons for each programme"], ["olevel_notelig", "O-Level / IGCSE result: No match yet"]]),
 
     h2("3.7 Redirect to the Online Application"),
-    p(`Every Apply Now button opens GMI's online application portal, at \`https://gmi.vialing.com/oa/login\` (${cite("portal")}), in the browser. If the device is offline, the app shows a message instead. The capture below shows the portal's real login page, reached from the eligible result in Figure 17.`),
+    p(`Every Apply Now and Apply Online button opens GMI's online application portal, at \`https://gmi.vialing.com/oa/login\` (${cite("portal")}), in the browser. If the device is offline, the app shows a message instead. The capture below shows the portal's real login page, reached from the eligible result in Figure 19.`),
     ...figures([["apply_redirect", "GMI's online application opened from Apply Now"]]),
 
     h2("3.8 Contact Us"),
     p("Contact Us puts every route to GMI in one place. A location card shows the address and **Open in Maps**. Rows with an arrow can be tapped: phone numbers open the dialer without calling, and WhatsApp, email and the website open their apps. The fax row has no arrow, because it cannot be tapped. Six logo buttons open GMI's official social media pages, and each has a screen reader label. If an app is missing, a message explains this, and the map falls back to the browser."),
-    ...figures([["contact_top", "Contact Us, top"], ["contact_lower", "Contact Us, lower part with social logos"]]),
+    ...figures([["contact_top", "Contact Us, with social logos"]]),
 
     h2("3.9 Enquiry Form"),
-    p("The form asks for a name, email address, phone number, programme of interest and message. The programme list includes General enquiry. Helper text guides the student before an error appears, and an error clears as soon as the field is corrected. When all five fields pass, the email app opens with GMI's address, a subject and the message filled in, ready to send."),
-    ...figures([["enquiry", "Enquiry Form"], ["enquiry_errors", "Validation errors"]]),
+    p("The form asks for a name, email address, phone number, programme of interest and message. The programme list includes General enquiry. Helper text guides the student before an error appears, and an error clears as soon as the field is corrected. When all five fields pass, the email app opens with GMI's address, a subject and the message filled in, ready to send. When the student comes back, an **Almost done** message reminds them to tap Send in the email app and names the address GMI will reply to. The form keeps what was typed, in case they want to change it. Opened from a course page, the form already has that programme chosen."),
+    ...figures([["enquiry", "Enquiry Form"], ["enquiry_errors", "Validation errors"], ["enquiry_confirm", "Confirmation after the email app"]]),
 
     h2("3.10 About Us"),
     p("About Us covers who GMI is, its history as a timeline, the vision and mission, its German-based education, governance and accreditation. The vision and mission are highlighted and use the wording from the May 2026 Programme Guide, which is the only dated version."),
     ...figures([["about_top", "About Us, top"], ["about_lower", "About Us, history timeline"]]),
 
     h2("3.11 Extra Features"),
-    p("Saved Programmes keeps bookmarks after the app closes. The FAQ opens each answer on tap, and every answer is traced to a source in our research notes. Settings changes the language and appearance. The whole app switches to Bahasa Melayu, including the course data and the checker, while official programme names stay in English, as GMI publishes them. Dark mode and landscape layouts are also supported."),
+    p("Saved Programmes keeps bookmarks after the app closes. The FAQ opens each answer on tap, and every answer is traced to a source in our research notes. Settings changes the language and appearance. The whole app switches to Bahasa Melayu, including the course data and the checker, while official programme names stay in English, as GMI publishes them. Dark mode, landscape layouts and tablets are also supported."),
     ...figures([["saved", "Saved Programmes"], ["faq", "FAQ"], ["settings", "Settings"]]),
     ...figures([["malay_home", "Home in Bahasa Melayu"], ["dark_home", "Home in dark mode"]], 4.9),
     ...figures([["land_home", "Home in landscape"]], 8),
+    h3("Campus, Technology Centres, Financial Aid and GMI News"),
+    p(`Four screens bring in more of GMI's website (${cite("facilities", "centres", "aid")}). **Campus & Facilities** shows GMI's own photos of eight facility groups, from the labs of each department to the library, sports, hostel and surau. Each row of photos scrolls sideways, and tapping one opens it full screen, where it can be zoomed with a pinch or a double tap. The photos ship inside the app, so the screen works offline, and they are credited to GMI on screen. The screen also lists the 15 places in GMI's 360° virtual tour and opens the tour.`),
+    p("**Technology Centres** describes the 12 centres and 3 examination centres that have their own page on GMI's website, names an industry partner only where GMI's page does, and links to each page. **Financial Aid** gives the rules first: aid is for Malaysian students, only one sponsor at a time, and only the sponsor can approve it. It then lists each sponsor GMI names, with buttons to call or email GMI's Loan & Sponsorship Unit."),
+    p(`**GMI News** is the one screen that needs the internet. It reads the latest posts from GMI's public news feed (${cite("newsfeed")}), and tapping a post opens the full article on GMI's website. The last download is saved, so when the phone is offline the screen shows the saved news with a notice, or a Try Again message if nothing has been saved yet.`),
+    ...figures([["campus", "Campus & Facilities"], ["photo_viewer", "A photo full screen"], ["tech_centres", "Technology Centres"]]),
+    ...figures([["financial_aid", "Financial Aid"], ["news", "GMI News"]]),
 
     h2("3.12 UI/UX Design"),
     p("The app follows one small design system, so every screen feels part of the same product."),
     bullet("**One font:** Figtree, in three weights, on a 12-style type scale. Nothing is smaller than 12sp."),
     bullet("**Colours with one job each:** blue navigates, red only ever means Apply, gold appears only on blue, and grey means Not eligible."),
-    bullet("**One shape system:** 8dp corners for buttons and fields, 12dp for cards, and a 16dp screen margin."),
-    bullet("**Accessibility:** all text pairs pass WCAG AA contrast, tap targets are at least 48dp, and icon-only buttons have screen reader labels."),
+    bullet("**One shape system:** 8dp corners for buttons and fields, 12dp for cards, and one screen margin: 16dp on phones, 48dp on tablets and 96dp on tablets in landscape."),
+    bullet("**Clear priorities:** Home leads with the two main tasks, and every course page ends with the same two actions, Enquire and Apply."),
+    bullet("**Readable over photos:** text on a photo always sits on a dark fade, so it keeps its contrast whatever the picture."),
+    bullet("**Calm motion:** short screen transitions and a 200ms fade-up as lists appear, so nothing slows the student down."),
+    bullet("**Accessibility:** all text pairs pass WCAG AA contrast, tap targets are at least 48dp, icon-only buttons have screen reader labels, and the layouts grow to fit text at twice the normal size."),
     bullet("**Feedback:** validation shows on the field, and every external action explains itself if it cannot run."),
   ].filter(Boolean);
 }
@@ -443,13 +500,13 @@ function afterCode(h) {
   return [
     h1("5. Conclusion"),
     h2("5.1 Summary"),
-    p("GMI Pathway meets its objectives. It lists all 18 GMI programmes, checks results for six qualifications against GMI's published rules, explains every outcome, and gives a direct route to the online application and to every contact channel. It works in English and Bahasa Melayu, and offline for everything except web links."),
+    p("GMI Pathway meets its objectives. It lists all 18 GMI programmes, checks results for six qualifications against GMI's published rules, explains every outcome, and gives a direct route to the online application and to every contact channel. It works in English and Bahasa Melayu, and offline for everything except GMI News and web links. It also shows GMI's campus, technology centres, financial aid and news, so a prospect can learn about life at GMI, not only the programmes."),
     p("The most important decision was to store the entry rules as data and keep the checker free of Android code. This let us run tests against the real rules, and it means a changed requirement needs no change to the logic. We also chose not to guess: where GMI has not published something, the app says so and points the student to GMI."),
 
     h2("5.2 Testing"),
     tableCaption("Test results"),
     table(["Check", "Device", "Result"], [
-      ["Unit tests", "Computer", "58 of 58 passed"],
+      ["Unit tests", "Computer", "68 of 68 passed"],
       ["Android Lint", "Computer", "No issues found"],
       ["All features, including dropdowns, dark mode and BM", "Android 7 (API 24) emulator", "40 of 40 passed"],
       ["All features, including dropdowns, dark mode and BM", "Pixel 9a (API 37) emulator", "40 of 40 passed"],
@@ -462,9 +519,13 @@ function afterCode(h) {
       ["BM at 360dp", "Pixel 9a emulator", "Passed, screens checked by eye"],
       ["Results and long lists at 360dp, dark mode", "Pixel 9a emulator", "6 of 6 passed"],
       ["Screen sizes: 5\" phone, 6.7\" phone, landscape, Large text", "Pixel 9a emulator", "No overflow or clipping, no crashes"],
+      ["Campus, photo zoom, Technology Centres, Financial Aid, highlights, pathway and Enquire", "Pixel 9a emulator", "Passed, in English, Malay, light and dark"],
+      ["GMI News online, offline with a saved copy, and offline with none", "Pixel 9a emulator", "3 of 3 passed"],
+      ["Enquiry confirmation after the email app", "Pixel 9a emulator", "Passed"],
+      ["Text at twice the normal size, and a 10-inch tablet", "Pixel 9a emulator, tablet simulated", "Passed after two fixes"],
     ], [4698, 2600, 2000]),
     spacer(),
-    p("Unit tests, Lint, the two full feature runs and the logo checks ran on the final build. The other device checks ran on earlier builds of the redesign, and only the course list, Contact Us and the subject list changed after them. The form, Enquiry and edge-case runs passed on API 24 before the redesign and were not repeated there afterwards, although the checker and Enquiry logic did not change. The feature runs used a lower display density, so every row fit on screen for the test scripts, and real sizes were checked separately."),
+    p("Unit tests, Lint, the two full feature runs and the logo checks ran on the final build. The other device checks ran on earlier builds of the redesign, and only the course list, Contact Us and the subject list changed after them. The form, Enquiry and edge-case runs passed on API 24 before the redesign and were not repeated there afterwards, although the checker and Enquiry logic did not change. The feature runs used a lower display density, so every row fit on screen for the test scripts, and real sizes were checked separately. The campus, centres, aid and news screens and the later design changes were checked on the Pixel 9a only, not on API 24. The large-text check found highlight cards cutting off text, and the tablet check found the Home header out of line with the cards. Both were fixed and checked again."),
 
     h2("5.3 Limitations"),
     bullet("The checker is a guide based on published rules. GMI makes the final decision."),
@@ -472,12 +533,17 @@ function afterCode(h) {
     bullet("The Enquiry Form sends through the student's email app, not to a GMI system, so a device needs an email app."),
     bullet("Testing was on emulators. The hand-offs to the email and Maps apps were confirmed, but the emulators had no signed-in email account or set-up Maps app, so the filled-in email and the map pin itself were not seen."),
     bullet("In landscape, the Course List app bar takes up more height than we would like."),
+    bullet("GMI News depends on GMI's public news feed. If GMI changes its website, the screen shows its error message until the app is updated."),
+    bullet("The campus photos are GMI's own, used with a credit for this student project. Formal permission would be needed before any public release."),
+    bullet("The January 2027 intake highlight is correct for now, but will need updating after that intake."),
+    bullet("Tablets were checked on a simulated 10-inch screen, not a real tablet."),
 
     h2("5.4 Future Improvements"),
     bullet("Load the course data from a GMI-managed source, so updates need no new app version."),
     bullet("Send enquiries directly to GMI's admissions team from inside the app."),
     bullet("Add rules for more entry routes once GMI confirms them, including Cyber Security Technology."),
-    bullet("Test on more real phones, and with prospective students."),
+    bullet("Load the home highlights from GMI's news, so they stay current."),
+    bullet("Test on more real phones and tablets, and with prospective students."),
 
     h2("5.5 Personal Reflection"),
     p("[[Student 1: write your own reflection here. What did you work on, what did you learn, what was hardest, and what would you do differently?]]"),

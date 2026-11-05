@@ -149,7 +149,8 @@ def legend(chart, x, y):
 
 
 def whole_app():
-    c = Chart()
+    # Twelve home options, so this chart is taller than the page default.
+    c = Chart(height=2780)
     spine = 340
     boxes = 870
     second = 1380
@@ -160,24 +161,28 @@ def whole_app():
     c.terminator(spine, 60, 260, 70, "Start")
     c.process(spine, 180, 500, 96, "Apply the saved language and appearance")
     c.process(spine, 312, 500, 96, "Show the splash screen and load the course catalogue")
-    c.io(spine, home_y, 500, 92, "Show Home: key figures, Apply Now, six cards, Settings")
+    c.io(spine, home_y, 500, 92, "Show Home: key figures, Apply Now, highlights, ten cards")
     c.io(spine, 580, 500, 74, "Prospect taps an option")
     c.arrow((spine, 95), (spine, 132))
     c.arrow((spine, 228), (spine, 264))
     c.arrow((spine, 360), (spine, 404))
     c.arrow((spine, 496), (spine, 543))
 
-    rows = [("Courses?", "process", "Course List: tabs, departments and search. Open, save or share a programme"),
+    rows = [("Courses?", "process", "Course List and Details: search, save, share, see the pathway"),
             ("Eligibility\nChecker?", "predefined", "Eligibility Checker (see the detailed flowchart)"),
-            ("Contact Us?", "contact", "Contact Us: dial, WhatsApp, map, email, website, social links"),
+            ("Campus?", "process", "Campus: facility photos, full-screen zoom, virtual tour spots"),
+            ("Tech Centres?", "process", "Technology Centres: each centre links to its GMI page"),
+            ("GMI News?", "process", "GMI News: latest posts, or the saved copy when offline"),
             ("About Us?", "process", "About Us: history, vision, mission, German-based education"),
+            ("Financial Aid?", "process", "Financial Aid: sponsors and rules; call or email the unit"),
+            ("Contact Us?", "contact", "Contact Us: dial, WhatsApp, map, email, website, social links"),
             ("Saved?", "process", "Saved Programmes: list bookmarks kept on the device"),
             ("FAQ?", "process", "FAQ: tap a question to open its answer"),
             ("Settings?", "process", "Settings: choose the language and appearance"),
             ("Apply Now?", "apply", "")]
-    step = 176
-    first = 720
-    d_w, d_h = 380, 128
+    step = 152
+    first = 712
+    d_w, d_h = 380, 116
     c.arrow((spine, 617), (spine, first - d_h / 2))
     for index, (question, kind, text) in enumerate(rows):
         y = first + index * step
