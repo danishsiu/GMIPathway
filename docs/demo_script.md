@@ -28,9 +28,9 @@
 
 ### 2. Home (30 seconds)
 
-**Show:** the key figures, the red Apply Now button and the six shortcut cards.
+**Show:** the campus photo header, the key figures, the red Apply Now button, then scroll: **Get started**, the **Highlights** row (swipe it), **Discover GMI** and **Help & support**.
 
-**Say:** "The home screen gives prospects the main facts and one tap to every feature. Each colour has one job: blue navigates, and red always means Apply. The programme count comes from the data, so it stays correct if the list changes."
+**Say:** "The home screen leads with the two main tasks, Courses and the Eligibility Checker. The highlights are facts GMI has published, like the January 2027 intake, and each one opens the right page. Each colour has one job: blue navigates, and red always means Apply. The programme count comes from the data, so it stays correct if the list changes."
 
 ### 3. Courses and search (1.5 minutes)
 
@@ -39,9 +39,10 @@
 2. Back on **Diploma**, tap **Electrical Engineering** to open it, then tap it again to close it.
 3. Tap the search icon and type `software`.
 4. Open **Diploma in Software Engineering** from the results.
-5. Show the fees, then open **Subjects** and **Entry requirements**.
+5. Show the photo header and the fees, then open **Subjects** and **Entry requirements**.
+6. Scroll to **Your pathway**: Before GMI, At GMI, After GMI.
 
-**Say:** "There are 18 programmes, grouped the way GMI groups them. Departments open like dropdowns, so the list starts as a short overview. Every card has the same structure, so they are easy to compare. Every course page comes from one data file, so GMI's details can change without changing the code. Long sections collapse, so the page stays easy to read."
+**Say:** "There are 18 programmes, grouped the way GMI groups them. Departments open like dropdowns, so the list starts as a short overview. Every card has the same structure, so they are easy to compare. Every course page comes from one data file, so GMI's details can change without changing the code. Long sections collapse, so the page stays easy to read. Your pathway shows the student where this programme takes them, and Enquire and Apply always stay on screen."
 
 ### 4. Bookmarks and share (45 seconds)
 
@@ -82,7 +83,9 @@ This is the main feature. **Swap speakers here.**
 **Do:**
 1. Open **Contact Us** and tap the phone number. It opens the dialer without calling. Go back.
 2. Tap **Open in Maps**. Go back.
-3. Tap **Send an Enquiry**, fill in the form, choose a programme and tap **Send Enquiry**.
+3. Tap **Send an Enquiry**, fill in the form, choose a programme and tap **Send Enquiry**. Come back from the email app to show the **Almost done** message.
+
+**Tip:** on any course page, **Enquire** opens this form with the programme already chosen.
 
 **Say:** "Rows with an arrow can be tapped, and the logos at the bottom open GMI's social pages. They use Intents to hand over to the phone, maps and email apps. If an app is missing, the app explains that instead of crashing, and the map falls back to the browser."
 
@@ -98,9 +101,19 @@ This is the main feature. **Swap speakers here.**
 
 **Say:** "The whole app switches language, including the course data and the checker. Official programme names and curriculum titles stay in English, as GMI publishes them. Every FAQ answer is traced to a source in our research notes. The app also keeps what you entered when the phone rotates."
 
+### 8b. Campus, centres, aid and news (1.5 minutes)
+
+**Do:**
+1. On Home, open **Campus**. Swipe a row of photos, tap one, and pinch or double-tap to zoom. Go back.
+2. Open **Tech Centres** and scroll to a centre with a partner label, such as ZEISS.
+3. Open **Financial Aid** and tap **State religious councils and zakat**.
+4. Open **GMI News**. Tap a post to open it on GMI's website, then come back.
+
+**Say:** "These screens bring in more of GMI's website. The campus photos are GMI's own, credited on screen, and ship inside the app, so they work offline. Every centre and sponsor is one GMI lists. GMI News is the only part that needs the internet. It reads GMI's public news feed and keeps a copy, so it still shows the last news offline."
+
 ### 9. Close (30 seconds)
 
-**Say:** "To summarise, GMI Pathway covers the course list, a data-driven Eligibility Checker for six qualifications, all the contact routes, and a full online application link, in two languages. We tested it from Android 7 to the latest version, and 58 automated tests check the rules against the real data. Thank you."
+**Say:** "To summarise, GMI Pathway covers the course list, a data-driven Eligibility Checker for six qualifications, all the contact routes, and a full online application link, in two languages. It also shows GMI's campus, technology centres, financial aid and news. We tested it from Android 7 to the latest version and on a tablet, and 68 automated tests check the rules against the real data. Thank you."
 
 ## Sample grades
 
@@ -174,7 +187,7 @@ These results are proven by `app/src/test/java/com/week14/gmipathway/logic/DemoS
 | Is the checker's result final? | No. It is a guide, and GMI makes the final decision. The results screen says so. |
 | Why are the rules not in the Java code? | Rules in `courses.json` can change without changing the logic, and the tests check the real data. |
 | How do you know BM gives the same results? | `MalayCatalogTest` runs both languages at every grade level and requires identical outcomes. |
-| Does it need the internet? | Only for web links. Courses and the checker work offline, and web links explain when there is no connection. |
+| Does it need the internet? | Only for GMI News and web links. Courses, the checker and the campus photos work offline. News shows its last saved copy offline, and web links explain when there is no connection. |
 | Why is the logo not GMI's? | We did not have permission, so we designed our own. |
 | Why this font? | Figtree fits long programme names and BM words in less space than the old font, so titles wrap less on small phones. |
 | Why are "Not eligible" cards grey? | So that red only ever means Apply, and the useful actions stand out. |
@@ -183,7 +196,7 @@ These results are proven by `app/src/test/java/com/week14/gmipathway/logic/DemoS
 
 | Problem | What to do |
 |---|---|
-| No internet | Say that courses and the checker work offline, and tap **Apply Now** to show the message. |
+| No internet | Say that courses, the checker and the campus work offline. Open **GMI News** to show the saved copy, and tap **Apply Now** to show the message. |
 | Gmail asks for setup | Say the form has already handed over to the email app, and move on. |
 | Maps asks for an update or setup | Say the app has handed over to Maps, and move on. |
 | The app is in the wrong language | Tap the gear on Home and choose **English**. |

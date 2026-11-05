@@ -42,23 +42,25 @@ GMI Pathway answers all three questions in one app.
 ## 4. Features
 
 - Course List with departments, search, bookmarks and sharing
-- Course Details with fees, subjects, careers and entry requirements
+- Course Details with fees, subjects, careers, entry requirements, a pathway, and Enquire and Apply
 - Eligibility Checker: You qualify, Ask GMI, Not eligible yet, Not assessed
 - Contact Us, Enquiry Form, About Us and FAQ
-- English and Bahasa Melayu, Light and Dark, portrait and landscape
+- Campus & Facilities, Technology Centres, Financial Aid and GMI News, from GMI's website
+- English and Bahasa Melayu, Light and Dark, portrait, landscape and tablets
 
 ## 5. Live demo
 
 Follow `docs/demo_script.md`. In order:
 
-1. Splash and Home
-2. Courses: departments, search, details
+1. Splash and Home: highlights and grouped shortcuts
+2. Courses: departments, search, details and Your pathway
 3. Bookmark and share
 4. Eligibility Checker: SPM eligible, then SPM not eligible (swap speakers here)
 5. Second qualification: O-Level / IGCSE
 6. Apply Now opens GMI's online application
 7. Contact Us and Enquiry Form
 8. FAQ, About Us, dark mode, Bahasa Melayu and rotation
+9. Campus with photo zoom, Technology Centres, Financial Aid and GMI News
 
 **Sample grades:** use Scenarios 1, 2 and 3 in the demo script. Their results are proved by automated tests.
 
@@ -84,7 +86,7 @@ Follow `docs/demo_script.md`. In order:
 
 - Every GMI fact is traced to a source, and the Malaysian Qualifications Register is the final word on accreditation
 - Where GMI has published nothing, the app says Ask GMI instead of guessing
-- 58 unit tests run the checker against the real data, and Lint found no issues
+- 68 unit tests run the checker against the real data and check the campus data and news reader, and Lint found no issues
 - Tested on Android 7 (API 24) and API 37 emulators, at several screen sizes
 
 ## 9. Limitations and future work
